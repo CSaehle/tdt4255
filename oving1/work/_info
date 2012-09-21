@@ -1,0 +1,65 @@
+m255
+K3
+13
+cModel Technology
+Z0 dZ:\github\tdt4255\oving1
+T_opt
+Ve>8W^W434LJQ`kiJjKiKa2
+Z1 04 14 8 work tb_sign_extend behavior 1
+Z2 =1-00215a5a6f07-505c904a-3a2-b64
+Z3 o-quiet -auto_acc_if_foreign -work work +acc
+Z4 n@_opt
+Z5 OE;O;6.6d;45
+Z6 dZ:\github\tdt4255\oving1
+Esign_extend
+Z7 w1348243267
+Z8 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+R6
+Z9 8sign_extend.vhd
+Z10 Fsign_extend.vhd
+l0
+L32
+Z11 V<jaodFPn6TJoPQgTk_QOT1
+Z12 OE;C;6.6d;45
+31
+Z13 o-explicit -93
+Z14 tExplicit 1
+Z15 !s100 k;S:MX3BdU5eDlMQDZFdE3
+Abehavioral
+R8
+Z16 DEx4 work 11 sign_extend 0 22 <jaodFPn6TJoPQgTk_QOT1
+l38
+L37
+Z17 VCBNNz[4B08JI6aXZCE^P12
+R12
+31
+Z18 Mx1 4 ieee 14 std_logic_1164
+R13
+R14
+Z19 !s100 lP5NX3LIhLVbO`T]W2?G61
+Etb_sign_extend
+Z20 w1348243704
+R8
+R6
+Z21 8tb_sign_extend.vhd
+Z22 Ftb_sign_extend.vhd
+l0
+L35
+Z23 VC[zXHmgWjcQ7Xl_DPDb1K3
+R12
+31
+R13
+R14
+Z24 !s100 W@oB1hPJ?eW8CBK=Nl=b53
+Abehavior
+R8
+Z25 DEx4 work 14 tb_sign_extend 0 22 C[zXHmgWjcQ7Xl_DPDb1K3
+l58
+L38
+Z26 Ve_6lNZGl>;hmb@MJ?d<;P1
+R12
+31
+R18
+R13
+R14
+Z27 !s100 Ia^R2z0P70VdiVI<20khX0

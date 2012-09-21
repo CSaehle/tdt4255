@@ -21,8 +21,71 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="oving1.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sign_extend.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="sign_extend.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="sign_extend.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_sign_extend.fdo"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1348242992" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1348242992">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1348243232" xil_pn:in_ck="5065598080168258692" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1348243232">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="adder.vhd"/>
+      <outfile xil_pn:name="alu.vhd"/>
+      <outfile xil_pn:name="alu_1bit.vhd"/>
+      <outfile xil_pn:name="com.vhd"/>
+      <outfile xil_pn:name="full_adder.vhd"/>
+      <outfile xil_pn:name="memory.vhd"/>
+      <outfile xil_pn:name="mips_constant_pkg.vhd"/>
+      <outfile xil_pn:name="processor.vhd"/>
+      <outfile xil_pn:name="register_file.vhd"/>
+      <outfile xil_pn:name="sign_extend.vhd"/>
+      <outfile xil_pn:name="tb_sign_extend.vhd"/>
+      <outfile xil_pn:name="tb_toplevel.vhd"/>
+      <outfile xil_pn:name="toplevel.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1348243232" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4172715909262913149" xil_pn:start_ts="1348243232">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1348243232" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3054896447821362175" xil_pn:start_ts="1348243232">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1348242992" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-644657079465608753" xil_pn:start_ts="1348242992">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1348243232" xil_pn:in_ck="5065598080168258692" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1348243232">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="adder.vhd"/>
+      <outfile xil_pn:name="alu.vhd"/>
+      <outfile xil_pn:name="alu_1bit.vhd"/>
+      <outfile xil_pn:name="com.vhd"/>
+      <outfile xil_pn:name="full_adder.vhd"/>
+      <outfile xil_pn:name="memory.vhd"/>
+      <outfile xil_pn:name="mips_constant_pkg.vhd"/>
+      <outfile xil_pn:name="processor.vhd"/>
+      <outfile xil_pn:name="register_file.vhd"/>
+      <outfile xil_pn:name="sign_extend.vhd"/>
+      <outfile xil_pn:name="tb_sign_extend.vhd"/>
+      <outfile xil_pn:name="tb_toplevel.vhd"/>
+      <outfile xil_pn:name="toplevel.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1348243234" xil_pn:in_ck="5065598080168258692" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1348243232">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="tb_sign_extend.fdo"/>
+    </transform>
+  </transforms>
 
 </generated_project>

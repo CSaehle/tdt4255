@@ -1,0 +1,98 @@
+# //  ModelSim SE 6.6d Nov  1 2010 
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -do \{do \{tb_sign_extend.fdo\}\} 
+# ** Error: (vsim-19) Failed to access library 'work' at "work".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+do tb_sign_extend.fdo
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity sign_extend
+# -- Compiling architecture behavioral of sign_extend
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_sign_extend
+# -- Compiling architecture behavior of tb_sign_extend
+# ** Error: tb_sign_extend.vhd(58): near "<": expecting "IDENTIFIER"
+# ** Error: tb_sign_extend.vhd(69): near "<": syntax error
+# ** Error: tb_sign_extend.vhd(72): near "<": syntax error
+# ** Error: tb_sign_extend.vhd(74): near "<": syntax error
+# ** Error: C:/modeltech_6.6d/win32/vcom failed.
+# Error in macro ./tb_sign_extend.fdo line 24
+# C:/modeltech_6.6d/win32/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "tb_sign_extend.vhd""
+do tb_sign_extend.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity sign_extend
+# -- Compiling architecture behavioral of sign_extend
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_sign_extend
+# -- Compiling architecture behavior of tb_sign_extend
+# ** Error: tb_sign_extend.vhd(71): Illegal target for signal assignment.
+# ** Error: tb_sign_extend.vhd(71): (vcom-1136) Unknown identifier "clock".
+# ** Error: tb_sign_extend.vhd(73): Illegal target for signal assignment.
+# ** Error: tb_sign_extend.vhd(73): (vcom-1136) Unknown identifier "clock".
+# ** Error: tb_sign_extend.vhd(93): VHDL Compiler exiting
+# ** Error: C:/modeltech_6.6d/win32/vcom failed.
+# Error in macro ./tb_sign_extend.fdo line 24
+# C:/modeltech_6.6d/win32/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "tb_sign_extend.vhd""
+do tb_sign_extend.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity sign_extend
+# -- Compiling architecture behavioral of sign_extend
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_sign_extend
+# -- Compiling architecture behavior of tb_sign_extend
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_sign_extend 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sign_extend(behavior)#1
+# Loading work.sign_extend(behavioral)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do tb_sign_extend.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity sign_extend
+# -- Compiling architecture behavioral of sign_extend
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_sign_extend
+# -- Compiling architecture behavior of tb_sign_extend
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_sign_extend 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sign_extend(behavior)#1
+# Loading work.sign_extend(behavioral)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
