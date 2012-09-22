@@ -8,91 +8,49 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim -do \{do \{tb_sign_extend.fdo\}\} 
-# ** Error: (vsim-19) Failed to access library 'work' at "work".
+# vsim -do \{do \{tb_shift_two.fdo\}\} 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-19) Failed to access library 'work.{tb_shift_two' at "work.{tb_shift_two".
 # No such file or directory. (errno = ENOENT)
+# ** Error: Library work.{tb_shift_two not found.
 # Error loading design
-do tb_sign_extend.fdo
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity sign_extend
-# -- Compiling architecture behavioral of sign_extend
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_sign_extend
-# -- Compiling architecture behavior of tb_sign_extend
-# ** Error: tb_sign_extend.vhd(58): near "<": expecting "IDENTIFIER"
-# ** Error: tb_sign_extend.vhd(69): near "<": syntax error
-# ** Error: tb_sign_extend.vhd(72): near "<": syntax error
-# ** Error: tb_sign_extend.vhd(74): near "<": syntax error
-# ** Error: C:/modeltech_6.6d/win32/vcom failed.
-# Error in macro ./tb_sign_extend.fdo line 24
-# C:/modeltech_6.6d/win32/vcom failed.
-#     while executing
-# "vcom -explicit  -93 "tb_sign_extend.vhd""
-do tb_sign_extend.fdo
+do tb_shift_two.fdo
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
-# -- Compiling entity sign_extend
-# -- Compiling architecture behavioral of sign_extend
+# -- Compiling entity shift_two
+# -- Compiling architecture behavioral of shift_two
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_sign_extend
-# -- Compiling architecture behavior of tb_sign_extend
-# ** Error: tb_sign_extend.vhd(71): Illegal target for signal assignment.
-# ** Error: tb_sign_extend.vhd(71): (vcom-1136) Unknown identifier "clock".
-# ** Error: tb_sign_extend.vhd(73): Illegal target for signal assignment.
-# ** Error: tb_sign_extend.vhd(73): (vcom-1136) Unknown identifier "clock".
-# ** Error: tb_sign_extend.vhd(93): VHDL Compiler exiting
+# -- Compiling entity tb_shift_two
+# -- Compiling architecture behavior of tb_shift_two
+# ** Error: tb_shift_two.vhd(80): (vcom-1272) Length of expected is 32; length of actual is 33.
+# ** Error: tb_shift_two.vhd(86): VHDL Compiler exiting
 # ** Error: C:/modeltech_6.6d/win32/vcom failed.
-# Error in macro ./tb_sign_extend.fdo line 24
+# Error in macro ./tb_shift_two.fdo line 24
 # C:/modeltech_6.6d/win32/vcom failed.
 #     while executing
-# "vcom -explicit  -93 "tb_sign_extend.vhd""
-do tb_sign_extend.fdo
+# "vcom -explicit  -93 "tb_shift_two.vhd""
+do tb_shift_two.fdo
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
-# -- Compiling entity sign_extend
-# -- Compiling architecture behavioral of sign_extend
+# -- Compiling entity shift_two
+# -- Compiling architecture behavioral of shift_two
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
-# -- Compiling entity tb_sign_extend
-# -- Compiling architecture behavior of tb_sign_extend
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_sign_extend 
+# -- Compiling entity tb_shift_two
+# -- Compiling architecture behavior of tb_shift_two
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_shift_two 
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_sign_extend(behavior)#1
-# Loading work.sign_extend(behavioral)#1
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-do tb_sign_extend.fdo
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity sign_extend
-# -- Compiling architecture behavioral of sign_extend
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_sign_extend
-# -- Compiling architecture behavior of tb_sign_extend
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_sign_extend 
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_sign_extend(behavior)#1
-# Loading work.sign_extend(behavioral)#1
+# Loading work.tb_shift_two(behavior)#1
+# Loading work.shift_two(behavioral)#1
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree

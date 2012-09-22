@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-09-21T17:06:09</DateModified>
+  <DateModified>2012-09-22T16:32:22</DateModified>
   <ModuleName>adder</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>//sambaad.stud.ntnu.no/chribru/github/tdt4255/oving1/iseconfig/adder.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>Z:/github/tdt4255/oving1\</ImplementationReportsDirectory>
+  <SavedFilePath>//sambaad.stud.ntnu.no/terjesc/git/GitHub/tdt4255/oving1/iseconfig/adder.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>Z:/git/GitHub/tdt4255/oving1\</ImplementationReportsDirectory>
   <DateInitialized>2012-09-19T17:20:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

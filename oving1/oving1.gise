@@ -23,10 +23,16 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="shift_two.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="shift_two.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="shift_two.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="sign_extend.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="sign_extend.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="sign_extend.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_shift_two.fdo"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_sign_extend.fdo"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
@@ -35,7 +41,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1348243232" xil_pn:in_ck="5065598080168258692" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1348243232">
+    <transform xil_pn:end_ts="1348329549" xil_pn:in_ck="3623116266219016871" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1348329549">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="adder.vhd"/>
@@ -47,16 +53,18 @@
       <outfile xil_pn:name="mips_constant_pkg.vhd"/>
       <outfile xil_pn:name="processor.vhd"/>
       <outfile xil_pn:name="register_file.vhd"/>
+      <outfile xil_pn:name="shift_two.vhd"/>
       <outfile xil_pn:name="sign_extend.vhd"/>
+      <outfile xil_pn:name="tb_shift_two.vhd"/>
       <outfile xil_pn:name="tb_sign_extend.vhd"/>
       <outfile xil_pn:name="tb_toplevel.vhd"/>
       <outfile xil_pn:name="toplevel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1348243232" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4172715909262913149" xil_pn:start_ts="1348243232">
+    <transform xil_pn:end_ts="1348329549" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-7366212353099234430" xil_pn:start_ts="1348329549">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1348243232" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3054896447821362175" xil_pn:start_ts="1348243232">
+    <transform xil_pn:end_ts="1348329549" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2203797422448385024" xil_pn:start_ts="1348329549">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -64,7 +72,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1348243232" xil_pn:in_ck="5065598080168258692" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1348243232">
+    <transform xil_pn:end_ts="1348329549" xil_pn:in_ck="3623116266219016871" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1348329549">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="adder.vhd"/>
@@ -76,15 +84,19 @@
       <outfile xil_pn:name="mips_constant_pkg.vhd"/>
       <outfile xil_pn:name="processor.vhd"/>
       <outfile xil_pn:name="register_file.vhd"/>
+      <outfile xil_pn:name="shift_two.vhd"/>
       <outfile xil_pn:name="sign_extend.vhd"/>
+      <outfile xil_pn:name="tb_shift_two.vhd"/>
       <outfile xil_pn:name="tb_sign_extend.vhd"/>
       <outfile xil_pn:name="tb_toplevel.vhd"/>
       <outfile xil_pn:name="toplevel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1348243234" xil_pn:in_ck="5065598080168258692" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1348243232">
+    <transform xil_pn:end_ts="1348329551" xil_pn:in_ck="3623116266219016871" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1348329549">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="tb_sign_extend.fdo"/>
+      <outfile xil_pn:name="tb_shift_two.fdo"/>
+      <outfile xil_pn:name="vsim.wlf"/>
+      <outfile xil_pn:name="work"/>
     </transform>
   </transforms>
 
