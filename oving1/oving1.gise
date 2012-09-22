@@ -26,6 +26,7 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu_control.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="alu_control.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="alu_control.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="control_unit.fdo"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="shift_two.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="shift_two.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="shift_two.xst"/>
@@ -33,6 +34,7 @@
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="sign_extend.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="sign_extend.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_alu_control.fdo"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_control_unit.fdo"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_shift_two.fdo"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_sign_extend.fdo"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
@@ -45,18 +47,15 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1348338559" xil_pn:in_ck="-405070254902060064" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1348338559">
+    <transform xil_pn:end_ts="1348344150" xil_pn:in_ck="8221488742600006101" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1348344150">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="adder.vhd"/>
       <outfile xil_pn:name="alu.vhd"/>
       <outfile xil_pn:name="alu_1bit.vhd"/>
       <outfile xil_pn:name="alu_control.vhd"/>
       <outfile xil_pn:name="com.vhd"/>
+      <outfile xil_pn:name="control_unit.vhd"/>
       <outfile xil_pn:name="full_adder.vhd"/>
       <outfile xil_pn:name="memory.vhd"/>
       <outfile xil_pn:name="mips_constant_pkg.vhd"/>
@@ -65,16 +64,17 @@
       <outfile xil_pn:name="shift_two.vhd"/>
       <outfile xil_pn:name="sign_extend.vhd"/>
       <outfile xil_pn:name="tb_alu_control.vhd"/>
+      <outfile xil_pn:name="tb_control_unit.vhd"/>
       <outfile xil_pn:name="tb_shift_two.vhd"/>
       <outfile xil_pn:name="tb_sign_extend.vhd"/>
       <outfile xil_pn:name="tb_toplevel.vhd"/>
       <outfile xil_pn:name="toplevel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1348337821" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3280646765696454291" xil_pn:start_ts="1348337821">
+    <transform xil_pn:end_ts="1348344219" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4211816678710550955" xil_pn:start_ts="1348344219">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1348337821" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7165877285396578325" xil_pn:start_ts="1348337821">
+    <transform xil_pn:end_ts="1348344219" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4319569930928985047" xil_pn:start_ts="1348344219">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -82,19 +82,15 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1348338560" xil_pn:in_ck="-405070254902060064" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1348338559">
+    <transform xil_pn:end_ts="1348344150" xil_pn:in_ck="8221488742600006101" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1348344150">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="adder.vhd"/>
       <outfile xil_pn:name="alu.vhd"/>
       <outfile xil_pn:name="alu_1bit.vhd"/>
       <outfile xil_pn:name="alu_control.vhd"/>
       <outfile xil_pn:name="com.vhd"/>
+      <outfile xil_pn:name="control_unit.vhd"/>
       <outfile xil_pn:name="full_adder.vhd"/>
       <outfile xil_pn:name="memory.vhd"/>
       <outfile xil_pn:name="mips_constant_pkg.vhd"/>
@@ -103,20 +99,16 @@
       <outfile xil_pn:name="shift_two.vhd"/>
       <outfile xil_pn:name="sign_extend.vhd"/>
       <outfile xil_pn:name="tb_alu_control.vhd"/>
+      <outfile xil_pn:name="tb_control_unit.vhd"/>
       <outfile xil_pn:name="tb_shift_two.vhd"/>
       <outfile xil_pn:name="tb_sign_extend.vhd"/>
       <outfile xil_pn:name="tb_toplevel.vhd"/>
       <outfile xil_pn:name="toplevel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1348338561" xil_pn:in_ck="-405070254902060064" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1348338560">
+    <transform xil_pn:end_ts="1348344222" xil_pn:in_ck="8221488742600006101" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1348344219">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="tb_alu_control.fdo"/>
+      <outfile xil_pn:name="tb_control_unit.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>
     </transform>
