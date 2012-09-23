@@ -39,19 +39,6 @@ end alu_control;
 architecture Behavioral of alu_control is
 
 begin
---	process (alu_op, funct)
---	begin
---		case alu_op & funct(3 downto 0) is
---			when "00----" => alu_control_input <= "0010";
---			when "01----" => alu_control_input <= "0110";
---			when "100000" => alu_control_input <= "0010";
---			when "100010" => alu_control_input <= "0110";
---			when "100100" => alu_control_input <= "0000";
---			when "100101" => alu_control_input <= "0001";
---			when "101010" => alu_control_input <= "0111";
---		end case;
---	end process;
-
 process (alu_op, funct)
 	begin
 		if (alu_op = "00") THEN alu_control_input <= "0010";
