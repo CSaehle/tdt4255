@@ -7,15 +7,18 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/adder - Behavioral Z:|github|tdt4255|oving1|adder.vhd</ClosedNode>
+         <ClosedNode>/alu - Behavioral Z:|github|tdt4255|oving1|alu.vhd</ClosedNode>
+         <ClosedNode>/toplevel - Behavioral Z:|github|tdt4255|oving1|toplevel.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>control_unit - Behavioral (Z:/github/tdt4255/oving1/control_unit.vhd)</SelectedItem>
+         <SelectedItem>alu - Behavioral (Z:/github/tdt4255/oving1/alu.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000e7000000020000000000000000000000000000000064ffffffff000000810000000000000002000000e70000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>control_unit - Behavioral (Z:/github/tdt4255/oving1/control_unit.vhd)</CurrentItem>
+      <CurrentItem>alu - Behavioral (Z:/github/tdt4255/oving1/alu.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -35,12 +38,14 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem>mips_constant_pkg.vhd</SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000001f3000000040101000100000000000000000000000064ffffffff000000810000000000000004000000e50000000100000000000000240000000100000000000000660000000100000000000000840000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>tb_shift_two.vhd</CurrentItem>
+      <CurrentItem>mips_constant_pkg.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -54,7 +59,7 @@
       <CurrentItem>work</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
@@ -75,18 +80,19 @@
          <ClosedNode>/adder - Behavioral Z:|github|tdt4255|oving1|adder.vhd</ClosedNode>
          <ClosedNode>/alu - Behavioral Z:|github|tdt4255|oving1|alu.vhd</ClosedNode>
          <ClosedNode>/tb_alu_control - behavior Z:|github|tdt4255|oving1|tb_alu_control.vhd</ClosedNode>
+         <ClosedNode>/tb_control_unit - behavior Z:|github|tdt4255|oving1|tb_control_unit.vhd</ClosedNode>
          <ClosedNode>/tb_shift_two - behavior Z:|github|tdt4255|oving1|tb_shift_two.vhd</ClosedNode>
          <ClosedNode>/tb_sign_extend - behavior Z:|github|tdt4255|oving1|tb_sign_extend.vhd</ClosedNode>
          <ClosedNode>/tb_toplevel - behavior Z:|github|tdt4255|oving1|tb_toplevel.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_control_unit - behavior (Z:/github/tdt4255/oving1/tb_control_unit.vhd)</SelectedItem>
+         <SelectedItem>alu - Behavioral (Z:/github/tdt4255/oving1/alu.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e2000000020000000000000000000000000000000064ffffffff000000810000000000000002000001e20000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>tb_control_unit - behavior (Z:/github/tdt4255/oving1/tb_control_unit.vhd)</CurrentItem>
+      <CurrentItem>alu - Behavioral (Z:/github/tdt4255/oving1/alu.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>

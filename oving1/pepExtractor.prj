@@ -1,1 +1,6 @@
-work	"alu_control.vhd"
+work	"control_unit.vhd"
+work	"tb_alu_control.vhd"
+work	"tb_control_unit.vhd"
+work	"tb_shift_two.vhd"
+work	"tb_sign_extend.vhd"
+work	"tb_toplevel.vhd"
