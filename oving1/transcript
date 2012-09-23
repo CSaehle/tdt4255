@@ -11,9 +11,9 @@
 # vsim -do \{do \{tb_control_unit.fdo\}\} 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 1
-#           Attempting to use alternate WLF file "./wlft2mxdvx".
+#           Attempting to use alternate WLF file "./wlftn3f10y".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft2mxdvx
+#           Using alternate file: ./wlftn3f10y
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Error: (vopt-19) Failed to access library 'work.{tb_control_unit' at "work.{tb_control_unit".
 # No such file or directory. (errno = ENOENT)
@@ -31,13 +31,65 @@ do tb_control_unit.fdo
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_control_unit
 # -- Compiling architecture behavior of tb_control_unit
+# ** Error: tb_control_unit.vhd(53): (vcom-1136) Unknown identifier "jump".
+# ** Error: tb_control_unit.vhd(53): Bad resolution function (std_logic_vector) for type (error).
+# ** Error: tb_control_unit.vhd(53): near ":": expecting ';' or ')'
+# ** Error: C:/modeltech_6.6d/win32/vcom failed.
+# Error in macro ./tb_control_unit.fdo line 24
+# C:/modeltech_6.6d/win32/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "tb_control_unit.vhd""
+compile tb_control_unit.fdo
+# wrong # args: should be "compile w cmd args"
+do tb_control_unit.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity control_unit
+# -- Compiling architecture behavioral of control_unit
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_control_unit
+# -- Compiling architecture behavior of tb_control_unit
 # vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_control_unit 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 1
-#           Attempting to use alternate WLF file "./wlftm80tai".
+#           Attempting to use alternate WLF file "./wlftgwdhjm".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftm80tai
+#           Using alternate file: ./wlftgwdhjm
+# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt6/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
 # ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_control_unit(behavior)#1
+# Loading work.control_unit(behavioral)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do tb_control_unit.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity control_unit
+# -- Compiling architecture behavioral of control_unit
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_control_unit
+# -- Compiling architecture behavior of tb_control_unit
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_control_unit 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 1
+#           Attempting to use alternate WLF file "./wlftwwvzai".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwwvzai
+# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt6/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Loading work.tb_control_unit(behavior)#1
