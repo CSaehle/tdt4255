@@ -55,18 +55,31 @@ architecture Behavioral of processor is
            mem_read : out  STD_LOGIC;
            mem_write : out  STD_LOGIC;
 			  branch: out STD_LOGIC;
-			  alu_op : out  STD_LOGIC_VECTOR (1 downto 0));
+			  alu_op : out  STD_LOGIC_VECTOR (1 downto 0);
+			  jump: out STD_LOGIC
+			  );
 	end component CONTROL_UNIT;
 
 	component ALU_CONTROL is
 		Port ( alu_op : in  STD_LOGIC_VECTOR (1 downto 0);
            funct : in  STD_LOGIC_VECTOR (5 downto 0);
-           alu_control_input : out  STD_LOGIC_VECTOR (3 downto 0));
+           alu_control_input : out  STD_LOGIC_VECTOR (3 downto 0)
+			  );
 	end component ALU_CONTROL;
+
+	signal alu_control_line : std_logic;
 
 begin
 
+	control: control_unit
+	port map ( 
+			alu_control_input => alu_control_line
+		);
 
+	alu_ctrl: alu_control
+	port map (
+			alu_op => alu_control_line
+		);
 
 end Behavioral;
 
