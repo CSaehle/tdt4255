@@ -8,31 +8,68 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim -do \{do \{alu.fdo\}\} 
+# vsim -do \{do \{tb_adder.fdo\}\} 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by:   Hostname:   ProcessID: 1
-#           Attempting to use alternate WLF file "./wlft1d4h1f".
+#           File in use by:   Hostname:   ProcessID: 2
+#           Attempting to use alternate WLF file "./wlftjbz5bq".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft1d4h1f
+#           Using alternate file: ./wlftjbz5bq
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Error: (vopt-19) Failed to access library 'work.{alu' at "work.{alu".
+# ** Error: (vopt-19) Failed to access library 'work.{tb_adder' at "work.{tb_adder".
 # No such file or directory. (errno = ENOENT)
-# ** Error: Library work.{alu not found.
+# ** Error: Library work.{tb_adder not found.
 # Error loading design
-do alu.fdo
+do tb_adder.fdo
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Loading package numeric_std
-# ** Error: (vcom-11) Could not find work.mips_constant_pkg.
-# ** Error: alu.vhd(25): (vcom-1195) Cannot find expanded name "work.mips_constant_pkg".
-# ** Error: alu.vhd(25): Unknown expanded name.
-# ** Error: alu.vhd(36): VHDL Compiler exiting
-# ** Error: C:/modeltech_6.6d/win32/vcom failed.
-# Error in macro ./alu.fdo line 23
-# C:/modeltech_6.6d/win32/vcom failed.
-#     while executing
-# "vcom -explicit  -93 "alu.vhd""
-pwd
-# Z:/github/tdt4255/oving1
+# -- Compiling entity tb_adder
+# -- Compiling architecture behavior of tb_adder
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_adder 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 2
+#           Attempting to use alternate WLF file "./wlfte8fb2q".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfte8fb2q
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: [1] tb_adder.vhd(34): (vopt-3473) Component instance "uut : adder" is not bound.
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_adder(behavior)#1
+# ** Warning: (vsim-3473) Component instance "uut : adder" is not bound.
+#    Time: 0 ps  Iteration: 0  Region: /tb_adder  File: tb_adder.vhd
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do tb_adder.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity tb_adder
+# -- Compiling architecture behavior of tb_adder
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_adder 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 2
+#           Attempting to use alternate WLF file "./wlftwe4e6w".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwe4e6w
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: [1] tb_adder.vhd(34): (vopt-3473) Component instance "uut : adder" is not bound.
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_adder(behavior)#1
+# ** Warning: (vsim-3473) Component instance "uut : adder" is not bound.
+#    Time: 0 ps  Iteration: 0  Region: /tb_adder  File: tb_adder.vhd
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+quit -sim
+# ** Warning: (vsim-31) Unable to unlink file "Z:\github\tdt4255\oving1\work/_opt4__lock".
+# No such file or directory. (errno = ENOENT)
+quit
