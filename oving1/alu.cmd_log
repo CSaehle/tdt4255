@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "Z:/github/tdt4255/oving1/alu.xst" -ofn "Z:/github/tdt4255/oving1/alu.syr" 
+xst -intstyle ise -ifn "Z:/github/tdt4255/oving1/alu.xst" -ofn "Z:/github/tdt4255/oving1/alu.syr" 

@@ -1,0 +1,4 @@
+vhdl work "full_adder.vhd"
+vhdl work "mips_constant_pkg.vhd"
+vhdl work "alu_1bit.vhd"
+vhdl work "alu.vhd"
