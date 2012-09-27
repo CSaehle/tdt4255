@@ -20,6 +20,9 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
+library WORK;
+use WORK.MIPS_CONSTANT_PKG.ALL;
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -32,7 +35,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity alu_control is
     Port ( alu_op : in  STD_LOGIC_VECTOR (1 downto 0);
            funct : in  STD_LOGIC_VECTOR (5 downto 0);
-           alu_control_input : out  STD_LOGIC_VECTOR (3 downto 0));
+           alu_control_input : out  ALU_INPUT);
 end alu_control;
 
 
