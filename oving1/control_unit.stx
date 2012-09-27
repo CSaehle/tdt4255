@@ -12,7 +12,7 @@ Total CPU time to Xst completion: 0.13 secs
 Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.13 secs
  
---> Reading design: pc_handle.prj
+--> Reading design: control_unit.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -39,28 +39,17 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "\github\tdt4255\oving1\full_adder.vhd" into library work
-Parsing entity <full_adder>.
-Parsing architecture <Behavioral> of entity <full_adder>.
-Parsing VHDL file "\github\tdt4255\oving1\shift_two.vhd" into library work
-Parsing entity <shift_two>.
-Parsing architecture <Behavioral> of entity <shift_two>.
-Parsing VHDL file "\github\tdt4255\oving1\adder.vhd" into library work
-Parsing entity <adder>.
-Parsing architecture <Behavioral> of entity <adder>.
-Parsing VHDL file "\github\tdt4255\oving1\pc_handle.vhd" into library work
-Parsing entity <pc_handle>.
-Parsing architecture <Behavioral> of entity <pc_handle>.
-
-
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.23 secs
- 
+Parsing VHDL file "\github\tdt4255\oving1\control_unit.vhd" into library work
+Parsing entity <control_unit>.
+Parsing architecture <Behavioral> of entity <control_unit>.
+ERROR:HDLCompiler:69 - "\github\tdt4255\oving1\control_unit.vhd" Line 49: <state_type> is not declared.
+ERROR:HDLCompiler:854 - "\github\tdt4255\oving1\control_unit.vhd" Line 47: Unit <behavioral> ignored due to previous errors.
+VHDL file \github\tdt4255\oving1\control_unit.vhd ignored due to errors
 --> 
 
-Total memory usage is 189020 kilobytes
+Total memory usage is 186908 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :    2 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

@@ -31,8 +31,14 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="alu.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="alu.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="alu_control.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="alu_control.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="alu_control.xst"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="alu_xst.xrpt"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="compxlib.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="control_unit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="control_unit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="control_unit.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pc_handle.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pc_handle.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="pc_handle.xst"/>

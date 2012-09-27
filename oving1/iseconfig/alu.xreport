@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-09-26T12:39:57</DateModified>
+  <DateModified>2012-09-27T21:16:03</DateModified>
   <ModuleName>alu</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>//sambaad.stud.ntnu.no/terjesc/git/GitHub/tdt4255/oving1/iseconfig/alu.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>Z:/git/GitHub/tdt4255/oving1\</ImplementationReportsDirectory>
+  <SavedFilePath>//sambaad.stud.ntnu.no/chribru/github/tdt4255/oving1/iseconfig/alu.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>Z:/github/tdt4255/oving1\</ImplementationReportsDirectory>
   <DateInitialized>2012-09-26T12:04:39</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

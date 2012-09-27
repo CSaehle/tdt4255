@@ -50,7 +50,8 @@ ARCHITECTURE behavior OF tb_control_unit IS
          mem_write : OUT  std_logic;
          branch : OUT  std_logic;
          alu_op : OUT  std_logic_vector(1 downto 0);
-			jump : OUT  std_logic
+			jump : OUT  std_logic;
+			exec_state : OUT std_logic
         );
     END COMPONENT;
     
@@ -68,6 +69,7 @@ ARCHITECTURE behavior OF tb_control_unit IS
    signal branch : std_logic;
    signal alu_op : std_logic_vector(1 downto 0);
 	signal jump : std_logic;
+	signal exec_state : std_logic;
    -- No clocks detected in port list. Replace <clock> below with 
    -- appropriate port name 
  
@@ -84,7 +86,8 @@ BEGIN
           mem_write => mem_write,
           branch => branch,
           alu_op => alu_op,
-			 jump => jump
+			 jump => jump,
+			 exec_state => exec_state
         );
  
 
