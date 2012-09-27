@@ -67,30 +67,44 @@ signal pc_added: STD_LOGIC_VECTOR (31 downto 0);
 signal jump_addr: STD_LOGIC_VECTOR (31 downto 0);
 signal branch_bytes: STD_LOGIC_VECTOR (31 downto 0);
 signal branch_addr: STD_LOGIC_VECTOR (31 downto 0);
-signal branch_selected: STD_LOGIC_VECTOR (31 downto 0); 
+signal branch_selected: STD_LOGIC_VECTOR (31 downto 0);
+signal current_byte_addr: STD_LOGIC_VECTOR (31 downto 0);
+signal next_byte_addr: STD_LOGIC_VECTOR (31 downto 0);
 
 begin
+current_byte_addr(31 downto 2) <= pc_current(29 downto 0);
+current_byte_addr(1 downto 0) <= "00";
+
 jump_addr (1 downto 0) <= "00";
 jump_addr (27 downto 2) <= jump_inst;
 jump_addr (31 downto 28) <= pc_added (31 downto 28);
 
 branch_selected <= branch_addr when (branch = '1' and zero = '1') else pc_added;
---pc_next <= jump_addr when jump = '1' else branch_selected;
-pc_next <= branch_bytes; --testing instantiation of component
+next_byte_addr <= jump_addr when jump = '1' else branch_selected;
+pc_next (31 downto 30) <= "00";
+pc_next (29 downto 0) <= next_byte_addr (31 downto 2);
+
 pc_add: adder
 generic map (N => 32)
 port map (
-	X => pc_current, Y => FOUR, CIN => ZERO1B, R => pc_added
+	X => current_byte_addr,
+	Y => FOUR,
+	CIN => ZERO1B,
+	R => pc_added
 );
 
 branch_shift : shift_two
 port map (
-	in_addr => offset, out_addr => branch_bytes
+	in_addr => offset,
+	out_addr => branch_bytes
 );
 
 branch_add: adder
 port map (
-	X => pc_added, Y => branch_bytes, CIN => ZERO1B, R => branch_addr
+	X => pc_added,
+	Y => branch_bytes,
+	CIN => ZERO1B,
+	R => branch_addr
 );
 
 end Behavioral;

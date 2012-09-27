@@ -31,7 +31,13 @@ end component;
   BEGIN
 
   -- Component Instantiation
-  uut: adder PORT MAP(X, Y, CIN, COUT, R);
+  uut: adder generic map (N => 32) PORT MAP(
+				X => X,
+				Y => Y,
+				CIN => CIN,
+				COUT => COUT,
+				R => R
+  );
 
 
   --  Test Bench Statements

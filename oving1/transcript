@@ -8,68 +8,149 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim -do \{do \{tb_adder.fdo\}\} 
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlftjbz5bq".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftjbz5bq
+# vsim -do \{do \{tb_shift_two.fdo\}\} 
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Error: (vopt-19) Failed to access library 'work.{tb_adder' at "work.{tb_adder".
+# ** Error: (vopt-19) Failed to access library 'work.{tb_shift_two' at "work.{tb_shift_two".
 # No such file or directory. (errno = ENOENT)
-# ** Error: Library work.{tb_adder not found.
+# ** Error: Library work.{tb_shift_two not found.
 # Error loading design
-do tb_adder.fdo
+do tb_shift_two.fdo
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity tb_adder
-# -- Compiling architecture behavior of tb_adder
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_adder 
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlfte8fb2q".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfte8fb2q
+# -- Compiling entity tb_shift_two
+# -- Compiling architecture behavior of tb_shift_two
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_shift_two 
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: [1] tb_adder.vhd(34): (vopt-3473) Component instance "uut : adder" is not bound.
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.tb_adder(behavior)#1
-# ** Warning: (vsim-3473) Component instance "uut : adder" is not bound.
-#    Time: 0 ps  Iteration: 0  Region: /tb_adder  File: tb_adder.vhd
+# Loading work.tb_shift_two(behavior)#1
+# Loading work.shift_two(behavioral)#1
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-do tb_adder.fdo
+do tb_pc_handle.fdo
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity tb_adder
-# -- Compiling architecture behavior of tb_adder
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_adder 
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlftwe4e6w".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftwe4e6w
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: [1] tb_adder.vhd(34): (vopt-3473) Component instance "uut : adder" is not bound.
+# -- Compiling entity pc_handle
+# -- Compiling architecture behavioral of pc_handle
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_pc_handle
+# -- Compiling architecture behavior of tb_pc_handle
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_pc_handle 
+# ** Note: (vsim-3812) Design is being optimized...
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
+# Loading work.tb_pc_handle(behavior)#1
+# Loading work.pc_handle(behavioral)#1
 # Loading ieee.numeric_std(body)
-# Loading work.tb_adder(behavior)#1
-# ** Warning: (vsim-3473) Component instance "uut : adder" is not bound.
-#    Time: 0 ps  Iteration: 0  Region: /tb_adder  File: tb_adder.vhd
+# Loading work.adder(behavioral)#1
+# Loading work.full_adder(behavioral)#1
+# Loading work.shift_two(behavioral)#1
+# Loading work.adder(behavioral)#2
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-quit -sim
-# ** Warning: (vsim-31) Unable to unlink file "Z:\github\tdt4255\oving1\work/_opt4__lock".
-# No such file or directory. (errno = ENOENT)
-quit
+do tb_pc_handle.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_handle
+# -- Compiling architecture behavioral of pc_handle
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_pc_handle
+# -- Compiling architecture behavior of tb_pc_handle
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_pc_handle 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_pc_handle(behavior)#1
+# Loading work.pc_handle(behavioral)#1
+# Loading ieee.numeric_std(body)
+# Loading work.adder(behavioral)#1
+# Loading work.full_adder(behavioral)#1
+# Loading work.shift_two(behavioral)#1
+# Loading work.adder(behavioral)#2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do tb_pc_handle.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_handle
+# -- Compiling architecture behavioral of pc_handle
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_pc_handle
+# -- Compiling architecture behavior of tb_pc_handle
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_pc_handle 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_pc_handle(behavior)#1
+# Loading work.pc_handle(behavioral)#1
+# Loading ieee.numeric_std(body)
+# Loading work.adder(behavioral)#1
+# Loading work.full_adder(behavioral)#1
+# Loading work.shift_two(behavioral)#1
+# Loading work.adder(behavioral)#2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+do tb_pc_handle.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_handle
+# -- Compiling architecture behavioral of pc_handle
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_pc_handle
+# -- Compiling architecture behavior of tb_pc_handle
+# ** Error: tb_pc_handle.vhd(107): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Error: tb_pc_handle.vhd(116): VHDL Compiler exiting
+# ** Error: C:/modeltech_6.6d/win32/vcom failed.
+# Error in macro ./tb_pc_handle.fdo line 24
+# C:/modeltech_6.6d/win32/vcom failed.
+#     while executing
+# "vcom -explicit  -93 "tb_pc_handle.vhd""
+
+do tb_pc_handle.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_handle
+# -- Compiling architecture behavioral of pc_handle
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_pc_handle
+# -- Compiling architecture behavior of tb_pc_handle
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_pc_handle 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_pc_handle(behavior)#1
+# Loading work.pc_handle(behavioral)#1
+# Loading ieee.numeric_std(body)
+# Loading work.adder(behavioral)#1
+# Loading work.full_adder(behavioral)#1
+# Loading work.shift_two(behavioral)#1
+# Loading work.adder(behavioral)#2
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree

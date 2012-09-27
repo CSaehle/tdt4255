@@ -9,36 +9,39 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/adder - Behavioral Z:|github|tdt4255|oving1|adder.vhd</ClosedNode>
          <ClosedNode>/alu - Behavioral Z:|github|tdt4255|oving1|alu.vhd</ClosedNode>
+         <ClosedNode>/pc_handle - Behavioral Z:|github|tdt4255|oving1|pc_handle.vhd/branch_add - adder - Behavioral</ClosedNode>
+         <ClosedNode>/pc_handle - Behavioral Z:|github|tdt4255|oving1|pc_handle.vhd/pc_add - adder - Behavioral</ClosedNode>
          <ClosedNode>/toplevel - Behavioral Z:|github|tdt4255|oving1|toplevel.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>pc - Behavioral (Z:/github/tdt4255/oving1/pc.vhd)</SelectedItem>
+         <SelectedItem>pc_handle - Behavioral (Z:/github/tdt4255/oving1/pc_handle.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000e7000000020000000000000000000000000000000064ffffffff000000810000000000000002000000e70000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>pc - Behavioral (Z:/github/tdt4255/oving1/pc.vhd)</CurrentItem>
+      <CurrentItem>pc_handle - Behavioral (Z:/github/tdt4255/oving1/pc_handle.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>View Compilation Log</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f30000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>View Compilation Log</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem>adder.vhd</SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000001f3000000040101000100000000000000000000000064ffffffff000000810000000000000004000000e50000000100000000000000240000000100000000000000660000000100000000000000840000000100000000</ViewHeaderState>
@@ -61,7 +64,6 @@
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem></SelectedItem>
@@ -79,16 +81,18 @@
          <ClosedNode>/alu - Behavioral Z:|github|tdt4255|oving1|alu.vhd</ClosedNode>
          <ClosedNode>/tb_alu_control - behavior Z:|github|tdt4255|oving1|tb_alu_control.vhd</ClosedNode>
          <ClosedNode>/tb_control_unit - behavior Z:|github|tdt4255|oving1|tb_control_unit.vhd</ClosedNode>
-         <ClosedNode>/tb_shift_two - behavior Z:|github|tdt4255|oving1|tb_shift_two.vhd</ClosedNode>
+         <ClosedNode>/tb_pc_handle - behavior Z:|github|tdt4255|oving1|tb_pc_handle.vhd</ClosedNode>
          <ClosedNode>/tb_sign_extend - behavior Z:|github|tdt4255|oving1|tb_sign_extend.vhd</ClosedNode>
          <ClosedNode>/tb_toplevel - behavior Z:|github|tdt4255|oving1|tb_toplevel.vhd</ClosedNode>
       </ClosedNodes>
-      <SelectedItems/>
+      <SelectedItems>
+         <SelectedItem>tb_shift_two - behavior (Z:/github/tdt4255/oving1/tb_shift_two.vhd)</SelectedItem>
+      </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e2000000020000000000000000000000000000000064ffffffff000000810000000000000002000001e20000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>alu - Behavioral (Z:/github/tdt4255/oving1/alu.vhd)</CurrentItem>
+      <CurrentItem>tb_shift_two - behavior (Z:/github/tdt4255/oving1/tb_shift_two.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -109,12 +113,38 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f30000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="ManualCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>xc6slx16-2csg324</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000146000000020000000000000000000000000000000064ffffffff000000810000000000000002000000d60000000100000000000000700000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>xc6slx16-2csg324</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="ManualCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>alu.vhd (Z:/github/tdt4255/oving1/alu.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000130000000020000000000000000000000000000000064ffffffff000000810000000000000002000000c00000000100000000000000700000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>alu.vhd (Z:/github/tdt4255/oving1/alu.vhd)</CurrentItem>
    </ItemView>
 </Project>

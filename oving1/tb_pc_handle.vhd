@@ -84,6 +84,29 @@ BEGIN
 		
 		offset ( 15 downto 12) <= "1111";
 		
+		wait for 100 ns;
+		branch <= '1';
+		zero <= '1';
+		
+		wait for 100 ns;
+		branch <= '1';
+		zero <= '0';
+
+		wait for 100 ns;
+		pc_current (17 downto 14) <= "1001";
+				
+		wait for 100 ns;
+		branch <= '0';
+		zero <= '1';
+		
+		wait for 100 ns;
+		branch <= '1';
+		zero <= '1';
+		
+		wait for 100 ns;
+		offset <= "11111111111111111111111111111111";
+		
+
 		--pc_current <= 0x"4";
 		
 
