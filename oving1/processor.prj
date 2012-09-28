@@ -1,0 +1,4 @@
+vhdl work "mips_constant_pkg.vhd"
+vhdl work "control_unit.vhd"
+vhdl work "alu_control.vhd"
+vhdl work "processor.vhd"

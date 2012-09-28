@@ -72,10 +72,10 @@ begin
 				X	=> X(0),
 				Y	=> Y(0),
 				LESS	=> LESS_AUX,
-				BINVERT => ALU_IN(2),
-				CIN	=> ALU_IN(2),
-				OP1	=> ALU_IN(1),
-				OP0	=> ALU_IN(0),					
+				BINVERT => ALU_IN.Op2,
+				CIN	=> ALU_IN.Op2,
+				OP1	=> ALU_IN.Op1,
+				OP0	=> ALU_IN.Op0,					
 				RES	=> R_AUX(0),
 				COUT	=> COUT_AUX(0)
 		);
@@ -87,10 +87,10 @@ begin
 					X	=> X(i),
 					Y	=> Y(i),
 					LESS	=> '0',
-					BINVERT => ALU_IN(2),
+					BINVERT => ALU_IN.Op2,
 					CIN	=> COUT_AUX(i-1),
-					OP1	=> ALU_IN(1),
-					OP0	=> ALU_IN(0),
+					OP1	=> ALU_IN.Op1,
+					OP0	=> ALU_IN.Op0,
 					RES	=> R_AUX(i),
 					COUT	=> COUT_AUX(i)
 				);
@@ -101,10 +101,10 @@ begin
 			X	=> X(N-1),
 			Y	=> Y(N-1),
 			LESS	=> '0',
-			BINVERT => ALU_IN(2),
+			BINVERT => ALU_IN.Op2,
 			CIN	=> COUT_AUX(N-2),
-			OP1	=> ALU_IN(1),
-			OP0	=> ALU_IN(0),
+			OP1	=> ALU_IN.Op1,
+			OP0	=> ALU_IN.Op0,
 			RES	=> R_AUX(N-1),
 			COUT	=> COUT_AUX(N-1),
 			SET	=> LESS_AUX
@@ -116,9 +116,9 @@ begin
 	FLAGS.Zero <= '1' when R_AUX= ZERO32b else '0';
 
 	ALU_RES:
-		process(ALU_IN(3),R_AUX,Y)
+		process(ALU_IN.Op3,R_AUX,Y)
 		begin
-			if  ALU_IN(3)='1' then
+			if  ALU_IN.Op3='1' then
 				R <= Y( ((N/2)-1) downto 0) & ZERO16b;
 			else
 				R <= R_AUX;

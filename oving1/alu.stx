@@ -4,15 +4,15 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Parameter xsthdpdir set to Z:/github/tdt4255/oving1/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
---> Reading design: alu_control.prj
+--> Reading design: alu.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -39,19 +39,25 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
+Parsing VHDL file "\github\tdt4255\oving1\full_adder.vhd" into library work
+Parsing entity <full_adder>.
+Parsing architecture <Behavioral> of entity <full_adder>.
 Parsing VHDL file "\github\tdt4255\oving1\mips_constant_pkg.vhd" into library work
 Parsing package <MIPS_CONSTANT_PKG>.
-Parsing VHDL file "\github\tdt4255\oving1\alu_control.vhd" into library work
-Parsing entity <alu_control>.
-Parsing architecture <Behavioral> of entity <alu_control>.
+Parsing VHDL file "\github\tdt4255\oving1\alu_1bit.vhd" into library work
+Parsing entity <alu_1bit>.
+Parsing architecture <Behavioral> of entity <alu_1bit>.
+Parsing VHDL file "\github\tdt4255\oving1\alu.vhd" into library work
+Parsing entity <alu>.
+Parsing architecture <Behavioral> of entity <alu>.
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.25 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.28 secs
  
 --> 
 
-Total memory usage is 186908 kilobytes
+Total memory usage is 188572 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

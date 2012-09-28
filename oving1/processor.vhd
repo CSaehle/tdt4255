@@ -20,6 +20,9 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
+library WORK;
+use WORK.MIPS_CONSTANT_PKG.ALL;
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -34,12 +37,12 @@ entity processor is
 		clk : in STD_LOGIC;
 		reset					: in STD_LOGIC;
 		processor_enable	: in  STD_LOGIC;
-		imem_address 		: out  STD_LOGIC_VECTOR (MEM_ADDR_BUS-1 downto 0);
-		imem_data_in 		: in  STD_LOGIC_VECTOR (MEM_DATA_BUS-1 downto 0);
-		dmem_data_in 		: in  STD_LOGIC_VECTOR (MEM_DATA_BUS-1 downto 0);
-		dmem_address 		: out  STD_LOGIC_VECTOR (MEM_ADDR_BUS-1 downto 0);
-		dmem_address_wr	: out  STD_LOGIC_VECTOR (MEM_ADDR_BUS-1 downto 0);
-		dmem_data_out		: out  STD_LOGIC_VECTOR (MEM_DATA_BUS-1 downto 0);
+		imem_address 		: out  STD_LOGIC_VECTOR (31 downto 0);
+		imem_data_in 		: in  STD_LOGIC_VECTOR (31 downto 0);
+		dmem_data_in 		: in  STD_LOGIC_VECTOR (31 downto 0);
+		dmem_address 		: out  STD_LOGIC_VECTOR (31 downto 0);
+		dmem_address_wr	: out  STD_LOGIC_VECTOR (31 downto 0);
+		dmem_data_out		: out  STD_LOGIC_VECTOR (31 downto 0);
 		dmem_write_enable	: out  STD_LOGIC
 	);
 end processor;
@@ -47,7 +50,8 @@ end processor;
 architecture Behavioral of processor is
 
 	component CONTROL_UNIT is
-		Port ( opcode : in  STD_LOGIC_VECTOR (5 downto 0);
+    Port (
+			  opcode : in  STD_LOGIC_VECTOR (5 downto 0);
            reg_dst : out  STD_LOGIC;
 			  alu_src : out  STD_LOGIC;
            mem_to_reg : out  STD_LOGIC;
@@ -56,29 +60,83 @@ architecture Behavioral of processor is
            mem_write : out  STD_LOGIC;
 			  branch: out STD_LOGIC;
 			  alu_op : out  STD_LOGIC_VECTOR (1 downto 0);
-			  jump: out STD_LOGIC
-			  );
+			  jump: out STD_LOGIC;
+			  exec_state: out STD_LOGIC
+	);
 	end component CONTROL_UNIT;
+	
+	component ALU is
+	generic ( N : natural := 32);
+		port(
+		X			: in STD_LOGIC_VECTOR(N-1 downto 0);
+		Y			: in STD_LOGIC_VECTOR(N-1 downto 0);
+		ALU_IN	: in ALU_INPUT;
+		R			: out STD_LOGIC_VECTOR(N-1 downto 0);
+		FLAGS		: out ALU_FLAGS
+	);
+	end component ALU;
 
 	component ALU_CONTROL is
-		Port ( alu_op : in  STD_LOGIC_VECTOR (1 downto 0);
+    Port ( alu_op : in  STD_LOGIC_VECTOR (1 downto 0);
            funct : in  STD_LOGIC_VECTOR (5 downto 0);
-           alu_control_input : out  STD_LOGIC_VECTOR (3 downto 0)
-			  );
+           alu_in : out  ALU_INPUT
+	);
 	end component ALU_CONTROL;
-
-	signal alu_control_line : std_logic;
+	
+	component PC is
+	    Port ( CLK : in  STD_LOGIC;
+           W : in  STD_LOGIC;
+           addr_put : in  STD_LOGIC_VECTOR (31 downto 0);
+           addr_get : out  STD_LOGIC_VECTOR (31 downto 0));
+	end component PC;
+	
+	component PC_HANDLE is
+	    Port ( pc_current : in  STD_LOGIC_VECTOR (31 downto 0);
+           offset : in  STD_LOGIC_VECTOR (31 downto 0);
+           jump_inst : in  STD_LOGIC_VECTOR (25 downto 0);
+			  jump: in STD_LOGIC;
+           zero : in  STD_LOGIC;
+           branch : in  STD_LOGIC;
+           pc_next : out  STD_LOGIC_VECTOR (31 downto 0));
+	end component PC_HANDLE;
+	
+	component SIGN_EXTEND is
+	    Port ( in_addr : in  STD_LOGIC_VECTOR (15 downto 0);
+           out_addr : out  STD_LOGIC_VECTOR (31 downto 0));
+	end component SIGN_EXTEND;
+	
+	signal alu_op_line: STD_LOGIC_VECTOR (31 downto 0);
+	signal pc_current_line: STD_LOGIC_VECTOR (31 downto 0); 
+	signal alu_in_line: ALU_INPUT;
 
 begin
 
-	control: control_unit
+	imem_addr <= pc_current_line;
+
+	inst_control_unit: control_unit
 	port map ( 
-			alu_control_input => alu_control_line
+			alu_op => alu_op_line
+		);
+		
+	inst_alu: alu
+	generic map (N => 32)
+	port map (
+			alu_in => alu_in_line
 		);
 
-	alu_ctrl: alu_control
+	inst_alu_control: alu_control
 	port map (
-			alu_op => alu_control_line
+			alu_op => alu_op_line
+		);
+		
+	inst_pc_handle: pc_handle
+	port map (
+			pc_current => pc_current_line
+		);
+		
+	inst_pc: pc
+	port map (
+			addr_get => pc_current_line
 		);
 
 end Behavioral;

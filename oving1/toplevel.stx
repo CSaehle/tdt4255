@@ -10,9 +10,9 @@ Total CPU time to Xst completion: 0.11 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.13 secs
  
---> Reading design: alu_control.prj
+--> Reading design: toplevel.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -41,19 +41,28 @@ TABLE OF CONTENTS
 =========================================================================
 Parsing VHDL file "\github\tdt4255\oving1\mips_constant_pkg.vhd" into library work
 Parsing package <MIPS_CONSTANT_PKG>.
+Parsing VHDL file "\github\tdt4255\oving1\control_unit.vhd" into library work
+Parsing entity <control_unit>.
+Parsing architecture <Behavioral> of entity <control_unit>.
 Parsing VHDL file "\github\tdt4255\oving1\alu_control.vhd" into library work
 Parsing entity <alu_control>.
 Parsing architecture <Behavioral> of entity <alu_control>.
-
-
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.25 secs
- 
+Parsing VHDL file "\github\tdt4255\oving1\processor.vhd" into library work
+Parsing entity <processor>.
+Parsing architecture <Behavioral> of entity <processor>.
+ERROR:HDLCompiler:1314 - "\github\tdt4255\oving1\processor.vhd" Line 81: Formal port/generic <alu_control_input> is not declared in <control_unit>
+ERROR:HDLCompiler:432 - "\github\tdt4255\oving1\processor.vhd" Line 79: Formal <opcode> has no actual or default value.
+opcode is declared here
+ERROR:HDLCompiler:841 - "\github\tdt4255\oving1\processor.vhd" Line 86: Expecting type std_logic_vector for <alu_control_line>.
+ERROR:HDLCompiler:432 - "\github\tdt4255\oving1\processor.vhd" Line 84: Formal <funct> has no actual or default value.
+funct is declared here
+ERROR:HDLCompiler:854 - "\github\tdt4255\oving1\processor.vhd" Line 50: Unit <behavioral> ignored due to previous errors.
+VHDL file \github\tdt4255\oving1\processor.vhd ignored due to errors
 --> 
 
-Total memory usage is 186908 kilobytes
+Total memory usage is 187036 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :    5 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

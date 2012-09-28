@@ -35,13 +35,21 @@ use WORK.MIPS_CONSTANT_PKG.ALL;
 entity alu_control is
     Port ( alu_op : in  STD_LOGIC_VECTOR (1 downto 0);
            funct : in  STD_LOGIC_VECTOR (5 downto 0);
-           alu_control_input : out  ALU_INPUT);
+           alu_in : out  ALU_INPUT);
 end alu_control;
 
 
 architecture Behavioral of alu_control is
 
+signal alu_control_input: STD_LOGIC_VECTOR (3 downto 0);
+
 begin
+
+alu_in.Op0 <= alu_control_input(0);
+alu_in.Op1 <= alu_control_input(1);
+alu_in.Op2 <= alu_control_input(2);
+alu_in.Op3 <= alu_control_input(3);
+
 process (alu_op, funct)
 	begin
 		if (alu_op = "00") THEN alu_control_input <= "0010";
