@@ -27,6 +27,9 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+
+library WORK;
+use WORK.MIPS_CONSTANT_PKG.ALL;
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -43,7 +46,7 @@ ARCHITECTURE behavior OF tb_alu_control IS
     PORT(
          alu_op : IN  std_logic_vector(1 downto 0);
          funct : IN  std_logic_vector(5 downto 0);
-         alu_in : OUT  ALU_INPUT
+         alu_in : OUT ALU_INPUT
         );
     END COMPONENT;
     
@@ -53,7 +56,7 @@ ARCHITECTURE behavior OF tb_alu_control IS
    signal funct : std_logic_vector(5 downto 0) := (others => '0');
 
  	--Outputs
-   signal alu_control_input : std_logic_vector(3 downto 0);
+   signal alu_in : ALU_INPUT;
  
  
 BEGIN
@@ -62,7 +65,7 @@ BEGIN
    uut: alu_control PORT MAP (
           alu_op => alu_op,
           funct => funct,
-          alu_control_input => alu_control_input
+          alu_in => alu_in
         );
 
 
