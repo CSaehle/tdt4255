@@ -43,7 +43,7 @@ ARCHITECTURE behavior OF tb_alu_control IS
     PORT(
          alu_op : IN  std_logic_vector(1 downto 0);
          funct : IN  std_logic_vector(5 downto 0);
-         alu_control_input : OUT  std_logic_vector(3 downto 0)
+         alu_in : OUT  ALU_INPUT
         );
     END COMPONENT;
     
