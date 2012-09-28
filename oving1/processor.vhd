@@ -106,16 +106,18 @@ architecture Behavioral of processor is
 	end component SIGN_EXTEND;
 	
 	signal alu_op_line: STD_LOGIC_VECTOR (31 downto 0);
-	signal pc_current_line: STD_LOGIC_VECTOR (31 downto 0); 
+	signal pc_current_line: STD_LOGIC_VECTOR (31 downto 0);
+	signal offset_line: STD_LOGIC_VECTOR (31 downto 0);
 	signal alu_in_line: ALU_INPUT;
 
 begin
 
-	imem_addr <= pc_current_line;
+	imem_address <= pc_current_line;
 
 	inst_control_unit: control_unit
 	port map ( 
-			alu_op => alu_op_line
+			alu_op => alu_op_line,
+			opcode => imem_data_in (31 downto 26)
 		);
 		
 	inst_alu: alu
@@ -129,14 +131,19 @@ begin
 			alu_op => alu_op_line
 		);
 		
+	inst_pc: pc
+	port map (
+			addr_get => pc_current_line
+		);
+		
 	inst_pc_handle: pc_handle
 	port map (
 			pc_current => pc_current_line
 		);
 		
-	inst_pc: pc
-	port map (
-			addr_get => pc_current_line
+	inst_sign_extend: sign_extend
+	port map(
+			out_addr => offset_line
 		);
 
 end Behavioral;
