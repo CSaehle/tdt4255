@@ -100,10 +100,25 @@ architecture Behavioral of processor is
            pc_next : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component PC_HANDLE;
 	
+	component REGISTER_FILE is
+		port(
+			CLK 			:	in	STD_LOGIC;				
+			RESET			:	in	STD_LOGIC;				
+			RW				:	in	STD_LOGIC;				
+			RS_ADDR 		:	in	STD_LOGIC_VECTOR (RADDR_BUS-1 downto 0); 
+			RT_ADDR 		:	in	STD_LOGIC_VECTOR (RADDR_BUS-1 downto 0); 
+			RD_ADDR 		:	in	STD_LOGIC_VECTOR (RADDR_BUS-1 downto 0);
+			WRITE_DATA	:	in	STD_LOGIC_VECTOR (DDATA_BUS-1 downto 0); 
+			RS				:	out	STD_LOGIC_VECTOR (DDATA_BUS-1 downto 0);
+			RT				:	out	STD_LOGIC_VECTOR (DDATA_BUS-1 downto 0)
+		);
+	end component REGISTER_FILE;
+	
 	component SIGN_EXTEND is
 	    Port ( in_addr : in  STD_LOGIC_VECTOR (15 downto 0);
            out_addr : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component SIGN_EXTEND;
+	
 	
 	signal alu_op_line: STD_LOGIC_VECTOR (31 downto 0);
 	signal pc_current_line: STD_LOGIC_VECTOR (31 downto 0);
@@ -139,6 +154,11 @@ begin
 	inst_pc_handle: pc_handle
 	port map (
 			pc_current => pc_current_line
+		);
+		
+	inst_register_file: register_file
+	port map(
+			clk => clk
 		);
 		
 	inst_sign_extend: sign_extend

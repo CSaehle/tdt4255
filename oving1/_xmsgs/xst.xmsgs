@@ -5,22 +5,25 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="432" delta="old" >"\github\tdt4255\oving1\processor.vhd" Line 123: Formal &lt;<arg fmt="%s" index="1">x</arg>&gt; has no actual or default value.
+<msg type="error" file="HDLCompiler" num="432" delta="new" >"\github\tdt4255\oving1\processor.vhd" Line 138: Formal &lt;<arg fmt="%s" index="1">x</arg>&gt; has no actual or default value.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="432" delta="old" >"\github\tdt4255\oving1\processor.vhd" Line 129: Formal &lt;<arg fmt="%s" index="1">funct</arg>&gt; has no actual or default value.
+<msg type="error" file="HDLCompiler" num="432" delta="new" >"\github\tdt4255\oving1\processor.vhd" Line 144: Formal &lt;<arg fmt="%s" index="1">funct</arg>&gt; has no actual or default value.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="432" delta="old" >"\github\tdt4255\oving1\processor.vhd" Line 134: Formal &lt;<arg fmt="%s" index="1">clk</arg>&gt; has no actual or default value.
+<msg type="error" file="HDLCompiler" num="432" delta="new" >"\github\tdt4255\oving1\processor.vhd" Line 149: Formal &lt;<arg fmt="%s" index="1">clk</arg>&gt; has no actual or default value.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="432" delta="old" >"\github\tdt4255\oving1\processor.vhd" Line 139: Formal &lt;<arg fmt="%s" index="1">offset</arg>&gt; has no actual or default value.
+<msg type="error" file="HDLCompiler" num="432" delta="new" >"\github\tdt4255\oving1\processor.vhd" Line 154: Formal &lt;<arg fmt="%s" index="1">offset</arg>&gt; has no actual or default value.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="432" delta="old" >"\github\tdt4255\oving1\processor.vhd" Line 144: Formal &lt;<arg fmt="%s" index="1">in_addr</arg>&gt; has no actual or default value.
+<msg type="error" file="HDLCompiler" num="432" delta="new" >"\github\tdt4255\oving1\processor.vhd" Line 159: Formal &lt;<arg fmt="%s" index="1">reset</arg>&gt; has no actual or default value.
 </msg>
 
-<msg type="error" file="HDLCompiler" num="854" delta="old" >"\github\tdt4255\oving1\processor.vhd" Line 50: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
+<msg type="error" file="HDLCompiler" num="432" delta="new" >"\github\tdt4255\oving1\processor.vhd" Line 164: Formal &lt;<arg fmt="%s" index="1">in_addr</arg>&gt; has no actual or default value.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="new" >"\github\tdt4255\oving1\processor.vhd" Line 50: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
 </msg>
 
 </messages>
