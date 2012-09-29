@@ -53,6 +53,7 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_alu_control.fdo"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_pc_handle.fdo"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_shift_two.fdo"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_toplevel.fdo"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="toplevel.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="toplevel.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="toplevel.xst"/>
@@ -73,7 +74,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1348863487" xil_pn:in_ck="-5504967401829718672" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1348863487">
+    <transform xil_pn:end_ts="1348944026" xil_pn:in_ck="-5504967401829718672" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1348944026">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhd"/>
@@ -88,11 +89,11 @@
       <outfile xil_pn:name="tb_sign_extend.vhd"/>
       <outfile xil_pn:name="tb_toplevel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1348863376" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3280646765696454291" xil_pn:start_ts="1348863376">
+    <transform xil_pn:end_ts="1348944026" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3623050530995557290" xil_pn:start_ts="1348944026">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1348863376" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7165877285396578325" xil_pn:start_ts="1348863376">
+    <transform xil_pn:end_ts="1348944026" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3144195386269199572" xil_pn:start_ts="1348944026">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -100,7 +101,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1348863487" xil_pn:in_ck="-5504967401829718672" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1348863487">
+    <transform xil_pn:end_ts="1348944026" xil_pn:in_ck="-5504967401829718672" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1348944026">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhd"/>
@@ -115,10 +116,10 @@
       <outfile xil_pn:name="tb_sign_extend.vhd"/>
       <outfile xil_pn:name="tb_toplevel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1348865531" xil_pn:in_ck="-5504967401829718672" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1348865528">
+    <transform xil_pn:end_ts="1348944027" xil_pn:in_ck="-5504967401829718672" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1348944026">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="tb_alu_control.fdo"/>
+      <outfile xil_pn:name="tb_toplevel.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>
     </transform>
@@ -163,16 +164,11 @@
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
-      <outfile xil_pn:name="alu.lso"/>
-      <outfile xil_pn:name="alu.prj"/>
-      <outfile xil_pn:name="alu.syr"/>
-      <outfile xil_pn:name="alu.xst"/>
-      <outfile xil_pn:name="alu_xst.xrpt"/>
-      <outfile xil_pn:name="webtalk_pn.xml"/>
-      <outfile xil_pn:name="xst"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
     <transform xil_pn:end_ts="1348770935" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="7640564188788611706" xil_pn:start_ts="1348770935">
       <status xil_pn:value="SuccessfullyRun"/>

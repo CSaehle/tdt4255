@@ -20,9 +20,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-library WORK;
-use WORK.MIPS_CONSTANT_PKG.ALL;
-
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -43,84 +40,70 @@ entity control_unit is
            mem_write : out  STD_LOGIC;
 			  branch: out STD_LOGIC;
 			  alu_op : out  STD_LOGIC_VECTOR (1 downto 0);
-			  jump: out STD_LOGIC;
-			  exec_state: out STD_LOGIC
+			  jump: out STD_LOGIC
 	);
 end control_unit;
 
 architecture Behavioral of control_unit is
 
-signal current_state: state_type := EXEC;
-signal next_state: state_type := EXEC;
-
 begin
 
-exec_state <= '1' when current_state = EXEC else '0';
-
-process(opcode, current_state)
+process(opcode)
 begin
-	current_state <= next_state;
-	
-	if current_state = STALL then
-		next_state <= EXEC;
-	else
-		case opcode is
-			when "000000" =>			-- R-format instructions
-				reg_dst <= 		'1';
-				alu_src <= 		'0';
-				mem_to_reg <= 	'0';
-				reg_write <= 	'1';
-				mem_read <= 	'0';
-				mem_write <= 	'0';
-				branch <= 		'0';
-				alu_op <= 		"10";
-				jump <=			'0';
-			when "100011" =>			-- load word
-				reg_dst <= 		'0';
-				alu_src <= 		'1';
-				mem_to_reg <= 	'1';
-				reg_write <= 	'1';
-				mem_read <= 	'1';
-				mem_write <= 	'0';
-				branch <= 		'0';
-				alu_op <= 		"00";
-				jump <=			'0';
-				next_state <=	STALL;
-			when "101011" =>			-- store word
-			 --reg_dst <= 		'0';  -- don't care
-				alu_src <= 		'1';
-			 --mem_to_reg <= 	'0';  -- don't care
-				reg_write <= 	'0';
-				mem_read <= 	'0';
-				mem_write <= 	'1';
-				branch <= 		'0';
-				alu_op <= 		"00";
-				jump <=			'0';
-				next_state <=	STALL;
-			when "000100" =>			-- branch on equal
-			 --reg_dst <= 		'0';  -- don't care
-				alu_src <= 		'0';
-			 --mem_to_reg <= 	'0';  -- don't care
-				reg_write <= 	'0';
-				mem_read <= 	'0';
-				mem_write <= 	'0';
-				branch <= 		'1';
-				alu_op <= 		"01";
-				jump <=			'0';
-			when "000010" =>			-- jump
-				reg_dst <= 		'0';
-				alu_src <= 		'0';
-				mem_to_reg <= 	'0';
-				reg_write <= 	'0';
-				mem_read <= 	'0';
-				mem_write <= 	'0';
-				branch <= 		'0';
-				alu_op <= 		"00";
-				jump <=			'1';			
-			when others =>
-				-- do nothing
-		end case;
-	end if;
+	case opcode is
+		when "000000" =>			-- R-format instructions
+			reg_dst <= 		'1';
+			alu_src <= 		'0';
+			mem_to_reg <= 	'0';
+			reg_write <= 	'1';
+			mem_read <= 	'0';
+			mem_write <= 	'0';
+			branch <= 		'0';
+			alu_op <= 		"10";
+			jump <=			'0';
+		when "100011" =>			-- load word
+			reg_dst <= 		'0';
+			alu_src <= 		'1';
+			mem_to_reg <= 	'1';
+			reg_write <= 	'1';
+			mem_read <= 	'1';
+			mem_write <= 	'0';
+			branch <= 		'0';
+			alu_op <= 		"00";
+			jump <=			'0';
+		when "101011" =>			-- store word
+		 --reg_dst <= 		'0';  -- don't care
+			alu_src <= 		'1';
+		 --mem_to_reg <= 	'0';  -- don't care
+			reg_write <= 	'0';
+			mem_read <= 	'0';
+			mem_write <= 	'1';
+			branch <= 		'0';
+			alu_op <= 		"00";
+			jump <=			'0';
+		when "000100" =>			-- branch on equal
+		 --reg_dst <= 		'0';  -- don't care
+			alu_src <= 		'0';
+		 --mem_to_reg <= 	'0';  -- don't care
+			reg_write <= 	'0';
+			mem_read <= 	'0';
+			mem_write <= 	'0';
+			branch <= 		'1';
+			alu_op <= 		"01";
+			jump <=			'0';
+		when "000010" =>			-- jump
+			reg_dst <= 		'0';
+			alu_src <= 		'0';
+			mem_to_reg <= 	'0';
+			reg_write <= 	'0';
+			mem_read <= 	'0';
+			mem_write <= 	'0';
+			branch <= 		'0';
+			alu_op <= 		"00";
+			jump <=			'1';			
+		when others =>
+			-- do nothing
+	end case;
 end process;
 		
 

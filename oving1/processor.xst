@@ -1,5 +1,5 @@
-set -tmpdir "Z:/github/tdt4255/oving1/xst/projnav.tmp"
-set -xsthdpdir "Z:/github/tdt4255/oving1/xst"
+set -tmpdir "C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/xst"
 run -compileonly yes
 -p xc6slx16-2-csg324
 -top processor

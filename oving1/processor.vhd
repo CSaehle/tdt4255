@@ -49,6 +49,9 @@ end processor;
 
 architecture Behavioral of processor is
 
+signal current_state: state_type := EXEC;
+signal next_state: state_type := EXEC;
+
 	component CONTROL_UNIT is
     Port (
 			  opcode : in  STD_LOGIC_VECTOR (5 downto 0);
@@ -60,8 +63,7 @@ architecture Behavioral of processor is
            mem_write : out  STD_LOGIC;
 			  branch: out STD_LOGIC;
 			  alu_op : out  STD_LOGIC_VECTOR (1 downto 0);
-			  jump: out STD_LOGIC;
-			  exec_state: out STD_LOGIC
+			  jump: out STD_LOGIC
 	);
 	end component CONTROL_UNIT;
 	
@@ -120,50 +122,130 @@ architecture Behavioral of processor is
 	end component SIGN_EXTEND;
 	
 	
-	signal alu_op_line: STD_LOGIC_VECTOR (31 downto 0);
-	signal pc_current_line: STD_LOGIC_VECTOR (31 downto 0);
-	signal offset_line: STD_LOGIC_VECTOR (31 downto 0);
-	signal alu_in_line: ALU_INPUT;
+	--control unit
+	signal reg_dst: STD_LOGIC := ZERO1b;
+	signal alu_src: STD_LOGIC := ZERO1b;
+	signal mem_to_reg: STD_LOGIC := ZERO1b;
+	signal reg_write: STD_LOGIC := ZERO1b;
+	signal mem_read: STD_LOGIC := ZERO1b;
+	signal mem_write: STD_LOGIC := ZERO1b;
+	signal branch: STD_LOGIC := ZERO1b;
+	signal alu_op: STD_LOGIC_VECTOR (1 downto 0) := "00";
+	signal jump: STD_LOGIC := ZERO1b;
+	
+	
+	--alu
+	signal alu_x: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	signal alu_y: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	signal alu_in: ALU_INPUT := (others => '0');
+	signal alu_out: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	signal flags: ALU_FLAGS := (others => '0');
+	
+	--pc handle
+	signal pc_current: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	signal offset: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	signal pc_next: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	
+	--register file
+	signal rs: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	signal rt: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	signal rd_addr: STD_LOGIC_VECTOR (4 downto 0) := "00000";
+	signal data_to_write: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	
+	
+
+	signal exec_state: STD_LOGIC;
 
 begin
 
-	imem_address <= pc_current_line;
+	exec_state <= '1' when current_state = EXEC else '0';
+	alu_x <= rs;
+	alu_y <= rt when alu_src = '1' else offset;
+	dmem_address <= alu_out;
+	rd_addr <= imem_data_in (15 downto 11) when reg_dst = '1' else imem_data_in(20 downto 16);
+	data_to_write <= dmem_data_in when mem_to_reg = '1' else alu_out;
+	dmem_data_out <= rt;
+	dmem_write_enable <= mem_write;
+	
+	
+	process (CLK)
+	begin		
+		current_state <= next_state;
+	
+		if current_state = STALL then
+			next_state <= EXEC;
+		else
+			next_state <= STALL;
+		end if;
+	end process;
 
 	inst_control_unit: control_unit
 	port map ( 
-			alu_op => alu_op_line,
-			opcode => imem_data_in (31 downto 26)
+			opcode => imem_data_in (31 downto 26),
+			reg_dst => reg_dst,
+			alu_src => alu_src,
+			mem_to_reg => mem_to_reg,
+			reg_write => reg_write,
+			mem_read => mem_read,
+			mem_write => mem_write,
+			branch => branch,
+			alu_op => alu_op,
+			jump => jump
 		);
 		
 	inst_alu: alu
 	generic map (N => 32)
 	port map (
-			alu_in => alu_in_line
+			x => alu_x,
+			y => alu_y,
+			alu_in => alu_in,
+			r => alu_out,
+			flags => flags
 		);
 
 	inst_alu_control: alu_control
 	port map (
-			alu_op => alu_op_line
+			alu_op => alu_op,
+			funct => imem_data_in(5 downto 0),
+			alu_in => alu_in
 		);
 		
 	inst_pc: pc
 	port map (
-			addr_get => pc_current_line
+			clk => clk,
+			addr_get => pc_current,
+			addr_put => pc_next,
+			W => exec_state
 		);
 		
 	inst_pc_handle: pc_handle
 	port map (
-			pc_current => pc_current_line
+			pc_current => pc_current,
+			offset => offset,
+			jump_inst => imem_data_in (25 downto 0),
+			jump => jump,
+			zero => flags.zero,
+			branch => branch,
+			pc_next => pc_next
 		);
 		
 	inst_register_file: register_file
 	port map(
-			clk => clk
+			clk => clk,
+			reset => ZERO1b,
+			rw => reg_write,
+			rs_addr => imem_data_in (25 downto 21),
+			rt_addr => imem_data_in (20 downto 16),
+			rd_addr => rd_addr,
+			write_data => data_to_write,
+			rs => rs,
+			rt => rt
 		);
 		
 	inst_sign_extend: sign_extend
 	port map(
-			out_addr => offset_line
+			in_addr => imem_data_in (15 downto 0),
+			out_addr => offset
 		);
 
 end Behavioral;
