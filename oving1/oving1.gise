@@ -40,9 +40,6 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="control_unit.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="control_unit.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="control_unit.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pc.prj"/>
-    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pc.stx"/>
-    <file xil_pn:fileType="FILE_XST" xil_pn:name="pc.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="pc_handle.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="pc_handle.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="pc_handle.xst"/>
@@ -87,10 +84,6 @@
     <transform xil_pn:end_ts="1348944026" xil_pn:in_ck="-5504967401829718672" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1348944026">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="alu.vhd"/>
       <outfile xil_pn:name="control_unit.vhd"/>
       <outfile xil_pn:name="pc.vhd"/>
@@ -118,11 +111,6 @@
     <transform xil_pn:end_ts="1348944026" xil_pn:in_ck="-5504967401829718672" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1348944026">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="alu.vhd"/>
       <outfile xil_pn:name="control_unit.vhd"/>
       <outfile xil_pn:name="pc.vhd"/>
@@ -135,14 +123,9 @@
       <outfile xil_pn:name="tb_sign_extend.vhd"/>
       <outfile xil_pn:name="tb_toplevel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1348951138" xil_pn:in_ck="-5504967401829718672" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1348951137">
+    <transform xil_pn:end_ts="1348947475" xil_pn:in_ck="-5504967401829718672" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1348947474">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="tb_toplevel.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>
