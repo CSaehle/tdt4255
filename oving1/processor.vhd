@@ -48,10 +48,6 @@ entity processor is
 end processor;
 
 architecture Behavioral of processor is
-
-signal current_state: state_type := EXEC;
-signal next_state: state_type := EXEC;
-
 	component CONTROL_UNIT is
     Port (
 			  opcode : in  STD_LOGIC_VECTOR (5 downto 0);
@@ -121,6 +117,8 @@ signal next_state: state_type := EXEC;
            out_addr : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component SIGN_EXTEND;
 	
+	signal current_state: state_type := STALL;
+	signal next_state: state_type := EXEC;
 	
 	--control unit
 	signal reg_dst: STD_LOGIC := ZERO1b;
@@ -132,7 +130,6 @@ signal next_state: state_type := EXEC;
 	signal branch: STD_LOGIC := ZERO1b;
 	signal alu_op: STD_LOGIC_VECTOR (1 downto 0) := "00";
 	signal jump: STD_LOGIC := ZERO1b;
-	
 	
 	--alu
 	signal alu_x: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
@@ -152,13 +149,11 @@ signal next_state: state_type := EXEC;
 	signal rd_addr: STD_LOGIC_VECTOR (4 downto 0) := "00000";
 	signal data_to_write: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	
-	
-
-	signal exec_state: STD_LOGIC;
+	signal exec_state: STD_LOGIC := '0';
 
 begin
 
-	exec_state <= '1' when current_state = EXEC else '0';
+	exec_state <= '1' when (current_state = EXEC) and (processor_enable = '1') else '0';
 	alu_x <= rs;
 	alu_y <= rt when alu_src = '1' else offset;
 	dmem_address <= alu_out;
@@ -166,16 +161,20 @@ begin
 	data_to_write <= dmem_data_in when mem_to_reg = '1' else alu_out;
 	dmem_data_out <= rt;
 	dmem_write_enable <= mem_write;
+	imem_address <= pc_current;
 	
 	
 	process (CLK)
-	begin		
-		current_state <= next_state;
-	
-		if current_state = STALL then
-			next_state <= EXEC;
-		else
-			next_state <= STALL;
+	begin
+		if (rising_edge(CLK)) then
+			if (processor_enable = '1') then
+				current_state <= next_state;
+				if (current_state = STALL) then
+					next_state <= EXEC;
+				else
+					next_state <= STALL;
+				end if;
+			end if;
 		end if;
 	end process;
 
