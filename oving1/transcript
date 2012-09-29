@@ -11,9 +11,9 @@
 # vsim -do \{do \{tb_toplevel.fdo\}\} 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 6
-#           Attempting to use alternate WLF file "./wlft81g7kn".
+#           Attempting to use alternate WLF file "./wlftdedy17".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft81g7kn
+#           Using alternate file: ./wlftdedy17
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Error: (vopt-19) Failed to access library 'work.{tb_toplevel' at "work.{tb_toplevel".
 # No such file or directory. (errno = ENOENT)
@@ -29,9 +29,9 @@ do tb_toplevel.fdo
 # vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 6
-#           Attempting to use alternate WLF file "./wlftrzaf2x".
+#           Attempting to use alternate WLF file "./wlfth6krbs".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftrzaf2x
+#           Using alternate file: ./wlfth6krbs
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Note: (vopt-143) Recognized 1 FSM in architecture body "com(behavioral)".
 # Loading std.standard
@@ -215,8 +215,7 @@ do tb_toplevel.fdo
 #    Time: 980 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 1 us  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/wave.do
-run 50 ns
+run 50 us
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 1020 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -225,7 +224,6 @@ run 50 ns
 #    Time: 1020 ns  Iteration: 3  Instance: /tb_toplevel/uut/inst_mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 1040 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-run 50 us
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 1060 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -5250,7 +5248,3 @@ run 50 us
 #    Time: 50980 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 51 us  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 51020 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 51040 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
