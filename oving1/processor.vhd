@@ -162,7 +162,7 @@ begin
 	-- The ALU takes the value of the first input register.
 	alu_x <= rs;
 	-- This one multiplexes - if ALU_SRC is set, the ALU takes the value of the second input register. If not, it takes the sign-extended offset of the instruction - for branches
-	alu_y <= rt when alu_src = '1' else offset;
+	alu_y <= offset when alu_src = '1' else rt;
 	
 	-- The ALU gets us the addrses for load/stores. It could be either, but this is not determined here so both are set as the result.
 	dmem_address <= alu_out;
