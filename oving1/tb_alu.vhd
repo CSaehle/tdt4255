@@ -3,6 +3,10 @@
   LIBRARY ieee;
   USE ieee.std_logic_1164.ALL;
   USE ieee.numeric_std.ALL;
+  
+  
+  library WORK;
+  use WORK.MIPS_CONSTANT_PKG.ALL;
 
   ENTITY tb_alu IS
   END tb_alu;
@@ -35,7 +39,7 @@ end component;
 				X => X,
 				Y => Y,
 				ALU_IN => ALU_IN,
-				COUT => COUT,
+				R => R,
 				FLAGS => FLAGS
   );
 
@@ -46,8 +50,8 @@ end component;
 
         wait for 100 ns; -- wait until global set/reset completes
 		  
-		  X (3 downto 0) <= "1111";
-		  Y (3 downto 0) <= "0100";
+		  X (3 downto 0) <= "0000";
+		  Y (3 downto 0) <= "0101";
 		  ALU_IN.Op0 <= '0';
 		  ALU_IN.Op1 <= '0';
 		  ALU_IN.Op2 <= '1';

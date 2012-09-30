@@ -27,6 +27,7 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="processor.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="processor.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="processor.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_alu.fdo"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_toplevel.fdo"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="toplevel.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="toplevel.lso"/>
@@ -47,7 +48,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1349036400" xil_pn:in_ck="2922227242005233832" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1349036400">
+    <transform xil_pn:end_ts="1349041440" xil_pn:in_ck="-8506887583936759345" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1349041440">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhd"/>
@@ -55,6 +56,7 @@
       <outfile xil_pn:name="pc.vhd"/>
       <outfile xil_pn:name="pc_handle.vhd"/>
       <outfile xil_pn:name="tb_adder.vhd"/>
+      <outfile xil_pn:name="tb_alu.vhd"/>
       <outfile xil_pn:name="tb_alu_control.vhd"/>
       <outfile xil_pn:name="tb_control_unit.vhd"/>
       <outfile xil_pn:name="tb_pc.vhd"/>
@@ -63,11 +65,11 @@
       <outfile xil_pn:name="tb_sign_extend.vhd"/>
       <outfile xil_pn:name="tb_toplevel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1349039672" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7947298879573668325" xil_pn:start_ts="1349039672">
+    <transform xil_pn:end_ts="1349041440" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-4743488713544906643" xil_pn:start_ts="1349041440">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1349039672" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4130375604551790691" xil_pn:start_ts="1349039672">
+    <transform xil_pn:end_ts="1349041440" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2990614760147867371" xil_pn:start_ts="1349041440">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -75,7 +77,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1349036400" xil_pn:in_ck="2922227242005233832" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1349036400">
+    <transform xil_pn:end_ts="1349041440" xil_pn:in_ck="-8506887583936759345" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1349041440">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhd"/>
@@ -83,6 +85,7 @@
       <outfile xil_pn:name="pc.vhd"/>
       <outfile xil_pn:name="pc_handle.vhd"/>
       <outfile xil_pn:name="tb_adder.vhd"/>
+      <outfile xil_pn:name="tb_alu.vhd"/>
       <outfile xil_pn:name="tb_alu_control.vhd"/>
       <outfile xil_pn:name="tb_control_unit.vhd"/>
       <outfile xil_pn:name="tb_pc.vhd"/>
@@ -91,12 +94,10 @@
       <outfile xil_pn:name="tb_sign_extend.vhd"/>
       <outfile xil_pn:name="tb_toplevel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1349039673" xil_pn:in_ck="2922227242005233832" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1349039672">
+    <transform xil_pn:end_ts="1349041442" xil_pn:in_ck="-8506887583936759345" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1349041440">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="alu.fdo"/>
+      <outfile xil_pn:name="tb_alu.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>
     </transform>
