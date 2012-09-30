@@ -176,7 +176,7 @@ begin
 		end if;
 	end process;
 	
-	process(processor_enable, current_state)
+	process(processor_enable, current_state, imem_data_in)
 	begin
 		if (processor_enable = '1') then 
 			if (current_state = FETCH) then
