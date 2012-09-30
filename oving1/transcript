@@ -11,22 +11,14 @@
 # vsim -do \{do \{tb_toplevel.fdo\}\} 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlfttx2kjw".
+#           Attempting to use alternate WLF file "./wlfty6dcth".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfttx2kjw
+#           Using alternate file: ./wlfty6dcth
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Error: (vopt-19) Failed to access library 'work.{tb_toplevel' at "work.{tb_toplevel".
 # No such file or directory. (errno = ENOENT)
 # ** Error: Library work.{tb_toplevel not found.
 # Error loading design
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Loading package mips_constant_pkg
-# -- Compiling entity register_file
-# -- Compiling architecture behavioral of register_file
 do tb_toplevel.fdo
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
@@ -37,9 +29,9 @@ do tb_toplevel.fdo
 # vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlftz6fdhi".
+#           Attempting to use alternate WLF file "./wlft4g2mnt".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftz6fdhi
+#           Using alternate file: ./wlft4g2mnt
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
 # Use vdir -l command to find such design units.
@@ -95,31 +87,4 @@ do tb_toplevel.fdo
 #    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-add wave sim:/tb_toplevel/uut/mips_sc_processor/line__160/*
-# (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/line__160/*'.
-restart -f
-run 5 us
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.do

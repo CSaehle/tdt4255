@@ -153,11 +153,12 @@ architecture Behavioral of processor is
 	signal rd_addr: STD_LOGIC_VECTOR (4 downto 0) := "00000";
 	signal data_to_write: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	
-	signal exec_state: STD_LOGIC := '0';
+	signal pc_write_enable: STD_LOGIC := '0';
 
 begin
 
-	exec_state <= '1' when (current_state = FETCH) and (processor_enable = '1') else '0';
+	pc_write_enable <= '1' when (next_state = FETCH) and (processor_enable = '1') else '0';
+	
 	alu_x <= rs;
 	alu_y <= rt when alu_src = '1' else offset;
 	dmem_address <= alu_out;
@@ -224,7 +225,7 @@ begin
 	inst_pc: pc
 	port map (
 			clk => clk,
-			WE => exec_state,
+			WE => pc_write_enable,
 			RESET => RESET,
 			addr_get => pc_current,
 			addr_put => pc_next
