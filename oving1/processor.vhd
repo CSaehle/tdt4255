@@ -157,7 +157,7 @@ architecture Behavioral of processor is
 
 begin
 
-	exec_state <= '1' when (current_state = EXEC) and (processor_enable = '1') else '0';
+	exec_state <= '1' when (current_state = FETCH) and (processor_enable = '1') else '0';
 	alu_x <= rs;
 	alu_y <= rt when alu_src = '1' else offset;
 	dmem_address <= alu_out;
