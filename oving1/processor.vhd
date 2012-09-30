@@ -164,7 +164,7 @@ begin
 	alu_x <= rs;
 	alu_y <= rt when alu_src = '1' else offset;
 	dmem_address <= alu_out;
-	dmem_address_rw <= alu_out;
+	dmem_address_wr <= alu_out;
 	rd_addr <= imem_data_in (15 downto 11) when reg_dst = '1' else imem_data_in(20 downto 16);
 	data_to_write <= dmem_data_in when mem_to_reg = '1' else alu_out;
 	dmem_data_out <= rt;

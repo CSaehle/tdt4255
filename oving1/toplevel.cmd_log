@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.xst" -ofn "C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.syr" 
+xst -intstyle ise -ifn "C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.xst" -ofn "C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.syr" 
