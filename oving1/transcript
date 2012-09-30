@@ -121,3 +121,57 @@ do tb_toplevel.fdo
 # Break in Architecture behavioral at C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd line 77
 # Simulation Breakpoint: Break in Architecture behavioral at C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd line 77
 # MACRO ./tb_toplevel.fdo PAUSED at line 45
+restart
+do 50 us
+# Cannot open macro file: 50
+run 50 us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+restart
+run 50 us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem

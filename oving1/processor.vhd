@@ -154,11 +154,8 @@ architecture Behavioral of processor is
 	signal data_to_write: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	
 	signal exec_state: STD_LOGIC := '0';
-	signal testetest: STD_LOGIC := '0';
 
 begin
-
-	testetest <= processor_enable;
 
 	exec_state <= '1' when (current_state = EXEC) and (processor_enable = '1') else '0';
 	alu_x <= rs;
@@ -172,16 +169,20 @@ begin
 	imem_address <= pc_current;
 	
 	
-	process (CLK)
+	process(CLK, processor_enable, next_state)
 	begin
-		if (rising_edge(CLK)) then
-			if (processor_enable = '1') then
-				current_state <= next_state;
-				if (current_state = STALL) then
-					next_state <= EXEC;
-				else
-					next_state <= STALL;
-				end if;
+		if (rising_edge(CLK)) and (processor_enable = '1') then
+			current_state <= next_state;
+		end if;
+	end process;
+	
+	process(CLK, processor_enable, current_state)
+	begin
+		if (rising_edge(CLK)) and (processor_enable = '1') then
+			if (current_state = STALL) then
+				next_state <= EXEC;
+			else
+				next_state <= STALL;
 			end if;
 		end if;
 	end process;
