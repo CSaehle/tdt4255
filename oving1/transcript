@@ -11,9 +11,9 @@
 # vsim -do \{do \{tb_toplevel.fdo\}\} 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlft398hvg".
+#           Attempting to use alternate WLF file "./wlft701cbv".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft398hvg
+#           Using alternate file: ./wlft701cbv
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Error: (vopt-19) Failed to access library 'work.{tb_toplevel' at "work.{tb_toplevel".
 # No such file or directory. (errno = ENOENT)
@@ -29,9 +29,9 @@ do tb_toplevel.fdo
 # vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlftyzg23k".
+#           Attempting to use alternate WLF file "./wlfta231h4".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftyzg23k
+#           Using alternate file: ./wlfta231h4
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
 # Use vdir -l command to find such design units.
@@ -64,19 +64,55 @@ do tb_toplevel.fdo
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Process: /tb_toplevel/uut/mips_sc_processor/inst_register_file/line__76 File: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd
-# Break in Architecture behavioral at C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd line 77
-# Simulation Breakpoint: Break in Architecture behavioral at C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd line 77
-# MACRO ./tb_toplevel.fdo PAUSED at line 45
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
 restart
-run 50 us
+run 5 us
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Process: /tb_toplevel/uut/mips_sc_processor/inst_register_file/line__76 File: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd
-# Break in Architecture behavioral at C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd line 77
-run 50 us
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Process: /tb_toplevel/uut/mips_sc_processor/inst_register_file/line__73 File: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd
-# Break in Architecture behavioral at C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd line 74
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
 do tb_toplevel.fdo
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
@@ -110,21 +146,196 @@ do tb_toplevel.fdo
 # Loading work.sign_extend(behavioral)#1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlftv01x4g".
+#           Attempting to use alternate WLF file "./wlftws8itm".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftv01x4g
+#           Using alternate file: ./wlftws8itm
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Process: /tb_toplevel/uut/mips_sc_processor/inst_register_file/line__76 File: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd
-# Break in Architecture behavioral at C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd line 77
-# Simulation Breakpoint: Break in Architecture behavioral at C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd line 77
-# MACRO ./tb_toplevel.fdo PAUSED at line 45
-restart
-do 50 us
-# Cannot open macro file: 50
-run 50 us
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package mips_constant_pkg
+# -- Compiling entity processor
+# -- Compiling architecture behavioral of processor
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(181): (vcom-1136) Unknown identifier "fetch".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(181): Type error resolving infix expression "=" as type std.standard.boolean.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(183): near "'": syntax error
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(186): (vcom-1136) Unknown identifier "fetch".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(188): near "else": expecting "END"
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling package mips_constant_pkg
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package mips_constant_pkg
+# -- Compiling entity processor
+# -- Compiling architecture behavioral of processor
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(183): near "'": syntax error
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(188): near "else": expecting "END"
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package mips_constant_pkg
+# -- Compiling entity processor
+# -- Compiling architecture behavioral of processor
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package mips_constant_pkg
+# -- Compiling entity processor
+# -- Compiling architecture behavioral of processor
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc_handle.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/shift_two.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc_handle.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_shift_two.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity adder
+# -- Compiling architecture behavioral of adder
+# -- Loading package mips_constant_pkg
+# -- Compiling entity alu
+# -- Compiling architecture behavioral of alu
+# -- Compiling entity alu_1bit
+# -- Compiling architecture behavioral of alu_1bit
+# -- Compiling entity alu_control
+# -- Compiling architecture behavioral of alu_control
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity com
+# -- Compiling architecture behavioral of com
+# -- Compiling entity control_unit
+# -- Compiling architecture behavioral of control_unit
+# -- Compiling entity full_adder
+# -- Compiling architecture behavioral of full_adder
+# -- Compiling entity memory
+# -- Compiling architecture behavioral of memory
+# -- Compiling package mips_constant_pkg
+# -- Loading package mips_constant_pkg
+# -- Compiling entity pc
+# -- Compiling architecture behavioral of pc
+# -- Compiling entity pc_handle
+# -- Compiling architecture behavioral of pc_handle
+# -- Compiling entity processor
+# -- Compiling architecture behavioral of processor
+# -- Compiling entity register_file
+# -- Compiling architecture behavioral of register_file
+# -- Compiling entity shift_two
+# -- Compiling architecture behavioral of shift_two
+# -- Compiling entity sign_extend
+# -- Compiling architecture behavioral of sign_extend
+# -- Compiling entity tb_adder
+# -- Compiling architecture behavior of tb_adder
+# -- Compiling entity tb_alu_control
+# -- Compiling architecture behavior of tb_alu_control
+# -- Compiling entity tb_control_unit
+# -- Compiling architecture behavior of tb_control_unit
+# -- Compiling entity tb_pc
+# -- Compiling architecture behavior of tb_pc
+# -- Compiling entity tb_pc_handle
+# -- Compiling architecture behavior of tb_pc_handle
+# -- Compiling entity tb_shift_two
+# -- Compiling architecture behavior of tb_shift_two
+# -- Compiling entity tb_sign_extend
+# -- Compiling architecture behavior of tb_sign_extend
+# -- Compiling entity tb_toplevel
+# -- Compiling architecture behavior of tb_toplevel
+# -- Compiling entity toplevel
+# -- Compiling architecture behavioral of toplevel
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package mips_constant_pkg
+# -- Compiling entity processor
+# -- Compiling architecture behavioral of processor
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package mips_constant_pkg
+# -- Compiling entity toplevel
+# -- Compiling architecture behavioral of toplevel
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_toplevel
+# -- Compiling architecture behavior of tb_toplevel
+do tb_toplevel.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_toplevel
+# -- Compiling architecture behavior of tb_toplevel
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 2
+#           Attempting to use alternate WLF file "./wlftaf3a06".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftaf3a06
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "processor(behavioral)".
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_toplevel(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mips_constant_pkg
+# Loading work.toplevel(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.com(behavioral)#1
+# Loading work.memory(behavioral)#1
+# Loading work.processor(behavioral)#1
+# Loading work.control_unit(behavioral)#1
+# Loading work.alu(behavioral)#1
+# Loading work.alu_1bit(behavioral)#1
+# Loading work.full_adder(behavioral)#1
+# Loading work.alu_control(behavioral)#1
+# Loading work.pc(behavioral)#1
+# Loading work.pc_handle(behavioral)#1
+# Loading work.adder(behavioral)#1
+# Loading work.shift_two(behavioral)#1
+# Loading work.adder(behavioral)#2
+# Loading work.register_file(behavioral)#1
+# Loading work.sign_extend(behavioral)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -150,7 +361,85 @@ run 50 us
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
 restart
-run 50 us
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_toplevel(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mips_constant_pkg
+# Loading work.toplevel(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.com(behavioral)#1
+# Loading work.memory(behavioral)#1
+# Loading work.processor(behavioral)#1
+# Loading work.control_unit(behavioral)#1
+# Loading work.alu(behavioral)#1
+# Loading work.alu_1bit(behavioral)#1
+# Loading work.full_adder(behavioral)#1
+# Loading work.alu_control(behavioral)#1
+# Loading work.pc(behavioral)#1
+# Loading work.pc_handle(behavioral)#1
+# Loading work.adder(behavioral)#1
+# Loading work.shift_two(behavioral)#1
+# Loading work.adder(behavioral)#2
+# Loading work.register_file(behavioral)#1
+# Loading work.sign_extend(behavioral)#1
+run 5 us
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_toplevel(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mips_constant_pkg
+# Loading work.toplevel(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.com(behavioral)#1
+# Loading work.memory(behavioral)#1
+# Loading work.processor(behavioral)#1
+# Loading work.control_unit(behavioral)#1
+# Loading work.alu(behavioral)#1
+# Loading work.alu_1bit(behavioral)#1
+# Loading work.full_adder(behavioral)#1
+# Loading work.alu_control(behavioral)#1
+# Loading work.pc(behavioral)#1
+# Loading work.pc_handle(behavioral)#1
+# Loading work.adder(behavioral)#1
+# Loading work.shift_two(behavioral)#1
+# Loading work.adder(behavioral)#2
+# Loading work.register_file(behavioral)#1
+# Loading work.sign_extend(behavioral)#1
+run 5 us
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0

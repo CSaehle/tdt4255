@@ -166,7 +166,8 @@ INFO:HDLCompiler:679 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\com.vhd" Li
 Elaborating entity <memory> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <processor> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:1127 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 161: Assignment to testetest ignored, since the identifier is never used
+WARNING:HDLCompiler:92 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 174: clk should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 181: clk should be on the sensitivity list of the process
 
 Elaborating entity <control_unit> (architecture <Behavioral>) from library <work>.
 
@@ -512,10 +513,10 @@ Unit <memory> synthesized.
 Synthesizing Unit <processor>.
     Related source file is "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd".
 WARNING:Xst:647 - Input <imem_data_in<10:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd" line 189: Output port <mem_read> of the instance <inst_control_unit> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd" line 203: Output port <FLAGS_Carry> of the instance <inst_alu> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd" line 203: Output port <FLAGS_Overflow> of the instance <inst_alu> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd" line 203: Output port <FLAGS_Negative> of the instance <inst_alu> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd" line 190: Output port <mem_read> of the instance <inst_control_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd" line 204: Output port <FLAGS_Carry> of the instance <inst_alu> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd" line 204: Output port <FLAGS_Overflow> of the instance <inst_alu> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd" line 204: Output port <FLAGS_Negative> of the instance <inst_alu> is unconnected or connected to loadless signal.
     Found 1-bit register for signal <next_state>.
     Found 1-bit register for signal <current_state>.
     Summary:
@@ -872,7 +873,3 @@ WARNING:Xst:2677 - Node <MIPS_SC_PROCESSOR/inst_pc/address_8> of sequential type
 WARNING:Xst:2677 - Node <MIPS_SC_PROCESSOR/inst_control_unit/mem_read> of sequential type is unconnected in block <toplevel>.
 
 Mapping all equations...
-Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block toplevel, actual ratio is 331.
-Optimizing block <toplevel> to meet ratio 100 (+ 5) of 2278 slices :
-WARNING:Xst:2254 - Area constraint could not be met for block <toplevel>, final ratio is 329.

@@ -168,7 +168,6 @@ begin
 	dmem_write_enable <= mem_write;
 	imem_address <= pc_current;
 	
-	
 	process(CLK, processor_enable, next_state)
 	begin
 		if (rising_edge(CLK)) and (processor_enable = '1') then
@@ -176,14 +175,18 @@ begin
 		end if;
 	end process;
 	
-	process(CLK, processor_enable, current_state)
+	process(processor_enable, current_state)
 	begin
-		if (rising_edge(CLK)) and (processor_enable = '1') then
-			if (current_state = STALL) then
+		if (processor_enable = '1') then 
+			if (current_state = FETCH) then
 				next_state <= EXEC;
-			else
+			elsif (current_state = EXEC) and (imem_data_in (31 downto 26) = "100011") then
 				next_state <= STALL;
+			else
+				next_state <= FETCH;
 			end if;
+		else
+			next_state <= FETCH;
 		end if;
 	end process;
 

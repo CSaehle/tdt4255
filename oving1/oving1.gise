@@ -90,9 +90,11 @@
       <outfile xil_pn:name="tb_sign_extend.vhd"/>
       <outfile xil_pn:name="tb_toplevel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1349008695" xil_pn:in_ck="2922227242005233832" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1349008694">
+    <transform xil_pn:end_ts="1349014348" xil_pn:in_ck="2922227242005233832" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1349014347">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="tb_toplevel.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>
@@ -125,10 +127,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1349008684" xil_pn:in_ck="-2597937838324397071" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4030751408528113389" xil_pn:start_ts="1349008587">
+    <transform xil_pn:end_ts="1349012646" xil_pn:in_ck="-2597937838324397071" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4030751408528113389" xil_pn:start_ts="1349012591">
       <status xil_pn:value="AbortedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="toplevel.lso"/>
       <outfile xil_pn:name="toplevel.ngr"/>
