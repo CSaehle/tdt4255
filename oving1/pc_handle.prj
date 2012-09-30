@@ -1,4 +1,0 @@
-vhdl work "full_adder.vhd"
-vhdl work "shift_two.vhd"
-vhdl work "adder.vhd"
-vhdl work "pc_handle.vhd"

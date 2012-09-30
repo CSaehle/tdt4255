@@ -75,14 +75,16 @@ architecture Behavioral of processor is
 	end component ALU;
 
 	component ALU_CONTROL is
-    Port ( alu_op : in  STD_LOGIC_VECTOR (1 downto 0);
+    Port ( 
+			  alu_op : in  STD_LOGIC_VECTOR (1 downto 0);
            funct : in  STD_LOGIC_VECTOR (5 downto 0);
            alu_in : out  ALU_INPUT
 	);
 	end component ALU_CONTROL;
 	
 	component PC is
-	    Port ( CLK : in  STD_LOGIC;
+	    Port (
+			  CLK : in  STD_LOGIC;
            WE : in  STD_LOGIC;
 			  RESET : in STD_LOGIC;
            addr_put : in  STD_LOGIC_VECTOR (31 downto 0);
@@ -114,8 +116,9 @@ architecture Behavioral of processor is
 	end component REGISTER_FILE;
 	
 	component SIGN_EXTEND is
-	    Port ( in_addr : in  STD_LOGIC_VECTOR (15 downto 0);
-           out_addr : out  STD_LOGIC_VECTOR (31 downto 0));
+	    Port ( 
+					in_addr : in  STD_LOGIC_VECTOR (15 downto 0);
+					out_addr : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component SIGN_EXTEND;
 	
 	signal current_state: state_type := STALL;
@@ -161,6 +164,7 @@ begin
 	alu_x <= rs;
 	alu_y <= rt when alu_src = '1' else offset;
 	dmem_address <= alu_out;
+	dmem_address_rw <= alu_out;
 	rd_addr <= imem_data_in (15 downto 11) when reg_dst = '1' else imem_data_in(20 downto 16);
 	data_to_write <= dmem_data_in when mem_to_reg = '1' else alu_out;
 	dmem_data_out <= rt;
