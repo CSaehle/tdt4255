@@ -54,13 +54,13 @@ process (alu_op, funct)
 	begin
 		if (alu_op = "00") THEN alu_control_input <= "0010";
 		elsif (alu_op = "01") THEN alu_control_input <= "0110";
-		elsif (alu_op = "10" AND funct(3 downto 0) = "0000") THEN alu_control_input <= "0010";
-		elsif (alu_op = "10" AND funct(3 downto 0) = "0010") THEN alu_control_input <= "0110";
-		elsif (alu_op = "10" AND funct(3 downto 0) = "0100") THEN alu_control_input <= "0000";
-		elsif (alu_op = "10" AND funct(3 downto 0) = "0101") THEN alu_control_input <= "0001";
-		elsif (alu_op = "10" AND funct(3 downto 0) = "1010") THEN alu_control_input <= "0111";
-		elsif (alu_op = "10") THEN alu_control_input <= "----";
-		elsif (alu_op = "11") THEN alu_control_input <= "----";
+		elsif (alu_op = "10" AND funct(3 downto 0) = "0000") THEN alu_control_input <= "0010"; -- ADD
+		elsif (alu_op = "10" AND funct(3 downto 0) = "0010") THEN alu_control_input <= "0110"; -- SUB
+		elsif (alu_op = "10" AND funct(3 downto 0) = "0100") THEN alu_control_input <= "0000"; -- AND
+		elsif (alu_op = "10" AND funct(3 downto 0) = "0101") THEN alu_control_input <= "0001"; -- OR
+		elsif (alu_op = "10" AND funct(3 downto 0) = "1010") THEN alu_control_input <= "0111"; -- SLT
+	--	elsif (alu_op = "10") THEN alu_control_input <= "----"; -- Don't care
+	--	elsif (alu_op = "11") THEN alu_control_input <= "----"; -- Don't care
 		end if;
 	end process;
 end Behavioral;

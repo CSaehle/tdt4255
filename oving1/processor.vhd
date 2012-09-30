@@ -156,19 +156,35 @@ architecture Behavioral of processor is
 	signal pc_write_enable: STD_LOGIC := '0';
 
 begin
-
+	-- This one updates the PC when the next state is a FETCH to make sure the instruction is ready for the next EXEC
 	pc_write_enable <= '1' when (next_state = FETCH) and (processor_enable = '1') else '0';
 	
+	-- The ALU takes the value of the first input register.
 	alu_x <= rs;
+	-- This one multiplexes - if ALU_SRC is set, the ALU takes the value of the second input register. If not, it takes the sign-extended offset of the instruction - for branches
 	alu_y <= rt when alu_src = '1' else offset;
+	
+	-- The ALU gets us the addrses for load/stores. It could be either, but this is not determined here so both are set as the result.
 	dmem_address <= alu_out;
 	dmem_address_wr <= alu_out;
-	rd_addr <= imem_data_in (15 downto 11) when reg_dst = '1' else imem_data_in(20 downto 16);
-	data_to_write <= dmem_data_in when mem_to_reg = '1' else alu_out;
-	dmem_data_out <= rt;
+	
+	-- This one decides whether to read or write from memory.
 	dmem_write_enable <= mem_write;
+	
+	-- This one determines the read address - if REG_DST is set, it's three-operand, if not, only two.
+	rd_addr <= imem_data_in (15 downto 11) when reg_dst = '1' else imem_data_in(20 downto 16);
+	-- Choose whether to use ALU or memory to source for writing to register.
+	data_to_write <= dmem_data_in when mem_to_reg = '1' else alu_out;
+	
+	-- Value of data in register rt to be written to memory.
+	dmem_data_out <= rt;
+	
+	-- Using address from PC to address instruction memory.
 	imem_address <= pc_current;
 	
+	
+	-- Here's our state machine:
+	-- This first part just updates the state on rising clock edge.
 	process(CLK, processor_enable, next_state)
 	begin
 		if (rising_edge(CLK)) and (processor_enable = '1') then
@@ -176,6 +192,7 @@ begin
 		end if;
 	end process;
 	
+	-- This one determines which state is the next one, depending on opcodes, current state. If the processor is not enabled, it prepares to fetch.
 	process(processor_enable, current_state, imem_data_in)
 	begin
 		if (processor_enable = '1') then 

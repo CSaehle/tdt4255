@@ -72,15 +72,21 @@ signal current_byte_addr: STD_LOGIC_VECTOR (31 downto 0);
 signal next_byte_addr: STD_LOGIC_VECTOR (31 downto 0);
 
 begin
+-- This translates PC to byte-address (from word)
 current_byte_addr(31 downto 2) <= pc_current(29 downto 0);
 current_byte_addr(1 downto 0) <= "00";
 
+-- Finding the correct 32-bit jump address - the jump instruction has only 26 bits for the address (the other six is the opcode).
 jump_addr (1 downto 0) <= "00";
 jump_addr (27 downto 2) <= jump_inst;
 jump_addr (31 downto 28) <= pc_added (31 downto 28);
 
+-- Current branch - if branch and zero are set, this is the address of the branch, else it's the word following the current PC.
 branch_selected <= branch_addr when (branch = '1' and zero = '1') else pc_added;
+-- This one is self-explanatory.
 next_byte_addr <= jump_addr when jump = '1' else branch_selected;
+
+-- And we translate back to word-addressing. This seems to work.
 pc_next (31 downto 30) <= "00";
 pc_next (29 downto 0) <= next_byte_addr (31 downto 2);
 
