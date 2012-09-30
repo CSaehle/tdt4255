@@ -8,40 +8,52 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim -do \{do \{tb_pc.fdo\}\} 
+# vsim -do \{do \{tb_toplevel.fdo\}\} 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 6
-#           Attempting to use alternate WLF file "./wlftsist21".
+#           Attempting to use alternate WLF file "./wlftf1jn0w".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftsist21
+#           Using alternate file: ./wlftf1jn0w
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Error: (vopt-19) Failed to access library 'work.{tb_pc' at "work.{tb_pc".
+# ** Error: (vopt-19) Failed to access library 'work.{tb_toplevel' at "work.{tb_toplevel".
 # No such file or directory. (errno = ENOENT)
-# ** Error: Library work.{tb_pc not found.
+# ** Error: Library work.{tb_toplevel not found.
 # Error loading design
-do tb_pc.fdo
+do tb_toplevel.fdo
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
-# -- Compiling entity pc
-# -- Compiling architecture behavioral of pc
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_pc
-# -- Compiling architecture behavior of tb_pc
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_pc 
+# -- Compiling entity tb_toplevel
+# -- Compiling architecture behavior of tb_toplevel
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 6
-#           Attempting to use alternate WLF file "./wlft7t0xi8".
+#           Attempting to use alternate WLF file "./wlftzx59y2".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft7t0xi8
+#           Using alternate file: ./wlftzx59y2
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt3/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt4/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt6/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt7/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt8/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt9/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
 # ** Note: (vsim-3812) Design is being optimized...
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_pc(behavior)#1
-# Loading work.pc(behavioral)#1
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
+# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
+# Use vdir -l command to find such design units.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(218): (vopt-1270) Bad default binding for component instance "inst_pc : pc".
+#  (Component port "w" is not on the entity.)
+# ** Warning: [1] C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(218): (vopt-3473) Component instance "inst_pc : pc" is not bound.
+# ** Error: Z:/github/tdt4255/oving1/pc_handle.vhd(42): Vopt Compiler exiting
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./tb_toplevel.fdo PAUSED at line 27

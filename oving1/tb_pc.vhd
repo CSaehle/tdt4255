@@ -42,7 +42,8 @@ ARCHITECTURE behavior OF tb_pc IS
     COMPONENT pc
     PORT(
          CLK : IN  std_logic;
-         W : IN  std_logic;
+         WE : IN  std_logic;
+			RESET: IN std_logic;
          addr_put : IN  std_logic_vector(31 downto 0);
          addr_get : OUT  std_logic_vector(31 downto 0)
         );
@@ -51,7 +52,8 @@ ARCHITECTURE behavior OF tb_pc IS
 
    --Inputs
    signal CLK : std_logic := '0';
-   signal W : std_logic := '0';
+   signal WE : std_logic := '0';
+	signal RESET: std_logic := '0';
    signal addr_put : std_logic_vector(31 downto 0) := (others => '0');
 
  	--Outputs
@@ -65,7 +67,8 @@ BEGIN
 	-- Instantiate the Unit Under Test (UUT)
    uut: pc PORT MAP (
           CLK => CLK,
-          W => W,
+          WE => WE,
+			 RESET => RESET,
           addr_put => addr_put,
           addr_get => addr_get
         );
@@ -84,18 +87,21 @@ BEGIN
    stim_proc: process
    begin		
       -- hold reset state for 100 ns.
-      wait for 100 ns;	
 
-      wait for CLK_period*10;
-		W <= '0';
-		wait for CLK_period*5;
+      wait for CLK_period*3;
+		WE <= '0';
+		wait for CLK_period*2;
 		addr_put (7 downto 0) <= "10010110";
-		wait for CLK_period*5;
+		wait for CLK_period*2;
 		addr_put (7 downto 0) <= "01101001";
-		wait for CLK_period*5;
-		W <= '1';
-		wait for CLK_period*5;
+		wait for CLK_period*2;
+		WE <= '1';
+		wait for CLK_period*2;
 		addr_put (15 downto 8) <= "10010110";
+		wait for CLK_period*2;
+		RESET <= '1';
+		wait for CLK_period*3;
+		RESET <= '0';
       -- insert stimulus here 
 
       wait;

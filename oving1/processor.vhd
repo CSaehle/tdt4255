@@ -83,7 +83,8 @@ architecture Behavioral of processor is
 	
 	component PC is
 	    Port ( CLK : in  STD_LOGIC;
-           W : in  STD_LOGIC;
+           WE : in  STD_LOGIC;
+			  RESET : in STD_LOGIC;
            addr_put : in  STD_LOGIC_VECTOR (31 downto 0);
            addr_get : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component PC;
@@ -215,9 +216,10 @@ begin
 	inst_pc: pc
 	port map (
 			clk => clk,
+			WE => exec_state,
+			RESET => RESET,
 			addr_get => pc_current,
-			addr_put => pc_next,
-			W => exec_state
+			addr_put => pc_next
 		);
 		
 	inst_pc_handle: pc_handle
@@ -234,7 +236,7 @@ begin
 	inst_register_file: register_file
 	port map(
 			clk => clk,
-			reset => ZERO1b,
+			reset => reset,
 			rw => reg_write,
 			rs_addr => imem_data_in (25 downto 21),
 			rt_addr => imem_data_in (20 downto 16),

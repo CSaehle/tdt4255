@@ -11,17 +11,18 @@
          <ClosedNode>/alu - Behavioral Z:|github|tdt4255|oving1|alu.vhd</ClosedNode>
          <ClosedNode>/pc_handle - Behavioral Z:|github|tdt4255|oving1|pc_handle.vhd/branch_add - adder - Behavioral</ClosedNode>
          <ClosedNode>/pc_handle - Behavioral Z:|github|tdt4255|oving1|pc_handle.vhd/pc_add - adder - Behavioral</ClosedNode>
+         <ClosedNode>/toplevel - Behavioral C:|Users|chribru|Desktop|GitHub|tdt4255|oving1|toplevel.vhd/MIPS_SC_PROCESSOR - processor - Behavioral/inst_alu - alu - Behavioral</ClosedNode>
          <ClosedNode>/toplevel - Behavioral Z:|github|tdt4255|oving1|toplevel.vhd/MIPS_SC_PROCESSOR - processor - Behavioral/inst_alu - alu - Behavioral</ClosedNode>
          <ClosedNode>/toplevel - Behavioral Z:|github|tdt4255|oving1|toplevel.vhd/MIPS_SC_PROCESSOR - processor - Behavioral/inst_pc_handle - pc_handle - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>toplevel - Behavioral (Z:/github/tdt4255/oving1/toplevel.vhd)</SelectedItem>
+         <SelectedItem>MIPS_SC_PROCESSOR - processor - Behavioral (C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000e7000000020000000000000000000000000000000064ffffffff000000810000000000000002000000e70000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>toplevel - Behavioral (Z:/github/tdt4255/oving1/toplevel.vhd)</CurrentItem>
+      <CurrentItem>MIPS_SC_PROCESSOR - processor - Behavioral (C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -43,9 +44,9 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a1000000040101000100000000000000000000000064ffffffff000000810000000000000004000000e50000000100000000000000240000000100000000000000660000000100000000000002320000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000003a3000000040101000100000000000000000000000064ffffffff000000810000000000000004000000e50000000100000000000000240000000100000000000000660000000100000000000002340000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Z:\github\tdt4255\oving1\adder.vhd</CurrentItem>
+      <CurrentItem>adder.vhd</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -54,12 +55,12 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f9000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f90000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000000f8000000010001000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>work</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000011b0000011b01000000050100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
@@ -69,13 +70,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Check Syntax</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012e0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Check Syntax</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -89,13 +90,13 @@
          <ClosedNode>/tb_toplevel - behavior Z:|github|tdt4255|oving1|tb_toplevel.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_pc - behavior (Z:/github/tdt4255/oving1/tb_pc.vhd)</SelectedItem>
+         <SelectedItem>tb_toplevel - behavior (C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >16</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e2000000020000000000000000000000000000000064ffffffff000000810000000000000002000001e20000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>tb_pc - behavior (Z:/github/tdt4255/oving1/tb_pc.vhd)</CurrentItem>
+      <CurrentItem>tb_toplevel - behavior (C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -107,7 +108,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012e0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
@@ -120,7 +121,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f6000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f60000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000012e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000012e0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>

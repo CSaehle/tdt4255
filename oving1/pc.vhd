@@ -20,6 +20,9 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
+library WORK;
+use WORK.MIPS_CONSTANT_PKG.ALL;
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -31,19 +34,26 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity pc is
     Port ( CLK : in  STD_LOGIC;
-           W : in  STD_LOGIC;
+           WE : in  STD_LOGIC;
+			  RESET : in STD_LOGIC;
            addr_put : in  STD_LOGIC_VECTOR (31 downto 0);
            addr_get : out  STD_LOGIC_VECTOR (31 downto 0));
 end pc;
 
 architecture Behavioral of pc is
 
+signal address : STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+
 begin
 
-process(CLK, W)
+addr_get <= address;
+
+process(CLK, RESET, ADDR_PUT, WE)
 begin
-	if (rising_edge(CLK)) and (W = '1') then
-		addr_get <= addr_put;
+	if (RESET = '1') then
+		address <= ZERO32b;
+	elsif (rising_edge(CLK)) and (WE = '1') then
+		address <= addr_put;
 	end if;
 end process;
 
