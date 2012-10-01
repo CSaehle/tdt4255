@@ -1,0 +1,25 @@
+Release 12.4 Drc M.81d (nt64)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Mon Oct 01 18:18:56 2012
+
+drc -z toplevel.ncd toplevel.pcf
+
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   MIPS_SC_PROCESSOR/inst_control_unit/_n0064 is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   MIPS_SC_PROCESSOR/inst_control_unit/_n0057 is sourced by a combinatorial pin.
+   This is not good design practice. Use the CE pin to control the loading of
+   data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_1_G is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_0_G is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+DRC detected 0 errors and 4 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
