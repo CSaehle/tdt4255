@@ -45,10 +45,10 @@ signal alu_control_input: STD_LOGIC_VECTOR (3 downto 0);
 
 begin
 -- Op3 is the least significant bit, thus the reversal.
-alu_in.Op3 <= alu_control_input(0);
-alu_in.Op2 <= alu_control_input(1);
-alu_in.Op1 <= alu_control_input(2);
-alu_in.Op0 <= alu_control_input(3);
+alu_in.Op0 <= alu_control_input(0);
+alu_in.Op1 <= alu_control_input(1);
+alu_in.Op2 <= alu_control_input(2);
+alu_in.Op3 <= alu_control_input(3);
 
 process (alu_op, funct)
 	begin
