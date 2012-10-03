@@ -91,6 +91,16 @@ begin
 			branch <= 		'1';
 			alu_op <= 		"01";
 			jump <=			'0';
+		when "001111" =>			-- LDI (lui in standard MIPS)
+			reg_dst <= 		'0';
+			alu_src <= 		'1';
+			mem_to_reg <= 	'0';
+			reg_write <= 	'1';
+			mem_read <= 	'0';
+			mem_write <= 	'0';
+			branch <= 		'0';
+			alu_op <= 		"00";
+			jump <=			'0';	
 		when "000010" =>			-- jump
 			reg_dst <= 		'0';
 			alu_src <= 		'0';
