@@ -1,0 +1,10 @@
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc toplevel1/data/toplevel1.ucf -bm edkBmmFile.bmm -p xc6slx16-csg324-2 toplevel1.ngc toplevel1.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o toplevel1_map.ncd toplevel1.ngd toplevel1.pcf 
+par -w -intstyle ise -ol high -mt off toplevel1_map.ncd toplevel1.ncd toplevel1.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml toplevel1.twx toplevel1.ncd -o toplevel1.twr toplevel1.pcf 
+bitgen -intstyle ise -f toplevel1.ut toplevel1.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc toplevel1/data/toplevel1.ucf -bm edkBmmFile.bmm -p xc6slx16-csg324-2 toplevel1.ngc toplevel1.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o toplevel1_map.ncd toplevel1.ngd toplevel1.pcf 
+par -w -intstyle ise -ol high -mt off toplevel1_map.ncd toplevel1.ncd toplevel1.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml toplevel1.twx toplevel1.ncd -o toplevel1.twr toplevel1.pcf 
+bitgen -intstyle ise -f toplevel1.ut toplevel1.ncd 

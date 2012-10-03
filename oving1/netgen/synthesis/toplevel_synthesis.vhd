@@ -7,14 +7,14 @@
 -- \   \   \/     Version: M.81d
 --  \   \         Application: netgen
 --  /   /         Filename: toplevel_synthesis.vhd
--- /___/   /\     Timestamp: Mon Oct 01 18:14:22 2012
+-- /___/   /\     Timestamp: Wed Oct 03 19:32:22 2012
 -- \   \  /  \ 
 --  \___\/\___\
 --             
 -- Command	: -intstyle ise -ar Structure -tm toplevel -w -dir netgen/synthesis -ofmt vhdl -sim toplevel.ngc toplevel_synthesis.vhd 
 -- Device	: xc6slx16-2-csg324
 -- Input file	: toplevel.ngc
--- Output file	: \\sambaad.stud.ntnu.no\carolisa\github\tdt4255\oving1\netgen\synthesis\toplevel_synthesis.vhd
+-- Output file	: C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\netgen\synthesis\toplevel_synthesis.vhd
 -- # of Entities	: 1
 -- Design Name	: toplevel
 -- Xilinx	: C:\Xilinx\12.4\ISE_DS\ISE\
@@ -963,17 +963,17 @@ architecture Structure of toplevel is
   signal MIPS_SC_PROCESSOR_inst_register_file_RS_ADDR_4_REGS_31_31_wide_mux_98_OUT_29_Q : STD_LOGIC; 
   signal MIPS_SC_PROCESSOR_inst_register_file_RS_ADDR_4_REGS_31_31_wide_mux_98_OUT_30_Q : STD_LOGIC; 
   signal MIPS_SC_PROCESSOR_inst_register_file_RS_ADDR_4_REGS_31_31_wide_mux_98_OUT_31_Q : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_control_unit_N3 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_control_unit_n0064_2258 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_control_unit_n0057 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_29_o : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_37_o : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_41_o : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_39_o : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_33_o : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_31_o : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_control_unit_n0069 : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_34_o : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_30_o : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_control_unit_n0062 : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_42_o : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_46_o : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_44_o : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_38_o : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_36_o : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_35_o : STD_LOGIC; 
   signal MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_34_o : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_33_o : STD_LOGIC; 
   signal MIPS_SC_PROCESSOR_inst_pc_handle_branch_add_CAUX_3_Q : STD_LOGIC; 
   signal MIPS_SC_PROCESSOR_inst_pc_handle_branch_add_CAUX_5_Q : STD_LOGIC; 
   signal MIPS_SC_PROCESSOR_inst_pc_handle_branch_add_CAUX_7_Q : STD_LOGIC; 
@@ -1009,19 +1009,20 @@ architecture Structure of toplevel is
   signal TDT4255_COM_state_FSM_FFd1_In54_2309 : STD_LOGIC; 
   signal N2 : STD_LOGIC; 
   signal N4 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_1_2313 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_2_2314 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_3_2315 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_5 : STD_LOGIC; 
+  signal N14 : STD_LOGIC; 
   signal N16 : STD_LOGIC; 
-  signal N17 : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_1_2315 : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_2_2316 : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_3_2317 : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_5 : STD_LOGIC; 
+  signal N18 : STD_LOGIC; 
   signal N19 : STD_LOGIC; 
-  signal N20 : STD_LOGIC; 
+  signal N21 : STD_LOGIC; 
   signal N22 : STD_LOGIC; 
-  signal N23 : STD_LOGIC; 
   signal N24 : STD_LOGIC; 
+  signal N25 : STD_LOGIC; 
   signal N26 : STD_LOGIC; 
-  signal N27 : STD_LOGIC; 
+  signal N28 : STD_LOGIC; 
   signal N29 : STD_LOGIC; 
   signal N31 : STD_LOGIC; 
   signal N33 : STD_LOGIC; 
@@ -1030,43 +1031,44 @@ architecture Structure of toplevel is
   signal N39 : STD_LOGIC; 
   signal N41 : STD_LOGIC; 
   signal N43 : STD_LOGIC; 
-  signal N49 : STD_LOGIC; 
-  signal N50 : STD_LOGIC; 
+  signal N45 : STD_LOGIC; 
   signal N51 : STD_LOGIC; 
+  signal N52 : STD_LOGIC; 
   signal N53 : STD_LOGIC; 
-  signal N54 : STD_LOGIC; 
   signal N55 : STD_LOGIC; 
+  signal N56 : STD_LOGIC; 
   signal N57 : STD_LOGIC; 
-  signal N58 : STD_LOGIC; 
   signal N59 : STD_LOGIC; 
+  signal N60 : STD_LOGIC; 
   signal N61 : STD_LOGIC; 
-  signal N62 : STD_LOGIC; 
+  signal N63 : STD_LOGIC; 
   signal N64 : STD_LOGIC; 
-  signal N65 : STD_LOGIC; 
   signal N66 : STD_LOGIC; 
+  signal N67 : STD_LOGIC; 
   signal N68 : STD_LOGIC; 
-  signal N69 : STD_LOGIC; 
+  signal N70 : STD_LOGIC; 
   signal N71 : STD_LOGIC; 
-  signal N72 : STD_LOGIC; 
+  signal N73 : STD_LOGIC; 
   signal N74 : STD_LOGIC; 
-  signal N75 : STD_LOGIC; 
+  signal N76 : STD_LOGIC; 
   signal N77 : STD_LOGIC; 
-  signal N78 : STD_LOGIC; 
   signal N79 : STD_LOGIC; 
+  signal N80 : STD_LOGIC; 
   signal N81 : STD_LOGIC; 
-  signal N82 : STD_LOGIC; 
   signal N83 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_G_2498 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_D_2499 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_D_2500 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_G_2501 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_D_2502 : STD_LOGIC; 
-  signal N88 : STD_LOGIC; 
-  signal N89 : STD_LOGIC; 
+  signal N84 : STD_LOGIC; 
+  signal N85 : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_G_2500 : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_D_2501 : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_D_2502 : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_G_2503 : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_D_2504 : STD_LOGIC; 
+  signal N90 : STD_LOGIC; 
   signal N91 : STD_LOGIC; 
-  signal N92 : STD_LOGIC; 
+  signal N93 : STD_LOGIC; 
+  signal N94 : STD_LOGIC; 
   signal MIPS_SC_PROCESSOR_Mmux_data_to_write2011 : STD_LOGIC; 
-  signal MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508 : STD_LOGIC; 
+  signal MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510 : STD_LOGIC; 
   signal NLW_INST_MEM_Mram_MEM_DOPADOP_1_UNCONNECTED : STD_LOGIC; 
   signal NLW_INST_MEM_Mram_MEM_DOPADOP_0_UNCONNECTED : STD_LOGIC; 
   signal NLW_INST_MEM_Mram_MEM_DOPBDOP_1_UNCONNECTED : STD_LOGIC; 
@@ -10796,7 +10798,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0367_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_31(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_31_26 : FDCE
@@ -11148,7 +11150,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0363_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_0(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_0_26 : FDCE
@@ -11500,7 +11502,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0355_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_2(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_2_26 : FDCE
@@ -11852,7 +11854,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0351_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_3(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_3_26 : FDCE
@@ -12204,7 +12206,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0359_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_1(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_1_26 : FDCE
@@ -12556,7 +12558,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0347_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_4(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_4_26 : FDCE
@@ -12908,7 +12910,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0343_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_5(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_5_26 : FDCE
@@ -13260,7 +13262,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0339_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_6(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_6_26 : FDCE
@@ -13612,7 +13614,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0335_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_7(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_7_26 : FDCE
@@ -13964,7 +13966,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0331_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_8(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_8_26 : FDCE
@@ -14316,7 +14318,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0327_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_9(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_9_26 : FDCE
@@ -14668,7 +14670,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0319_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_11(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_11_26 : FDCE
@@ -15020,7 +15022,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0315_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_12(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_12_26 : FDCE
@@ -15372,7 +15374,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0323_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_10(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_10_26 : FDCE
@@ -15724,7 +15726,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0311_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_13(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_13_26 : FDCE
@@ -16076,7 +16078,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0307_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_14(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_14_26 : FDCE
@@ -16428,7 +16430,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0303_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_15(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_15_26 : FDCE
@@ -16780,7 +16782,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0299_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_16(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_16_26 : FDCE
@@ -17132,7 +17134,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0295_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_17(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_17_26 : FDCE
@@ -17484,7 +17486,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0291_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_18(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_18_26 : FDCE
@@ -17836,7 +17838,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0283_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_20(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_20_26 : FDCE
@@ -18188,7 +18190,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0279_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_21(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_21_26 : FDCE
@@ -18540,7 +18542,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0287_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_19(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_19_26 : FDCE
@@ -18892,7 +18894,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0275_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_22(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_22_26 : FDCE
@@ -19244,7 +19246,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0271_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_23(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_23_26 : FDCE
@@ -19596,7 +19598,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0267_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_24(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_24_26 : FDCE
@@ -19948,7 +19950,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0263_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_25(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_25_26 : FDCE
@@ -20300,7 +20302,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0259_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_26(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_26_26 : FDCE
@@ -20652,7 +20654,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0255_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_27(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_27_26 : FDCE
@@ -21004,7 +21006,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0247_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_29(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_29_26 : FDCE
@@ -21356,7 +21358,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0243_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_30(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_30_26 : FDCE
@@ -21708,7 +21710,7 @@ begin
       C => clk_BUFGP_72,
       CE => MIPS_SC_PROCESSOR_inst_register_file_n0251_inv,
       CLR => reset_IBUF_73,
-      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508,
+      D => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510,
       Q => MIPS_SC_PROCESSOR_inst_register_file_REGS_28(27)
     );
   MIPS_SC_PROCESSOR_inst_register_file_REGS_28_26 : FDCE
@@ -22010,50 +22012,50 @@ begin
     );
   MIPS_SC_PROCESSOR_inst_control_unit_reg_write : LD
     port map (
-      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_29_o,
-      G => MIPS_SC_PROCESSOR_inst_control_unit_n0057,
+      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_34_o,
+      G => MIPS_SC_PROCESSOR_inst_control_unit_n0062,
       Q => MIPS_SC_PROCESSOR_inst_control_unit_reg_write_442
     );
   MIPS_SC_PROCESSOR_inst_control_unit_alu_src : LD
     port map (
-      D => MIPS_SC_PROCESSOR_inst_control_unit_N3,
-      G => MIPS_SC_PROCESSOR_inst_control_unit_n0057,
+      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_30_o,
+      G => MIPS_SC_PROCESSOR_inst_control_unit_n0062,
       Q => MIPS_SC_PROCESSOR_inst_control_unit_alu_src_444
     );
   MIPS_SC_PROCESSOR_inst_control_unit_alu_op_1 : LD
     port map (
-      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_37_o,
-      G => MIPS_SC_PROCESSOR_inst_control_unit_n0057,
+      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_42_o,
+      G => MIPS_SC_PROCESSOR_inst_control_unit_n0062,
       Q => MIPS_SC_PROCESSOR_inst_control_unit_alu_op(1)
     );
   MIPS_SC_PROCESSOR_inst_control_unit_jump : LD
     port map (
-      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_41_o,
-      G => MIPS_SC_PROCESSOR_inst_control_unit_n0057,
+      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_46_o,
+      G => MIPS_SC_PROCESSOR_inst_control_unit_n0062,
       Q => MIPS_SC_PROCESSOR_inst_control_unit_jump_441
     );
   MIPS_SC_PROCESSOR_inst_control_unit_reg_dst : LD
     port map (
-      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_37_o,
-      G => MIPS_SC_PROCESSOR_inst_control_unit_n0064_2258,
+      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_42_o,
+      G => MIPS_SC_PROCESSOR_inst_control_unit_n0069,
       Q => MIPS_SC_PROCESSOR_inst_control_unit_reg_dst_445
     );
   MIPS_SC_PROCESSOR_inst_control_unit_branch : LD
     port map (
-      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_39_o,
-      G => MIPS_SC_PROCESSOR_inst_control_unit_n0057,
+      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_44_o,
+      G => MIPS_SC_PROCESSOR_inst_control_unit_n0062,
       Q => MIPS_SC_PROCESSOR_inst_control_unit_branch_446
     );
   MIPS_SC_PROCESSOR_inst_control_unit_mem_to_reg : LD
     port map (
-      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_31_o,
-      G => MIPS_SC_PROCESSOR_inst_control_unit_n0064_2258,
+      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_36_o,
+      G => MIPS_SC_PROCESSOR_inst_control_unit_n0069,
       Q => MIPS_SC_PROCESSOR_inst_control_unit_mem_to_reg_443
     );
   MIPS_SC_PROCESSOR_inst_control_unit_mem_write : LD
     port map (
-      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_33_o,
-      G => MIPS_SC_PROCESSOR_inst_control_unit_n0057,
+      D => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_38_o,
+      G => MIPS_SC_PROCESSOR_inst_control_unit_n0062,
       Q => MIPS_SC_PROCESSOR_inst_control_unit_mem_write_233
     );
   Mmux_imem_write_enable_com11 : LUT2
@@ -23125,80 +23127,98 @@ begin
       I4 => instr_data(21),
       O => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o
     );
-  MIPS_SC_PROCESSOR_inst_control_unit_out1 : LUT6
+  MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_38_o_5_1 : LUT6
     generic map(
-      INIT => X"0400040000000015"
+      INIT => X"0000008000000000"
+    )
+    port map (
+      I0 => instr_data(29),
+      I1 => instr_data(26),
+      I2 => instr_data(31),
+      I3 => instr_data(28),
+      I4 => instr_data(30),
+      I5 => instr_data(27),
+      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_38_o
+    );
+  MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_36_o_5_1 : LUT6
+    generic map(
+      INIT => X"0000000800000000"
+    )
+    port map (
+      I0 => instr_data(26),
+      I1 => instr_data(31),
+      I2 => instr_data(29),
+      I3 => instr_data(28),
+      I4 => instr_data(30),
+      I5 => instr_data(27),
+      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_36_o
+    );
+  MIPS_SC_PROCESSOR_inst_control_unit_out11 : LUT6
+    generic map(
+      INIT => X"0008080000080000"
+    )
+    port map (
+      I0 => instr_data(26),
+      I1 => instr_data(27),
+      I2 => instr_data(30),
+      I3 => instr_data(28),
+      I4 => instr_data(31),
+      I5 => instr_data(29),
+      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_30_o
+    );
+  MIPS_SC_PROCESSOR_inst_control_unit_n00691 : LUT6
+    generic map(
+      INIT => X"0140000100000001"
     )
     port map (
       I0 => instr_data(30),
-      I1 => instr_data(27),
-      I2 => instr_data(28),
-      I3 => instr_data(26),
-      I4 => instr_data(29),
-      I5 => instr_data(31),
-      O => MIPS_SC_PROCESSOR_inst_control_unit_n0057
+      I1 => instr_data(28),
+      I2 => instr_data(29),
+      I3 => instr_data(31),
+      I4 => instr_data(26),
+      I5 => instr_data(27),
+      O => MIPS_SC_PROCESSOR_inst_control_unit_n0069
     );
-  MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_37_o_5_1 : LUT6
+  MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_42_o_5_1 : LUT6
     generic map(
       INIT => X"0000000000000001"
     )
     port map (
       I0 => instr_data(27),
       I1 => instr_data(28),
-      I2 => instr_data(30),
-      I3 => instr_data(31),
-      I4 => instr_data(29),
+      I2 => instr_data(31),
+      I3 => instr_data(29),
+      I4 => instr_data(30),
       I5 => instr_data(26),
-      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_37_o
+      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_42_o
     );
-  MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_41_o_5_1 : LUT6
+  MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_46_o_5_1 : LUT6
     generic map(
       INIT => X"0000000100000000"
     )
     port map (
       I0 => instr_data(28),
-      I1 => instr_data(30),
-      I2 => instr_data(31),
-      I3 => instr_data(29),
+      I1 => instr_data(31),
+      I2 => instr_data(29),
+      I3 => instr_data(30),
       I4 => instr_data(26),
       I5 => instr_data(27),
-      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_41_o
+      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_46_o
     );
-  MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_39_o_5_1 : LUT6
+  MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_44_o_5_1 : LUT6
     generic map(
       INIT => X"0000000100000000"
     )
     port map (
       I0 => instr_data(27),
-      I1 => instr_data(30),
-      I2 => instr_data(31),
-      I3 => instr_data(29),
-      I4 => instr_data(26),
-      I5 => instr_data(28),
-      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_39_o
-    );
-  MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_31_o_5_11 : LUT5
-    generic map(
-      INIT => X"00400000"
-    )
-    port map (
-      I0 => instr_data(28),
-      I1 => instr_data(27),
-      I2 => instr_data(31),
+      I1 => instr_data(31),
+      I2 => instr_data(29),
       I3 => instr_data(30),
       I4 => instr_data(26),
-      O => MIPS_SC_PROCESSOR_inst_control_unit_N3
+      I5 => instr_data(28),
+      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_44_o
     );
-  MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_29_o1 : LUT2
-    generic map(
-      INIT => X"E"
-    )
-    port map (
-      I0 => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_31_o,
-      I1 => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_37_o,
-      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_29_o
-    );
-  MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_33_o11 : LUT6
+  MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_34_o11 : LUT6
     generic map(
       INIT => X"0000040000400000"
     )
@@ -23209,9 +23229,9 @@ begin
       I3 => instr_data(2),
       I4 => instr_data(3),
       I5 => instr_data(0),
-      O => MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_33_o
+      O => MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_34_o
     );
-  MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_34_o11 : LUT6
+  MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_35_o11 : LUT6
     generic map(
       INIT => X"00010101FFFFFFFF"
     )
@@ -23222,7 +23242,7 @@ begin
       I3 => instr_data(2),
       I4 => instr_data(1),
       I5 => MIPS_SC_PROCESSOR_inst_control_unit_alu_op(1),
-      O => MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_34_o
+      O => MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_35_o
     );
   MIPS_SC_PROCESSOR_inst_pc_handle_branch_add_GEN_ADDER_7_NEXT_FA_COUT1 : LUT5
     generic map(
@@ -23720,6 +23740,50 @@ begin
       I5 => TDT4255_COM_state_FSM_FFd2_332,
       O => TDT4255_COM_state_FSM_FFd3_In
     );
+  MIPS_SC_PROCESSOR_inst_control_unit_out2_SW0 : LUT2
+    generic map(
+      INIT => X"8"
+    )
+    port map (
+      I0 => instr_data(27),
+      I1 => instr_data(26),
+      O => N14
+    );
+  MIPS_SC_PROCESSOR_inst_control_unit_out2 : LUT6
+    generic map(
+      INIT => X"FFFFFFFF04000040"
+    )
+    port map (
+      I0 => instr_data(30),
+      I1 => N14,
+      I2 => instr_data(31),
+      I3 => instr_data(29),
+      I4 => instr_data(28),
+      I5 => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_42_o,
+      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_PWR_11_o_Select_34_o
+    );
+  MIPS_SC_PROCESSOR_inst_control_unit_out_SW0 : LUT2
+    generic map(
+      INIT => X"7"
+    )
+    port map (
+      I0 => instr_data(28),
+      I1 => instr_data(27),
+      O => N16
+    );
+  MIPS_SC_PROCESSOR_inst_control_unit_out : LUT6
+    generic map(
+      INIT => X"FFFFFFFF00010000"
+    )
+    port map (
+      I0 => instr_data(31),
+      I1 => instr_data(30),
+      I2 => instr_data(29),
+      I3 => instr_data(26),
+      I4 => N16,
+      I5 => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_30_o,
+      O => MIPS_SC_PROCESSOR_inst_control_unit_n0062
+    );
   MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_1 : LUT6
     generic map(
       INIT => X"0000000000000001"
@@ -23744,20 +23808,20 @@ begin
       I3 => MIPS_SC_PROCESSOR_alu_out_9_Q,
       I4 => MIPS_SC_PROCESSOR_alu_out_10_Q,
       I5 => MIPS_SC_PROCESSOR_alu_out_11_Q,
-      O => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_1_2313
+      O => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_1_2315
     );
   MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_3 : LUT6
     generic map(
       INIT => X"0000000000000002"
     )
     port map (
-      I0 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_1_2313,
+      I0 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_1_2315,
       I1 => MIPS_SC_PROCESSOR_alu_out_12_Q,
       I2 => MIPS_SC_PROCESSOR_alu_out_13_Q,
       I3 => MIPS_SC_PROCESSOR_alu_out_14_Q,
       I4 => MIPS_SC_PROCESSOR_alu_out_15_Q,
       I5 => MIPS_SC_PROCESSOR_alu_out_16_Q,
-      O => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_2_2314
+      O => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_2_2316
     );
   MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_4 : LUT6
     generic map(
@@ -23765,12 +23829,12 @@ begin
     )
     port map (
       I0 => MIPS_SC_PROCESSOR_alu_out_17_Q,
-      I1 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_2_2314,
+      I1 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_2_2316,
       I2 => MIPS_SC_PROCESSOR_alu_out_18_Q,
       I3 => MIPS_SC_PROCESSOR_alu_out_19_Q,
       I4 => MIPS_SC_PROCESSOR_alu_out_20_Q,
       I5 => MIPS_SC_PROCESSOR_alu_out_21_Q,
-      O => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_3_2315
+      O => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_3_2317
     );
   command_0_IBUF : IBUF
     port map (
@@ -24742,7 +24806,7 @@ begin
       I2 => MIPS_SC_PROCESSOR_alu_y(0),
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I4 => MIPS_SC_PROCESSOR_rs(0),
-      O => N16
+      O => N18
     );
   MIPS_SC_PROCESSOR_inst_alu_BEGIN_ALU1B_Mmux_RES_AUX11_SW1 : LUT5
     generic map(
@@ -24754,7 +24818,7 @@ begin
       I2 => MIPS_SC_PROCESSOR_rs(0),
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
-      O => N17
+      O => N19
     );
   MIPS_SC_PROCESSOR_Mmux_data_to_write251 : LUT5
     generic map(
@@ -24763,8 +24827,8 @@ begin
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_mem_to_reg_443,
       I1 => dmem_data_in(31),
-      I2 => N20,
-      I3 => N19,
+      I2 => N22,
+      I3 => N21,
       I4 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_30_Q,
       O => MIPS_SC_PROCESSOR_data_to_write_31_Q
     );
@@ -24779,15 +24843,15 @@ begin
       I3 => MIPS_SC_PROCESSOR_alu_y(30),
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I5 => MIPS_SC_PROCESSOR_alu_y(29),
-      O => N23
+      O => N25
     );
   MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_6 : LUT6
     generic map(
       INIT => X"0000000300000005"
     )
     port map (
-      I0 => N26,
-      I1 => N27,
+      I0 => N28,
+      I1 => N29,
       I2 => MIPS_SC_PROCESSOR_alu_out_28_Q,
       I3 => MIPS_SC_PROCESSOR_alu_out_29_Q,
       I4 => MIPS_SC_PROCESSOR_alu_out_30_Q,
@@ -24802,7 +24866,7 @@ begin
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_branch_446,
       I1 => MIPS_SC_PROCESSOR_inst_pc_handle_branch_add_CAUX_7_Q,
       I2 => instr_data(6),
-      O => N29
+      O => N31
     );
   MIPS_SC_PROCESSOR_inst_pc_handle_Mmux_next_byte_addr271 : LUT6
     generic map(
@@ -24812,7 +24876,7 @@ begin
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_jump_441,
       I1 => instr_data(6),
       I2 => MIPS_SC_PROCESSOR_inst_pc_handle_pc_added(8),
-      I3 => N29,
+      I3 => N31,
       I4 => MIPS_SC_PROCESSOR_inst_alu_R_AUX(0),
       I5 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_5,
       O => MIPS_SC_PROCESSOR_pc_next(6)
@@ -24825,7 +24889,7 @@ begin
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_branch_446,
       I1 => MIPS_SC_PROCESSOR_inst_pc_handle_branch_add_CAUX_5_Q,
       I2 => instr_data(4),
-      O => N31
+      O => N33
     );
   MIPS_SC_PROCESSOR_inst_pc_handle_Mmux_next_byte_addr251 : LUT6
     generic map(
@@ -24835,7 +24899,7 @@ begin
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_jump_441,
       I1 => MIPS_SC_PROCESSOR_inst_pc_handle_pc_added(6),
       I2 => instr_data(4),
-      I3 => N31,
+      I3 => N33,
       I4 => MIPS_SC_PROCESSOR_inst_alu_R_AUX(0),
       I5 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_5,
       O => MIPS_SC_PROCESSOR_pc_next(4)
@@ -24848,7 +24912,7 @@ begin
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_jump_441,
       I1 => MIPS_SC_PROCESSOR_inst_pc_handle_pc_added(4),
       I2 => instr_data(2),
-      I3 => N33,
+      I3 => N35,
       I4 => MIPS_SC_PROCESSOR_inst_alu_R_AUX(0),
       I5 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_5,
       O => MIPS_SC_PROCESSOR_pc_next(2)
@@ -24861,7 +24925,7 @@ begin
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_jump_441,
       I1 => instr_data(7),
       I2 => MIPS_SC_PROCESSOR_inst_pc_handle_pc_added(9),
-      I3 => N35,
+      I3 => N37,
       I4 => MIPS_SC_PROCESSOR_inst_alu_R_AUX(0),
       I5 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_5,
       O => MIPS_SC_PROCESSOR_pc_next(7)
@@ -24874,7 +24938,7 @@ begin
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_jump_441,
       I1 => MIPS_SC_PROCESSOR_inst_pc_handle_pc_added(7),
       I2 => instr_data(5),
-      I3 => N37,
+      I3 => N39,
       I4 => MIPS_SC_PROCESSOR_inst_alu_R_AUX(0),
       I5 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_5,
       O => MIPS_SC_PROCESSOR_pc_next(5)
@@ -24887,7 +24951,7 @@ begin
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_jump_441,
       I1 => MIPS_SC_PROCESSOR_inst_pc_handle_pc_added(5),
       I2 => instr_data(3),
-      I3 => N39,
+      I3 => N41,
       I4 => MIPS_SC_PROCESSOR_inst_alu_R_AUX(0),
       I5 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_5,
       O => MIPS_SC_PROCESSOR_pc_next(3)
@@ -24900,7 +24964,7 @@ begin
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_jump_441,
       I1 => MIPS_SC_PROCESSOR_inst_pc_handle_pc_added(3),
       I2 => instr_data(1),
-      I3 => N41,
+      I3 => N43,
       I4 => MIPS_SC_PROCESSOR_inst_alu_R_AUX(0),
       I5 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_5,
       O => MIPS_SC_PROCESSOR_pc_next(1)
@@ -24975,9 +25039,9 @@ begin
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_mem_to_reg_443,
       I1 => dmem_data_in(0),
-      I2 => N43,
-      I3 => N16,
-      I4 => N17,
+      I2 => N45,
+      I3 => N18,
+      I4 => N19,
       I5 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_30_Q,
       O => MIPS_SC_PROCESSOR_data_to_write_0_Q
     );
@@ -24988,9 +25052,9 @@ begin
     port map (
       I0 => TDT4255_COM_read_addr(0),
       I1 => TDT4255_COM_processor_enable_157,
-      I2 => N43,
-      I3 => N16,
-      I4 => N17,
+      I2 => N45,
+      I3 => N18,
+      I4 => N19,
       I5 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_30_Q,
       O => dmem_address(0)
     );
@@ -25001,9 +25065,9 @@ begin
     port map (
       I0 => TDT4255_COM_write_addr(0),
       I1 => TDT4255_COM_processor_enable_157,
-      I2 => N43,
-      I3 => N16,
-      I4 => N17,
+      I2 => N45,
+      I3 => N18,
+      I4 => N19,
       I5 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_30_Q,
       O => dmem_address_wr(0)
     );
@@ -25018,7 +25082,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_alu_y(28),
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I5 => MIPS_SC_PROCESSOR_alu_y(27),
-      O => N50
+      O => N52
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_25_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW1 : LUT6
     generic map(
@@ -25031,7 +25095,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_alu_y(26),
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I5 => MIPS_SC_PROCESSOR_alu_y(25),
-      O => N54
+      O => N56
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_23_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW1 : LUT6
     generic map(
@@ -25044,7 +25108,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_alu_y(24),
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I5 => MIPS_SC_PROCESSOR_alu_y(23),
-      O => N58
+      O => N60
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_30_NEXT_ALU1B_Mmux_RES_AUX11 : LUT6
     generic map(
@@ -25053,9 +25117,9 @@ begin
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
       I1 => MIPS_SC_PROCESSOR_inst_register_file_RS_ADDR_4_REGS_31_31_wide_mux_98_OUT_29_Q,
-      I2 => N24,
-      I3 => N22,
-      I4 => N23,
+      I2 => N26,
+      I3 => N24,
+      I4 => N25,
       I5 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_28_Q,
       O => MIPS_SC_PROCESSOR_alu_out_30_Q
     );
@@ -25096,7 +25160,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_rs(29),
       I4 => MIPS_SC_PROCESSOR_alu_y(29),
       I5 => MIPS_SC_PROCESSOR_rs(30),
-      O => N61
+      O => N63
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_30_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW1 : LUT6
     generic map(
@@ -25109,7 +25173,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_rs(29),
       I4 => MIPS_SC_PROCESSOR_alu_y(29),
       I5 => MIPS_SC_PROCESSOR_rs(30),
-      O => N62
+      O => N64
     );
   MIPS_SC_PROCESSOR_inst_alu_BEGIN_ALU1B_Mmux_RES_AUX12 : LUT6
     generic map(
@@ -25117,10 +25181,10 @@ begin
     )
     port map (
       I0 => MIPS_SC_PROCESSOR_alu_y(31),
-      I1 => N16,
-      I2 => N17,
-      I3 => N61,
-      I4 => N62,
+      I1 => N18,
+      I2 => N19,
+      I3 => N63,
+      I4 => N64,
       I5 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_28_Q,
       O => MIPS_SC_PROCESSOR_inst_alu_R_AUX(0)
     );
@@ -25131,9 +25195,9 @@ begin
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
       I1 => MIPS_SC_PROCESSOR_inst_register_file_RS_ADDR_4_REGS_31_31_wide_mux_98_OUT_27_Q,
-      I2 => N51,
-      I3 => N49,
-      I4 => N50,
+      I2 => N53,
+      I3 => N51,
+      I4 => N52,
       I5 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_26_Q,
       O => MIPS_SC_PROCESSOR_alu_out_28_Q
     );
@@ -25144,9 +25208,9 @@ begin
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
       I1 => MIPS_SC_PROCESSOR_inst_register_file_RS_ADDR_4_REGS_31_31_wide_mux_98_OUT_25_Q,
-      I2 => N55,
-      I3 => N53,
-      I4 => N54,
+      I2 => N57,
+      I3 => N55,
+      I4 => N56,
       I5 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_24_Q,
       O => MIPS_SC_PROCESSOR_alu_out_26_Q
     );
@@ -25157,9 +25221,9 @@ begin
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
       I1 => MIPS_SC_PROCESSOR_inst_register_file_RS_ADDR_4_REGS_31_31_wide_mux_98_OUT_23_Q,
-      I2 => N59,
-      I3 => N57,
-      I4 => N58,
+      I2 => N61,
+      I3 => N59,
+      I4 => N60,
       I5 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_22_Q,
       O => MIPS_SC_PROCESSOR_alu_out_24_Q
     );
@@ -25174,7 +25238,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I4 => MIPS_SC_PROCESSOR_rs(31),
       I5 => MIPS_SC_PROCESSOR_alu_y(27),
-      O => N64
+      O => N66
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_27_NEXT_ALU1B_Mmux_RES_AUX11_SW1 : LUT6
     generic map(
@@ -25187,7 +25251,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_rs(31),
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I5 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
-      O => N65
+      O => N67
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_27_NEXT_ALU1B_Mmux_RES_AUX11_SW2 : LUT6
     generic map(
@@ -25200,29 +25264,29 @@ begin
       I3 => MIPS_SC_PROCESSOR_rs(31),
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I5 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
-      O => N66
+      O => N68
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_30_NEXT_ALU1B_Mmux_RES_AUX11_SW0 : LUT4
     generic map(
       INIT => X"AEA2"
     )
     port map (
-      I0 => N22,
+      I0 => N24,
       I1 => MIPS_SC_PROCESSOR_inst_register_file_RS_ADDR_4_REGS_31_31_wide_mux_98_OUT_29_Q,
       I2 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
-      I3 => N23,
-      O => N68
+      I3 => N25,
+      O => N70
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_30_NEXT_ALU1B_Mmux_RES_AUX11_SW1 : LUT4
     generic map(
       INIT => X"AEA2"
     )
     port map (
-      I0 => N23,
+      I0 => N25,
       I1 => MIPS_SC_PROCESSOR_inst_register_file_RS_ADDR_4_REGS_31_31_wide_mux_98_OUT_29_Q,
       I2 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
-      I3 => N24,
-      O => N69
+      I3 => N26,
+      O => N71
     );
   MIPS_SC_PROCESSOR_Mmux_data_to_write241 : LUT5
     generic map(
@@ -25231,8 +25295,8 @@ begin
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_mem_to_reg_443,
       I1 => dmem_data_in(30),
-      I2 => N68,
-      I3 => N69,
+      I2 => N70,
+      I3 => N71,
       I4 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_28_Q,
       O => MIPS_SC_PROCESSOR_data_to_write_30_Q
     );
@@ -25243,8 +25307,8 @@ begin
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_control_unit_mem_to_reg_443,
       I1 => dmem_data_in(29),
-      I2 => N72,
-      I3 => N71,
+      I2 => N74,
+      I3 => N73,
       I4 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_28_Q,
       O => MIPS_SC_PROCESSOR_data_to_write_29_Q
     );
@@ -25254,12 +25318,12 @@ begin
     )
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
-      I1 => N65,
-      I2 => N64,
+      I1 => N67,
+      I2 => N66,
       I3 => MIPS_SC_PROCESSOR_alu_out_22_Q,
       I4 => MIPS_SC_PROCESSOR_alu_out_24_Q,
       I5 => MIPS_SC_PROCESSOR_alu_out_23_Q,
-      O => N74
+      O => N76
     );
   MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_5_SW1 : LUT6
     generic map(
@@ -25267,25 +25331,25 @@ begin
     )
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
-      I1 => N66,
-      I2 => N64,
+      I1 => N68,
+      I2 => N66,
       I3 => MIPS_SC_PROCESSOR_alu_out_22_Q,
       I4 => MIPS_SC_PROCESSOR_alu_out_24_Q,
       I5 => MIPS_SC_PROCESSOR_alu_out_23_Q,
-      O => N75
+      O => N77
     );
   MIPS_SC_PROCESSOR_inst_alu_LAST_ALU1B_Mmux_RES_AUX11_SW2 : LUT6
     generic map(
       INIT => X"FFFFFFDDFFFFFDFD"
     )
     port map (
-      I0 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_3_2315,
+      I0 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_3_2317,
       I1 => MIPS_SC_PROCESSOR_alu_out_25_Q,
-      I2 => N74,
-      I3 => N75,
+      I2 => N76,
+      I3 => N77,
       I4 => MIPS_SC_PROCESSOR_alu_out_26_Q,
       I5 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_26_Q,
-      O => N26
+      O => N28
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_21_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW1 : LUT6
     generic map(
@@ -25298,7 +25362,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_alu_y(22),
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I5 => MIPS_SC_PROCESSOR_alu_y(21),
-      O => N78
+      O => N80
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_22_NEXT_ALU1B_Mmux_RES_AUX11 : LUT6
     generic map(
@@ -25307,9 +25371,9 @@ begin
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
       I1 => MIPS_SC_PROCESSOR_inst_register_file_RS_ADDR_4_REGS_31_31_wide_mux_98_OUT_21_Q,
-      I2 => N79,
-      I3 => N77,
-      I4 => N78,
+      I2 => N81,
+      I3 => N79,
+      I4 => N80,
       I5 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_20_Q,
       O => MIPS_SC_PROCESSOR_alu_out_22_Q
     );
@@ -25324,7 +25388,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_alu_y(20),
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I5 => MIPS_SC_PROCESSOR_alu_y(19),
-      O => N82
+      O => N84
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_20_NEXT_ALU1B_Mmux_RES_AUX11 : LUT6
     generic map(
@@ -25333,9 +25397,9 @@ begin
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
       I1 => MIPS_SC_PROCESSOR_inst_register_file_RS_ADDR_4_REGS_31_31_wide_mux_98_OUT_19_Q,
-      I2 => N83,
-      I3 => N81,
-      I4 => N82,
+      I2 => N85,
+      I3 => N83,
+      I4 => N84,
       I5 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_18_Q,
       O => MIPS_SC_PROCESSOR_alu_out_20_Q
     );
@@ -25365,14 +25429,14 @@ begin
     );
   MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1 : LD
     port map (
-      D => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_D_2499,
-      G => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_G_2498,
+      D => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_D_2501,
+      G => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_G_2500,
       Q => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439
     );
   MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2 : LD
     port map (
-      D => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_D_2500,
-      G => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_G_2498,
+      D => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_D_2502,
+      G => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_G_2500,
       Q => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438
     );
   MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_G : LUT3
@@ -25381,24 +25445,24 @@ begin
     )
     port map (
       I0 => status_0_OBUF_285,
-      I1 => MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_34_o,
-      I2 => MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_33_o,
-      O => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_G_2501
+      I1 => MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_35_o,
+      I2 => MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_34_o,
+      O => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_G_2503
     );
   MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_D : LUT3
     generic map(
       INIT => X"54"
     )
     port map (
-      I0 => MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_34_o,
-      I1 => MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_33_o,
+      I0 => MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_35_o,
+      I1 => MIPS_SC_PROCESSOR_inst_alu_control_GND_56_o_PWR_25_o_AND_34_o,
       I2 => status_0_OBUF_285,
-      O => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_D_2502
+      O => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_D_2504
     );
   MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0 : LD
     port map (
-      D => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_D_2502,
-      G => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_G_2501,
+      D => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_D_2504,
+      G => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_G_2503,
       Q => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440
     );
   MIPS_SC_PROCESSOR_inst_register_file_Mmux_RS281 : LUT4
@@ -25489,7 +25553,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_rs(27),
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I5 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
-      O => N88
+      O => N90
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_27_NEXT_ALU1B_Mmux_RES_AUX11_SW5 : LUT6
     generic map(
@@ -25502,7 +25566,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_rs(27),
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I5 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
-      O => N89
+      O => N91
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_13_NEXT_ALU1B_FULLADDER_ALU_COUT1 : LUT5
     generic map(
@@ -25599,12 +25663,12 @@ begin
     )
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
-      I1 => N88,
-      I2 => N64,
+      I1 => N90,
+      I2 => N66,
       I3 => MIPS_SC_PROCESSOR_alu_out_22_Q,
-      I4 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_3_2315,
+      I4 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_3_2317,
       I5 => MIPS_SC_PROCESSOR_alu_out_23_Q,
-      O => N91
+      O => N93
     );
   MIPS_SC_PROCESSOR_inst_alu_LAST_ALU1B_Mmux_RES_AUX11_SW3_SW1 : LUT6
     generic map(
@@ -25612,12 +25676,12 @@ begin
     )
     port map (
       I0 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
-      I1 => N89,
-      I2 => N64,
+      I1 => N91,
+      I2 => N66,
       I3 => MIPS_SC_PROCESSOR_alu_out_22_Q,
-      I4 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_3_2315,
+      I4 => MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_3_2317,
       I5 => MIPS_SC_PROCESSOR_alu_out_23_Q,
-      O => N92
+      O => N94
     );
   MIPS_SC_PROCESSOR_inst_alu_LAST_ALU1B_Mmux_RES_AUX11_SW3 : LUT6
     generic map(
@@ -25625,12 +25689,12 @@ begin
     )
     port map (
       I0 => MIPS_SC_PROCESSOR_alu_out_24_Q,
-      I1 => N91,
-      I2 => N92,
+      I1 => N93,
+      I2 => N94,
       I3 => MIPS_SC_PROCESSOR_alu_out_25_Q,
       I4 => MIPS_SC_PROCESSOR_alu_out_26_Q,
       I5 => MIPS_SC_PROCESSOR_inst_alu_COUT_AUX_26_Q,
-      O => N27
+      O => N29
     );
   MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_7_SW3 : LUT5
     generic map(
@@ -25642,7 +25706,7 @@ begin
       I2 => MIPS_SC_PROCESSOR_inst_pc_handle_branch_add_CAUX_7_Q,
       I3 => instr_data(6),
       I4 => MIPS_SC_PROCESSOR_inst_pc_handle_pc_added(8),
-      O => N35
+      O => N37
     );
   MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_7_SW4 : LUT5
     generic map(
@@ -25654,7 +25718,7 @@ begin
       I2 => MIPS_SC_PROCESSOR_inst_pc_handle_branch_add_CAUX_5_Q,
       I3 => instr_data(4),
       I4 => MIPS_SC_PROCESSOR_inst_pc_handle_pc_added(6),
-      O => N37
+      O => N39
     );
   Mmux_dmem_write_data311 : LUT6
     generic map(
@@ -25783,7 +25847,7 @@ begin
       I2 => MIPS_SC_PROCESSOR_inst_pc_handle_branch_add_CAUX_3_Q,
       I3 => instr_data(2),
       I4 => MIPS_SC_PROCESSOR_inst_pc_handle_pc_added(4),
-      O => N39
+      O => N41
     );
   MIPS_SC_PROCESSOR_inst_alu_FLAGS_Zero_31_7_SW6 : LUT4
     generic map(
@@ -25794,7 +25858,7 @@ begin
       I1 => instr_data(1),
       I2 => MIPS_SC_PROCESSOR_inst_pc_address(0),
       I3 => instr_data(0),
-      O => N41
+      O => N43
     );
   MIPS_SC_PROCESSOR_Mmux_alu_y51 : LUT4
     generic map(
@@ -26360,7 +26424,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I5 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
-      O => N83
+      O => N85
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_23_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW2 : LUT6
     generic map(
@@ -26373,7 +26437,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I5 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
-      O => N59
+      O => N61
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_21_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW2 : LUT6
     generic map(
@@ -26386,7 +26450,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I5 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
-      O => N79
+      O => N81
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_25_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW2 : LUT6
     generic map(
@@ -26399,7 +26463,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I5 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
-      O => N55
+      O => N57
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_29_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW2 : LUT6
     generic map(
@@ -26412,7 +26476,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I5 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
-      O => N24
+      O => N26
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_27_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW2 : LUT6
     generic map(
@@ -26425,7 +26489,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I5 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
-      O => N51
+      O => N53
     );
   MIPS_SC_PROCESSOR_inst_alu_LAST_ALU1B_Mmux_RES_AUX11_SW1 : LUT6
     generic map(
@@ -26438,7 +26502,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I5 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
-      O => N20
+      O => N22
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_29_NEXT_ALU1B_Mmux_RES_AUX11_SW1 : LUT6
     generic map(
@@ -26451,7 +26515,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_438,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I5 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
-      O => N72
+      O => N74
     );
   TDT4255_COM_Mmux_state_2_read_data_31_wide_mux_20_OUT251 : LUT4
     generic map(
@@ -26816,7 +26880,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
       I5 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
-      O => N81
+      O => N83
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_23_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW0 : LUT6
     generic map(
@@ -26829,7 +26893,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
       I5 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
-      O => N57
+      O => N59
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_21_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW0 : LUT6
     generic map(
@@ -26842,7 +26906,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
       I5 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
-      O => N77
+      O => N79
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_25_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW0 : LUT6
     generic map(
@@ -26855,7 +26919,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
       I5 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
-      O => N53
+      O => N55
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_29_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW0 : LUT6
     generic map(
@@ -26868,7 +26932,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
       I5 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
-      O => N22
+      O => N24
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_27_NEXT_ALU1B_FULLADDER_ALU_COUT1_SW0 : LUT6
     generic map(
@@ -26881,7 +26945,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
       I5 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
-      O => N49
+      O => N51
     );
   MIPS_SC_PROCESSOR_inst_alu_LAST_ALU1B_Mmux_RES_AUX11_SW0 : LUT6
     generic map(
@@ -26894,7 +26958,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
       I5 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
-      O => N19
+      O => N21
     );
   MIPS_SC_PROCESSOR_inst_alu_GEN_ALU_29_NEXT_ALU1B_Mmux_RES_AUX11_SW0 : LUT6
     generic map(
@@ -26907,7 +26971,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_439,
       I4 => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_0_440,
       I5 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
-      O => N71
+      O => N73
     );
   MIPS_SC_PROCESSOR_inst_register_file_Mmux_RS33 : LUT6
     generic map(
@@ -27078,19 +27142,6 @@ begin
       I5 => instr_data(21),
       O => MIPS_SC_PROCESSOR_rs(27)
     );
-  MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_31_o_5_2 : LUT6
-    generic map(
-      INIT => X"0000000800000000"
-    )
-    port map (
-      I0 => instr_data(27),
-      I1 => instr_data(31),
-      I2 => instr_data(29),
-      I3 => instr_data(28),
-      I4 => instr_data(30),
-      I5 => instr_data(26),
-      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_31_o
-    );
   MIPS_SC_PROCESSOR_inst_pc_handle_pc_add_GEN_ADDER_5_NEXT_FA_COUT1 : LUT4
     generic map(
       INIT => X"8000"
@@ -27149,7 +27200,7 @@ begin
       I3 => instr_data(15),
       I4 => MIPS_SC_PROCESSOR_inst_register_file_GND_98_o_RS_ADDR_4_equal_98_o,
       I5 => MIPS_SC_PROCESSOR_inst_register_file_RS_ADDR_4_REGS_31_31_wide_mux_98_OUT_31_Q,
-      O => N43
+      O => N45
     );
   MIPS_SC_PROCESSOR_inst_register_file_Mmux_RS131 : LUT6
     generic map(
@@ -27266,7 +27317,7 @@ begin
       I3 => MIPS_SC_PROCESSOR_inst_pc_address(1),
       I4 => instr_data(1),
       I5 => instr_data(0),
-      O => N33
+      O => N35
     );
   MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_D : LUT5
     generic map(
@@ -27278,7 +27329,7 @@ begin
       I2 => MIPS_SC_PROCESSOR_inst_control_unit_branch_446,
       I3 => instr_data(2),
       I4 => instr_data(1),
-      O => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_D_2500
+      O => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_2_D_2502
     );
   MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_G : LUT6
     generic map(
@@ -27291,7 +27342,7 @@ begin
       I3 => instr_data(0),
       I4 => instr_data(2),
       I5 => MIPS_SC_PROCESSOR_inst_control_unit_alu_op(1),
-      O => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_G_2498
+      O => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_G_2500
     );
   MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_D : LUT6
     generic map(
@@ -27304,33 +27355,7 @@ begin
       I3 => instr_data(1),
       I4 => instr_data(3),
       I5 => MIPS_SC_PROCESSOR_inst_control_unit_alu_op(1),
-      O => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_D_2499
-    );
-  MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_33_o_5_1 : LUT6
-    generic map(
-      INIT => X"0000008000000000"
-    )
-    port map (
-      I0 => instr_data(31),
-      I1 => instr_data(29),
-      I2 => instr_data(27),
-      I3 => instr_data(28),
-      I4 => instr_data(30),
-      I5 => instr_data(26),
-      O => MIPS_SC_PROCESSOR_inst_control_unit_GND_11_o_GND_11_o_Select_33_o
-    );
-  MIPS_SC_PROCESSOR_inst_control_unit_n0064 : LUT6
-    generic map(
-      INIT => X"0100000100000001"
-    )
-    port map (
-      I0 => instr_data(29),
-      I1 => instr_data(28),
-      I2 => instr_data(30),
-      I3 => instr_data(31),
-      I4 => instr_data(26),
-      I5 => instr_data(27),
-      O => MIPS_SC_PROCESSOR_inst_control_unit_n0064_2258
+      O => MIPS_SC_PROCESSOR_inst_alu_control_alu_control_input_1_D_2501
     );
   clk_BUFGP : BUFGP
     port map (
@@ -27693,7 +27718,7 @@ begin
       I0 => MIPS_SC_PROCESSOR_Mmux_data_to_write2011,
       I1 => dmem_data_in(27),
       S => MIPS_SC_PROCESSOR_inst_control_unit_mem_to_reg_443,
-      O => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2508
+      O => MIPS_SC_PROCESSOR_Mmux_data_to_write2011_f7_2510
     );
 
 end Structure;

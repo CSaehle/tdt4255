@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\chribru\Desktop\GitHub\tdt4255\processor1\toplevel1.ncd
+OUTFILE=C:\Users\chribru\Desktop\GitHub\tdt4255\processor1\toplevel1.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=C:\Users\chribru\Desktop\GitHub\tdt4255\processor1
+LICENSE=ISE
+USER_INFO=174154421_208900020_603

@@ -1,0 +1,34 @@
+##############################################################################
+## Filename:          C:\Users\chribru\Desktop\GitHub\tdt4255\processor1\toplevel1\pcores/toplevel1_v1_00_a/data/toplevel1_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Wed Oct 03 20:48:31 2012 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a proc_common_pkg vhdl
+lib proc_common_v3_00_a ipif_pkg vhdl
+lib proc_common_v3_00_a or_muxcy vhdl
+lib proc_common_v3_00_a or_gate128 vhdl
+lib proc_common_v3_00_a family_support vhdl
+lib proc_common_v3_00_a pselect_f vhdl
+lib proc_common_v3_00_a counter_f vhdl
+lib plbv46_slave_single_v1_01_a plb_address_decoder vhdl
+lib plbv46_slave_single_v1_01_a plb_slave_attachment vhdl
+lib plbv46_slave_single_v1_01_a plbv46_slave_single vhdl
+lib toplevel1_v1_00_a user_logic vhdl
+lib toplevel1_v1_00_a toplevel1 vhdl
+lib toplevel1_v1_00_a adder vhdl
+lib toplevel1_v1_00_a alu vhdl
+lib toplevel1_v1_00_a alu_1bit vhdl
+lib toplevel1_v1_00_a alu_control vhdl
+lib toplevel1_v1_00_a com vhdl
+lib toplevel1_v1_00_a control_unit vhdl
+lib toplevel1_v1_00_a full_adder vhdl
+lib toplevel1_v1_00_a memory vhdl
+lib toplevel1_v1_00_a mips_constant_pkg vhdl
+lib toplevel1_v1_00_a pc vhdl
+lib toplevel1_v1_00_a pc_handle vhdl
+lib toplevel1_v1_00_a processor vhdl
+lib toplevel1_v1_00_a register_file vhdl
+lib toplevel1_v1_00_a shift_two vhdl
+lib toplevel1_v1_00_a sign_extend vhdl
+lib toplevel1_v1_00_a toplevel vhdl

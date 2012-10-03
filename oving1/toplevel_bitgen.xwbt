@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=Z:\github\tdt4255\oving1\toplevel.ncd
-OUTFILE=Z:\github\tdt4255\oving1\toplevel.bit
+INFILE=C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\toplevel.ncd
+OUTFILE=C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\toplevel.bit
 FAMILY=Spartan6
 PART=xc6slx16-2csg324
-WORKINGDIR=Z:\github\tdt4255\oving1
+WORKINGDIR=C:\Users\chribru\Desktop\GitHub\tdt4255\oving1
 LICENSE=ISE
-USER_INFO=174154421_206686269_008
+USER_INFO=174154421_208900020_603

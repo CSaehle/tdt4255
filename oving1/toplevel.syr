@@ -4,13 +4,13 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: toplevel.prj
 
@@ -106,51 +106,51 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "\github\tdt4255\oving1\full_adder.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\full_adder.vhd" into library work
 Parsing entity <full_adder>.
 Parsing architecture <Behavioral> of entity <full_adder>.
-Parsing VHDL file "\github\tdt4255\oving1\shift_two.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\shift_two.vhd" into library work
 Parsing entity <shift_two>.
 Parsing architecture <Behavioral> of entity <shift_two>.
-Parsing VHDL file "\github\tdt4255\oving1\mips_constant_pkg.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\mips_constant_pkg.vhd" into library work
 Parsing package <MIPS_CONSTANT_PKG>.
-Parsing VHDL file "\github\tdt4255\oving1\alu_1bit.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\alu_1bit.vhd" into library work
 Parsing entity <alu_1bit>.
 Parsing architecture <Behavioral> of entity <alu_1bit>.
-Parsing VHDL file "\github\tdt4255\oving1\adder.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\adder.vhd" into library work
 Parsing entity <adder>.
 Parsing architecture <Behavioral> of entity <adder>.
-Parsing VHDL file "\github\tdt4255\oving1\sign_extend.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\sign_extend.vhd" into library work
 Parsing entity <sign_extend>.
 Parsing architecture <Behavioral> of entity <sign_extend>.
-Parsing VHDL file "\github\tdt4255\oving1\register_file.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\register_file.vhd" into library work
 Parsing entity <register_file>.
 Parsing architecture <Behavioral> of entity <register_file>.
-Parsing VHDL file "\github\tdt4255\oving1\pc_handle.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\pc_handle.vhd" into library work
 Parsing entity <pc_handle>.
 Parsing architecture <Behavioral> of entity <pc_handle>.
-Parsing VHDL file "\github\tdt4255\oving1\pc.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\pc.vhd" into library work
 Parsing entity <pc>.
 Parsing architecture <Behavioral> of entity <pc>.
-Parsing VHDL file "\github\tdt4255\oving1\control_unit.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\control_unit.vhd" into library work
 Parsing entity <control_unit>.
 Parsing architecture <Behavioral> of entity <control_unit>.
-Parsing VHDL file "\github\tdt4255\oving1\alu_control.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\alu_control.vhd" into library work
 Parsing entity <alu_control>.
 Parsing architecture <Behavioral> of entity <alu_control>.
-Parsing VHDL file "\github\tdt4255\oving1\alu.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\alu.vhd" into library work
 Parsing entity <alu>.
 Parsing architecture <Behavioral> of entity <alu>.
-Parsing VHDL file "\github\tdt4255\oving1\processor.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" into library work
 Parsing entity <processor>.
 Parsing architecture <Behavioral> of entity <processor>.
-Parsing VHDL file "\github\tdt4255\oving1\memory.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\memory.vhd" into library work
 Parsing entity <memory>.
 Parsing architecture <Behavioral> of entity <memory>.
-Parsing VHDL file "\github\tdt4255\oving1\com.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\com.vhd" into library work
 Parsing entity <com>.
 Parsing architecture <Behavioral> of entity <com>.
-Parsing VHDL file "\github\tdt4255\oving1\toplevel.vhd" into library work
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\toplevel.vhd" into library work
 Parsing entity <toplevel>.
 Parsing architecture <Behavioral> of entity <toplevel>.
 
@@ -161,7 +161,7 @@ Parsing architecture <Behavioral> of entity <toplevel>.
 Elaborating entity <toplevel> (architecture <Behavioral>) with generics from library <work>.
 
 Elaborating entity <com> (architecture <Behavioral>) with generics from library <work>.
-INFO:HDLCompiler:679 - "\github\tdt4255\oving1\com.vhd" Line 231. Case statement is complete. others clause is never selected
+INFO:HDLCompiler:679 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\com.vhd" Line 231. Case statement is complete. others clause is never selected
 
 Elaborating entity <memory> (architecture <Behavioral>) with generics from library <work>.
 
@@ -180,8 +180,8 @@ Elaborating entity <alu_control> (architecture <Behavioral>) from library <work>
 Elaborating entity <pc> (architecture <Behavioral>) from library <work>.
 
 Elaborating entity <pc_handle> (architecture <Behavioral>) from library <work>.
-WARNING:HDLCompiler:871 - "\github\tdt4255\oving1\pc_handle.vhd" Line 62: Using initial value "00000000000000000000000000000100" for four since it is never assigned
-WARNING:HDLCompiler:871 - "\github\tdt4255\oving1\pc_handle.vhd" Line 63: Using initial value '0' for zero1b since it is never assigned
+WARNING:HDLCompiler:871 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\pc_handle.vhd" Line 62: Using initial value "00000000000000000000000000000100" for four since it is never assigned
+WARNING:HDLCompiler:871 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\pc_handle.vhd" Line 63: Using initial value '0' for zero1b since it is never assigned
 
 Elaborating entity <adder> (architecture <Behavioral>) with generics from library <work>.
 
@@ -196,7 +196,7 @@ Elaborating entity <sign_extend> (architecture <Behavioral>) from library <work>
 =========================================================================
 
 Synthesizing Unit <toplevel>.
-    Related source file is "/github/tdt4255/oving1/toplevel.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/toplevel.vhd".
         MEM_ADDR_BUS = 32
         MEM_DATA_BUS = 32
     Summary:
@@ -204,7 +204,7 @@ Synthesizing Unit <toplevel>.
 Unit <toplevel> synthesized.
 
 Synthesizing Unit <com>.
-    Related source file is "/github/tdt4255/oving1/com.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/com.vhd".
         MEM_ADDR_BUS = 32
         MEM_DATA_BUS = 32
         INPUT_BUS_WIDTH = 32
@@ -238,7 +238,7 @@ Synthesizing Unit <com>.
 Unit <com> synthesized.
 
 Synthesizing Unit <memory>.
-    Related source file is "/github/tdt4255/oving1/memory.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/memory.vhd".
         N = 32
         M = 8
 WARNING:Xst:647 - Input <W_ADDR<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
@@ -251,12 +251,12 @@ WARNING:Xst:647 - Input <ADDR<31:8>> is never used. This port will be preserved 
 Unit <memory> synthesized.
 
 Synthesizing Unit <processor>.
-    Related source file is "/github/tdt4255/oving1/processor.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd".
 WARNING:Xst:647 - Input <imem_data_in<10:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3010 - "/github/tdt4255/oving1/processor.vhd" line 211: Output port <mem_read> of the instance <inst_control_unit> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/processor.vhd" line 225: Output port <FLAGS_Carry> of the instance <inst_alu> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/processor.vhd" line 225: Output port <FLAGS_Overflow> of the instance <inst_alu> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/processor.vhd" line 225: Output port <FLAGS_Negative> of the instance <inst_alu> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd" line 211: Output port <mem_read> of the instance <inst_control_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd" line 225: Output port <FLAGS_Carry> of the instance <inst_alu> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd" line 225: Output port <FLAGS_Overflow> of the instance <inst_alu> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/processor.vhd" line 225: Output port <FLAGS_Negative> of the instance <inst_alu> is unconnected or connected to loadless signal.
     Found 2-bit register for signal <current_state>.
     Found finite state machine <FSM_1> for signal <current_state>.
     -----------------------------------------------------------------------
@@ -275,7 +275,7 @@ INFO:Xst:3010 - "/github/tdt4255/oving1/processor.vhd" line 225: Output port <FL
 Unit <processor> synthesized.
 
 Synthesizing Unit <control_unit>.
-    Related source file is "/github/tdt4255/oving1/control_unit.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/control_unit.vhd".
 WARNING:Xst:737 - Found 1-bit latch for signal <alu_src>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <mem_to_reg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <reg_write>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -291,56 +291,56 @@ WARNING:Xst:737 - Found 1-bit latch for signal <reg_dst>. Latches may be generat
 Unit <control_unit> synthesized.
 
 Synthesizing Unit <alu>.
-    Related source file is "/github/tdt4255/oving1/alu.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd".
         N = 32
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 71: Output port <SET> of the instance <BEGIN_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[1].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[2].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[3].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[4].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[5].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[6].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[7].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[8].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[9].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[10].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[11].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[12].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[13].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[14].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[15].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[16].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[17].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[18].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[19].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[20].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[21].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[22].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[23].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[24].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[25].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[26].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[27].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[28].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[29].NEXT_ALU1B> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[30].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 71: Output port <SET> of the instance <BEGIN_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[1].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[2].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[3].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[4].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[5].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[6].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[7].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[8].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[9].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[10].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[11].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[12].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[13].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[14].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[15].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[16].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[17].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[18].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[19].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[20].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[21].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[22].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[23].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[24].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[25].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[26].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[27].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[28].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[29].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[30].NEXT_ALU1B> is unconnected or connected to loadless signal.
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <alu> synthesized.
 
 Synthesizing Unit <alu_1bit>.
-    Related source file is "/github/tdt4255/oving1/alu_1bit.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/alu_1bit.vhd".
     Summary:
 	inferred   5 Multiplexer(s).
 Unit <alu_1bit> synthesized.
 
 Synthesizing Unit <full_adder>.
-    Related source file is "/github/tdt4255/oving1/full_adder.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/full_adder.vhd".
     Summary:
 Unit <full_adder> synthesized.
 
 Synthesizing Unit <alu_control>.
-    Related source file is "/github/tdt4255/oving1/alu_control.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/alu_control.vhd".
 WARNING:Xst:647 - Input <funct<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:737 - Found 1-bit latch for signal <alu_control_input<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <alu_control_input<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -351,37 +351,37 @@ WARNING:Xst:737 - Found 1-bit latch for signal <alu_control_input<0>>. Latches m
 Unit <alu_control> synthesized.
 
 Synthesizing Unit <pc>.
-    Related source file is "/github/tdt4255/oving1/pc.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/pc.vhd".
     Found 32-bit register for signal <address>.
     Summary:
 	inferred  32 D-type flip-flop(s).
 Unit <pc> synthesized.
 
 Synthesizing Unit <pc_handle>.
-    Related source file is "/github/tdt4255/oving1/pc_handle.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/pc_handle.vhd".
 WARNING:Xst:647 - Input <pc_current<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-INFO:Xst:3010 - "/github/tdt4255/oving1/pc_handle.vhd" line 93: Output port <COUT> of the instance <pc_add> is unconnected or connected to loadless signal.
-INFO:Xst:3010 - "/github/tdt4255/oving1/pc_handle.vhd" line 108: Output port <COUT> of the instance <branch_add> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/pc_handle.vhd" line 93: Output port <COUT> of the instance <pc_add> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "/users/chribru/desktop/github/tdt4255/oving1/pc_handle.vhd" line 108: Output port <COUT> of the instance <branch_add> is unconnected or connected to loadless signal.
     Summary:
 	inferred   2 Multiplexer(s).
 Unit <pc_handle> synthesized.
 
 Synthesizing Unit <adder>.
-    Related source file is "/github/tdt4255/oving1/adder.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/adder.vhd".
         N = 32
     Summary:
 	no macro.
 Unit <adder> synthesized.
 
 Synthesizing Unit <shift_two>.
-    Related source file is "/github/tdt4255/oving1/shift_two.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/shift_two.vhd".
 WARNING:Xst:647 - Input <in_addr<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Summary:
 	no macro.
 Unit <shift_two> synthesized.
 
 Synthesizing Unit <register_file>.
-    Related source file is "/github/tdt4255/oving1/register_file.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/register_file.vhd".
     Found 32-bit register for signal <REGS<30>>.
     Found 32-bit register for signal <REGS<29>>.
     Found 32-bit register for signal <REGS<28>>.
@@ -424,7 +424,7 @@ INFO:Xst:3019 - HDL ADVISOR - 1024 flip-flops were inferred for signal <REGS>. Y
 Unit <register_file> synthesized.
 
 Synthesizing Unit <sign_extend>.
-    Related source file is "/github/tdt4255/oving1/sign_extend.vhd".
+    Related source file is "/users/chribru/desktop/github/tdt4255/oving1/sign_extend.vhd".
     Summary:
 	no macro.
 Unit <sign_extend> synthesized.
@@ -690,13 +690,13 @@ Top Level Output File Name         : toplevel.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1068
+# BELS                             : 1070
 #      GND                         : 1
-#      LUT2                        : 7
+#      LUT2                        : 8
 #      LUT3                        : 56
 #      LUT4                        : 100
-#      LUT5                        : 23
-#      LUT6                        : 839
+#      LUT5                        : 22
+#      LUT6                        : 841
 #      MUXF7                       : 41
 #      VCC                         : 1
 # FlipFlops/Latches                : 1165
@@ -721,14 +721,14 @@ Selected Device : 6slx16csg324-2
 
 Slice Logic Utilization: 
  Number of Slice Registers:            1165  out of  18224     6%  
- Number of Slice LUTs:                 1025  out of   9112    11%  
-    Number used as Logic:              1025  out of   9112    11%  
+ Number of Slice LUTs:                 1027  out of   9112    11%  
+    Number used as Logic:              1027  out of   9112    11%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   2094
-   Number with an unused Flip Flop:     929  out of   2094    44%  
-   Number with an unused LUT:          1069  out of   2094    51%  
-   Number of fully used LUT-FF pairs:    96  out of   2094     4%  
+ Number of LUT Flip Flop pairs used:   2095
+   Number with an unused Flip Flop:     930  out of   2095    44%  
+   Number with an unused LUT:          1068  out of   2095    50%  
+   Number of fully used LUT-FF pairs:    97  out of   2095     4%  
    Number of unique control sets:        43
 
 IO Utilization: 
@@ -762,8 +762,8 @@ Clock Information:
 Clock Signal                                                                                                        | Clock buffer(FF name)                                          | Load  |
 --------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------+-------+
 clk                                                                                                                 | BUFGP                                                          | 1156  |
-MIPS_SC_PROCESSOR/inst_control_unit/_n0057(MIPS_SC_PROCESSOR/inst_control_unit/out1:O)                              | NONE(*)(MIPS_SC_PROCESSOR/inst_control_unit/reg_write)         | 6     |
-MIPS_SC_PROCESSOR/inst_control_unit/_n0064(MIPS_SC_PROCESSOR/inst_control_unit/_n0064:O)                            | NONE(*)(MIPS_SC_PROCESSOR/inst_control_unit/reg_dst)           | 2     |
+MIPS_SC_PROCESSOR/inst_control_unit/_n0062(MIPS_SC_PROCESSOR/inst_control_unit/out:O)                               | NONE(*)(MIPS_SC_PROCESSOR/inst_control_unit/reg_write)         | 6     |
+MIPS_SC_PROCESSOR/inst_control_unit/_n0069(MIPS_SC_PROCESSOR/inst_control_unit/_n00691:O)                           | NONE(*)(MIPS_SC_PROCESSOR/inst_control_unit/reg_dst)           | 2     |
 MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_1_G(MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_1_G:O)| NONE(*)(MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_1)| 2     |
 MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_0_G(MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_0_G:O)| NONE(*)(MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_0)| 1     |
 --------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------+-------+
@@ -884,7 +884,7 @@ Clock to Setup on destination clock MIPS_SC_PROCESSOR/inst_alu_control/alu_contr
                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------------+---------+---------+---------+---------+
-MIPS_SC_PROCESSOR/inst_control_unit/_n0057|         |         |    4.319|         |
+MIPS_SC_PROCESSOR/inst_control_unit/_n0062|         |         |    4.319|         |
 clk                                       |         |         |    6.133|         |
 ------------------------------------------+---------+---------+---------+---------+
 
@@ -893,24 +893,24 @@ Clock to Setup on destination clock MIPS_SC_PROCESSOR/inst_alu_control/alu_contr
                                           | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock                              |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ------------------------------------------+---------+---------+---------+---------+
-MIPS_SC_PROCESSOR/inst_control_unit/_n0057|         |         |    2.700|         |
+MIPS_SC_PROCESSOR/inst_control_unit/_n0062|         |         |    2.700|         |
 clk                                       |         |         |    4.841|         |
 ------------------------------------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock MIPS_SC_PROCESSOR/inst_control_unit/_n0057
+Clock to Setup on destination clock MIPS_SC_PROCESSOR/inst_control_unit/_n0062
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    6.265|         |
+clk            |         |         |    6.237|         |
 ---------------+---------+---------+---------+---------+
 
-Clock to Setup on destination clock MIPS_SC_PROCESSOR/inst_control_unit/_n0064
+Clock to Setup on destination clock MIPS_SC_PROCESSOR/inst_control_unit/_n0069
 ---------------+---------+---------+---------+---------+
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |         |         |    5.028|         |
+clk            |         |         |    5.060|         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -920,8 +920,8 @@ Source Clock                                            |Dest:Rise|Dest:Rise|Des
 --------------------------------------------------------+---------+---------+---------+---------+
 MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_0_G|         |   16.392|         |         |
 MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_1_G|         |   23.848|         |         |
-MIPS_SC_PROCESSOR/inst_control_unit/_n0057              |         |   23.628|         |         |
-MIPS_SC_PROCESSOR/inst_control_unit/_n0064              |         |    6.771|         |         |
+MIPS_SC_PROCESSOR/inst_control_unit/_n0062              |         |   23.628|         |         |
+MIPS_SC_PROCESSOR/inst_control_unit/_n0069              |         |    6.771|         |         |
 clk                                                     |   29.859|         |         |         |
 --------------------------------------------------------+---------+---------+---------+---------+
 
@@ -929,11 +929,11 @@ clk                                                     |   29.859|         |   
 
 
 Total REAL time to Xst completion: 25.00 secs
-Total CPU time to Xst completion: 25.46 secs
+Total CPU time to Xst completion: 24.98 secs
  
 --> 
 
-Total memory usage is 275156 kilobytes
+Total memory usage is 266388 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   98 (   0 filtered)

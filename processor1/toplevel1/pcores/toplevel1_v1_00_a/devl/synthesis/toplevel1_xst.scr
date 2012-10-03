@@ -1,0 +1,12 @@
+run
+-opt_level 2
+-opt_mode speed
+-ifmt mixed
+-ifn "C:\Users\chribru\Desktop\GitHub\tdt4255\processor1\toplevel1\pcores\toplevel1_v1_00_a\devl\synthesis\toplevel1_xst.prj"
+-top toplevel1
+-p virtex5
+-ofn "C:\Users\chribru\Desktop\GitHub\tdt4255\processor1\toplevel1\pcores\toplevel1_v1_00_a\devl\synthesis\toplevel1_xst.ngc"
+-iobuf NO
+-rtlview YES
+-hierarchy_separator /
+-work_lib toplevel1_v1_00_a

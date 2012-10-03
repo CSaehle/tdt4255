@@ -1,0 +1,22 @@
+microblaze_0
+RW_TOPLEVEL_SOURCES = main.c 
+RW_TOPLEVEL_HEADERS = drivers/toplevel1_v1_00_a/src/toplevel1.h 
+RW_TOPLEVEL_CC = mb-gcc
+RW_TOPLEVEL_CC_SIZE = mb-size
+RW_TOPLEVEL_CC_OPT = -O2
+RW_TOPLEVEL_CFLAGS = 
+RW_TOPLEVEL_CC_SEARCH = # -B
+RW_TOPLEVEL_LIBPATH = -L./microblaze_0/lib/ # -L
+RW_TOPLEVEL_INCLUDES = -I./microblaze_0/include/  -Idrivers/toplevel1_v1_00_a/src/ # -I
+RW_TOPLEVEL_LFLAGS = # -l
+RW_TOPLEVEL_LINKER_SCRIPT = rw_toplevel/rw_toplevel_linker_script.ld
+RW_TOPLEVEL_CC_DEBUG_FLAG =  -g 
+RW_TOPLEVEL_CC_PROFILE_FLAG = # -pg
+RW_TOPLEVEL_CC_GLOBPTR_FLAG= # -mxl-gp-opt
+RW_TOPLEVEL_MODE = executable
+RW_TOPLEVEL_LIBG_OPT = -$(RW_TOPLEVEL_MODE) microblaze_0
+RW_TOPLEVEL_CC_INFERRED_FLAGS= -mno-xl-soft-mul -mxl-barrel-shift -mxl-pattern-compare -mcpu=v8.00.b 
+RW_TOPLEVEL_CC_START_ADDR_FLAG=  #  # -Wl,-defsym -Wl,_TEXT_START_ADDR=
+RW_TOPLEVEL_CC_STACK_SIZE_FLAG=  #  # -Wl,-defsym -Wl,_STACK_SIZE=
+RW_TOPLEVEL_CC_HEAP_SIZE_FLAG=  #  # -Wl,-defsym -Wl,_HEAP_SIZE=
+                  $(RW_TOPLEVEL_CC_INFERRED_FLAGS)  \
