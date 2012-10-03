@@ -1,0 +1,1362 @@
+Release 12.4 - xst M.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "toplevel1_0_wrapper_xst.prj"
+Verilog Include Directory          : {"C:\Users\chribru\Desktop\GitHub\tdt4255\processor1\toplevel1\pcores\" "C:\Xilinx\12.4\ISE_DS\EDK\hw\XilinxProcessorIPLib\pcores\" }
+
+---- Target Parameters
+Target Device                      : xc6slx16csg324-2
+Output File Name                   : "../implementation/toplevel1_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : toplevel1_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation/toplevel1_0_wrapper}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" into library plbv46_slave_single_v1_01_a
+Parsing entity <plb_address_decoder>.
+Parsing architecture <IMP> of entity <plb_address_decoder>.
+Parsing VHDL file "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" into library plbv46_slave_single_v1_01_a
+Parsing entity <plb_slave_attachment>.
+Parsing architecture <implementation> of entity <plb_slave_attachment>.
+Parsing VHDL file "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" into library plbv46_slave_single_v1_01_a
+Parsing entity <plbv46_slave_single>.
+Parsing architecture <implementation> of entity <plbv46_slave_single>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/user_logic.vhd" into library toplevel1_v1_00_a
+Parsing entity <user_logic>.
+Parsing architecture <IMP> of entity <user_logic>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/toplevel1.vhd" into library toplevel1_v1_00_a
+Parsing entity <toplevel1>.
+Parsing architecture <IMP> of entity <toplevel1>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/adder.vhd" into library toplevel1_v1_00_a
+Parsing entity <adder>.
+Parsing architecture <Behavioral> of entity <adder>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/mips_constant_pkg.vhd" into library toplevel1_v1_00_a
+Parsing package <MIPS_CONSTANT_PKG>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" into library toplevel1_v1_00_a
+Parsing entity <alu>.
+Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu_1bit.vhd" into library toplevel1_v1_00_a
+Parsing entity <alu_1bit>.
+Parsing architecture <Behavioral> of entity <alu_1bit>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu_control.vhd" into library toplevel1_v1_00_a
+Parsing entity <alu_control>.
+Parsing architecture <Behavioral> of entity <alu_control>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/com.vhd" into library toplevel1_v1_00_a
+Parsing entity <com>.
+Parsing architecture <Behavioral> of entity <com>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/control_unit.vhd" into library toplevel1_v1_00_a
+Parsing entity <control_unit>.
+Parsing architecture <Behavioral> of entity <control_unit>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/full_adder.vhd" into library toplevel1_v1_00_a
+Parsing entity <full_adder>.
+Parsing architecture <Behavioral> of entity <full_adder>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/memory.vhd" into library toplevel1_v1_00_a
+Parsing entity <memory>.
+Parsing architecture <Behavioral> of entity <memory>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/pc.vhd" into library toplevel1_v1_00_a
+Parsing entity <pc>.
+Parsing architecture <Behavioral> of entity <pc>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/pc_handle.vhd" into library toplevel1_v1_00_a
+Parsing entity <pc_handle>.
+Parsing architecture <Behavioral> of entity <pc_handle>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/processor.vhd" into library toplevel1_v1_00_a
+Parsing entity <processor>.
+Parsing architecture <Behavioral> of entity <processor>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/register_file.vhd" into library toplevel1_v1_00_a
+Parsing entity <register_file>.
+Parsing architecture <Behavioral> of entity <register_file>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/shift_two.vhd" into library toplevel1_v1_00_a
+Parsing entity <shift_two>.
+Parsing architecture <Behavioral> of entity <shift_two>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/sign_extend.vhd" into library toplevel1_v1_00_a
+Parsing entity <sign_extend>.
+Parsing architecture <Behavioral> of entity <sign_extend>.
+Parsing VHDL file "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/toplevel.vhd" into library toplevel1_v1_00_a
+Parsing entity <toplevel>.
+Parsing architecture <Behavioral> of entity <toplevel>.
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\processor1\toplevel1\synthesis\../hdl/toplevel1_0_wrapper.vhd" into library work
+Parsing entity <toplevel1_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <toplevel1_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <toplevel1_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <toplevel1> (architecture <IMP>) with generics from library <toplevel1_v1_00_a>.
+
+Elaborating entity <plbv46_slave_single> (architecture <implementation>) with generics from library <plbv46_slave_single_v1_01_a>.
+
+Elaborating entity <plb_slave_attachment> (architecture <implementation>) with generics from library <plbv46_slave_single_v1_01_a>.
+
+Elaborating entity <plb_address_decoder> (architecture <IMP>) with generics from library <plbv46_slave_single_v1_01_a>.
+WARNING:HDLCompiler:1127 - "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" Line 319: Assignment to cs_s_h_clr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" Line 323: Assignment to addr_match_clr ignored, since the identifier is never used
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <or_gate128> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <or_muxcy> (architecture <implementation>) with generics from library <proc_common_v3_00_a>.
+INFO:HDLCompiler:679 - "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" Line 711. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "C:/Xilinx/12.4/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" Line 1025: Assignment to start_data_phase ignored, since the identifier is never used
+
+Elaborating entity <counter_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <user_logic> (architecture <IMP>) with generics from library <toplevel1_v1_00_a>.
+
+Elaborating entity <toplevel> (architecture <Behavioral>) with generics from library <toplevel1_v1_00_a>.
+
+Elaborating entity <com> (architecture <Behavioral>) with generics from library <toplevel1_v1_00_a>.
+INFO:HDLCompiler:679 - "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/com.vhd" Line 231. Case statement is complete. others clause is never selected
+
+Elaborating entity <memory> (architecture <Behavioral>) with generics from library <toplevel1_v1_00_a>.
+
+Elaborating entity <processor> (architecture <Behavioral>) from library <toplevel1_v1_00_a>.
+
+Elaborating entity <control_unit> (architecture <Behavioral>) from library <toplevel1_v1_00_a>.
+
+Elaborating entity <alu> (architecture <Behavioral>) with generics from library <toplevel1_v1_00_a>.
+
+Elaborating entity <alu_1bit> (architecture <Behavioral>) from library <toplevel1_v1_00_a>.
+
+Elaborating entity <full_adder> (architecture <Behavioral>) from library <toplevel1_v1_00_a>.
+
+Elaborating entity <alu_control> (architecture <Behavioral>) from library <toplevel1_v1_00_a>.
+
+Elaborating entity <pc> (architecture <Behavioral>) from library <toplevel1_v1_00_a>.
+
+Elaborating entity <pc_handle> (architecture <Behavioral>) from library <toplevel1_v1_00_a>.
+WARNING:HDLCompiler:871 - "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/pc_handle.vhd" Line 62: Using initial value "00000000000000000000000000000100" for four since it is never assigned
+WARNING:HDLCompiler:871 - "C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/pc_handle.vhd" Line 63: Using initial value '0' for zero1b since it is never assigned
+
+Elaborating entity <adder> (architecture <Behavioral>) with generics from library <toplevel1_v1_00_a>.
+
+Elaborating entity <shift_two> (architecture <Behavioral>) from library <toplevel1_v1_00_a>.
+
+Elaborating entity <register_file> (architecture <Behavioral>) from library <toplevel1_v1_00_a>.
+
+Elaborating entity <sign_extend> (architecture <Behavioral>) from library <toplevel1_v1_00_a>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <toplevel1_0_wrapper>.
+    Related source file is "/users/chribru/desktop/github/tdt4255/processor1/toplevel1/hdl/toplevel1_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <toplevel1_0_wrapper> synthesized.
+
+Synthesizing Unit <toplevel1>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/toplevel1.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_BASEADDR = "10000100010000011000000000000000"
+        C_HIGHADDR = "10000100010000011000000000111111"
+        C_SPLB_AWIDTH = 32
+        C_SPLB_DWIDTH = 32
+        C_SPLB_NUM_MASTERS = 2
+        C_SPLB_MID_WIDTH = 1
+        C_SPLB_NATIVE_DWIDTH = 32
+        C_SPLB_P2P = 0
+        C_SPLB_SUPPORT_BURSTS = 0
+        C_SPLB_SMALLEST_MASTER = 32
+        C_SPLB_CLK_PERIOD_PS = 15000
+        C_INCLUDE_DPHASE_TIMER = 1
+        C_FAMILY = "spartan6"
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/toplevel1.vhd" line 301: Output port <Bus2IP_Addr> of the instance <PLBV46_SLAVE_SINGLE_I> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/toplevel1.vhd" line 301: Output port <Bus2IP_CS> of the instance <PLBV46_SLAVE_SINGLE_I> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/toplevel1.vhd" line 301: Output port <Bus2IP_RNW> of the instance <PLBV46_SLAVE_SINGLE_I> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <toplevel1> synthesized.
+
+Synthesizing Unit <plbv46_slave_single>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100010000011000000000000000","0000000000000000000000000000000010000100010000011000000000111111")
+        C_ARD_NUM_CE_ARRAY = (8)
+        C_SPLB_P2P = 0
+        C_BUS2CORE_CLK_RATIO = 1
+        C_INCLUDE_DPHASE_TIMER = 1
+        C_SPLB_MID_WIDTH = 1
+        C_SPLB_NUM_MASTERS = 2
+        C_SPLB_AWIDTH = 32
+        C_SPLB_DWIDTH = 32
+        C_SIPIF_DWIDTH = 32
+        C_FAMILY = "spartan6"
+WARNING:Xst:647 - Input <PLB_MSize<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendPri<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendPri<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_reqPri<0:1>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_TAttribute<0:15>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_SAValid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_abort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_busLock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_lockErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <plbv46_slave_single> synthesized.
+
+Synthesizing Unit <plb_slave_attachment>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100010000011000000000000000","0000000000000000000000000000000010000100010000011000000000111111")
+        C_ARD_NUM_CE_ARRAY = (8)
+        C_PLB_NUM_MASTERS = 2
+        C_PLB_MID_WIDTH = 1
+        C_SPLB_P2P = 0
+        C_BUS2CORE_CLK_RATIO = 1
+        C_IPIF_ABUS_WIDTH = 32
+        C_IPIF_DBUS_WIDTH = 32
+        C_DPHASE_TIMEOUT = 128
+        C_INCLUDE_DPHASE_TIMER = 1
+        C_FAMILY = "spartan6"
+WARNING:Xst:647 - Input <PLB_UABus<0:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3010 - "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" line 1201: Output port <Count_Out> of the instance <INCLUDE_DATA_PHASE_WDT.I_DPTO_COUNTER> is unconnected or connected to loadless signal.
+    Register <set_sl_busy> equivalent to <sl_addrack_i> has been removed
+    Register <wr_clear_sl_busy> equivalent to <sl_wrdack_i> has been removed
+    Register <sl_wrcomp_i> equivalent to <sl_wrdack_i> has been removed
+    Register <sl_rdcomp_i> equivalent to <rd_clear_sl_busy> has been removed
+    Register <sl_rddack_i> equivalent to <rd_clear_sl_busy> has been removed
+    Found 32-bit register for signal <plb_wrdbus_reg>.
+    Found 1-bit register for signal <plb_masterid_reg>.
+    Found 1-bit register for signal <plb_rnw_reg>.
+    Found 4-bit register for signal <plb_size_reg>.
+    Found 3-bit register for signal <plb_type_reg>.
+    Found 1-bit register for signal <plb_pavalid_reg>.
+    Found 32-bit register for signal <plb_abus_reg>.
+    Found 1-bit register for signal <GEN_FOR_SHARED.addr_cntl_cs>.
+    Found 1-bit register for signal <sl_addrack_i>.
+    Found 1-bit register for signal <sl_rearbitrate_i>.
+    Found 1-bit register for signal <addr_cycle_flush>.
+    Found 32-bit register for signal <master_id>.
+    Found 1-bit register for signal <sl_busy>.
+    Found 2-bit register for signal <sl_mbusy_i>.
+    Found 2-bit register for signal <sl_mrderr_i>.
+    Found 2-bit register for signal <sl_mwrerr_i>.
+    Found 1-bit register for signal <sl_wrdack_i>.
+    Found 1-bit register for signal <rd_clear_sl_busy>.
+    Found 32-bit register for signal <sl_rddbus_i>.
+    Found 1-bit register for signal <bus2ip_rnw_i>.
+    Found 4-bit register for signal <bus2ip_be_i>.
+    Found 32-bit register for signal <bus2ip_addr_i>.
+    Found 1-bit register for signal <data_timeout>.
+    Found 4-bit register for signal <plb_be_reg>.
+    Summary:
+	inferred 193 D-type flip-flop(s).
+	inferred  12 Multiplexer(s).
+Unit <plb_slave_attachment> synthesized.
+
+Synthesizing Unit <plb_address_decoder>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd".
+        C_BUS_AWIDTH = 32
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000100010000011000000000000000","0000000000000000000000000000000010000100010000011000000000111111")
+        C_ARD_NUM_CE_ARRAY = (8)
+        C_SPLB_P2P = 0
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <Address_In_Erly<0:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Address_Valid_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus_RNW_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 5-bit register for signal <addr_out_s_h>.
+    Found 1-bit register for signal <MEM_DECODE_GEN[0].GEN_PLB_SHARED.cs_out_s_h>.
+    Found 1-bit register for signal <cs_out_i>.
+    Found 1-bit register for signal <decode_hit_reg>.
+    Found 1-bit register for signal <rdce_out_i<0>>.
+    Found 1-bit register for signal <wrce_out_i<0>>.
+    Found 1-bit register for signal <rdce_out_i<1>>.
+    Found 1-bit register for signal <wrce_out_i<1>>.
+    Found 1-bit register for signal <rdce_out_i<2>>.
+    Found 1-bit register for signal <wrce_out_i<2>>.
+    Found 1-bit register for signal <rdce_out_i<3>>.
+    Found 1-bit register for signal <wrce_out_i<3>>.
+    Found 1-bit register for signal <rdce_out_i<4>>.
+    Found 1-bit register for signal <wrce_out_i<4>>.
+    Found 1-bit register for signal <rdce_out_i<5>>.
+    Found 1-bit register for signal <wrce_out_i<5>>.
+    Found 1-bit register for signal <rdce_out_i<6>>.
+    Found 1-bit register for signal <wrce_out_i<6>>.
+    Found 1-bit register for signal <rdce_out_i<7>>.
+    Found 1-bit register for signal <wrce_out_i<7>>.
+    Found 1-bit register for signal <rnw_s_h>.
+    Summary:
+	inferred  25 D-type flip-flop(s).
+Unit <plb_address_decoder> synthesized.
+
+Synthesizing Unit <pselect_f_1>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 26
+        C_AW = 32
+        C_BAR = "10000100010000011000000000000000"
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <A<26:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_1> synthesized.
+
+Synthesizing Unit <pselect_f_2>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "000"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_2> synthesized.
+
+Synthesizing Unit <pselect_f_3>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "001"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_3> synthesized.
+
+Synthesizing Unit <pselect_f_4>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "010"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_4> synthesized.
+
+Synthesizing Unit <pselect_f_5>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "011"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_5> synthesized.
+
+Synthesizing Unit <pselect_f_6>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "100"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_6> synthesized.
+
+Synthesizing Unit <pselect_f_7>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "101"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_7> synthesized.
+
+Synthesizing Unit <pselect_f_8>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "110"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_8> synthesized.
+
+Synthesizing Unit <pselect_f_9>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 3
+        C_AW = 3
+        C_BAR = "111"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_9> synthesized.
+
+Synthesizing Unit <or_gate128>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd".
+        C_OR_WIDTH = 1
+        C_BUS_WIDTH = 1
+        C_USE_LUT_OR = false
+    Summary:
+	no macro.
+Unit <or_gate128> synthesized.
+
+Synthesizing Unit <or_muxcy>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd".
+        C_NUM_BITS = 1
+    Summary:
+	no macro.
+Unit <or_muxcy> synthesized.
+
+Synthesizing Unit <counter_f>.
+    Related source file is "c:/xilinx/12.4/ise_ds/edk/hw/xilinxprocessoriplib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd".
+        C_NUM_BITS = 8
+        C_FAMILY = "nofamily"
+    Found 9-bit register for signal <INFERRED_GEN.icount_out>.
+    Found 9-bit subtractor for signal <INFERRED_GEN.icount_out[8]_GND_27_o_mux_5_OUT> created at line 292.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   9 D-type flip-flop(s).
+Unit <counter_f> synthesized.
+
+Synthesizing Unit <user_logic>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/user_logic.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_SLV_DWIDTH = 32
+        C_NUM_REG = 5
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+    Found 32-bit register for signal <slv_reg1>.
+    Found 32-bit register for signal <slv_reg2>.
+    Found 32-bit register for signal <slv_reg0>.
+    Summary:
+	inferred  96 D-type flip-flop(s).
+	inferred  97 Multiplexer(s).
+Unit <user_logic> synthesized.
+
+Synthesizing Unit <toplevel>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/toplevel.vhd".
+        MEM_ADDR_BUS = 32
+        MEM_DATA_BUS = 32
+    Summary:
+	inferred   6 Multiplexer(s).
+Unit <toplevel> synthesized.
+
+Synthesizing Unit <com>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/com.vhd".
+        MEM_ADDR_BUS = 32
+        MEM_DATA_BUS = 32
+        INPUT_BUS_WIDTH = 32
+    Found 32-bit register for signal <status>.
+    Found 32-bit register for signal <bus_data_out>.
+    Found 32-bit register for signal <read_addr>.
+    Found 32-bit register for signal <write_addr>.
+    Found 32-bit register for signal <write_data>.
+    Found 1-bit register for signal <write_enable>.
+    Found 1-bit register for signal <processor_enable>.
+    Found 1-bit register for signal <write_imem>.
+    Found 32-bit register for signal <internal_data_out>.
+    Found 3-bit register for signal <state>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 16                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 000                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred 195 D-type flip-flop(s).
+	inferred   3 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <com> synthesized.
+
+Synthesizing Unit <memory>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/memory.vhd".
+        N = 32
+        M = 8
+WARNING:Xst:647 - Input <W_ADDR<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <ADDR<31:8>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 256x32-bit dual-port RAM <Mram_MEM> for signal <MEM>.
+    Found 8-bit register for signal <address_reg<7:0>>.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   8 D-type flip-flop(s).
+Unit <memory> synthesized.
+
+Synthesizing Unit <processor>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/processor.vhd".
+WARNING:Xst:647 - Input <imem_data_in<10:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/processor.vhd" line 211: Output port <mem_read> of the instance <inst_control_unit> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/processor.vhd" line 225: Output port <FLAGS_Carry> of the instance <inst_alu> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/processor.vhd" line 225: Output port <FLAGS_Overflow> of the instance <inst_alu> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/processor.vhd" line 225: Output port <FLAGS_Negative> of the instance <inst_alu> is unconnected or connected to loadless signal.
+    Found 2-bit register for signal <current_state>.
+    Found finite state machine <FSM_1> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | stall                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   5 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <processor> synthesized.
+
+Synthesizing Unit <control_unit>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/control_unit.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_src>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_to_reg>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_write>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_read>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <mem_write>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <branch>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_op<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_op<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <jump>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <reg_dst>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  10 Latch(s).
+Unit <control_unit> synthesized.
+
+Synthesizing Unit <alu>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd".
+        N = 32
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 71: Output port <SET> of the instance <BEGIN_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[1].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[2].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[3].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[4].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[5].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[6].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[7].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[8].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[9].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[10].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[11].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[12].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[13].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[14].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[15].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[16].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[17].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[18].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[19].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[20].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[21].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[22].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[23].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[24].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[25].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[26].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[27].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[28].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[29].NEXT_ALU1B> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu.vhd" line 86: Output port <SET> of the instance <GEN_ALU[30].NEXT_ALU1B> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <alu> synthesized.
+
+Synthesizing Unit <alu_1bit>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu_1bit.vhd".
+    Summary:
+	inferred   5 Multiplexer(s).
+Unit <alu_1bit> synthesized.
+
+Synthesizing Unit <full_adder>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/full_adder.vhd".
+    Summary:
+Unit <full_adder> synthesized.
+
+Synthesizing Unit <alu_control>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/alu_control.vhd".
+WARNING:Xst:647 - Input <funct<5:4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_control_input<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_control_input<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <alu_control_input<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   3 Latch(s).
+	inferred   9 Multiplexer(s).
+Unit <alu_control> synthesized.
+
+Synthesizing Unit <pc>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/pc.vhd".
+    Found 32-bit register for signal <address>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <pc> synthesized.
+
+Synthesizing Unit <pc_handle>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/pc_handle.vhd".
+WARNING:Xst:647 - Input <pc_current<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/pc_handle.vhd" line 93: Output port <COUT> of the instance <pc_add> is unconnected or connected to loadless signal.
+INFO:Xst:3010 - "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/pc_handle.vhd" line 108: Output port <COUT> of the instance <branch_add> is unconnected or connected to loadless signal.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <pc_handle> synthesized.
+
+Synthesizing Unit <adder>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/adder.vhd".
+        N = 32
+    Summary:
+	no macro.
+Unit <adder> synthesized.
+
+Synthesizing Unit <shift_two>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/shift_two.vhd".
+WARNING:Xst:647 - Input <in_addr<31:30>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <shift_two> synthesized.
+
+Synthesizing Unit <register_file>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/register_file.vhd".
+    Found 32-bit register for signal <REGS<30>>.
+    Found 32-bit register for signal <REGS<29>>.
+    Found 32-bit register for signal <REGS<28>>.
+    Found 32-bit register for signal <REGS<27>>.
+    Found 32-bit register for signal <REGS<26>>.
+    Found 32-bit register for signal <REGS<25>>.
+    Found 32-bit register for signal <REGS<24>>.
+    Found 32-bit register for signal <REGS<23>>.
+    Found 32-bit register for signal <REGS<22>>.
+    Found 32-bit register for signal <REGS<21>>.
+    Found 32-bit register for signal <REGS<20>>.
+    Found 32-bit register for signal <REGS<19>>.
+    Found 32-bit register for signal <REGS<18>>.
+    Found 32-bit register for signal <REGS<17>>.
+    Found 32-bit register for signal <REGS<16>>.
+    Found 32-bit register for signal <REGS<15>>.
+    Found 32-bit register for signal <REGS<14>>.
+    Found 32-bit register for signal <REGS<13>>.
+    Found 32-bit register for signal <REGS<12>>.
+    Found 32-bit register for signal <REGS<11>>.
+    Found 32-bit register for signal <REGS<10>>.
+    Found 32-bit register for signal <REGS<9>>.
+    Found 32-bit register for signal <REGS<8>>.
+    Found 32-bit register for signal <REGS<7>>.
+    Found 32-bit register for signal <REGS<6>>.
+    Found 32-bit register for signal <REGS<5>>.
+    Found 32-bit register for signal <REGS<4>>.
+    Found 32-bit register for signal <REGS<3>>.
+    Found 32-bit register for signal <REGS<2>>.
+    Found 32-bit register for signal <REGS<1>>.
+    Found 32-bit register for signal <REGS<0>>.
+    Found 32-bit register for signal <REGS<31>>.
+INFO:Xst:3019 - HDL ADVISOR - 1024 flip-flops were inferred for signal <REGS>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:3019 - HDL ADVISOR - 1024 flip-flops were inferred for signal <REGS>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Found 32-bit 32-to-1 multiplexer for signal <RS_ADDR[4]_REGS[31][31]_wide_mux_98_OUT> created at line 74.
+    Found 32-bit 32-to-1 multiplexer for signal <RT_ADDR[4]_REGS[31][31]_wide_mux_101_OUT> created at line 77.
+    Summary:
+	inferred 1024 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+Unit <register_file> synthesized.
+
+Synthesizing Unit <sign_extend>.
+    Related source file is "c:/users/chribru/desktop/github/tdt4255/processor1/toplevel1/pcores/toplevel1_v1_00_a/hdl/vhdl/sign_extend.vhd".
+    Summary:
+	no macro.
+Unit <sign_extend> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 256x32-bit dual-port RAM                              : 2
+# Adders/Subtractors                                   : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 79
+ 1-bit register                                        : 19
+ 2-bit register                                        : 3
+ 3-bit register                                        : 1
+ 32-bit register                                       : 47
+ 4-bit register                                        : 3
+ 5-bit register                                        : 1
+ 8-bit register                                        : 4
+ 9-bit register                                        : 1
+# Latches                                              : 13
+ 1-bit latch                                           : 13
+# Multiplexers                                         : 308
+ 1-bit 2-to-1 multiplexer                              : 288
+ 2-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 14
+ 32-bit 32-to-1 multiplexer                            : 2
+ 5-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+# Xors                                                 : 193
+ 1-bit xor2                                            : 193
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2404 -  FFs/Latches <status<0:1>> (without init value) have a constant value of 0 in block <com>.
+
+Synthesizing (advanced) Unit <memory>.
+INFO:Xst:3040 - The RAM <Mram_MEM> will be implemented as a BLOCK RAM, absorbing the following register(s): <address_reg>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <CLK>           | rise     |
+    |     weA            | connected to signal <MemWrite>      | high     |
+    |     addrA          | connected to signal <W_ADDR>        |          |
+    |     diA            | connected to signal <WRITE_DATA>    |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 256-word x 32-bit                   |          |
+    |     mode           | write-first                         |          |
+    |     clkB           | connected to signal <CLK>           | rise     |
+    |     addrB          | connected to signal <ADDR>          |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <memory> synthesized (advanced).
+WARNING:Xst:2677 - Node <addr_out_s_h_4> of sequential type is unconnected in block <plb_address_decoder>.
+WARNING:Xst:2677 - Node <addr_out_s_h_3> of sequential type is unconnected in block <plb_address_decoder>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 256x32-bit dual-port block RAM                        : 2
+# Adders/Subtractors                                   : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 1542
+ Flip-Flops                                            : 1542
+# Multiplexers                                         : 361
+ 1-bit 2-to-1 multiplexer                              : 279
+ 1-bit 32-to-1 multiplexer                             : 64
+ 2-bit 2-to-1 multiplexer                              : 3
+ 32-bit 2-to-1 multiplexer                             : 14
+ 5-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+# Xors                                                 : 193
+ 1-bit xor2                                            : 193
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch master_id_31 hinder the constant cleaning in the block plb_slave_attachment.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <master_id_30> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_29> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_28> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_27> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_26> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_25> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_24> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_23> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_22> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_21> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_20> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_19> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_18> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_17> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_16> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_15> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_14> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_13> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_12> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_11> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_10> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_9> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_8> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_7> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_6> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_5> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_4> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_3> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_2> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_1> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <GEN_FOR_SHARED.addr_cntl_cs> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <addr_cycle_flush> 
+INFO:Xst:2261 - The FF/Latch <branch> in Unit <control_unit> is equivalent to the following FF/Latch, which will be removed : <alu_op_0> 
+INFO:Xst:2261 - The FF/Latch <address_30> in Unit <pc> is equivalent to the following FF/Latch, which will be removed : <address_31> 
+WARNING:Xst:1293 - FF/Latch <address_30> has a constant value of 0 in block <pc>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/FSM_0> on signal <state[1:3]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000
+ 100   | 100
+ 001   | 001
+ 011   | 011
+ 010   | 010
+ 101   | 101
+ 110   | 110
+ 111   | 111
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/FSM_1> on signal <current_state[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ exec  | 10
+ stall | 00
+ fetch | 01
+-------------------
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    alu_control_input_1 in unit <alu_control>
+    alu_control_input_2 in unit <alu_control>
+    alu_control_input_0 in unit <alu_control>
+
+
+Optimizing unit <toplevel1_0_wrapper> ...
+
+Optimizing unit <plb_slave_attachment> ...
+
+Optimizing unit <plb_address_decoder> ...
+
+Optimizing unit <counter_f> ...
+
+Optimizing unit <user_logic> ...
+
+Optimizing unit <toplevel> ...
+
+Optimizing unit <com> ...
+
+Optimizing unit <processor> ...
+
+Optimizing unit <pc> ...
+
+Optimizing unit <register_file> ...
+
+Optimizing unit <control_unit> ...
+
+Optimizing unit <alu_control> ...
+
+Optimizing unit <adder> ...
+
+Optimizing unit <alu> ...
+WARNING:Xst:1710 - FF/Latch <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_0> (without init value) has a constant value of 0 in block <toplevel1_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mwrerr_i_1> (without init value) has a constant value of 0 in block <toplevel1_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_0> (without init value) has a constant value of 0 in block <toplevel1_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mrderr_i_1> (without init value) has a constant value of 0 in block <toplevel1_0_wrapper>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_0> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_1> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_2> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_3> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_4> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_5> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_6> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_7> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_8> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_9> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_10> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_11> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_12> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_13> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_14> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_15> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_16> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_17> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_18> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_19> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_20> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_21> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_22> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_23> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_24> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_25> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_26> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_27> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_28> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_29> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_30> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_31> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_30> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_31> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_5> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_6> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_7> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_5> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_6> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_7> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN<0>.GEN_PLB_SHARED.cs_out_s_h_0> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_0> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_1> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_2> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_3> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_4> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_5> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_6> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_7> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_8> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_9> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_10> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_11> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_12> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_13> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_14> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_15> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_16> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_17> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_18> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_19> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_20> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_21> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_22> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/slv_reg1_23> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_31> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_30> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_29> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_28> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_27> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_26> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_25> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_24> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_23> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_22> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_21> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_20> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_19> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_18> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_17> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_16> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_15> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_14> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_13> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_12> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_11> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_10> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_9> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/write_addr_8> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_31> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_30> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_29> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_28> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_27> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_26> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_25> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_24> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_23> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_22> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_21> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_20> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_19> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_18> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_17> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_16> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_15> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_14> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_13> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_12> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_11> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_10> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_9> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/read_addr_8> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_29> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_28> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_27> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_26> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_25> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_24> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_23> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_22> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_21> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_20> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_19> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_18> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_17> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_16> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_15> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_14> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_13> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_12> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_11> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_10> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_9> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_8> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+WARNING:Xst:2677 - Node <toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/mem_read> of sequential type is unconnected in block <toplevel1_0_wrapper>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block toplevel1_0_wrapper, actual ratio is 25.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1373
+ Flip-Flops                                            : 1373
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : toplevel1_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1219
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 10
+#      LUT3                        : 136
+#      LUT4                        : 113
+#      LUT5                        : 38
+#      LUT6                        : 878
+#      MUXF7                       : 41
+#      VCC                         : 1
+# FlipFlops/Latches                : 1384
+#      FD                          : 4
+#      FDCE                        : 1032
+#      FDR                         : 208
+#      FDRE                        : 123
+#      FDS                         : 6
+#      LD                          : 11
+# RAMS                             : 2
+#      RAMB8BWER                   : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1384  out of  18224     7%  
+ Number of Slice LUTs:                 1176  out of   9112    12%  
+    Number used as Logic:              1176  out of   9112    12%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2337
+   Number with an unused Flip Flop:     953  out of   2337    40%  
+   Number with an unused LUT:          1161  out of   2337    49%  
+   Number of fully used LUT-FF pairs:   223  out of   2337     9%  
+   Number of unique control sets:        54
+
+IO Utilization: 
+ Number of IOs:                         201
+ Number of bonded IOBs:                   0  out of    232     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                                                                                                                                                                            | Clock buffer(FF name)                                                                                    | Load  |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+-------+
+SPLB_Clk                                                                                                                                                                                                | NONE(toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/data_timeout)                                  | 1375  |
+toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/_n0057(toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/out1:O)                              | NONE(*)(toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/reg_write)         | 6     |
+toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/_n0064(toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/_n0064:O)                            | NONE(*)(toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/reg_dst)           | 2     |
+toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_1_G(toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_1_G:O)| NONE(*)(toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_1)| 2     |
+toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_0_G(toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_0_G:O)| NONE(*)(toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_0)| 1     |
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------+-------+
+(*) These 4 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 29.859ns (Maximum Frequency: 33.491MHz)
+   Minimum input arrival time before clock: 2.803ns
+   Maximum output required time after clock: 0.633ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SPLB_Clk'
+  Clock period: 29.859ns (frequency: 33.491MHz)
+  Total number of paths / destination ports: 3484592 / 2704
+-------------------------------------------------------------------------
+Delay:               29.859ns (Levels of Logic = 21)
+  Source:            toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/INST_MEM/Mram_MEM (RAM)
+  Destination:       toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_7 (FF)
+  Source Clock:      SPLB_Clk rising
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/INST_MEM/Mram_MEM to toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB8BWER:CLKBRDCLK->DOBDO0  258   2.950   2.570  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/INST_MEM/Mram_MEM (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/instr_data<16>)
+     LUT6:I4->O            1   0.373   1.060  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_register_file/mux32_81 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_register_file/mux32_81)
+     LUT6:I2->O            3   0.364   0.904  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_register_file/mux32_3 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_register_file/mux32_3)
+     LUT4:I2->O            1   0.373   0.820  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_register_file/Mmux_RT110 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/dmem_write_data_proc<0>)
+     LUT5:I3->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/BEGIN_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<0>)
+     LUT6:I5->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[2].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<2>)
+     LUT6:I5->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[4].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<4>)
+     LUT6:I5->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[6].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<6>)
+     LUT6:I5->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[8].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<8>)
+     LUT6:I5->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[10].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<10>)
+     LUT6:I5->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[12].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<12>)
+     LUT6:I5->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[14].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<14>)
+     LUT6:I5->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[16].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<16>)
+     LUT6:I5->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[18].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<18>)
+     LUT6:I5->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[20].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<20>)
+     LUT6:I5->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[22].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<22>)
+     LUT6:I5->O            3   0.373   0.766  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[24].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<24>)
+     LUT6:I5->O            5   0.373   0.841  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[26].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<26>)
+     LUT6:I5->O            6   0.373   0.876  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[28].NEXT_ALU1B/FULLADDER_ALU/COUT1 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/COUT_AUX<28>)
+     LUT6:I5->O            1   0.373   0.970  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/GEN_ALU[29].NEXT_ALU1B/Mmux_RES_AUX11 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/alu_out<29>)
+     LUT6:I3->O            8   0.373   0.944  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/FLAGS_Zero<31>6 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu/FLAGS_Zero<31>5)
+     LUT6:I5->O            1   0.373   0.000  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc_handle/Mmux_next_byte_addr11 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/pc_next<0>)
+     FDCE:D                    0.142          toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_pc/address_0
+    ----------------------------------------
+    Total                     29.859ns (10.916ns logic, 18.943ns route)
+                                       (36.6% logic, 63.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 1439 / 1439
+-------------------------------------------------------------------------
+Offset:              2.803ns (Levels of Logic = 1)
+  Source:            SPLB_Rst (PAD)
+  Destination:       toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/bus_data_out_0 (FF)
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: SPLB_Rst to toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/bus_data_out_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT4:I0->O           32   0.364   1.519  toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/_n0071_inv_011 (toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/_n0071_inv_0)
+     FDR:R                     0.541          toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/TDT4255_COM/bus_data_out_31
+    ----------------------------------------
+    Total                      2.803ns (1.284ns logic, 1.519ns route)
+                                       (45.8% logic, 54.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 40 / 40
+-------------------------------------------------------------------------
+Offset:              0.633ns (Levels of Logic = 0)
+  Source:            toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0 (FF)
+  Destination:       Sl_rdDBus<0> (PAD)
+  Source Clock:      SPLB_Clk rising
+
+  Data Path: toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0 to Sl_rdDBus<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              0   0.633   0.000  toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0 (toplevel1_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_rddbus_i_0)
+    ----------------------------------------
+    Total                      0.633ns (0.633ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock SPLB_Clk
+--------------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+SPLB_Clk                                                                                          |   29.859|         |         |         |
+toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_0_G|         |   16.392|         |         |
+toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_1_G|         |   23.848|         |         |
+toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/_n0057              |         |   23.628|         |         |
+toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/_n0064              |         |    6.771|         |         |
+--------------------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_0_G
+------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------------------------------------------+---------+---------+---------+---------+
+SPLB_Clk                                                                            |         |         |    6.133|         |
+toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/_n0057|         |         |    4.319|         |
+------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_alu_control/alu_control_input_1_G
+------------------------------------------------------------------------------------+---------+---------+---------+---------+
+                                                                                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                                        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+------------------------------------------------------------------------------------+---------+---------+---------+---------+
+SPLB_Clk                                                                            |         |         |    4.841|         |
+toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/_n0057|         |         |    2.700|         |
+------------------------------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/_n0057
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SPLB_Clk       |         |         |    6.265|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock toplevel1_0/USER_LOGIC_I/TDT4255_TOPLEVEL/MIPS_SC_PROCESSOR/inst_control_unit/_n0064
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SPLB_Clk       |         |         |    5.028|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 20.00 secs
+Total CPU time to Xst completion: 20.25 secs
+ 
+--> 
+
+Total memory usage is 225344 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  230 (   0 filtered)
+Number of infos    :   48 (   0 filtered)
+
