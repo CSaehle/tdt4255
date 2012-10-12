@@ -73,17 +73,22 @@ def encJ (opcode, target):
 
     return int(ans, 2)
 
+def outhex(x):
+    res = hex(x)
+    if res[-1] == 'L':
+        res = res[:-1]
+    return res
 
 def proghex(instrs, start=1, addrlen=2, fname=None):
     lines = [None] * len(instrs)
     for i, instr in enumerate(instrs):
         pos = "0x"+hex(i+start)[2:].rjust(addrlen, '0').upper() 
-        instr = "0x"+hex(instr)[2:].rjust(8, '0').upper()
+        instr = "0x"+outhex(instr)[2:].rjust(8, '0').upper()
         lines[i] = pos + " " + instr
     lines = "\n".join(lines)
     
     if fname:
-        f = open(fname, 'w', 1, 'UTF-8')
+        f = open(fname, 'w')
         f.write(lines)
         f.write('\n')
         f.close()
@@ -130,9 +135,8 @@ def simulate(instrs, start=1, startexec=1, dmeminit=None, imemsize=0xFF, dmemsiz
             i_rt   = int(bcode[11:16], 2)
             i_im   = int(bcode[16:32], 2)
 
-            offset = i_im
-            if (offset & 0x80000000):
-                offset = -(offset & 0x7FFFFFFF)
+            offset = fr2c(i_im, 32)
+
             #print("offset:", offset)
 
             if   opcode == LW:
@@ -162,16 +166,53 @@ fib_inst = [
             encI(LDI, 0, 3,  1), #3 - r3 = 1
             encI(LDI, 0, 10, 2), #4 - r10 = 2
             encI(LDI, 0, 11, 1), #5 - r11 = 1
-            encR(RTYPE, 1, 10, 1, 0, SUB), #6 - r1 -= 2
-            encI(BEQ, 1, 0, 5), #7 - for1
-            encR(RTYPE, 2, 3, 4, 0, ADD), #8 - r4 = r2+r3
-            encR(RTYPE, 3, 0, 2, 0, ADD), #9 - r2 = r3+0
-            encR(RTYPE, 4, 0, 3, 0, ADD), #10 - r3 = r4+0
-            encR(RTYPE, 1, 11, 1, 9, SUB), #11 - r1 -= 1
-            encJ(JMP, 7), #12 - jump to for1
+            encI(LDI, 0, 0, 0), #6 - r0 = 0
+            encR(RTYPE, 1, 10, 1, 0, SUB), #7 - r1 -= 2
+            encI(BEQ, 1, 0, 6), #8 - for1
+            encR(RTYPE, 2, 3, 4, 0, ADD), #9 - r4 = r2+r3
+            encR(RTYPE, 3, 0, 2, 0, ADD), #10 - r2 = r3+0
+            encR(RTYPE, 4, 0, 3, 0, ADD), #11 - r3 = r4+0
+            encR(RTYPE, 1, 11, 1, 9, SUB), #12 - r1 -= 1
+            encI(SW, 0, 4, 2), #13 - #store r4 to datamem addr 2
+            encJ(JMP, 8), #14 - jump to for1
+            encI(SW, 0, 4, 1), #store r4 to datamem addr 1
+            encI(SW, 0, 4, 1), #store r4 to datamem addr 1
             encI(SW, 0, 4, 1) #store r4 to datamem addr 1
             
     ]
 
+much_inst = [
+            encI(LDI, 0, 1, 8),
+            encI(LDI, 0, 2, 16),
+            encI(LDI, 0, 3, 74),
+            encI(LDI, 0, 4, 4095),
+            encR(RTYPE, 1, 2, 5, 0, SLT),
+            encR(RTYPE, 2, 1, 6, 0, SLT),
+            encR(RTYPE, 2, 4, 7, 0, SLT),
+            encR(RTYPE, 1, 2, 8, 0, ADD),
+            encR(RTYPE, 3, 2, 9, 0, SUB),
+            encR(RTYPE, 3, 1, 10,0, AND),
+            encR(RTYPE, 3, 2, 11,0, OR),
+            encI(SW, 0, 1, 1),
+            encI(SW, 0, 2, 2),
+            encI(SW, 0, 3, 3),
+            encI(SW, 0, 4, 4),
+            encI(SW, 0, 5, 5),
+            encI(SW, 0, 6, 6),
+            encI(SW, 0, 7, 7),
+            encI(SW, 0, 8, 8),
+            encI(SW, 0, 9, 9),
+            encI(SW, 0,10, 10),
+            encI(SW, 0,11, 11),
+            encI(SW, 0,12, 12),
+            encI(SW, 0,13, 13)
+        ]
+            
+
 print(simulate(fib_inst, dmemsize=8))
 proghex(fib_inst)
+proghex(fib_inst, fname="fib.txt")
+
+#print(simulate(much_inst, dmemsize=16))
+#proghex(much_inst)
+#proghex(much_inst, fname="much.txt")
