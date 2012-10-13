@@ -148,6 +148,7 @@ architecture Behavioral of processor is
 	signal pc_next: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	
 	--register file
+	signal reg_write_exec : STD_LOGIC := ZERO1b;
 	signal rs: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal rt: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal rd_addr: STD_LOGIC_VECTOR (4 downto 0) := "00000";
@@ -158,6 +159,9 @@ architecture Behavioral of processor is
 begin
 	-- This one updates the PC when the next state is a FETCH to make sure the instruction is ready for the next EXEC
 	pc_write_enable <= '1' when (next_state = FETCH) and (processor_enable = '1') else '0';
+	
+	--
+	reg_write_exec <= reg_write when (current_state = EXEC) else '0';
 	
 	-- The ALU takes the value of the first input register.
 	alu_x <= rs;
@@ -263,7 +267,7 @@ begin
 	port map(
 			clk => clk,
 			reset => reset,
-			rw => reg_write,
+			rw => reg_write_exec,
 			rs_addr => imem_data_in (25 downto 21),
 			rt_addr => imem_data_in (20 downto 16),
 			rd_addr => rd_addr,

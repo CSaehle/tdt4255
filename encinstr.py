@@ -161,13 +161,13 @@ def simulate(instrs, start=1, startexec=1, dmeminit=None, imemsize=0xFF, dmemsiz
     
 
 fib_inst = [
-            encI(LDI, 0, 1, 17), #1 - r1 = 42
+            encI(LDI, 0, 1, 17), #1 - r1 = 17
             encI(LDI, 0, 2,  0), #2 - r2 = 0
             encI(LDI, 0, 3,  1), #3 - r3 = 1
             encI(LDI, 0, 10, 2), #4 - r10 = 2
             encI(LDI, 0, 11, 1), #5 - r11 = 1
             encI(LDI, 0, 0, 0), #6 - r0 = 0
-            encR(RTYPE, 1, 10, 1, 0, SUB), #7 - r1 -= 2
+            encR(RTYPE, 1, 11, 1, 0, SUB), #7 - r1 -= 1
             encI(BEQ, 1, 0, 6), #8 - for1
             encR(RTYPE, 2, 3, 4, 0, ADD), #9 - r4 = r2+r3
             encR(RTYPE, 3, 0, 2, 0, ADD), #10 - r2 = r3+0
