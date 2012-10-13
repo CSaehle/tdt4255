@@ -11,15 +11,50 @@
 # vsim -do \{do \{tb_toplevel.fdo\}\} 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlftbt0fct".
+#           Attempting to use alternate WLF file "./wlft8mq6d7".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftbt0fct
+#           Using alternate file: ./wlft8mq6d7
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Error: (vopt-19) Failed to access library 'work.{tb_toplevel' at "work.{tb_toplevel".
 # No such file or directory. (errno = ENOENT)
 # ** Error: Library work.{tb_toplevel not found.
 # Error loading design
-# Load canceled
+vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/processor.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package mips_constant_pkg
+# -- Compiling entity processor
+# -- Compiling architecture behavioral of processor
+vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/processor.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package mips_constant_pkg
+# -- Compiling entity processor
+# -- Compiling architecture behavioral of processor
+vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/tb_toplevel.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_toplevel
+# -- Compiling architecture behavior of tb_toplevel
+vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/toplevel.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package mips_constant_pkg
+# -- Compiling entity toplevel
+# -- Compiling architecture behavioral of toplevel
+vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/tb_toplevel.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_toplevel
+# -- Compiling architecture behavior of tb_toplevel
+do tb_toplevel
+# Cannot open macro file: tb_toplevel
 do tb_toplevel.fdo
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
@@ -30,9 +65,9 @@ do tb_toplevel.fdo
 # vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlft7y0tsj".
+#           Attempting to use alternate WLF file "./wlfthtvmxv".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft7y0tsj
+#           Using alternate file: ./wlfthtvmxv
 # ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt/_deps" - file is inconsistent with version property.
 # ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
@@ -109,8 +144,7 @@ do tb_toplevel.fdo
 #    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-do Z:/github/tdt4255/oving1/toplevel.do
-restart -f; run 5us
+restart -f; run 50us;
 # ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt/_deps" - file is inconsistent with version property.
 # ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
@@ -119,555 +153,6 @@ restart -f; run 5us
 # ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt18/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
 # ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt21/_deps" - file is inconsistent with version property.
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-do Z:/github/tdt4255/oving1/toplevel.do
-restart -f; run 5us
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt/_deps" - file is inconsistent with version property.
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt12/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt18/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt21/_deps" - file is inconsistent with version property.
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-quit -sim
-vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/tb_toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(103): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(103): near "3C010011": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(104): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(104): near "3C020000": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(105): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(105): near "3C030001": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(106): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(106): near "3C0A0002": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(107): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(107): near "3C0B0001": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(108): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(108): near "3C000000": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(109): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(109): near "002A0822": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(110): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(110): near "10200006": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(111): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(111): near "00432020": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(112): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(112): near "00601020": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(113): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(113): near "00801820": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(114): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(114): near "002B0A62": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(115): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(115): near "AC040002": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(116): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(116): near "08000008": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(117): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(117): near "AC040001": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(118): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(118): near "AC040001": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(119): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(119): near "AC040001": expecting ';'
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(188): (vcom-1136) Unknown identifier "fib1".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(199): (vcom-1136) Unknown identifier "fib2".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(209): (vcom-1136) Unknown identifier "fib3".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(219): (vcom-1136) Unknown identifier "fib4".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(229): (vcom-1136) Unknown identifier "fib5".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(239): (vcom-1136) Unknown identifier "fib6".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(249): (vcom-1136) Unknown identifier "fib7".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(259): (vcom-1136) Unknown identifier "fib8".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(269): (vcom-1136) Unknown identifier "fib9".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(279): (vcom-1136) Unknown identifier "fib10".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(290): (vcom-1136) Unknown identifier "fib11".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(300): (vcom-1136) Unknown identifier "fib12".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(310): (vcom-1136) Unknown identifier "fib13".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(320): (vcom-1136) Unknown identifier "fib14".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(330): (vcom-1136) Unknown identifier "fib15".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(340): (vcom-1136) Unknown identifier "fib16".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(350): (vcom-1136) Unknown identifier "fib17".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(360): (vcom-1136) Unknown identifier "fib18".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(419): VHDL Compiler exiting
-vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Loading package mips_constant_pkg
-# -- Compiling entity toplevel
-# -- Compiling architecture behavioral of toplevel
-vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Loading package mips_constant_pkg
-# -- Compiling entity toplevel
-# -- Compiling architecture behavioral of toplevel
-vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Loading package mips_constant_pkg
-# -- Compiling entity toplevel
-# -- Compiling architecture behavioral of toplevel
-vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/tb_toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(103): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(103): near "3C010011": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(104): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(104): near "3C020000": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(105): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(105): near "3C030001": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(106): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(106): near "3C0A0002": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(107): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(107): near "3C0B0001": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(108): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(108): near "3C000000": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(109): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(109): near "002A0822": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(110): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(110): near "10200006": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(111): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(111): near "00432020": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(112): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(112): near "00601020": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(113): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(113): near "00801820": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(114): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(114): near "002B0A62": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(115): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(115): near "AC040002": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(116): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(116): near "08000008": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(117): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(117): near "AC040001": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(118): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(118): near "AC040001": expecting ';'
-# ** Warning: [4] Z:/github/tdt4255/oving1/tb_toplevel.vhd(119): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(119): near "AC040001": expecting ';'
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(188): (vcom-1136) Unknown identifier "fib1".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(199): (vcom-1136) Unknown identifier "fib2".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(209): (vcom-1136) Unknown identifier "fib3".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(219): (vcom-1136) Unknown identifier "fib4".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(229): (vcom-1136) Unknown identifier "fib5".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(239): (vcom-1136) Unknown identifier "fib6".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(249): (vcom-1136) Unknown identifier "fib7".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(259): (vcom-1136) Unknown identifier "fib8".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(269): (vcom-1136) Unknown identifier "fib9".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(279): (vcom-1136) Unknown identifier "fib10".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(290): (vcom-1136) Unknown identifier "fib11".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(300): (vcom-1136) Unknown identifier "fib12".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(310): (vcom-1136) Unknown identifier "fib13".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(320): (vcom-1136) Unknown identifier "fib14".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(330): (vcom-1136) Unknown identifier "fib15".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(340): (vcom-1136) Unknown identifier "fib16".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(350): (vcom-1136) Unknown identifier "fib17".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(410): VHDL Compiler exiting
-vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/tb_toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(188): (vcom-1136) Unknown identifier "fib1".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(199): (vcom-1136) Unknown identifier "fib2".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(209): (vcom-1136) Unknown identifier "fib3".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(219): (vcom-1136) Unknown identifier "fib4".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(229): (vcom-1136) Unknown identifier "fib5".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(239): (vcom-1136) Unknown identifier "fib6".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(249): (vcom-1136) Unknown identifier "fib7".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(259): (vcom-1136) Unknown identifier "fib8".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(269): (vcom-1136) Unknown identifier "fib9".
-# ** Error: Z:/github/tdt4255/oving1/tb_toplevel.vhd(410): VHDL Compiler exiting
-vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/tb_toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-do tb_toplevel.fdo
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlftfcv2ia".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftfcv2ia
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt/_deps" - file is inconsistent with version property.
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt12/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt18/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt21/_deps" - file is inconsistent with version property.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_toplevel(behavior)#1
-# Loading ieee.numeric_std(body)
-# Loading work.mips_constant_pkg
-# Loading work.toplevel(behavioral)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.com(behavioral)#1
-# Loading work.memory(behavioral)#1
-# Loading work.processor(behavioral)#1
-# Loading work.control_unit(behavioral)#1
-# Loading work.alu(behavioral)#1
-# Loading work.alu_1bit(behavioral)#1
-# Loading work.full_adder(behavioral)#1
-# Loading work.alu_control(behavioral)#1
-# Loading work.pc(behavioral)#1
-# Loading work.pc_handle(behavioral)#1
-# Loading work.adder(behavioral)#1
-# Loading work.shift_two(behavioral)#1
-# Loading work.adder(behavioral)#2
-# Loading work.register_file(behavioral)#1
-# Loading work.sign_extend(behavioral)#1
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-do Z:/github/tdt4255/oving1/toplevel.do
-restart -f; run 10us
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt/_deps" - file is inconsistent with version property.
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt12/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt18/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt21/_deps" - file is inconsistent with version property.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_toplevel(behavior)#1
-# Loading ieee.numeric_std(body)
-# Loading work.mips_constant_pkg
-# Loading work.toplevel(behavioral)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.com(behavioral)#1
-# Loading work.memory(behavioral)#1
-# Loading work.processor(behavioral)#1
-# Loading work.control_unit(behavioral)#1
-# Loading work.alu(behavioral)#1
-# Loading work.alu_1bit(behavioral)#1
-# Loading work.full_adder(behavioral)#1
-# Loading work.alu_control(behavioral)#1
-# Loading work.pc(behavioral)#1
-# Loading work.pc_handle(behavioral)#1
-# Loading work.adder(behavioral)#1
-# Loading work.shift_two(behavioral)#1
-# Loading work.adder(behavioral)#2
-# Loading work.register_file(behavioral)#1
-# Loading work.sign_extend(behavioral)#1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-restart -f; run 100us
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt/_deps" - file is inconsistent with version property.
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt12/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt18/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt21/_deps" - file is inconsistent with version property.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_toplevel(behavior)#1
-# Loading ieee.numeric_std(body)
-# Loading work.mips_constant_pkg
-# Loading work.toplevel(behavioral)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.com(behavioral)#1
-# Loading work.memory(behavioral)#1
-# Loading work.processor(behavioral)#1
-# Loading work.control_unit(behavioral)#1
-# Loading work.alu(behavioral)#1
-# Loading work.alu_1bit(behavioral)#1
-# Loading work.full_adder(behavioral)#1
-# Loading work.alu_control(behavioral)#1
-# Loading work.pc(behavioral)#1
-# Loading work.pc_handle(behavioral)#1
-# Loading work.adder(behavioral)#1
-# Loading work.shift_two(behavioral)#1
-# Loading work.adder(behavioral)#2
-# Loading work.register_file(behavioral)#1
-# Loading work.sign_extend(behavioral)#1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-quit -sim
-vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/processor.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package mips_constant_pkg
-# -- Compiling entity processor
-# -- Compiling architecture behavioral of processor
-vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Loading package mips_constant_pkg
-# -- Compiling entity toplevel
-# -- Compiling architecture behavioral of toplevel
-vcom -reportprogress 300 -work work Z:/github/tdt4255/oving1/tb_toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-do tb_toplevel.fdo
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlftqt9f4y".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftqt9f4y
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt/_deps" - file is inconsistent with version property.
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt12/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt18/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt21/_deps" - file is inconsistent with version property.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "processor(behavioral)".
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_toplevel(behavior)#1
-# Loading ieee.numeric_std(body)
-# Loading work.mips_constant_pkg
-# Loading work.toplevel(behavioral)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.com(behavioral)#1
-# Loading work.memory(behavioral)#1
-# Loading work.processor(behavioral)#1
-# Loading work.control_unit(behavioral)#1
-# Loading work.alu(behavioral)#1
-# Loading work.alu_1bit(behavioral)#1
-# Loading work.full_adder(behavioral)#1
-# Loading work.alu_control(behavioral)#1
-# Loading work.pc(behavioral)#1
-# Loading work.pc_handle(behavioral)#1
-# Loading work.adder(behavioral)#1
-# Loading work.shift_two(behavioral)#1
-# Loading work.adder(behavioral)#2
-# Loading work.register_file(behavioral)#1
-# Loading work.sign_extend(behavioral)#1
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-do Z:/github/tdt4255/oving1/toplevel.do
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf Z:/github/tdt4255/oving1/toplevel_2.do
-restart -f; run 20us;
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt/_deps" - file is inconsistent with version property.
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt12/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt18/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "Z:\github\tdt4255\oving1\work/@_opt21/_deps" - file is inconsistent with version property.
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_toplevel(behavior)#1
-# Loading ieee.numeric_std(body)
-# Loading work.mips_constant_pkg
-# Loading work.toplevel(behavioral)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.com(behavioral)#1
-# Loading work.memory(behavioral)#1
-# Loading work.processor(behavioral)#1
-# Loading work.control_unit(behavioral)#1
-# Loading work.alu(behavioral)#1
-# Loading work.alu_1bit(behavioral)#1
-# Loading work.full_adder(behavioral)#1
-# Loading work.alu_control(behavioral)#1
-# Loading work.pc(behavioral)#1
-# Loading work.pc_handle(behavioral)#1
-# Loading work.adder(behavioral)#1
-# Loading work.shift_two(behavioral)#1
-# Loading work.adder(behavioral)#2
-# Loading work.register_file(behavioral)#1
-# Loading work.sign_extend(behavioral)#1
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0

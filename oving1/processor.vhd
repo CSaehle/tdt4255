@@ -161,7 +161,7 @@ begin
 	pc_write_enable <= '1' when (next_state = FETCH) and (processor_enable = '1') else '0';
 	
 	--
-	reg_write_exec <= reg_write when (current_state = EXEC) else '0';
+	reg_write_exec <= reg_write when (current_state /= FETCH) else '0';
 	
 	-- The ALU takes the value of the first input register.
 	alu_x <= rs;
