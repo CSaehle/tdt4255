@@ -45,6 +45,15 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="reg_32.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="reg_32.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="reg_32.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="reg_exmem.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="reg_exmem.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="reg_exmem.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="reg_idex.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="reg_idex.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="reg_idex.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="reg_ifid.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="reg_ifid.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="reg_ifid.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_alu.fdo"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_toplevel.fdo"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="toplevel.bgn" xil_pn:subbranch="FPGAConfiguration"/>
