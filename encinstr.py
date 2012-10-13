@@ -177,7 +177,7 @@ fib_inst = [
             encJ(JMP, 8), #14 - jump to for1
             encI(SW, 0, 4, 1), #store r4 to datamem addr 1
             encI(SW, 0, 4, 1), #store r4 to datamem addr 1
-            encI(SW, 0, 4, 1) #store r4 to datamem addr 1
+            encI(LW, 0, 7, 1) #store r4 to datamem addr 1
             
     ]
 

@@ -106,7 +106,7 @@ ARCHITECTURE behavior OF tb_toplevel IS
    constant FIB04 : std_logic_vector(0 to 31)		:= x"3C0A0002";
    constant FIB05 : std_logic_vector(0 to 31)		:= x"3C0B0001";
    constant FIB06 : std_logic_vector(0 to 31)		:= x"3C000000";
-   constant FIB07 : std_logic_vector(0 to 31)		:= x"002A0822";
+   constant FIB07 : std_logic_vector(0 to 31)		:= x"002B0822";
    constant FIB08 : std_logic_vector(0 to 31)		:= x"10200006";
    constant FIB09 : std_logic_vector(0 to 31)		:= x"00432020";
    constant FIB10 : std_logic_vector(0 to 31)		:= x"00601020";
@@ -116,7 +116,7 @@ ARCHITECTURE behavior OF tb_toplevel IS
    constant FIB14 : std_logic_vector(0 to 31)		:= x"08000008";
    constant FIB15 : std_logic_vector(0 to 31)		:= x"AC040001";
    constant FIB16 : std_logic_vector(0 to 31)		:= x"AC040001";
-   constant FIB17 : std_logic_vector(0 to 31)		:= x"AC040001";
+   constant FIB17 : std_logic_vector(0 to 31)		:= x"8C070001";
       
    constant CMD_IDLE	: std_logic_vector(0 to 31) := "00000000000000000000000000000000";
 	constant CMD_WI	: std_logic_vector(0 to 31) := "00000000000000000000000000000001";
