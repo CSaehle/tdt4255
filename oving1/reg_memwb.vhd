@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date:    21:55:32 10/13/2012 
+-- Create Date:    15:58:39 10/16/2012 
 -- Design Name: 
--- Module Name:    idex - Behavioral 
+-- Module Name:    reg_memwb - Behavioral 
 -- Project Name: 
 -- Target Devices: 
 -- Tool versions: 
@@ -29,56 +29,37 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity reg_exmem is
+entity reg_memwb is
     Port ( reg_write_in : in  STD_LOGIC;
            reg_write_out : out  STD_LOGIC;
-			  mem_to_reg_in : in STD_LOGIC;
-			  mem_to_reg_out : out STD_LOGIC;
-           branch_in : in  STD_LOGIC;
-           branch_out : out  STD_LOGIC;
-           mem_read_in : in  STD_LOGIC;
-           mem_read_out : out  STD_LOGIC;
-           mem_write_in : in  STD_LOGIC;
-           mem_write_out : out  STD_LOGIC;
-           pc_in : in  STD_LOGIC_VECTOR (31 downto 0);
-           pc_out : out  STD_LOGIC_VECTOR (31 downto 0);
+           mem_to_reg_in : in  STD_LOGIC;
+           mem_to_reg_out : out  STD_LOGIC;
+           read_data_in : in  STD_LOGIC_VECTOR (31 downto 0);
+           read_data_out : out  STD_LOGIC_VECTOR (31 downto 0);
            alu_res_in : in  STD_LOGIC_VECTOR (31 downto 0);
            alu_res_out : out  STD_LOGIC_VECTOR (31 downto 0);
-           read_data_2_in : in  STD_LOGIC_VECTOR (31 downto 0);
-           read_data_2_out : out  STD_LOGIC_VECTOR (31 downto 0);
            rd_selected_in : in  STD_LOGIC_VECTOR (4 downto 0);
            rd_selected_out : out  STD_LOGIC_VECTOR (4 downto 0);
 			  clk : in STD_LOGIC;
 			  reset : in STD_LOGIC);
-			  
-end reg_exmem;
+end reg_memwb;
 
-architecture Behavioral of reg_exmem is
+architecture Behavioral of reg_memwb is
 
 begin
-
-process (reg_write_in, mem_to_reg_in, branch_in, mem_read_in, mem_write_in, pc_in, alu_res_in, read_data_2_in,
-			rd_selected_in, clk, reset)
+process (reg_write_in, mem_to_reg_in, read_data_in, alu_res_in, rd_selected_in, clk, reset)
 	begin
 		if (reset = '1') then
 			reg_write_out <= '0';
 			mem_to_reg_out <= '0';
-			branch_out <= '0';
-			mem_read_out <= '0';
-			mem_write_out <= '0';
-			pc_out <= (others => '0');
+			read_data_out <= (others => '0');
 			alu_res_out <= (others => '0');
-			read_data_2_out <= (others => '0');
 			rd_selected_out <= (others => '0');
 		elsif (rising_edge(clk)) then
 			reg_write_out <= reg_write_in;
 			mem_to_reg_out <= mem_to_reg_in;
-			branch_out <= branch_in;
-			mem_read_out <= mem_read_in;
-			mem_write_out <= mem_write_in;
-			pc_out <= pc_in;
+			read_data_out <= read_data_in;
 			alu_res_out <= alu_res_in;
-			read_data_2_out <= read_data_2_in;
 			rd_selected_out <= rd_selected_in;
 		end if;
 end process;

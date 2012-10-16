@@ -4,15 +4,15 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to Z:/git/GitHub/tdt4255/oving1/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.13 secs
  
---> Reading design: reg_exmem.prj
+--> Reading design: reg_memwb.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -39,13 +39,13 @@ TABLE OF CONTENTS
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "\git\GitHub\tdt4255\oving1\reg_exmem.vhd" into library work
-Parsing entity <reg_exmem>.
-Parsing architecture <Behavioral> of entity <reg_exmem>.
+Parsing VHDL file "\git\GitHub\tdt4255\oving1\reg_memwb.vhd" into library work
+Parsing entity <reg_memwb>.
+Parsing architecture <Behavioral> of entity <reg_memwb>.
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.22 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.69 secs
  
 --> 
 

@@ -32,6 +32,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity reg_idex is
     Port ( reg_write_in : in  STD_LOGIC;
            reg_write_out : out  STD_LOGIC;
+			  mem_to_reg_in : in STD_LOGIC;
+			  mem_to_reg_out : out STD_LOGIC;
            branch_in : in  STD_LOGIC;
            branch_out : out  STD_LOGIC;
            mem_read_in : in  STD_LOGIC;
@@ -65,11 +67,12 @@ architecture Behavioral of reg_idex is
 
 begin
 
-process (reg_write_in, branch_in, mem_read_in, mem_write_in, reg_dst_in, alu_op_in, alu_src_in,
+process (reg_write_in, mem_to_reg_in, branch_in, mem_read_in, mem_write_in, reg_dst_in, alu_op_in, alu_src_in,
 				pc_in, read_data_1_in, read_data_2_in, immediate_in, rt_in, rd_in, clk, reset)
 	begin
 		if (reset = '1') then
 			reg_write_out <= '0';
+			mem_to_reg_out <= '0';
 			branch_out <= '0';
 			mem_read_out <= '0';
 			mem_write_out <= '0';
@@ -84,6 +87,7 @@ process (reg_write_in, branch_in, mem_read_in, mem_write_in, reg_dst_in, alu_op_
 			rd_out <= (others => '0');
 		elsif (rising_edge(clk)) then
 			reg_write_out <= reg_write_in;
+			mem_to_reg_out <= mem_to_reg_in;
 			branch_out <= branch_in;
 			mem_read_out <= mem_read_in;
 			mem_write_out <= mem_write_in;

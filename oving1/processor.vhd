@@ -116,10 +116,90 @@ architecture Behavioral of processor is
 	end component REGISTER_FILE;
 	
 	component SIGN_EXTEND is
-	    Port ( 
-					in_addr : in  STD_LOGIC_VECTOR (15 downto 0);
-					out_addr : out  STD_LOGIC_VECTOR (31 downto 0));
+		Port ( 
+			in_addr : in  STD_LOGIC_VECTOR (15 downto 0);
+			out_addr : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component SIGN_EXTEND;
+	
+	component reg_ifid is
+		Port ( pc_in : in  STD_LOGIC_VECTOR (31 downto 0);
+			pc_out : out  STD_LOGIC_VECTOR (31 downto 0);
+			instr_in : in  STD_LOGIC_VECTOR (31 downto 0);
+			instr_out : out  STD_LOGIC_VECTOR (31 downto 0);
+			clk : in  STD_LOGIC;
+			reset : in  STD_LOGIC);
+	end component reg_ifid;
+	
+	component reg_idex is
+		Port ( reg_write_in : in  STD_LOGIC;
+           reg_write_out : out  STD_LOGIC;
+			  mem_to_reg_in : in STD_LOGIC;
+			  mem_to_reg_out : out STD_LOGIC;
+           branch_in : in  STD_LOGIC;
+           branch_out : out  STD_LOGIC;
+           mem_read_in : in  STD_LOGIC;
+           mem_read_out : out  STD_LOGIC;
+           mem_write_in : in  STD_LOGIC;
+           mem_write_out : out  STD_LOGIC;
+           reg_dst_in : in  STD_LOGIC;
+           reg_dst_out : out  STD_LOGIC;
+           alu_op_in : in  STD_LOGIC_VECTOR (1 downto 0);
+           alu_op_out : out  STD_LOGIC_VECTOR (1 downto 0);
+           alu_src_in : in  STD_LOGIC;
+           alu_src_out : out  STD_LOGIC;
+           pc_in : in  STD_LOGIC_VECTOR (31 downto 0);
+           pc_out : out  STD_LOGIC_VECTOR (31 downto 0);
+           read_data_1_in : in  STD_LOGIC_VECTOR (31 downto 0);
+           read_data_1_out : out  STD_LOGIC_VECTOR (31 downto 0);
+           read_data_2_in : in  STD_LOGIC_VECTOR (31 downto 0);
+           read_data_2_out : out  STD_LOGIC_VECTOR (31 downto 0);
+           immediate_in : in  STD_LOGIC_VECTOR (31 downto 0);
+           immediate_out : out  STD_LOGIC_VECTOR (31 downto 0);
+           rt_in : in  STD_LOGIC_VECTOR (4 downto 0);
+           rt_out : out  STD_LOGIC_VECTOR (4 downto 0);
+           rd_in : in  STD_LOGIC_VECTOR (4 downto 0);
+           rd_out : out  STD_LOGIC_VECTOR (4 downto 0);
+			  clk : in STD_LOGIC;
+			  reset : in STD_LOGIC);
+	end component reg_idex;
+	
+	component reg_exmem is
+		Port ( reg_write_in : in  STD_LOGIC;
+           reg_write_out : out  STD_LOGIC;
+			  mem_to_reg_in : in STD_LOGIC;
+			  mem_to_reg_out : out STD_LOGIC;
+           branch_in : in  STD_LOGIC;
+           branch_out : out  STD_LOGIC;
+           mem_read_in : in  STD_LOGIC;
+           mem_read_out : out  STD_LOGIC;
+           mem_write_in : in  STD_LOGIC;
+           mem_write_out : out  STD_LOGIC;
+           pc_in : in  STD_LOGIC_VECTOR (31 downto 0);
+           pc_out : out  STD_LOGIC_VECTOR (31 downto 0);
+           alu_res_in : in  STD_LOGIC_VECTOR (31 downto 0);
+           alu_res_out : out  STD_LOGIC_VECTOR (31 downto 0);
+           read_data_2_in : in  STD_LOGIC_VECTOR (31 downto 0);
+           read_data_2_out : out  STD_LOGIC_VECTOR (31 downto 0);
+           rd_selected_in : in  STD_LOGIC_VECTOR (4 downto 0);
+           rd_selected_out : out  STD_LOGIC_VECTOR (4 downto 0);
+			  clk : in STD_LOGIC;
+			  reset : in STD_LOGIC);
+	end component reg_exmem;
+	
+	component reg_memwb is
+		Port ( reg_write_in : in  STD_LOGIC;
+           reg_write_out : out  STD_LOGIC;
+           mem_to_reg_in : in  STD_LOGIC;
+           mem_to_reg_out : out  STD_LOGIC;
+           read_data_in : in  STD_LOGIC_VECTOR (31 downto 0);
+           read_data_out : out  STD_LOGIC_VECTOR (31 downto 0);
+           alu_res_in : in  STD_LOGIC_VECTOR (31 downto 0);
+           alu_res_out : out  STD_LOGIC_VECTOR (31 downto 0);
+           rd_selected_in : in  STD_LOGIC_VECTOR (4 downto 0);
+           rd_selected_out : out  STD_LOGIC_VECTOR (4 downto 0);
+			  clk : in STD_LOGIC;
+			  reset : in STD_LOGIC);
+	end component reg_memwb;
 	
 	signal current_state: state_type := STALL;
 	signal next_state: state_type := EXEC;
