@@ -69,13 +69,13 @@ process (reg_write_in, branch_in, mem_read_in, mem_write_in, reg_dst_in, alu_op_
 				pc_in, read_data_1_in, read_data_2_in, immediate_in, rt_in, rd_in, clk, reset)
 	begin
 		if (reset = '1') then
-			reg_write_out <= (others => '0');
-			branch_out <= (others => '0');
-			mem_read_out <= (others => '0');
-			mem_write_out <= (others => '0');
-			reg_dst_out <= (others => '0');
+			reg_write_out <= '0';
+			branch_out <= '0';
+			mem_read_out <= '0';
+			mem_write_out <= '0';
+			reg_dst_out <= '0';
 			alu_op_out <= (others => '0');
-			alu_src_out <= (others => '0');
+			alu_src_out <= '0';
 			pc_out <= (others => '0');
 			read_data_1_out <= (others => '0');
 			read_data_2_out <= (others => '0');

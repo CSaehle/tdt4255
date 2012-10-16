@@ -5,26 +5,5 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="845" delta="new" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_idex.vhd" Line 72: Type of aggregate cannot be determined without context ; <arg fmt="%d" index="1">0</arg> visible types match here
-</msg>
-
-<msg type="error" file="HDLCompiler" num="845" delta="new" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_idex.vhd" Line 73: Type of aggregate cannot be determined without context ; <arg fmt="%d" index="1">0</arg> visible types match here
-</msg>
-
-<msg type="error" file="HDLCompiler" num="845" delta="new" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_idex.vhd" Line 74: Type of aggregate cannot be determined without context ; <arg fmt="%d" index="1">0</arg> visible types match here
-</msg>
-
-<msg type="error" file="HDLCompiler" num="845" delta="new" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_idex.vhd" Line 75: Type of aggregate cannot be determined without context ; <arg fmt="%d" index="1">0</arg> visible types match here
-</msg>
-
-<msg type="error" file="HDLCompiler" num="845" delta="new" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_idex.vhd" Line 76: Type of aggregate cannot be determined without context ; <arg fmt="%d" index="1">0</arg> visible types match here
-</msg>
-
-<msg type="error" file="HDLCompiler" num="845" delta="new" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_idex.vhd" Line 78: Type of aggregate cannot be determined without context ; <arg fmt="%d" index="1">0</arg> visible types match here
-</msg>
-
-<msg type="error" file="HDLCompiler" num="854" delta="new" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_idex.vhd" Line 64: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
-</msg>
-
 </messages>
 
