@@ -213,6 +213,7 @@ architecture Behavioral of processor is
 	end component reg_memwb;
 	
 	signal id_instruction: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	signal ONE: STD_LOGIC_VECTOR (31 downto 0) := x"00000001";
 	
 	--control unit
 	----WB
@@ -316,7 +317,7 @@ architecture Behavioral of processor is
 
 begin
 	-- This one updates the PC when the next state is a FETCH to make sure the instruction is ready for the next EXEC
-	pc_write_enable <= '1';
+	pc_write_enable <= processor_enable;
 	
 	-- This one multiplexes - if ALU_SRC is set, the ALU takes the value of the second input register. If not, it takes the sign-extended offset of the instruction - for branches
 	alu_y <= ex_offset when ex_alu_src = '1' else ex_read_data_2;
@@ -404,7 +405,7 @@ begin
 			jump_target_in => ex_jump_target,
 			jump_target_out => mem_jump_target,
 			zero_in => flags.zero,
-			zero_out => mem_branch,
+			zero_out => mem_zero,
 			mem_read_in => ex_mem_read,
 			mem_read_out => mem_mem_read,
 			mem_write_in => ex_mem_write,
@@ -479,6 +480,14 @@ begin
 			addr_put => if_jump_selected
 		);
 		
+	inst_pc_add: adder
+	port map (
+		X => pc_current,
+		Y => ONE,
+		CIN => ZERO1B,
+		R => if_pc_next
+	);
+		
 	inst_branch_add: adder
 	port map (
 		X => ex_pc_next,
@@ -502,7 +511,7 @@ begin
 		
 	inst_sign_extend: sign_extend
 	port map(
-			in_addr => imem_data_in (15 downto 0),
+			in_addr => id_instruction (15 downto 0),
 			out_addr => id_offset
 		);
 
