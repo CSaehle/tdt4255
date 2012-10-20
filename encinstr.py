@@ -113,7 +113,7 @@ def progtb(instrs, start=1, fname=None):
         print(lines)
     
 
-def simulate(instrs, start=1, startexec=1, dmeminit=None, imemsize=0xFF, dmemsize=0xFF):
+def simulate(instrs, start=1, startexec=1, endexec=None, dmeminit=None, imemsize=0xFF, dmemsize=0xFF):
     plen = len(instrs)
     reg = [0] * 32
     dmem = [0] * dmemsize
@@ -121,12 +121,13 @@ def simulate(instrs, start=1, startexec=1, dmeminit=None, imemsize=0xFF, dmemsiz
     imem[start:start+plen] = instrs #copy program to instruction memory
     if dmeminit:
         dmem[0:len(dmeminit)] = dmeminit #initialize data memory
-    
-    pend = start + plen
+
+    if not endexec:
+        endexec = start + plen
     pc = startexec
     
 
-    while (pc <= pend):
+    while (pc <= endexec):
         instr = imem[pc]        
         bcode = bin(instr)[2:].rjust(32, '0')
         opcode = int(bcode[0:6], 2)
