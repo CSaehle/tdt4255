@@ -39,7 +39,7 @@ entity reg_idex is
 			  jump_in : in STD_LOGIC;
 			  jump_out : out STD_LOGIC;
 			  jump_target_in : in STD_LOGIC_VECTOR (25 downto 0);
-			  jump_target_out : in STD_LOGIC_VECTOR (25 downto 0);
+			  jump_target_out : out STD_LOGIC_VECTOR (25 downto 0);
            mem_read_in : in  STD_LOGIC;
            mem_read_out : out  STD_LOGIC;
            mem_write_in : in  STD_LOGIC;
@@ -71,7 +71,7 @@ architecture Behavioral of reg_idex is
 
 begin
 
-process (reg_write_in, mem_to_reg_in, branch_in, mem_read_in, mem_write_in, reg_dst_in, alu_op_in, alu_src_in,
+process (reg_write_in, mem_to_reg_in, branch_in, jump_in, jump_target_in, mem_read_in, mem_write_in, reg_dst_in, alu_op_in, alu_src_in,
 				pc_in, read_data_1_in, read_data_2_in, immediate_in, rt_in, rd_in, clk, reset)
 	begin
 		if (reset = '1') then

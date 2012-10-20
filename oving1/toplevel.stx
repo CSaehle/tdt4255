@@ -10,7 +10,7 @@ Total CPU time to Xst completion: 0.10 secs
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: toplevel.prj
 
@@ -62,49 +62,15 @@ Parsing architecture <Behavioral> of entity <reg_ifid>.
 Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_idex.vhd" into library work
 Parsing entity <reg_idex>.
 Parsing architecture <Behavioral> of entity <reg_idex>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_exmem.vhd" into library work
-Parsing entity <reg_exmem>.
-Parsing architecture <Behavioral> of entity <reg_exmem>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\register_file.vhd" into library work
-Parsing entity <register_file>.
-Parsing architecture <Behavioral> of entity <register_file>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\pc.vhd" into library work
-Parsing entity <pc>.
-Parsing architecture <Behavioral> of entity <pc>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\control_unit.vhd" into library work
-Parsing entity <control_unit>.
-Parsing architecture <Behavioral> of entity <control_unit>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\alu_control.vhd" into library work
-Parsing entity <alu_control>.
-Parsing architecture <Behavioral> of entity <alu_control>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\alu.vhd" into library work
-Parsing entity <alu>.
-Parsing architecture <Behavioral> of entity <alu>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\adder.vhd" into library work
-Parsing entity <adder>.
-Parsing architecture <Behavioral> of entity <adder>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" into library work
-Parsing entity <processor>.
-Parsing architecture <Behavioral> of entity <processor>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\memory.vhd" into library work
-Parsing entity <memory>.
-Parsing architecture <Behavioral> of entity <memory>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\com.vhd" into library work
-Parsing entity <com>.
-Parsing architecture <Behavioral> of entity <com>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\toplevel.vhd" into library work
-Parsing entity <toplevel>.
-Parsing architecture <Behavioral> of entity <toplevel>.
-
-
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.76 secs
- 
+ERROR:HDLCompiler:294 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_idex.vhd" Line 82: Cannot update 'in' object jump_target_out
+ERROR:HDLCompiler:294 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_idex.vhd" Line 99: Cannot update 'in' object jump_target_out
+ERROR:HDLCompiler:854 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_idex.vhd" Line 70: Unit <behavioral> ignored due to previous errors.
+VHDL file \Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_idex.vhd ignored due to errors
 --> 
 
-Total memory usage is 190256 kilobytes
+Total memory usage is 188016 kilobytes
 
-Number of errors   :    0 (   0 filtered)
+Number of errors   :    3 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

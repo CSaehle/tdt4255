@@ -3,13 +3,13 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/xst
 
 
-Total REAL time to Xst completion: 1.00 secs
+Total REAL time to Xst completion: 0.00 secs
 Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: processor.prj
@@ -42,9 +42,6 @@ TABLE OF CONTENTS
 Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\full_adder.vhd" into library work
 Parsing entity <full_adder>.
 Parsing architecture <Behavioral> of entity <full_adder>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\shift_two.vhd" into library work
-Parsing entity <shift_two>.
-Parsing architecture <Behavioral> of entity <shift_two>.
 Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\reg_32.vhd" into library work
 Parsing entity <reg_32>.
 Parsing architecture <Behavioral> of entity <reg_32>.
@@ -53,9 +50,6 @@ Parsing package <MIPS_CONSTANT_PKG>.
 Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\alu_1bit.vhd" into library work
 Parsing entity <alu_1bit>.
 Parsing architecture <Behavioral> of entity <alu_1bit>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\adder.vhd" into library work
-Parsing entity <adder>.
-Parsing architecture <Behavioral> of entity <adder>.
 Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\sign_extend.vhd" into library work
 Parsing entity <sign_extend>.
 Parsing architecture <Behavioral> of entity <sign_extend>.
@@ -74,9 +68,6 @@ Parsing architecture <Behavioral> of entity <reg_exmem>.
 Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\register_file.vhd" into library work
 Parsing entity <register_file>.
 Parsing architecture <Behavioral> of entity <register_file>.
-Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\pc_handle.vhd" into library work
-Parsing entity <pc_handle>.
-Parsing architecture <Behavioral> of entity <pc_handle>.
 Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\pc.vhd" into library work
 Parsing entity <pc>.
 Parsing architecture <Behavioral> of entity <pc>.
@@ -89,29 +80,22 @@ Parsing architecture <Behavioral> of entity <alu_control>.
 Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\alu.vhd" into library work
 Parsing entity <alu>.
 Parsing architecture <Behavioral> of entity <alu>.
+Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\adder.vhd" into library work
+Parsing entity <adder>.
+Parsing architecture <Behavioral> of entity <adder>.
 Parsing VHDL file "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" into library work
 Parsing entity <processor>.
 Parsing architecture <Behavioral> of entity <processor>.
-ERROR:HDLCompiler:69 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 327: <id_instruction> is not declared.
-ERROR:HDLCompiler:192 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 327: Actual of formal out port instr_out cannot be an expression
-ERROR:HDLCompiler:69 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 358: <id_instruction> is not declared.
-ERROR:HDLCompiler:69 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 360: <id_instruction> is not declared.
-ERROR:HDLCompiler:69 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 412: <id_instruction> is not declared.
-ERROR:HDLCompiler:69 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 453: <offset> is not declared.
-ERROR:HDLCompiler:69 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 457: <branch> is not declared.
-ERROR:HDLCompiler:69 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 470: <id_rs> is not declared.
-ERROR:HDLCompiler:192 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 470: Actual of formal out port rs cannot be an expression
-ERROR:HDLCompiler:69 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 471: <id_rt> is not declared.
-ERROR:HDLCompiler:192 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 471: Actual of formal out port rt cannot be an expression
-ERROR:HDLCompiler:69 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 477: <offset> is not declared.
-ERROR:HDLCompiler:192 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 477: Actual of formal out port out_addr cannot be an expression
-ERROR:HDLCompiler:854 - "\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 50: Unit <behavioral> ignored due to previous errors.
-VHDL file \Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd ignored due to errors
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.21 secs
+ 
 --> 
 
 Total memory usage is 189168 kilobytes
 
-Number of errors   :   14 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 
