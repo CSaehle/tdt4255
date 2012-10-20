@@ -11,14 +11,19 @@
 # vsim -do \{do \{tb_toplevel.fdo\}\} 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlftsbrn40".
+#           Attempting to use alternate WLF file "./wlftfmq7kf".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftsbrn40
+#           Using alternate file: ./wlftfmq7kf
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Error: (vopt-19) Failed to access library 'work.{tb_toplevel' at "work.{tb_toplevel".
 # No such file or directory. (errno = ENOENT)
 # ** Error: Library work.{tb_toplevel not found.
 # Error loading design
+do C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_3.do
+restart -f; run 5ns
+# No Design Loaded!
+run tb_toplevel.fdo
+# No Design Loaded!
 do tb_toplevel.fdo
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
@@ -29,9 +34,9 @@ do tb_toplevel.fdo
 # vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlfticvrgc".
+#           Attempting to use alternate WLF file "./wlft5vf9qd".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfticvrgc
+#           Using alternate file: ./wlft5vf9qd
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
@@ -93,6 +98,7 @@ do tb_toplevel.fdo
 # Loading work.adder(behavioral)#1
 # Loading work.register_file(behavioral)#1
 # Loading work.sign_extend(behavioral)#1
+do C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_3.do
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
@@ -120,7 +126,41 @@ do tb_toplevel.fdo
 #    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-restart -f; run 80us;
+do C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_3.do
+restart -f; run 5ns
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt12/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt15/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt18/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt21/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt22/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt23/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt24/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt3/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
+restart -f; run 5us
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
@@ -165,8 +205,7 @@ restart -f; run 80us;
 #    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-do C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_3.do
-restart -f; run 40us;
+restart -f; run 50us
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
