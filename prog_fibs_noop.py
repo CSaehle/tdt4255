@@ -26,5 +26,6 @@ fib_inst = [
 
 print(simulate(fib_inst, dmemsize=8))
 progtb(fib_inst)
+progtb(fib_inst, fname="tb_fib.txt")
 #proghex(fib_inst)
 #proghex(fib_inst, fname="fib.txt")
