@@ -60,3 +60,38 @@ vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/ovin
 # ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd(459): (vcom-1136) Unknown identifier "wi".
 # ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd(469): (vcom-1136) Unknown identifier "wi".
 # ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd(492): VHDL Compiler exiting
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_toplevel
+# -- Compiling architecture behavior of tb_toplevel
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package mips_constant_pkg
+# -- Compiling entity processor
+# -- Compiling architecture behavioral of processor
+# ** Warning: [14] C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(320): (vcom-1272) Length of expected is 32; length of actual is 5.
+# ** Warning: [14] C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(324): (vcom-1272) Length of expected is 26; length of actual is 32.
+# ** Warning: [14] C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(324): (vcom-1272) Length of expected is 26; length of actual is 32.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(476): (vcom-1272) Length of formal "addr_put" is 32; length of actual is 26.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(506): VHDL Compiler exiting
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package mips_constant_pkg
+# -- Compiling entity processor
+# -- Compiling architecture behavioral of processor
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(328): "00" is not an operator symbol.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(328): Invalid prefix (string literal) for expanded name.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd(509): VHDL Compiler exiting
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package mips_constant_pkg
+# -- Compiling entity processor
+# -- Compiling architecture behavioral of processor

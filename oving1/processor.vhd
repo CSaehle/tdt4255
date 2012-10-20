@@ -267,11 +267,13 @@ architecture Behavioral of processor is
 	
 	signal id_offset: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal ex_offset: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	
 	signal ex_jump_target: STD_LOGIC_VECTOR (25 downto 0) := (others => '0');
 	signal mem_jump_target: STD_LOGIC_VECTOR (25 downto 0) := (others => '0');
 	
-	signal if_branch_selected: STD_LOGIC_VECTOR (25 downto 0) := (others => '0');
-	signal if_jump_selected: STD_LOGIC_VECTOR (25 downto 0) := (others => '0');
+	signal if_branch_selected: STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
+	signal if_jump_selected: STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
+	signal if_jump_target: STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
 	
 	signal mem_zero: STD_LOGIC := ZERO1b;
 	signal mem_branch_and_zero: STD_LOGIC := ZERO1b;
@@ -317,12 +319,13 @@ begin
 	pc_write_enable <= '1';
 	
 	-- This one multiplexes - if ALU_SRC is set, the ALU takes the value of the second input register. If not, it takes the sign-extended offset of the instruction - for branches
-	alu_y <= ex_offset when ex_alu_src = '1' else ex_rt;
+	alu_y <= ex_offset when ex_alu_src = '1' else ex_read_data_2;
 	
 	mem_branch_and_zero <= mem_branch and mem_zero;
 	
+	if_jump_target <= "00" & if_pc_next(31 downto 28) & mem_jump_target;
 	if_branch_selected <= mem_branch_target when mem_branch_and_zero = '1' else if_pc_next;
-	if_jump_selected <= mem_jump_target when mem_jump = '1' else if_branch_selected;
+	if_jump_selected <= if_jump_target when mem_jump = '1' else if_branch_selected;
 	
 	-- The ALU gets us the addrses for load/stores. It could be either, but this is not determined here so both are set as the result.
 	dmem_address <= mem_alu_out;

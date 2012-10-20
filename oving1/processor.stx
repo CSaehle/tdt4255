@@ -89,11 +89,11 @@ Parsing architecture <Behavioral> of entity <processor>.
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.17 secs
+Total CPU time to Xst completion: 3.19 secs
  
 --> 
 
-Total memory usage is 188400 kilobytes
+Total memory usage is 188912 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
