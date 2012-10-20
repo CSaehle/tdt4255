@@ -204,6 +204,8 @@ architecture Behavioral of processor is
 			  reset : in STD_LOGIC);
 	end component reg_memwb;
 	
+	signal id_instruction: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	
 	--control unit
 	----WB
 	signal id_reg_write: STD_LOGIC := ZERO1b;
@@ -257,9 +259,14 @@ architecture Behavioral of processor is
 	
 	signal id_offset: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal ex_offset: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	signal ex_jump_target: STD_LOGIC_VECTOR (25 downto 0) := (others => '0');
+	signal mem_jump_target: STD_LOGIC_VECTOR (25 downto 0) := (others => '0');
 	
 	signal mem_zero: STD_LOGIC := ZERO1b;
 	signal mem_branch_and_zero: STD_LOGIC := ZERO1b;
+	
+	signal ex_jump: STD_LOGIC := ZERO1b;
+	signal mem_jump: STD_LOGIC := ZERO1b;
 	
 	signal if_pc_next: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal id_pc_next: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
@@ -289,8 +296,8 @@ architecture Behavioral of processor is
 	
 	signal pc_write_enable: STD_LOGIC := '0';
 	
-	signal ex_rt: STD_LOGIC_VECTOR (4 downto 0) := ZERO32b;
-	signal ex_rd: STD_LOGIC_VECTOR (4 downto 0) := ZERO32b;
+	signal ex_rt: STD_LOGIC_VECTOR (4 downto 0) := (others => '0');
+	signal ex_rd: STD_LOGIC_VECTOR (4 downto 0) := (others => '0');
 	
 	signal wb_dmem_data_in : STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	
@@ -476,14 +483,14 @@ begin
 			rt_addr => imem_data_in (20 downto 16),
 			rd_addr => wb_rd_addr,
 			write_data => data_to_write,
-			rs => id_rs,
-			rt => id_rt
+			rs => id_read_data_1,
+			rt => id_read_data_2
 		);
 		
 	inst_sign_extend: sign_extend
 	port map(
 			in_addr => imem_data_in (15 downto 0),
-			out_addr => offset
+			out_addr => id_offset
 		);
 
 end Behavioral;
