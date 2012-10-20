@@ -91,15 +91,16 @@ architecture Behavioral of processor is
            addr_get : out  STD_LOGIC_VECTOR (31 downto 0));
 	end component PC;
 	
-	component PC_HANDLE is
-	    Port ( pc_current : in  STD_LOGIC_VECTOR (31 downto 0);
-           offset : in  STD_LOGIC_VECTOR (31 downto 0);
-           jump_inst : in  STD_LOGIC_VECTOR (25 downto 0);
-			  jump: in STD_LOGIC;
-           zero : in  STD_LOGIC;
-           branch : in  STD_LOGIC;
-           pc_next : out  STD_LOGIC_VECTOR (31 downto 0));
-	end component PC_HANDLE;
+	component adder
+		generic ( N : natural := 32);
+		port(
+			X	: in	STD_LOGIC_VECTOR(N-1 downto 0);
+			Y	: in	STD_LOGIC_VECTOR(N-1 downto 0);
+			CIN	: in	STD_LOGIC;
+			COUT	: out	STD_LOGIC;
+			R	: out	STD_LOGIC_VECTOR(N-1 downto 0)
+		);
+	end component;
 	
 	component REGISTER_FILE is
 		port(
@@ -170,6 +171,8 @@ architecture Behavioral of processor is
 			  mem_to_reg_out : out STD_LOGIC;
            branch_in : in  STD_LOGIC;
            branch_out : out  STD_LOGIC;
+           zero_in : in  STD_LOGIC;
+           zero_out : out  STD_LOGIC;
            mem_read_in : in  STD_LOGIC;
            mem_read_out : out  STD_LOGIC;
            mem_write_in : in  STD_LOGIC;
@@ -200,9 +203,6 @@ architecture Behavioral of processor is
 			  clk : in STD_LOGIC;
 			  reset : in STD_LOGIC);
 	end component reg_memwb;
-	
-	signal current_state: state_type := STALL;
-	signal next_state: state_type := EXEC;
 	
 	--control unit
 	----WB
@@ -258,9 +258,14 @@ architecture Behavioral of processor is
 	signal id_offset: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal ex_offset: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	
+	signal mem_zero: STD_LOGIC := ZERO1b;
+	signal mem_branch_and_zero: STD_LOGIC := ZERO1b;
+	
 	signal if_pc_next: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal id_pc_next: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal ex_pc_next: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	signal ex_branch_target: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	signal mem_branch_target: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	--/pc handle
 	
 	--register file
@@ -292,20 +297,19 @@ architecture Behavioral of processor is
 
 begin
 	-- This one updates the PC when the next state is a FETCH to make sure the instruction is ready for the next EXEC
-	pc_write_enable <= '1' when (next_state = FETCH) and (processor_enable = '1') else '0';
-	
-	--
-	reg_write_exec <= reg_write when (current_state /= FETCH) else '0';
+	pc_write_enable <= '1';
 	
 	-- This one multiplexes - if ALU_SRC is set, the ALU takes the value of the second input register. If not, it takes the sign-extended offset of the instruction - for branches
 	alu_y <= ex_offset when ex_alu_src = '1' else ex_rt;
+	
+	mem_branch_and_zero <= mem_branch and mem_zero;
 	
 	-- The ALU gets us the addrses for load/stores. It could be either, but this is not determined here so both are set as the result.
 	dmem_address <= mem_alu_out;
 	dmem_address_wr <= mem_alu_out;
 	
 	-- This one decides whether to read or write from memory.
-	dmem_write_enable <= mem_write;
+	dmem_write_enable <= mem_mem_write;
 	
 	-- This one determines the read address - if REG_DST is set, it's three-operand, if not, only two.
 	ex_rd_addr <= ex_rd when ex_reg_dst = '1' else ex_rt;
@@ -314,32 +318,6 @@ begin
 	
 	-- Using address from PC to address instruction memory.
 	imem_address <= pc_current;
-	
-	
-	-- Here's our state machine:
-	-- This first part just updates the state on rising clock edge.
-	process(CLK, processor_enable, next_state)
-	begin
-		if (rising_edge(CLK)) and (processor_enable = '1') then
-			current_state <= next_state;
-		end if;
-	end process;
-	
-	-- This one determines which state is the next one, depending on opcodes, current state. If the processor is not enabled, it prepares to fetch.
-	process(processor_enable, current_state, imem_data_in)
-	begin
-		if (processor_enable = '1') then 
-			if (current_state = FETCH) then
-				next_state <= EXEC;
-			elsif (current_state = EXEC) and (imem_data_in (31 downto 26) = "100011") then
-				next_state <= STALL;
-			else
-				next_state <= FETCH;
-			end if;
-		else
-			next_state <= FETCH;
-		end if;
-	end process;
 
 	-- PIPELINE REGISTERS
 	inst_reg_ifid : reg_ifid
@@ -394,12 +372,14 @@ begin
 			mem_to_reg_out => mem_mem_to_reg,
 			branch_in => ex_branch,
 			branch_out => mem_branch,
+			zero_in => flags.zero,
+			zero_out => mem_branch,
 			mem_read_in => ex_mem_read,
 			mem_read_out => mem_mem_read,
 			mem_write_in => ex_mem_write,
 			mem_write_out => mem_mem_write,
-			pc_in => ,
-			pc_out => ,
+			pc_in => ex_branch_target,
+			pc_out => mem_branch_target,
 			alu_res_in => ex_alu_out,
 			alu_res_out => mem_alu_out,
 			read_data_2_in => ex_read_data_2,
@@ -468,22 +448,30 @@ begin
 			addr_put => if_pc_next
 		);
 		
-	inst_pc_handle: pc_handle
+	inst_branch_add: adder
 	port map (
-			pc_current => pc_current,
-			offset => offset,
-			jump_inst => imem_data_in (25 downto 0),
-			jump => jump,
-			zero => flags.zero,
-			branch => branch,
-			pc_next => if_pc_next
-		);
+		X => ex_pc_next,
+		Y => ex_offset,
+		CIN => ZERO1B,
+		R => ex_branch_target
+	);
+		
+--	inst_pc_handle: pc_handle
+--	port map (
+--			pc_current => pc_current,
+--			offset => offset,
+--			jump_inst => imem_data_in (25 downto 0),
+--			jump => jump,
+--			zero => flags.zero,
+--			branch => branch,
+--			pc_next => if_pc_next
+--		);
 		
 	inst_register_file: register_file
 	port map(
 			clk => clk,
 			reset => reset,
-			rw => reg_write_exec,
+			rw => wb_reg_write,
 			rs_addr => imem_data_in (25 downto 21),
 			rt_addr => imem_data_in (20 downto 16),
 			rd_addr => wb_rd_addr,

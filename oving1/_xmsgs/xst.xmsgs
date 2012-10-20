@@ -5,5 +5,47 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 327: &lt;<arg fmt="%s" index="1">id_instruction</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="192" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 327: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">instr_out</arg> cannot be an expression
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 358: &lt;<arg fmt="%s" index="1">id_instruction</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 360: &lt;<arg fmt="%s" index="1">id_instruction</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 412: &lt;<arg fmt="%s" index="1">id_instruction</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 453: &lt;<arg fmt="%s" index="1">offset</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 457: &lt;<arg fmt="%s" index="1">branch</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 470: &lt;<arg fmt="%s" index="1">id_rs</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="192" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 470: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">rs</arg> cannot be an expression
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 471: &lt;<arg fmt="%s" index="1">id_rt</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="192" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 471: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">rt</arg> cannot be an expression
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 477: &lt;<arg fmt="%s" index="1">offset</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="192" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 477: Actual of formal <arg fmt="%s" index="1">out</arg> port <arg fmt="%s" index="2">out_addr</arg> cannot be an expression
+</msg>
+
+<msg type="error" file="HDLCompiler" num="854" delta="old" >"\Users\chribru\Desktop\GitHub\tdt4255\oving1\processor.vhd" Line 50: Unit &lt;<arg fmt="%s" index="1">behavioral</arg>&gt; ignored due to previous errors.
+</msg>
+
 </messages>
 
