@@ -36,6 +36,10 @@ entity reg_idex is
 			  mem_to_reg_out : out STD_LOGIC;
            branch_in : in  STD_LOGIC;
            branch_out : out  STD_LOGIC;
+			  jump_in : in STD_LOGIC;
+			  jump_out : out STD_LOGIC;
+			  jump_target_in : in STD_LOGIC_VECTOR (25 downto 0);
+			  jump_target_out : in STD_LOGIC_VECTOR (25 downto 0);
            mem_read_in : in  STD_LOGIC;
            mem_read_out : out  STD_LOGIC;
            mem_write_in : in  STD_LOGIC;
@@ -74,6 +78,8 @@ process (reg_write_in, mem_to_reg_in, branch_in, mem_read_in, mem_write_in, reg_
 			reg_write_out <= '0';
 			mem_to_reg_out <= '0';
 			branch_out <= '0';
+			jump_out <= '0';
+			jump_target_out <= (others => '0');
 			mem_read_out <= '0';
 			mem_write_out <= '0';
 			reg_dst_out <= '0';
@@ -89,6 +95,8 @@ process (reg_write_in, mem_to_reg_in, branch_in, mem_read_in, mem_write_in, reg_
 			reg_write_out <= reg_write_in;
 			mem_to_reg_out <= mem_to_reg_in;
 			branch_out <= branch_in;
+			jump_out <= jump_in;
+			jump_target_out <= jump_target_in;
 			mem_read_out <= mem_read_in;
 			mem_write_out <= mem_write_in;
 			reg_dst_out <= reg_dst_in;
