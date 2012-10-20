@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2012-10-20T15:16:48</DateModified>
+  <DateModified>2012-10-20T18:19:59</DateModified>
   <ModuleName>toplevel</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>//sambaad.stud.ntnu.no/terjesc/git/GitHub/tdt4255/oving1/iseconfig/toplevel.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>Z:/git/GitHub/tdt4255/oving1\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/iseconfig/toplevel.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/chribru/Desktop/GitHub/tdt4255/oving1\</ImplementationReportsDirectory>
   <DateInitialized>2012-09-28T22:24:59</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

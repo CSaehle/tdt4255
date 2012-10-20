@@ -100,7 +100,7 @@ def progtb(instrs, start=1, fname=None):
     for i, instr in enumerate(instrs):
         pos = 'x"'+hex(i+start)[2:].rjust(8, '0').upper()+'"'
         instr = 'x"'+outhex(instr)[2:].rjust(8, '0').upper()+'"'
-        lines += ["      command <= WI;", "      bus_address_in <= {};".format(pos), "      bus_data_in <= {};".format(instr), "      wait for clk_period*3;", ""]
+        lines += ["      command <= CMD_WI;", "      bus_address_in <= {};".format(pos), "      bus_data_in <= {};".format(instr), "      wait for clk_period*3;", ""]
         lines += ["      command <= CMD_IDLE;", "      bus_address_in <= zero;", "      bus_data_in <= zero;", "      wait for clk_period*3;", ""]
     lines = "\n".join(lines)
     
