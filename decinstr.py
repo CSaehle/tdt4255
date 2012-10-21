@@ -1,3 +1,5 @@
+from encinstr import fr2c
+
 def decinstr(x):
     bcode = bin(x)[2:].rjust(32, '0')
     opcode = bcode[0:6]
@@ -33,6 +35,6 @@ immediate:  {6:5d}  {6:016b}
 opcode:               {0}
 target:     {7:8d}  {7:026b}
 """.format(opcode, r_rs, r_rt, r_rd, r_shmt, r_func,
-           i_im, j_tgt)
+           fr2c(i_im, 16), j_tgt)
 
     print(res)

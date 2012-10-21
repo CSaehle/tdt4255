@@ -17,15 +17,15 @@ fib_inst = [
             encR(RTYPE, 1, 11, 1, 9, SUB), #21 - r1 -= 1
             NOP, NOP, NOP, #22-24
             encJ(JMP, 10), #25 - jump to for1
-            NOP, NOP, NOP, #26-28
-            encI(SW, 0, 4, 1), #29 - store r4 to datamem addr 1
-            NOP, NOP, NOP, NOP, #30-33
-            encI(LW, 0, 7, 1), #34 -load datamem addr 1 to r7
-            NOP, NOP, NOP, NOP, NOP, NOP, NOP, #35-41
-            encJ(JMP, 35) #42
-    ]
+            encI(SW, 0, 4, 1), #26 - store r4 to datamem addr 1
+            NOP, NOP, NOP, NOP, #27-30
+            encI(LW, 0, 7, 1), #31 -load datamem addr 1 to r7
+            NOP, NOP, NOP, NOP, NOP, NOP, NOP, #32-38
+            encI(BEQ, 0, 0, -8), #39 - infinite do nothing loop to prevent wraparound
+            NOP, NOP, NOP, NOP, NOP #40-44 - in case overwriting larger program
+        ]
 
-print(simulate(fib_inst, dmemsize=8, endexec=41))
+print(simulate(fib_inst, dmemsize=8, endexec=38))
 progtb(fib_inst)
 progtb(fib_inst, fname="tb_fib.txt")
 #proghex(fib_inst)

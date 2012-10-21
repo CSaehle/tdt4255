@@ -27,13 +27,14 @@ def to2c(x, bits):
 
 def fr2c(x, bits):
     msig = 1 << (bits-1)
-    mask = msig - 1
+    ones = msig - 1
     
     if x & msig:
-        x &= mask
-        x = -x
+        x &= ones
+        x ^= ones
+        x = -(x+1)
     else:
-        x &= mask
+        x &= ones
 
     return x       
 
@@ -154,7 +155,7 @@ def simulate(instrs, start=1, startexec=1, endexec=None, dmeminit=None, imemsize
             i_rt   = int(bcode[11:16], 2)
             i_im   = int(bcode[16:32], 2)
 
-            offset = fr2c(i_im, 32)
+            offset = fr2c(i_im, 16)
 
             #print("offset:", offset)
 

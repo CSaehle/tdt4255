@@ -135,6 +135,7 @@ BEGIN
       bus_address_in <= zero;
       bus_data_in <= zero;
       wait for clk_period*3;
+
 ----- DELETE FROM HERE
 
       command <= CMD_WI;
@@ -389,7 +390,7 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"0000001A";
-      bus_data_in <= x"00000000";
+      bus_data_in <= x"AC040001";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
@@ -419,7 +420,7 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"0000001D";
-      bus_data_in <= x"AC040001";
+      bus_data_in <= x"00000000";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
@@ -439,7 +440,7 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"0000001F";
-      bus_data_in <= x"00000000";
+      bus_data_in <= x"8C070001";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
@@ -469,7 +470,7 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"00000022";
-      bus_data_in <= x"8C070001";
+      bus_data_in <= x"00000000";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
@@ -519,7 +520,7 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"00000027";
-      bus_data_in <= x"00000000";
+      bus_data_in <= x"1000FFF8";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
@@ -549,7 +550,27 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"0000002A";
-      bus_data_in <= x"08000023";
+      bus_data_in <= x"00000000";
+      wait for clk_period*3;
+
+      command <= CMD_IDLE;
+      bus_address_in <= zero;
+      bus_data_in <= zero;
+      wait for clk_period*3;
+
+      command <= CMD_WI;
+      bus_address_in <= x"0000002B";
+      bus_data_in <= x"00000000";
+      wait for clk_period*3;
+
+      command <= CMD_IDLE;
+      bus_address_in <= zero;
+      bus_data_in <= zero;
+      wait for clk_period*3;
+
+      command <= CMD_WI;
+      bus_address_in <= x"0000002C";
+      bus_data_in <= x"00000000";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
