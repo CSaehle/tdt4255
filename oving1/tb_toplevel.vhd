@@ -137,7 +137,6 @@ BEGIN
       wait for clk_period*3;
 
 ----- DELETE FROM HERE
-
       command <= CMD_WI;
       bus_address_in <= x"00000001";
       bus_data_in <= x"3C010011";
@@ -230,7 +229,7 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"0000000A";
-      bus_data_in <= x"1020000F";
+      bus_data_in <= x"10200010";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
@@ -380,7 +379,7 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"00000019";
-      bus_data_in <= x"0800000A";
+      bus_data_in <= x"AC040001";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
@@ -390,7 +389,7 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"0000001A";
-      bus_data_in <= x"AC040001";
+      bus_data_in <= x"0800000A";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
