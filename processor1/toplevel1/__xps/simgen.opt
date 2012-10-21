@@ -1,1 +1,0 @@
- -p spartan6 -lang vhdl$(PROJECT_SEARCHPATHOPT) $(GLOBAL_SEARCHPATHOPT)   rw_toplevel/executable.elf -msg __xps/ise/xmsgprops.lst -s mti -X C:/Users/chribru/Desktop/GitHub/tdt4255/processor1/toplevel1/
