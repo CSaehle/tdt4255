@@ -338,7 +338,7 @@ begin
 	-- This one determines the read address - if REG_DST is set, it's three-operand, if not, only two.
 	ex_rd_addr <= ex_rd when ex_reg_dst = '1' else ex_rt;
 	-- Choose whether to use ALU or memory to source for writing to register.
-	data_to_write <= wb_dmem_data_in when wb_mem_to_reg = '1' else wb_alu_out;
+	data_to_write <= dmem_data_in when wb_mem_to_reg = '1' else wb_alu_out;
 	
 	-- Using address from PC to address instruction memory.
 	imem_address <= pc_current;

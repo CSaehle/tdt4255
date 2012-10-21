@@ -499,7 +499,7 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"00000025";
-      bus_data_in <= x"AC040001";
+      bus_data_in <= x"00000000";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
@@ -539,7 +539,7 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"00000029";
-      bus_data_in <= x"00000000";
+      bus_data_in <= x"8C070001";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
@@ -549,7 +549,7 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"0000002A";
-      bus_data_in <= x"8C070001";
+      bus_data_in <= x"00000000";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
@@ -559,7 +559,7 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"0000002B";
-      bus_data_in <= x"8C070001";
+      bus_data_in <= x"00000000";
       wait for clk_period*3;
 
       command <= CMD_IDLE;
@@ -649,26 +649,6 @@ BEGIN
 
       command <= CMD_WI;
       bus_address_in <= x"00000034";
-      bus_data_in <= x"00000000";
-      wait for clk_period*3;
-
-      command <= CMD_IDLE;
-      bus_address_in <= zero;
-      bus_data_in <= zero;
-      wait for clk_period*3;
-
-      command <= CMD_WI;
-      bus_address_in <= x"00000035";
-      bus_data_in <= x"00000000";
-      wait for clk_period*3;
-
-      command <= CMD_IDLE;
-      bus_address_in <= zero;
-      bus_data_in <= zero;
-      wait for clk_period*3;
-
-      command <= CMD_WI;
-      bus_address_in <= x"00000036";
       bus_data_in <= x"0800002A";
       wait for clk_period*3;
 

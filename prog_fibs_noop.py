@@ -19,9 +19,7 @@ fib_inst = [
             encJ(JMP, 13), #31 - jump to for1
             NOP, NOP, NOP, NOP, #32-35
             encI(SW, 0, 4, 1), #36 - store r4 to datamem addr 1
-            encI(SW, 0, 4, 1), #37 - store r4 to datamem addr 1
-            NOP, NOP, NOP, NOP, #38-39
-            encI(LW, 0, 7, 1), #40 -load datamem addr 1 to r7
+            NOP, NOP, NOP, NOP, #37-40
             encI(LW, 0, 7, 1), #41 -load datamem addr 1 to r7
             NOP, NOP, NOP, NOP, NOP, NOP, NOP, NOP, NOP, NOP, #42-51
             encJ(JMP, 42) #52
