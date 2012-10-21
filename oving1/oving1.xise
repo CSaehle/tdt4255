@@ -61,15 +61,6 @@
       <association xil_pn:name="PostRouteSimulation"/>
       <association xil_pn:name="PostTranslateSimulation"/>
     </file>
-    <file xil_pn:name="shift_two.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="Implementation"/>
-    </file>
-    <file xil_pn:name="tb_shift_two.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation"/>
-      <association xil_pn:name="PostMapSimulation"/>
-      <association xil_pn:name="PostRouteSimulation"/>
-      <association xil_pn:name="PostTranslateSimulation"/>
-    </file>
     <file xil_pn:name="alu_control.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="Implementation"/>
     </file>
@@ -92,16 +83,6 @@
     <file xil_pn:name="pc.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation"/>
       <association xil_pn:name="Implementation"/>
-    </file>
-    <file xil_pn:name="pc_handle.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation"/>
-      <association xil_pn:name="Implementation"/>
-    </file>
-    <file xil_pn:name="tb_pc_handle.vhd" xil_pn:type="FILE_VHDL">
-      <association xil_pn:name="BehavioralSimulation"/>
-      <association xil_pn:name="PostMapSimulation"/>
-      <association xil_pn:name="PostRouteSimulation"/>
-      <association xil_pn:name="PostTranslateSimulation"/>
     </file>
     <file xil_pn:name="tb_adder.vhd" xil_pn:type="FILE_VHDL">
       <association xil_pn:name="BehavioralSimulation"/>
