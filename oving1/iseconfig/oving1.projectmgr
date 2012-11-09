@@ -11,20 +11,22 @@
          <ClosedNode>/alu - Behavioral Z:|github|tdt4255|oving1|alu.vhd</ClosedNode>
          <ClosedNode>/pc_handle - Behavioral Z:|github|tdt4255|oving1|pc_handle.vhd/branch_add - adder - Behavioral</ClosedNode>
          <ClosedNode>/pc_handle - Behavioral Z:|github|tdt4255|oving1|pc_handle.vhd/pc_add - adder - Behavioral</ClosedNode>
-         <ClosedNode>/toplevel - Behavioral C:|Users|chribru|Desktop|GitHub|tdt4255|oving1|toplevel.vhd/MIPS_SC_PROCESSOR - processor - Behavioral</ClosedNode>
          <ClosedNode>/toplevel - Behavioral C:|Users|chribru|Desktop|GitHub|tdt4255|oving1|toplevel.vhd/MIPS_SC_PROCESSOR - processor - Behavioral/inst_alu - alu - Behavioral</ClosedNode>
+         <ClosedNode>/toplevel - Behavioral C:|Users|chribru|Desktop|GitHub|tdt4255|oving1|toplevel.vhd/MIPS_SC_PROCESSOR - processor - Behavioral/inst_branch_add - adder - Behavioral</ClosedNode>
+         <ClosedNode>/toplevel - Behavioral C:|Users|chribru|Desktop|GitHub|tdt4255|oving1|toplevel.vhd/MIPS_SC_PROCESSOR - processor - Behavioral/inst_pc_add - adder - Behavioral</ClosedNode>
          <ClosedNode>/toplevel - Behavioral C:|Users|chribru|Desktop|GitHub|tdt4255|oving1|toplevel.vhd/MIPS_SC_PROCESSOR - processor - Behavioral/inst_pc_handle - pc_handle - Behavioral</ClosedNode>
+         <ClosedNode>/toplevel - Behavioral C:|Users|chribru|Desktop|GitHub|tdt4255|oving1|toplevel.vhd/MIPS_SC_PROCESSOR - processor - Behavioral/inst_reg_ifid - reg_ifid - Behavioral</ClosedNode>
          <ClosedNode>/toplevel - Behavioral Z:|github|tdt4255|oving1|toplevel.vhd/MIPS_SC_PROCESSOR - processor - Behavioral/inst_alu - alu - Behavioral</ClosedNode>
          <ClosedNode>/toplevel - Behavioral Z:|github|tdt4255|oving1|toplevel.vhd/MIPS_SC_PROCESSOR - processor - Behavioral/inst_pc_handle - pc_handle - Behavioral</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>toplevel - Behavioral (C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd)</SelectedItem>
+         <SelectedItem>MIPS_SC_PROCESSOR - processor - Behavioral (C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000000e7000000020000000000000000000000000000000064ffffffff000000810000000000000002000000e70000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>toplevel - Behavioral (C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd)</CurrentItem>
+      <CurrentItem>MIPS_SC_PROCESSOR - processor - Behavioral (C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -73,13 +75,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Check Syntax</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a0000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a00000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Check Syntax</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
@@ -133,13 +135,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+         <SelectedItem>ModelSim Simulator</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a0000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a00000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+      <CurrentItem>ModelSim Simulator</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="ManualCompile" >
       <ClosedNodes>

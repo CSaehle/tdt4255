@@ -1,5 +1,12 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
+add wave -noupdate /tb_toplevel/clk
+add wave -noupdate /tb_toplevel/reset
+add wave -noupdate /tb_toplevel/command
+add wave -noupdate /tb_toplevel/bus_address_in
+add wave -noupdate /tb_toplevel/bus_data_in
+add wave -noupdate /tb_toplevel/status
+add wave -noupdate /tb_toplevel/bus_data_out
 add wave -noupdate -radix binary /tb_toplevel/uut/mips_sc_processor/clk
 add wave -noupdate -radix binary /tb_toplevel/uut/mips_sc_processor/reset
 add wave -noupdate -radix binary /tb_toplevel/uut/mips_sc_processor/processor_enable
@@ -20,8 +27,6 @@ add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/ex_branch_t
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/mem_branch_target
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/id_offset
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/ex_offset
-add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/ex_jump_target
-add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/mem_jump_target
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/if_branch_selected
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/if_jump_selected
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/if_jump_target
@@ -66,8 +71,6 @@ add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/ex_alu_out
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/mem_alu_out
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/wb_alu_out
 add wave -noupdate /tb_toplevel/uut/mips_sc_processor/id_jump
-add wave -noupdate /tb_toplevel/uut/mips_sc_processor/ex_jump
-add wave -noupdate /tb_toplevel/uut/mips_sc_processor/mem_jump
 add wave -noupdate /tb_toplevel/uut/mips_sc_processor/reg_write_exec
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/id_read_data_1
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/id_read_data_2
@@ -94,4 +97,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {1468596 ps} {48718596 ps}
+WaveRestoreZoom {11879049 ps} {34504634 ps}

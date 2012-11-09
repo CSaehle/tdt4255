@@ -90,7 +90,7 @@ architecture Behavioral of toplevel is
 		generic (M :NATURAL :=MEM_ADDR_COUNT; N :NATURAL :=DDATA_BUS); 
 		port(
 			CLK			: in STD_LOGIC;
-			--RESET			:	in  STD_LOGIC;	
+			RESET			:	in  STD_LOGIC;	
 			W_ADDR		:	in  STD_LOGIC_VECTOR (N-1 downto 0);	-- Address to write data
 			WRITE_DATA	:	in  STD_LOGIC_VECTOR (N-1 downto 0);	-- Data to be written
 			MemWrite		:	in  STD_LOGIC;									-- Write Signal
@@ -168,7 +168,7 @@ begin
 	DATA_MEM: MEMORY generic map (M=>MEM_ADDR_COUNT, N=>DDATA_BUS) 
 	port map(
 		CLK			=> clk,
-		--RESET			=> reset,
+		RESET			=> reset,
 		W_ADDR		=> dmem_address_wr,		-- ADDRESS TO BE WRITTEN
 		WRITE_DATA	=> dmem_write_data,		-- DATA TO BE WRITTEN
 		ADDR			=> dmem_address,			-- ADDRESS TO BE READ
@@ -179,7 +179,7 @@ begin
 	INST_MEM: MEMORY generic map (M=>MEM_ADDR_COUNT, N=>IDATA_BUS) 
 	port map(
 		CLK			=> clk,
-		--RESET		=> reset,
+		RESET		=> reset,
 		W_ADDR		=> dmem_address_wr_com,		-- ADDRESS TO BE WRITTEN
 		WRITE_DATA	=> dmem_write_data_com,		-- DATA TO BE WRITTEN
 		ADDR		=> instr_addr,					-- ADDRESS TO BE READ

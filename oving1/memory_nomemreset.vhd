@@ -34,7 +34,7 @@ entity memory is
 	generic (N :NATURAL; M :NATURAL);
 	port(
 		CLK			: in STD_LOGIC;
-		RESET			:	in  STD_LOGIC;	
+		--RESET			:	in  STD_LOGIC;	
 		W_ADDR		:	in  STD_LOGIC_VECTOR (N-1 downto 0);	-- Address to write data
 		WRITE_DATA	:	in  STD_LOGIC_VECTOR (N-1 downto 0);	-- Data to be written
 		MemWrite		:	in  STD_LOGIC;									-- Write Signal
@@ -53,14 +53,16 @@ architecture Behavioral of memory is
 	
 begin
 
-	MEM_PROC: process(CLK, RESET, MemWrite, WRITE_DATA, ADDR, W_ADDR, MEM, address_reg)
+	--MEM_PROC: process(CLK, RESET, MemWrite, WRITE_DATA, ADDR, W_ADDR, MEM, address_reg)
+	MEM_PROC: process(CLK, MemWrite, WRITE_DATA, ADDR, W_ADDR, MEM, address_reg)
 	begin	
 		if rising_edge (CLK) then
-			if (RESET = '1') then 
-				for i in 0 to M-1 loop
-					MEM(i) <= (others => '0');
-				end loop;
-			elsif MemWrite='1' then
+			--if (RESET = '1') then 
+				--for i in 0 to M-1 loop
+					--MEM(i) <= (others => '0');
+				--end loop;
+			--elsif MemWrite='1' then
+			if MemWrite='1' then
 				MEM(to_integer(unsigned( W_ADDR((M-1) downto 0) ))) <= WRITE_DATA;
 			end if;
 			address_reg <= ADDR;

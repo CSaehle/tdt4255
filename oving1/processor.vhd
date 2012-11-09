@@ -138,10 +138,6 @@ architecture Behavioral of processor is
 			  mem_to_reg_out : out STD_LOGIC;
            branch_in : in  STD_LOGIC;
            branch_out : out  STD_LOGIC;
-			  jump_in : in STD_LOGIC;
-			  jump_out : out STD_LOGIC;
-			  jump_target_in : in STD_LOGIC_VECTOR (25 downto 0);
-			  jump_target_out : out STD_LOGIC_VECTOR (25 downto 0);
            mem_read_in : in  STD_LOGIC;
            mem_read_out : out  STD_LOGIC;
            mem_write_in : in  STD_LOGIC;
@@ -175,10 +171,6 @@ architecture Behavioral of processor is
 			  mem_to_reg_out : out STD_LOGIC;
            branch_in : in  STD_LOGIC;
            branch_out : out  STD_LOGIC;
-			  jump_in : in STD_LOGIC;
-			  jump_out : out STD_LOGIC;
-			  jump_target_in : in STD_LOGIC_VECTOR (25 downto 0);
-			  jump_target_out : out STD_LOGIC_VECTOR (25 downto 0);
            zero_in : in  STD_LOGIC;
            zero_out : out  STD_LOGIC;
            mem_read_in : in  STD_LOGIC;
@@ -269,9 +261,6 @@ architecture Behavioral of processor is
 	signal id_offset: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal ex_offset: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	
-	signal ex_jump_target: STD_LOGIC_VECTOR (25 downto 0) := (others => '0');
-	signal mem_jump_target: STD_LOGIC_VECTOR (25 downto 0) := (others => '0');
-	
 	signal if_branch_selected: STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
 	signal if_jump_selected: STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
 	signal if_jump_target: STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
@@ -280,8 +269,6 @@ architecture Behavioral of processor is
 	signal mem_branch_and_zero: STD_LOGIC := ZERO1b;
 	
 	signal id_jump: STD_LOGIC := ZERO1b;
-	signal ex_jump: STD_LOGIC := ZERO1b;
-	signal mem_jump: STD_LOGIC := ZERO1b;
 	
 	signal if_pc_next: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal id_pc_next: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
@@ -324,9 +311,9 @@ begin
 	
 	mem_branch_and_zero <= mem_branch and mem_zero;
 	
-	if_jump_target <= "00" & if_pc_next(31 downto 28) & mem_jump_target;
+	if_jump_target <= "00" & if_pc_next(31 downto 28) & id_instruction (25 downto 0);
 	if_branch_selected <= mem_branch_target when mem_branch_and_zero = '1' else if_pc_next;
-	if_jump_selected <= if_jump_target when mem_jump = '1' else if_branch_selected;
+	if_jump_selected <= if_jump_target when id_jump = '1' else if_branch_selected;
 	
 	-- The ALU gets us the addrses for load/stores. It could be either, but this is not determined here so both are set as the result.
 	dmem_address <= mem_alu_out;
@@ -362,10 +349,6 @@ begin
 			mem_to_reg_out => ex_mem_to_reg,
 			branch_in => id_branch,
 			branch_out => ex_branch,
-			jump_in => id_jump,
-			jump_out => ex_jump,
-			jump_target_in => id_instruction (25 downto 0),
-			jump_target_out => ex_jump_target,
 			mem_read_in => id_mem_read,
 			mem_read_out => ex_mem_read,
 			mem_write_in => id_mem_write,
@@ -400,10 +383,6 @@ begin
 			mem_to_reg_out => mem_mem_to_reg,
 			branch_in => ex_branch,
 			branch_out => mem_branch,
-			jump_in => ex_jump,
-			jump_out => mem_jump,
-			jump_target_in => ex_jump_target,
-			jump_target_out => mem_jump_target,
 			zero_in => flags.zero,
 			zero_out => mem_zero,
 			mem_read_in => ex_mem_read,
