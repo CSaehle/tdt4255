@@ -36,10 +36,6 @@ entity reg_exmem is
 			  mem_to_reg_out : out STD_LOGIC;
            branch_in : in  STD_LOGIC;
            branch_out : out  STD_LOGIC;
-			  jump_in : in STD_LOGIC;
-			  jump_out : out STD_LOGIC;
-			  jump_target_in : in STD_LOGIC_VECTOR (25 downto 0);
-			  jump_target_out : out STD_LOGIC_VECTOR (25 downto 0);
            zero_in : in  STD_LOGIC;
            zero_out : out  STD_LOGIC;
            mem_read_in : in  STD_LOGIC;
@@ -63,15 +59,13 @@ architecture Behavioral of reg_exmem is
 
 begin
 
-process (reg_write_in, mem_to_reg_in, branch_in, jump_in, jump_target_in, zero_in, mem_read_in, mem_write_in, pc_in, alu_res_in, read_data_2_in,
+process (reg_write_in, mem_to_reg_in, branch_in, zero_in, mem_read_in, mem_write_in, pc_in, alu_res_in, read_data_2_in,
 			rd_selected_in, clk, reset)
 	begin
 		if (reset = '1') then
 			reg_write_out <= '0';
 			mem_to_reg_out <= '0';
 			branch_out <= '0';
-			jump_out <= '0';
-			jump_target_out <= (others => '0');
 			zero_out <= '0';
 			mem_read_out <= '0';
 			mem_write_out <= '0';
@@ -83,8 +77,6 @@ process (reg_write_in, mem_to_reg_in, branch_in, jump_in, jump_target_in, zero_i
 			reg_write_out <= reg_write_in;
 			mem_to_reg_out <= mem_to_reg_in;
 			branch_out <= branch_in;
-			jump_out <= jump_in;
-			jump_target_out <= jump_target_in;
 			zero_out <= zero_in;
 			mem_read_out <= mem_read_in;
 			mem_write_out <= mem_write_in;
