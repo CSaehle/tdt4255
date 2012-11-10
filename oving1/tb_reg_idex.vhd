@@ -47,10 +47,6 @@ ARCHITECTURE behavior OF tb_reg_idex IS
          mem_to_reg_out : OUT  std_logic;
          branch_in : IN  std_logic;
          branch_out : OUT  std_logic;
-         jump_in : IN  std_logic;
-         jump_out : OUT  std_logic;
-         jump_target_in : IN  std_logic_vector(25 downto 0);
-         jump_target_out : OUT  std_logic_vector(25 downto 0);
          mem_read_in : IN  std_logic;
          mem_read_out : OUT  std_logic;
          mem_write_in : IN  std_logic;

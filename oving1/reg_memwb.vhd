@@ -34,8 +34,6 @@ entity reg_memwb is
            reg_write_out : out  STD_LOGIC;
            mem_to_reg_in : in  STD_LOGIC;
            mem_to_reg_out : out  STD_LOGIC;
-           read_data_in : in  STD_LOGIC_VECTOR (31 downto 0);
-           read_data_out : out  STD_LOGIC_VECTOR (31 downto 0);
            alu_res_in : in  STD_LOGIC_VECTOR (31 downto 0);
            alu_res_out : out  STD_LOGIC_VECTOR (31 downto 0);
            rd_selected_in : in  STD_LOGIC_VECTOR (4 downto 0);
@@ -47,18 +45,16 @@ end reg_memwb;
 architecture Behavioral of reg_memwb is
 
 begin
-process (reg_write_in, mem_to_reg_in, read_data_in, alu_res_in, rd_selected_in, clk, reset)
+process (reg_write_in, mem_to_reg_in, alu_res_in, rd_selected_in, clk, reset)
 	begin
 		if (reset = '1') then
 			reg_write_out <= '0';
 			mem_to_reg_out <= '0';
-			read_data_out <= (others => '0');
 			alu_res_out <= (others => '0');
 			rd_selected_out <= (others => '0');
 		elsif (rising_edge(clk)) then
 			reg_write_out <= reg_write_in;
 			mem_to_reg_out <= mem_to_reg_in;
-			read_data_out <= read_data_in;
 			alu_res_out <= alu_res_in;
 			rd_selected_out <= rd_selected_in;
 		end if;

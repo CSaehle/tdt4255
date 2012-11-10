@@ -45,8 +45,6 @@ ARCHITECTURE behavior OF tb_reg_memwb IS
          reg_write_out : OUT  std_logic;
          mem_to_reg_in : IN  std_logic;
          mem_to_reg_out : OUT  std_logic;
-         read_data_in : IN  std_logic_vector(31 downto 0);
-         read_data_out : OUT  std_logic_vector(31 downto 0);
          alu_res_in : IN  std_logic_vector(31 downto 0);
          alu_res_out : OUT  std_logic_vector(31 downto 0);
          rd_selected_in : IN  std_logic_vector(4 downto 0);
@@ -60,7 +58,6 @@ ARCHITECTURE behavior OF tb_reg_memwb IS
    --Inputs
    signal reg_write_in : std_logic := '0';
    signal mem_to_reg_in : std_logic := '0';
-   signal read_data_in : std_logic_vector(31 downto 0) := (others => '0');
    signal alu_res_in : std_logic_vector(31 downto 0) := (others => '0');
    signal rd_selected_in : std_logic_vector(4 downto 0) := (others => '0');
    signal clk : std_logic := '0';
@@ -69,7 +66,6 @@ ARCHITECTURE behavior OF tb_reg_memwb IS
  	--Outputs
    signal reg_write_out : std_logic;
    signal mem_to_reg_out : std_logic;
-   signal read_data_out : std_logic_vector(31 downto 0);
    signal alu_res_out : std_logic_vector(31 downto 0);
    signal rd_selected_out : std_logic_vector(4 downto 0);
 
@@ -84,8 +80,6 @@ BEGIN
           reg_write_out => reg_write_out,
           mem_to_reg_in => mem_to_reg_in,
           mem_to_reg_out => mem_to_reg_out,
-          read_data_in => read_data_in,
-          read_data_out => read_data_out,
           alu_res_in => alu_res_in,
           alu_res_out => alu_res_out,
           rd_selected_in => rd_selected_in,
