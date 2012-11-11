@@ -50,7 +50,7 @@ begin
 	if ((exmem_reg_write = '1') and (exmem_reg_rd /= "00000") and (exmem_reg_rd = idex_reg_rs)) then
 		forward_a <= "10";
 	-- 2a
-	elsif ((memwb_reg_write = '1') and (memwb_reg_rd /= "00000") and (exmem_reg_write = '0' or (exmem_reg_rd /= idex_reg_rs)) and (memwb_reg_rd = idex_reg_rs)) then
+	elsif ((memwb_reg_write = '1') and (memwb_reg_rd /= "00000") and (memwb_reg_rd = idex_reg_rs)) then
 		forward_a <= "01";
 	-- default
 	else
@@ -61,7 +61,7 @@ begin
 	if ((exmem_reg_write = '1') and (exmem_reg_rd /= "00000") and (exmem_reg_rd = idex_reg_rt)) then
 		forward_b <= "10";
 	-- 2b
-	elsif ((memwb_reg_write = '1') and (memwb_reg_rd /= "00000") and (exmem_reg_write = '0' or (memwb_reg_rd /= idex_reg_rt)) and (memwb_reg_rd = idex_reg_rt)) then
+	elsif ((memwb_reg_write = '1') and (memwb_reg_rd /= "00000") and (memwb_reg_rd = idex_reg_rt)) then
 		forward_b <= "01";
 	-- default
 	else
