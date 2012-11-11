@@ -9,470 +9,96 @@
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
 # vsim -do \{do \{tb_toplevel.fdo\}\} 
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlfthw7d46".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfthw7d46
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Error: (vopt-19) Failed to access library 'work.{tb_toplevel' at "work.{tb_toplevel".
+# ** Error: (vsim-19) Failed to access library 'work' at "work".
 # No such file or directory. (errno = ENOENT)
-# ** Error: Library work.{tb_toplevel not found.
 # Error loading design
-do tb_toplevel.fdo
-# ** Warning: (vlib-34) Library already exists at "work".
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlftws3nqg".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftws3nqg
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt/_deps" - file open failed.
+# ** Error: (vcom-19) Failed to access library 'work' at "work".
 # No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt12/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt15/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt18/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt21/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt22/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt23/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt24/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt25/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt3/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt30/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt31/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt32/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt33/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt34/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt35/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt36/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt37/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt38/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt39/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt4/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt40/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt41/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt43/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt45/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt46/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt48/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt49/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt5/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt50/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt51/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt53/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt54/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt6/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt7/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt8/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt9/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "com(behavioral)".
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_toplevel(behavior)#1
-# Loading ieee.numeric_std(body)
-# Loading work.mips_constant_pkg
-# Loading work.toplevel(behavioral)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.com(behavioral)#1
-# Loading work.memory(behavioral)#1
-# Loading work.processor(behavioral)#1
-# Loading work.reg_ifid(behavioral)#1
-# Loading work.reg_32(behavioral)#1
-# Loading work.reg_idex(behavioral)#1
-# Loading work.reg_exmem(behavioral)#1
-# Loading work.reg_memwb(behavioral)#1
-# Loading work.control_unit(behavioral)#1
-# Loading work.alu(behavioral)#1
-# Loading work.alu_1bit(behavioral)#1
-# Loading work.full_adder(behavioral)#1
-# Loading work.alu_control(behavioral)#1
-# Loading work.pc(behavioral)#1
-# Loading work.adder(behavioral)#1
-# Loading work.register_file(behavioral)#1
-# Loading work.sign_extend(behavioral)#1
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-run 50us;
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_reg_exmem
-# -- Compiling architecture behavior of tb_reg_exmem
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd(113): (vcom-1136) Unknown identifier "jump_in".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd(114): (vcom-1136) Unknown identifier "jump_out".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd(115): (vcom-1136) Unknown identifier "jump_target_in".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd(116): (vcom-1136) Unknown identifier "jump_target_out".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd(158): VHDL Compiler exiting
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_reg_idex
-# -- Compiling architecture behavior of tb_reg_idex
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd(129): (vcom-1136) Unknown identifier "jump_in".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd(130): (vcom-1136) Unknown identifier "jump_out".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd(131): (vcom-1136) Unknown identifier "jump_target_in".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd(132): (vcom-1136) Unknown identifier "jump_target_out".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd(182): VHDL Compiler exiting
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_reg_idex
-# -- Compiling architecture behavior of tb_reg_idex
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_reg_exmem
-# -- Compiling architecture behavior of tb_reg_exmem
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd(113): (vcom-1136) Unknown identifier "jump_in".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd(114): (vcom-1136) Unknown identifier "jump_out".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd(115): (vcom-1136) Unknown identifier "jump_target_in".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd(116): (vcom-1136) Unknown identifier "jump_target_out".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd(158): VHDL Compiler exiting
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_reg_exmem
-# -- Compiling architecture behavior of tb_reg_exmem
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_reg_ifid
-# -- Compiling architecture behavior of tb_reg_ifid
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_reg_memwb
-# -- Compiling architecture behavior of tb_reg_memwb
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_reg_memwb
-# -- Compiling architecture behavior of tb_reg_memwb
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# ** Warning: (vcom-6) -- Waiting for lock by "chribru@DMLAB10". Lockfile is "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/_lock".
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_sign_extend
-# -- Compiling architecture behavior of tb_sign_extend
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_reg_exmem
-# -- Compiling architecture behavior of tb_reg_exmem
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_pc
-# -- Compiling architecture behavior of tb_pc
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_control_unit
-# -- Compiling architecture behavior of tb_control_unit
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package mips_constant_pkg
-# -- Compiling entity tb_alu_control
-# -- Compiling architecture behavior of tb_alu_control
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Loading package mips_constant_pkg
-# -- Compiling entity tb_alu
-# -- Compiling architecture behavior of tb_alu
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity tb_adder
-# -- Compiling architecture behavior of tb_adder
+vlib work
 vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Loading package numeric_std
-# -- Loading package mips_constant_pkg
-# -- Compiling entity toplevel
-# -- Compiling architecture behavioral of toplevel
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd
+# ** Error: (vcom-11) Could not find work.mips_constant_pkg.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd(25): (vcom-1195) Cannot find expanded name "work.mips_constant_pkg".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd(25): Unknown expanded name.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd(36): VHDL Compiler exiting
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory_nomemreset.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_32.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_nomemreset.vhd
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Loading package numeric_std
-# -- Loading package mips_constant_pkg
-# -- Compiling entity toplevel
-# -- Compiling architecture behavioral of toplevel
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_nomemreset.vhd
+# -- Compiling entity adder
+# -- Compiling architecture behavioral of adder
+# ** Error: (vcom-11) Could not find work.mips_constant_pkg.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(25): (vcom-1195) Cannot find expanded name "work.mips_constant_pkg".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(25): Unknown expanded name.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(36): VHDL Compiler exiting
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory_nomemreset.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_32.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_nomemreset.vhd
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Loading package numeric_std
-# -- Loading package mips_constant_pkg
-# -- Compiling entity toplevel
-# -- Compiling architecture behavioral of toplevel
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-vcom -reportprogress 30 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_sign_extend
-# -- Compiling architecture behavior of tb_sign_extend
-vcom -reportprogress 30 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_reg_memwb
-# -- Compiling architecture behavior of tb_reg_memwb
-vcom -reportprogress 30 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_reg_ifid
-# -- Compiling architecture behavior of tb_reg_ifid
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd
+# -- Compiling entity adder
+# -- Compiling architecture behavioral of adder
+# ** Error: (vcom-11) Could not find work.mips_constant_pkg.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(25): (vcom-1195) Cannot find expanded name "work.mips_constant_pkg".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(25): Unknown expanded name.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(36): VHDL Compiler exiting
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory_nomemreset.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_32.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_nomemreset.vhd
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Loading package numeric_std
+# -- Compiling entity adder
+# -- Compiling architecture behavioral of adder
+# ** Error: (vcom-11) Could not find work.mips_constant_pkg.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(25): (vcom-1195) Cannot find expanded name "work.mips_constant_pkg".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(25): Unknown expanded name.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(36): VHDL Compiler exiting
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling package mips_constant_pkg
+vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory_nomemreset.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_32.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_nomemreset.vhd
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity adder
+# -- Compiling architecture behavioral of adder
 # -- Loading package mips_constant_pkg
-# -- Compiling entity toplevel
-# -- Compiling architecture behavioral of toplevel
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-do tb_toplevel
-# Cannot open macro file: tb_toplevel
-do tb_toplevel.fdo
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by:   Hostname:   ProcessID: 2
-#           Attempting to use alternate WLF file "./wlftyknf9n".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftyknf9n
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt11/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt12/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt15/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt18/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt21/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt22/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt23/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt24/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt25/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt3/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt30/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt31/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt32/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt33/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt34/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt35/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt36/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt37/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt38/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt39/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt4/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt40/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt41/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt43/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt45/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt46/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt48/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt49/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt5/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt50/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt51/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt53/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt54/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-2009) At least one design unit was compiled with optimization level -O0 or -O1.
-# Use vdir -l command to find such design units.
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_toplevel(behavior)#1
-# Loading ieee.numeric_std(body)
-# Loading work.mips_constant_pkg
-# Loading work.toplevel(behavioral)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.com(behavioral)#1
-# Loading work.memory(behavioral)#1
-# Loading work.processor(behavioral)#1
-# Loading work.reg_ifid(behavioral)#1
-# Loading work.reg_32(behavioral)#1
-# Loading work.reg_idex(behavioral)#1
-# Loading work.reg_exmem(behavioral)#1
-# Loading work.reg_memwb(behavioral)#1
-# Loading work.control_unit(behavioral)#1
-# Loading work.alu(behavioral)#1
-# Loading work.alu_1bit(behavioral)#1
-# Loading work.full_adder(behavioral)#1
-# Loading work.alu_control(behavioral)#1
-# Loading work.pc(behavioral)#1
-# Loading work.adder(behavioral)#1
-# Loading work.register_file(behavioral)#1
-# Loading work.sign_extend(behavioral)#1
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-run 50us;
+# -- Compiling entity alu
+# -- Compiling architecture behavioral of alu
+# -- Compiling entity alu_1bit
+# -- Compiling architecture behavioral of alu_1bit
+# -- Compiling entity alu_control
+# -- Compiling architecture behavioral of alu_control
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity com
+# -- Compiling architecture behavioral of com
+# -- Compiling entity control_unit
+# -- Compiling architecture behavioral of control_unit
+# -- Compiling entity forwarding_unit
+# -- Compiling architecture behavioral of forwarding_unit
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(50): No feasible entries for infix operator "and".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(50): Bad expression in left operand of infix expression "and".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(50): Type error resolving infix expression "and" as type std.standard.boolean.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(53): No feasible entries for infix operator "and".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(53): Bad expression in left operand of infix expression "and".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(53): Bad expression in left operand of infix expression "and".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(53): Type error resolving infix expression "and" as type std.standard.boolean.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(61): No feasible entries for infix operator "and".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(61): Bad expression in left operand of infix expression "and".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(61): Type error resolving infix expression "and" as type std.standard.boolean.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(64): No feasible entries for infix operator "and".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(64): Bad expression in left operand of infix expression "and".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(64): Bad expression in left operand of infix expression "and".
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(64): Type error resolving infix expression "and" as type std.standard.boolean.
+# ** Warning: [2] C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(71): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(73): VHDL Compiler exiting

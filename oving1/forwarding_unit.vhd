@@ -47,10 +47,10 @@ begin
 process
 begin
 	-- 1a
-	if (exmem_reg_write and (exmem_reg_rd /= "00000") and (exmem_reg_rd = idex_register_rs)) then
+	if (exmem_reg_write and (exmem_reg_rd /= "00000") and (exmem_reg_rd = idex_reg_rs)) then
 		forward_a <= "10";
 	-- 2a
-	elsif (memwb_reg_write and (memwb_reg_rd /= "00000") and (exmem_reg_rd /= idex_register_rs) and (memwb_reg_rd = idex_reg_rs)) then
+	elsif (memwb_reg_write and (memwb_reg_rd /= "00000") and (exmem_reg_rd /= idex_reg_rs) and (memwb_reg_rd = idex_reg_rs)) then
 		forward_a <= "01";
 	-- default
 	else
@@ -58,10 +58,10 @@ begin
 	end if;
 	
 	-- 1b
-	if (exmem_reg_write and (exmem_reg_rd /= "00000") and (exmem_reg_rd = idex_register_rt)) then
+	if (exmem_reg_write and (exmem_reg_rd /= "00000") and (exmem_reg_rd = idex_reg_rt)) then
 		forward_b <= "10";
 	-- 2b
-	elsif (memwb_reg_write and (memwb_reg_rd /= "00000") and (memwb_reg_rd /= idex_register_rt) and (memwb_reg_rd = idex_reg_rt)) then
+	elsif (memwb_reg_write and (memwb_reg_rd /= "00000") and (memwb_reg_rd /= idex_reg_rt) and (memwb_reg_rd = idex_reg_rt)) then
 		forward_b <= "01";
 	-- default
 	else
