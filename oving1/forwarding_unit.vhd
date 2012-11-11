@@ -44,7 +44,7 @@ architecture Behavioral of forwarding_unit is
 
 begin
 
-process
+process (exmem_reg_write, memwb_reg_write, exmem_reg_rd, memwb_reg_rd, idex_reg_rs, idex_reg_rt)
 begin
 	-- 1a
 	if ((exmem_reg_write = '1') and (exmem_reg_rd /= "00000") and (exmem_reg_rd = idex_reg_rs)) then

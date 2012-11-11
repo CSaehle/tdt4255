@@ -194,8 +194,6 @@ architecture Behavioral of processor is
            reg_write_out : out  STD_LOGIC;
            mem_to_reg_in : in  STD_LOGIC;
            mem_to_reg_out : out  STD_LOGIC;
-           read_data_in : in  STD_LOGIC_VECTOR (31 downto 0);
-           read_data_out : out  STD_LOGIC_VECTOR (31 downto 0);
            alu_res_in : in  STD_LOGIC_VECTOR (31 downto 0);
            alu_res_out : out  STD_LOGIC_VECTOR (31 downto 0);
            rd_selected_in : in  STD_LOGIC_VECTOR (4 downto 0);
@@ -431,8 +429,6 @@ begin
 			reg_write_out => wb_reg_write,
 			mem_to_reg_in => mem_mem_to_reg,
 			mem_to_reg_out => wb_mem_to_reg,
-			read_data_in => dmem_data_in,
-			read_data_out => wb_dmem_data_in,
 			alu_res_in => mem_alu_out,
 			alu_res_out => wb_alu_out,
 			rd_selected_in => mem_rd_addr,
