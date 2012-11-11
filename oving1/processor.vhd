@@ -204,6 +204,17 @@ architecture Behavioral of processor is
 			  reset : in STD_LOGIC);
 	end component reg_memwb;
 	
+	component forwarding_unit is
+		Port ( exmem_reg_write : in  STD_LOGIC;
+           memwb_reg_write : in  STD_LOGIC;
+           exmem_reg_rd : in  STD_LOGIC_VECTOR (4 downto 0);
+           memwb_reg_rd : in  STD_LOGIC_VECTOR (4 downto 0);
+           idex_reg_rs : in  STD_LOGIC_VECTOR (4 downto 0);
+           idex_reg_rt : in  STD_LOGIC_VECTOR (4 downto 0);
+           forward_a : out  STD_LOGIC_VECTOR (1 downto 0);
+           forward_b : out  STD_LOGIC_VECTOR (1 downto 0));
+	end component forwarding_unit;
+	
 	signal id_instruction: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal ONE: STD_LOGIC_VECTOR (31 downto 0) := x"00000001";
 	
@@ -245,6 +256,7 @@ architecture Behavioral of processor is
 	--/control unit
 	
 	--alu
+	signal alu_x: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal alu_y: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal alu_in: ALU_INPUT := (others => '0');
 	
@@ -301,13 +313,25 @@ architecture Behavioral of processor is
 	
 	signal wb_dmem_data_in : STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	
+	-- forward
+	signal fwd_data_2 : STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
+	signal forward_a : STD_LOGIC_VECTOR (1 downto 0) := (others => '0');
+	signal forward_b : STD_LOGIC_VECTOR (1 downto 0) := (others => '0');
+	--/forward
+	
 
 begin
 	-- This one updates the PC when the next state is a FETCH to make sure the instruction is ready for the next EXEC
 	pc_write_enable <= processor_enable;
 	
 	-- This one multiplexes - if ALU_SRC is set, the ALU takes the value of the second input register. If not, it takes the sign-extended offset of the instruction - for branches
-	alu_y <= ex_offset when ex_alu_src = '1' else ex_read_data_2;
+	alu_y <= ex_offset when ex_alu_src = '1' else fwd_data_2;
+	
+	-- Forwarding mux 1
+	with forward_a select alu_x <= ex_read_data_1 when "00", mem_alu_out when "10", data_to_write when others;
+	
+	-- Forwarding mux 2
+	with forward_b select fwd_data_2 <= ex_read_data_2 when "00", mem_alu_out when "10", data_to_write when others;
 	
 	mem_branch_and_zero <= mem_branch and mem_zero;
 	
@@ -418,7 +442,6 @@ begin
 		);
 	-- /pipeline registers
 
-
 	inst_control_unit: control_unit
 	port map ( 
 			opcode => id_instruction (31 downto 26),
@@ -436,7 +459,7 @@ begin
 	inst_alu: alu
 	generic map (N => 32)
 	port map (
-			x => ex_read_data_1,
+			x => alu_x,
 			y => alu_y,
 			alu_in => alu_in,
 			r => ex_alu_out,
@@ -492,6 +515,18 @@ begin
 	port map(
 			in_addr => id_instruction (15 downto 0),
 			out_addr => id_offset
+		);
+
+	inst_forwarding_unit: forwarding_unit
+	port map(
+			exmem_reg_write => mem_reg_write,
+			memwb_reg_write => wb_reg_write,
+			exmem_reg_rd => mem_rd_addr,
+			memwb_reg_rd => wb_rd_addr,
+			idex_reg_rs => ex_rd, -- usikker om rd er rett, evt. om rd/rt skal være motsatt
+			idex_reg_rt => ex_rt, -- navnekonvensjon burde kanskje vært ex_rs_addr og ex_rt_addr?
+			forward_a => forward_a,
+			forward_b => forward_b
 		);
 
 end Behavioral;
