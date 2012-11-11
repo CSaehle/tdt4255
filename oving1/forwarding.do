@@ -37,6 +37,7 @@ add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/ex_read_dat
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/ex_rd_addr
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/mem_rd_addr
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/wb_rd_addr
+add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/ex_rs
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/ex_rt
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/ex_rd
 add wave -noupdate /tb_toplevel/uut/mips_sc_processor/forward_a
