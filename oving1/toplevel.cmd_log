@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "Z:/git/GitHub/tdt4255/oving1/toplevel.xst" -ofn "Z:/git/GitHub/tdt4255/oving1/toplevel.syr" 
