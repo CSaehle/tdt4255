@@ -90,15 +90,7 @@ BEGIN
 
       -- insert stimulus here 
 		
-		exmem_reg_write <= '1';
-		memwb_reg_write <= '0';
-		exmem_reg_rd <= "00111";
-		memwb_reg_rd <= "00000";
-		idex_reg_rs <= "00111";
-		idex_reg_rt <= "00000";
-		
-		wait for 10 ns;
-		
+		--case 0: newest data for rs from previous instruction, now residing in mem. No conflicts with instruction in wb.
 		exmem_reg_write <= '1';
 		memwb_reg_write <= '0';
 		exmem_reg_rd <= "00111";
@@ -108,6 +100,7 @@ BEGIN
 		
 		wait for 10 ns;
 		
+		--case 1: newest data for rs from prevprev instruction, now residing in wb. No conflicts with instruction in mem.
 		exmem_reg_write <= '0';
 		memwb_reg_write <= '1';
 		exmem_reg_rd <= "00111";
@@ -117,6 +110,7 @@ BEGIN
 		
 		wait for 10 ns;
 		
+		--case 2: newest data for rs from previous instruction, now residing in mem. Prevprev instruction also writes to reg, but data in mem is newer.
 		exmem_reg_write <= '1';
 		memwb_reg_write <= '1';
 		exmem_reg_rd <= "00111";
@@ -126,15 +120,7 @@ BEGIN
 		
 		wait for 10 ns;
 		
-		exmem_reg_write <= '0';
-		memwb_reg_write <= '1';
-		exmem_reg_rd <= "00111";
-		memwb_reg_rd <= "00111";
-		idex_reg_rs <= "00111";
-		idex_reg_rt <= "00000";
-		
-		wait for 10 ns;
-		
+		--case 3: previous two instructions do not write to registers
 		exmem_reg_write <= '0';
 		memwb_reg_write <= '0';
 		exmem_reg_rd <= "00111";
@@ -144,12 +130,143 @@ BEGIN
 		
 		wait for 10 ns;
 		
+		--case 4: case 0 for rt
+		exmem_reg_write <= '1';
+		memwb_reg_write <= '0';
+		exmem_reg_rd <= "00111";
+		memwb_reg_rd <= "00111";
+		idex_reg_rs <= "00000";
+		idex_reg_rt <= "00111";
+		
+		wait for 10 ns;
+		
+		--case 5: case 1 for rt
+		exmem_reg_write <= '0';
+		memwb_reg_write <= '1';
+		exmem_reg_rd <= "00111";
+		memwb_reg_rd <= "00111";
+		idex_reg_rs <= "00000";
+		idex_reg_rt <= "00111";		
+		
+		wait for 10 ns;
+		
+		--case 6: case 2 for rt
+		exmem_reg_write <= '1';
+		memwb_reg_write <= '1';
+		exmem_reg_rd <= "00111";
+		memwb_reg_rd <= "00111";
+		idex_reg_rs <= "00000";
+		idex_reg_rt <= "00111";
+		
+		wait for 10 ns;
+		
+		--case 7: case 4 for rt
+		exmem_reg_write <= '0';
+		memwb_reg_write <= '0';
+		exmem_reg_rd <= "00111";
+		memwb_reg_rd <= "00111";
+		idex_reg_rs <= "00000";
+		idex_reg_rt <= "00111";
+		
+		wait for 10 ns;
+		
+		--case 8: prev instr writes, but to another register
+		exmem_reg_write <= '1';
+		memwb_reg_write <= '0';
+		exmem_reg_rd <= "00110";
+		memwb_reg_rd <= "00110";
+		idex_reg_rs <= "00111";
+		idex_reg_rt <= "00000";
+		
+		wait for 10 ns;
+		
+		--case 9: prevprev instr writes, but to another reg 
+		exmem_reg_write <= '0';
+		memwb_reg_write <= '1';
+		exmem_reg_rd <= "00110";
+		memwb_reg_rd <= "00110";
+		idex_reg_rs <= "00111";
+		idex_reg_rt <= "00000";		
+		
+		wait for 10 ns;
+		
+		--case 10: both instructions write, but to another reg
+		exmem_reg_write <= '1';
+		memwb_reg_write <= '1';
+		exmem_reg_rd <= "00110";
+		memwb_reg_rd <= "00110";
+		idex_reg_rs <= "00111";
+		idex_reg_rt <= "00000";
+		
+		wait for 10 ns;
+		
+		--case 11: both instructions write, but prev to another reg
+		exmem_reg_write <= '1';
+		memwb_reg_write <= '1';
+		exmem_reg_rd <= "00110";
+		memwb_reg_rd <= "00111";
+		idex_reg_rs <= "00111";
+		idex_reg_rt <= "00000";
+		
+		wait for 10 ns;
+		
+		--case 12: both instructions write, but prevprev to another reg
+		exmem_reg_write <= '1';
+		memwb_reg_write <= '1';
+		exmem_reg_rd <= "00111";
+		memwb_reg_rd <= "00110";
+		idex_reg_rs <= "00000";
+		idex_reg_rt <= "00111";
+		
+		wait for 10 ns;
+		
+		--case 13: both instruction write, but to register 0
+		exmem_reg_write <= '1';
+		memwb_reg_write <= '1';
+		exmem_reg_rd <= "00000";
+		memwb_reg_rd <= "00000";
+		idex_reg_rs <= "00000";
+		idex_reg_rt <= "00000";
+
+		wait for 10 ns;
+		
+		--case 14: case 0 for both
+		exmem_reg_write <= '1';
+		memwb_reg_write <= '0';
+		exmem_reg_rd <= "00111";
+		memwb_reg_rd <= "00111";
+		idex_reg_rs <= "00111";
+		idex_reg_rt <= "00111";
+		
+		wait for 10 ns;
+		
+		--case 15: case 1 for both
 		exmem_reg_write <= '0';
 		memwb_reg_write <= '1';
 		exmem_reg_rd <= "00111";
 		memwb_reg_rd <= "00111";
 		idex_reg_rs <= "00111";
-		idex_reg_rt <= "00000";	
+		idex_reg_rt <= "00111";		
+		
+		wait for 10 ns;
+		
+		--case 16: case 2 for both
+		exmem_reg_write <= '1';
+		memwb_reg_write <= '1';
+		exmem_reg_rd <= "00111";
+		memwb_reg_rd <= "00111";
+		idex_reg_rs <= "00111";
+		idex_reg_rt <= "00111";
+		
+		wait for 10 ns;
+		
+		--case 17: case 4 for both
+		exmem_reg_write <= '0';
+		memwb_reg_write <= '0';
+		exmem_reg_rd <= "00111";
+		memwb_reg_rd <= "00111";
+		idex_reg_rs <= "00111";
+		idex_reg_rt <= "00111";		
 
       wait;
    end process;
