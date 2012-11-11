@@ -524,8 +524,8 @@ begin
 			memwb_reg_write => wb_reg_write,
 			exmem_reg_rd => mem_rd_addr,
 			memwb_reg_rd => wb_rd_addr,
-			idex_reg_rs => ex_rs, -- usikker om rd er rett, evt. om rd/rt skal være motsatt
-			idex_reg_rt => ex_rt, -- navnekonvensjon burde kanskje vært ex_rs_addr og ex_rt_addr?
+			idex_reg_rs => ex_rs, -- usikker om rd er rett, evt. om rd/rt skal være motsatt. Skal være rs.
+			idex_reg_rt => ex_rt, -- navnekonvensjon burde kanskje vært ex_rs_addr og ex_rt_addr? Newp, vi har read_data_whatevs til innholdet i registre. r-something == adressen.
 			forward_a => forward_a,
 			forward_b => forward_b
 		);
