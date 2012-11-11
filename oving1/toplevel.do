@@ -7,6 +7,13 @@ add wave -noupdate /tb_toplevel/bus_address_in
 add wave -noupdate /tb_toplevel/bus_data_in
 add wave -noupdate /tb_toplevel/status
 add wave -noupdate /tb_toplevel/bus_data_out
+add wave -noupdate /tb_toplevel/clk
+add wave -noupdate /tb_toplevel/reset
+add wave -noupdate /tb_toplevel/command
+add wave -noupdate /tb_toplevel/bus_address_in
+add wave -noupdate /tb_toplevel/bus_data_in
+add wave -noupdate /tb_toplevel/status
+add wave -noupdate /tb_toplevel/bus_data_out
 add wave -noupdate -radix binary /tb_toplevel/uut/mips_sc_processor/clk
 add wave -noupdate -radix binary /tb_toplevel/uut/mips_sc_processor/reset
 add wave -noupdate -radix binary /tb_toplevel/uut/mips_sc_processor/processor_enable
@@ -81,6 +88,8 @@ add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/mem_rd_addr
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/wb_rd_addr
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/ex_rt
 add wave -noupdate -radix decimal /tb_toplevel/uut/mips_sc_processor/ex_rd
+add wave -noupdate /tb_toplevel/uut/mips_sc_processor/forward_a
+add wave -noupdate /tb_toplevel/uut/mips_sc_processor/forward_b
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {11140000 ps} 0}
 configure wave -namecolwidth 355
