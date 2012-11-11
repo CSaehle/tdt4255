@@ -8,97 +8,33 @@
 # //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
 # //  AND IS SUBJECT TO LICENSE TERMS.
 # //
-# vsim -do \{do \{tb_toplevel.fdo\}\} 
-# ** Error: (vsim-19) Failed to access library 'work' at "work".
+# vsim -do \{do \{tb_forwarding_unit.fdo\}\} 
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: (vopt-19) Failed to access library 'work.{tb_forwarding_unit' at "work.{tb_forwarding_unit".
 # No such file or directory. (errno = ENOENT)
+# ** Error: Library work.{tb_forwarding_unit not found.
 # Error loading design
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# ** Error: (vcom-19) Failed to access library 'work' at "work".
-# No such file or directory. (errno = ENOENT)
-vlib work
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd
+do tb_forwarding_unit.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# ** Error: (vcom-11) Could not find work.mips_constant_pkg.
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd(25): (vcom-1195) Cannot find expanded name "work.mips_constant_pkg".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd(25): Unknown expanded name.
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd(36): VHDL Compiler exiting
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory_nomemreset.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_32.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_nomemreset.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity adder
-# -- Compiling architecture behavioral of adder
-# ** Error: (vcom-11) Could not find work.mips_constant_pkg.
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(25): (vcom-1195) Cannot find expanded name "work.mips_constant_pkg".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(25): Unknown expanded name.
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(36): VHDL Compiler exiting
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory_nomemreset.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_32.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_nomemreset.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity adder
-# -- Compiling architecture behavioral of adder
-# ** Error: (vcom-11) Could not find work.mips_constant_pkg.
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(25): (vcom-1195) Cannot find expanded name "work.mips_constant_pkg".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(25): Unknown expanded name.
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(36): VHDL Compiler exiting
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory_nomemreset.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_32.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_nomemreset.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity adder
-# -- Compiling architecture behavioral of adder
-# ** Error: (vcom-11) Could not find work.mips_constant_pkg.
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(25): (vcom-1195) Cannot find expanded name "work.mips_constant_pkg".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(25): Unknown expanded name.
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd(36): VHDL Compiler exiting
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling package mips_constant_pkg
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory_nomemreset.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_32.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/register_file.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel_nomemreset.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity adder
-# -- Compiling architecture behavioral of adder
-# -- Loading package mips_constant_pkg
-# -- Compiling entity alu
-# -- Compiling architecture behavioral of alu
-# -- Compiling entity alu_1bit
-# -- Compiling architecture behavioral of alu_1bit
-# -- Compiling entity alu_control
-# -- Compiling architecture behavioral of alu_control
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity com
-# -- Compiling architecture behavioral of com
-# -- Compiling entity control_unit
-# -- Compiling architecture behavioral of control_unit
 # -- Compiling entity forwarding_unit
 # -- Compiling architecture behavioral of forwarding_unit
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(50): No feasible entries for infix operator "and".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(50): Bad expression in left operand of infix expression "and".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(50): Type error resolving infix expression "and" as type std.standard.boolean.
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(53): No feasible entries for infix operator "and".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(53): Bad expression in left operand of infix expression "and".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(53): Bad expression in left operand of infix expression "and".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(53): Type error resolving infix expression "and" as type std.standard.boolean.
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(61): No feasible entries for infix operator "and".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(61): Bad expression in left operand of infix expression "and".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(61): Type error resolving infix expression "and" as type std.standard.boolean.
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(64): No feasible entries for infix operator "and".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(64): Bad expression in left operand of infix expression "and".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(64): Bad expression in left operand of infix expression "and".
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(64): Type error resolving infix expression "and" as type std.standard.boolean.
-# ** Warning: [2] C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(71): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
-# ** Error: C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd(73): VHDL Compiler exiting
+# ** Warning: [2] forwarding_unit.vhd(71): (vcom-1090) Possible infinite loop: Process contains no WAIT statement.
+# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_forwarding_unit
+# -- Compiling architecture behavior of tb_forwarding_unit
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_forwarding_unit 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_forwarding_unit(behavior)#1
+# Loading work.forwarding_unit(behavioral)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Break key hit 
+# Break in Process line__48 at forwarding_unit.vhd line 71
