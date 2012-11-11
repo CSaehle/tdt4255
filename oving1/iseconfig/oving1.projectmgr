@@ -125,13 +125,13 @@
          <ClosedNode>/tb_toplevel - behavior Z:|git|GitHub|tdt4255|oving1|tb_toplevel.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - forwarding_unit - Behavioral (C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd)</SelectedItem>
+         <SelectedItem>tb_forwarding_unit - behavior (C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e2000000020000000000000000000000000000000064ffffffff000000810000000000000002000001e20000000100000000000000000000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uut - forwarding_unit - Behavioral (C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd)</CurrentItem>
+      <CurrentItem>tb_forwarding_unit - behavior (C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
