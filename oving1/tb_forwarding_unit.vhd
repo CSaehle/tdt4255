@@ -147,9 +147,9 @@ BEGIN
 		exmem_reg_write <= '0';
 		memwb_reg_write <= '1';
 		exmem_reg_rd <= "00111";
-		memwb_reg_rd <= "11100";
+		memwb_reg_rd <= "00111";
 		idex_reg_rs <= "00111";
-		idex_reg_rt <= "11100";	
+		idex_reg_rt <= "00000";	
 
       wait;
    end process;
