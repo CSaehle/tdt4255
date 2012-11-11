@@ -54,6 +54,8 @@ entity reg_idex is
            read_data_2_out : out  STD_LOGIC_VECTOR (31 downto 0);
            immediate_in : in  STD_LOGIC_VECTOR (31 downto 0);
            immediate_out : out  STD_LOGIC_VECTOR (31 downto 0);
+			  rs_in : in STD_LOGIC_VECTOR (4 downto 0);
+			  rs_out : out STD_LOGIC_VECTOR (4 downto 0);
            rt_in : in  STD_LOGIC_VECTOR (4 downto 0);
            rt_out : out  STD_LOGIC_VECTOR (4 downto 0);
            rd_in : in  STD_LOGIC_VECTOR (4 downto 0);
@@ -68,7 +70,7 @@ architecture Behavioral of reg_idex is
 begin
 
 process (reg_write_in, mem_to_reg_in, branch_in, mem_read_in, mem_write_in, reg_dst_in, alu_op_in, alu_src_in,
-				pc_in, read_data_1_in, read_data_2_in, immediate_in, rt_in, rd_in, clk, reset)
+				pc_in, read_data_1_in, read_data_2_in, immediate_in, rs_in, rt_in, rd_in, clk, reset)
 	begin
 		if (reset = '1') then
 			reg_write_out <= '0';
@@ -83,6 +85,7 @@ process (reg_write_in, mem_to_reg_in, branch_in, mem_read_in, mem_write_in, reg_
 			read_data_1_out <= (others => '0');
 			read_data_2_out <= (others => '0');
 			immediate_out <= (others => '0');
+			rs_out <= (others => '0');
 			rt_out <= (others => '0');
 			rd_out <= (others => '0');
 		elsif (rising_edge(clk)) then
@@ -98,6 +101,7 @@ process (reg_write_in, mem_to_reg_in, branch_in, mem_read_in, mem_write_in, reg_
 			read_data_1_out <= read_data_1_in;
 			read_data_2_out <= read_data_2_in;
 			immediate_out <= immediate_in;
+			rs_out <= rs_in;
 			rt_out <= rt_in;
 			rd_out <= rd_in;
 		end if;

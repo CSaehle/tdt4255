@@ -65,7 +65,9 @@ ARCHITECTURE behavior OF tb_reg_idex IS
          read_data_2_out : OUT  std_logic_vector(31 downto 0);
          immediate_in : IN  std_logic_vector(31 downto 0);
          immediate_out : OUT  std_logic_vector(31 downto 0);
-         rt_in : IN  std_logic_vector(4 downto 0);
+         rs_in : IN  std_logic_vector(4 downto 0);
+         rs_out : OUT  std_logic_vector(4 downto 0);
+			rt_in : IN  std_logic_vector(4 downto 0);
          rt_out : OUT  std_logic_vector(4 downto 0);
          rd_in : IN  std_logic_vector(4 downto 0);
          rd_out : OUT  std_logic_vector(4 downto 0);
@@ -90,7 +92,8 @@ ARCHITECTURE behavior OF tb_reg_idex IS
    signal read_data_1_in : std_logic_vector(31 downto 0) := (others => '0');
    signal read_data_2_in : std_logic_vector(31 downto 0) := (others => '0');
    signal immediate_in : std_logic_vector(31 downto 0) := (others => '0');
-   signal rt_in : std_logic_vector(4 downto 0) := (others => '0');
+   signal rs_in : std_logic_vector(4 downto 0) := (others => '0');
+	signal rt_in : std_logic_vector(4 downto 0) := (others => '0');
    signal rd_in : std_logic_vector(4 downto 0) := (others => '0');
    signal clk : std_logic := '0';
    signal reset : std_logic := '0';
@@ -110,7 +113,8 @@ ARCHITECTURE behavior OF tb_reg_idex IS
    signal read_data_1_out : std_logic_vector(31 downto 0);
    signal read_data_2_out : std_logic_vector(31 downto 0);
    signal immediate_out : std_logic_vector(31 downto 0);
-   signal rt_out : std_logic_vector(4 downto 0);
+   signal rs_out : std_logic_vector(4 downto 0);
+	signal rt_out : std_logic_vector(4 downto 0);
    signal rd_out : std_logic_vector(4 downto 0);
 
    -- Clock period definitions
@@ -144,6 +148,8 @@ BEGIN
           read_data_2_out => read_data_2_out,
           immediate_in => immediate_in,
           immediate_out => immediate_out,
+			 rs_in => rs_in,
+			 rs_out => rs_out,
           rt_in => rt_in,
           rt_out => rt_out,
           rd_in => rd_in,

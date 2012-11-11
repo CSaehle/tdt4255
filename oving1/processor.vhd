@@ -156,7 +156,9 @@ architecture Behavioral of processor is
            read_data_2_out : out  STD_LOGIC_VECTOR (31 downto 0);
            immediate_in : in  STD_LOGIC_VECTOR (31 downto 0);
            immediate_out : out  STD_LOGIC_VECTOR (31 downto 0);
-           rt_in : in  STD_LOGIC_VECTOR (4 downto 0);
+           rs_in : in  STD_LOGIC_VECTOR (4 downto 0);
+           rs_out : out  STD_LOGIC_VECTOR (4 downto 0);
+			  rt_in : in  STD_LOGIC_VECTOR (4 downto 0);
            rt_out : out  STD_LOGIC_VECTOR (4 downto 0);
            rd_in : in  STD_LOGIC_VECTOR (4 downto 0);
            rd_out : out  STD_LOGIC_VECTOR (4 downto 0);
@@ -306,6 +308,7 @@ architecture Behavioral of processor is
 	
 	signal pc_write_enable: STD_LOGIC := '0';
 	
+	signal ex_rs: STD_LOGIC_VECTOR (4 downto 0) := (others => '0');
 	signal ex_rt: STD_LOGIC_VECTOR (4 downto 0) := (others => '0');
 	signal ex_rd: STD_LOGIC_VECTOR (4 downto 0) := (others => '0');
 	
@@ -389,6 +392,8 @@ begin
 			read_data_2_out => ex_read_data_2,
 			immediate_in => id_offset,
 			immediate_out => ex_offset,
+			rs_in => id_instruction (25 downto 21),
+			rs_out => ex_rs,
 			rt_in => id_instruction (20 downto 16),
 			rt_out => ex_rt,
 			rd_in => id_instruction (15 downto 11),
@@ -519,7 +524,7 @@ begin
 			memwb_reg_write => wb_reg_write,
 			exmem_reg_rd => mem_rd_addr,
 			memwb_reg_rd => wb_rd_addr,
-			idex_reg_rs => ex_rd, -- usikker om rd er rett, evt. om rd/rt skal være motsatt
+			idex_reg_rs => ex_rs, -- usikker om rd er rett, evt. om rd/rt skal være motsatt
 			idex_reg_rt => ex_rt, -- navnekonvensjon burde kanskje vært ex_rs_addr og ex_rt_addr?
 			forward_a => forward_a,
 			forward_b => forward_b

@@ -22,10 +22,16 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="oving1.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="forwarding_unit.fdo"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="reg_idex.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="reg_idex.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="reg_idex.xst"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_forwarding_unit.fdo"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="tb_reg_idex.fdo"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
@@ -33,7 +39,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1352655775" xil_pn:in_ck="7061694717294192413" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1352655775">
+    <transform xil_pn:end_ts="1352667464" xil_pn:in_ck="7061694717294192413" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1352667464">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhd"/>
@@ -58,11 +64,11 @@
       <outfile xil_pn:name="tb_sign_extend.vhd"/>
       <outfile xil_pn:name="tb_toplevel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1352655775" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4449610715560104829" xil_pn:start_ts="1352655775">
+    <transform xil_pn:end_ts="1352667296" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1655715739741133522" xil_pn:start_ts="1352667296">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1352655775" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-470689594260454917" xil_pn:start_ts="1352655775">
+    <transform xil_pn:end_ts="1352667296" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8789991723338552144" xil_pn:start_ts="1352667296">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -70,7 +76,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1352655775" xil_pn:in_ck="7061694717294192413" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1352655775">
+    <transform xil_pn:end_ts="1352667464" xil_pn:in_ck="7061694717294192413" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1352667464">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="alu.vhd"/>
@@ -95,12 +101,12 @@
       <outfile xil_pn:name="tb_sign_extend.vhd"/>
       <outfile xil_pn:name="tb_toplevel.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1352655776" xil_pn:in_ck="7061694717294192413" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1352655775">
+    <transform xil_pn:end_ts="1352667645" xil_pn:in_ck="7061694717294192413" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="889151390353550919" xil_pn:start_ts="1352667644">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="tb_forwarding_unit.fdo"/>
+      <outfile xil_pn:name="tb_reg_idex.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>
     </transform>
