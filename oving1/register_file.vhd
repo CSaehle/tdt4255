@@ -57,7 +57,7 @@ architecture Behavioral of register_file is
 
 begin
 
-	REGISTERS: process(CLK,RESET,RW,WRITE_DATA,RD_ADDR)
+	REGISTERS: process(CLK,RESET,RW,WRITE_DATA,RD_ADDR,RS_ADDR,RT_ADDR)
 	begin
 		if  RESET='1' then
 				for i in 0 to NUM_REG-1 loop
@@ -67,12 +67,7 @@ begin
 			if  RW='1' then
 				REGS(to_integer(unsigned(RD_ADDR)))<=WRITE_DATA;
 			end if;
-		end if;
-	end process  REGISTERS;
-
-	process(CLK,RS_ADDR,RT_ADDR)
-	begin
-		if falling_edge(CLK) then
+		elsif falling_edge(CLK) then
 			if RS_ADDR="00000" then
 				RS <= (others=>'0');
 			else
