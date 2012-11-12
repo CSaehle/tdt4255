@@ -3,8 +3,8 @@ from encinstr import *
 fib_inst = [
             encI(LDI, 0, 1, 17), #1 - r1 = 17
             encI(LDI, 0, 2,  0), #2 - r2 = 0
-            encI(LDI, 0, 3,  1), #3 - r3 = 1
-            encI(LDI, 0, 11, 1), #4 - r11 = 1
+            encI(LDI, 0, 11,  1), #3 - r11 = 1
+            encI(LDI, 0, 3, 1), #4 - r3 = 1
             encR(RTYPE, 1, 11, 1, 0, SUB), #5 - r1 -= 1
             encI(BEQ, 1, 0, 6), #6 - for1
             encR(RTYPE, 2, 3, 4, 0, ADD), #7 - r4 = r2+r3
