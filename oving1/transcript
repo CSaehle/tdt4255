@@ -31,8 +31,7 @@ do tb_toplevel.fdo
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt17/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt22/_deps" - file is inconsistent with version property.
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "com(behavioral)".
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Loading work.tb_toplevel(behavior)#1
@@ -97,6 +96,33 @@ restart -f; run 50 us;
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt17/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt22/_deps" - file is inconsistent with version property.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_toplevel(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mips_constant_pkg
+# Loading work.toplevel(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.com(behavioral)#1
+# Loading work.memory(behavioral)#1
+# Loading work.processor(behavioral)#1
+# Loading work.reg_ifid(behavioral)#1
+# Loading work.reg_32(behavioral)#1
+# Loading work.reg_idex(behavioral)#1
+# Loading work.reg_exmem(behavioral)#1
+# Loading work.reg_memwb(behavioral)#1
+# Loading work.control_unit(behavioral)#1
+# Loading work.alu(behavioral)#1
+# Loading work.alu_1bit(behavioral)#1
+# Loading work.full_adder(behavioral)#1
+# Loading work.alu_control(behavioral)#1
+# Loading work.pc(behavioral)#1
+# Loading work.adder(behavioral)#1
+# Loading work.register_file(behavioral)#1
+# Loading work.sign_extend(behavioral)#1
+# Loading work.forwarding_unit(behavioral)#1
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -121,60 +147,6 @@ restart -f; run 50 us;
 #    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity forwarding_unit
-# -- Compiling architecture behavioral of forwarding_unit
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package mips_constant_pkg
-# -- Compiling entity processor
-# -- Compiling architecture behavioral of processor
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Loading package mips_constant_pkg
-# -- Compiling entity toplevel
-# -- Compiling architecture behavioral of toplevel
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-do tb_forwarding_unit.fdo
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity forwarding_unit
-# -- Compiling architecture behavioral of forwarding_unit
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_forwarding_unit
-# -- Compiling architecture behavior of tb_forwarding_unit
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_forwarding_unit 
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt18/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt19/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt20/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_forwarding_unit(behavior)#1
-# Loading work.forwarding_unit(behavioral)#1
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
 do tb_toplevel.fdo
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
@@ -192,8 +164,7 @@ do tb_toplevel.fdo
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt17/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt22/_deps" - file is inconsistent with version property.
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "com(behavioral)".
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Loading work.tb_toplevel(behavior)#1
@@ -248,7 +219,7 @@ do tb_toplevel.fdo
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
 do C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding.do
-restart -f; run 50us;
+restart -f; run 50 us;
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt14/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt15/_deps" - file open failed.
@@ -258,6 +229,33 @@ restart -f; run 50us;
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt17/_deps" - file open failed.
 # No such file or directory. (errno = ENOENT)
 # ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt22/_deps" - file is inconsistent with version property.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_toplevel(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mips_constant_pkg
+# Loading work.toplevel(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.com(behavioral)#1
+# Loading work.memory(behavioral)#1
+# Loading work.processor(behavioral)#1
+# Loading work.reg_ifid(behavioral)#1
+# Loading work.reg_32(behavioral)#1
+# Loading work.reg_idex(behavioral)#1
+# Loading work.reg_exmem(behavioral)#1
+# Loading work.reg_memwb(behavioral)#1
+# Loading work.control_unit(behavioral)#1
+# Loading work.alu(behavioral)#1
+# Loading work.alu_1bit(behavioral)#1
+# Loading work.full_adder(behavioral)#1
+# Loading work.alu_control(behavioral)#1
+# Loading work.pc(behavioral)#1
+# Loading work.adder(behavioral)#1
+# Loading work.register_file(behavioral)#1
+# Loading work.sign_extend(behavioral)#1
+# Loading work.forwarding_unit(behavioral)#1
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
@@ -282,47 +280,140 @@ restart -f; run 50us;
 #    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_forwarding_unit.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_forwarding_unit
-# -- Compiling architecture behavior of tb_forwarding_unit
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding_unit.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity forwarding_unit
-# -- Compiling architecture behavioral of forwarding_unit
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Loading package mips_constant_pkg
-# -- Compiling entity toplevel
-# -- Compiling architecture behavioral of toplevel
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package mips_constant_pkg
-# -- Compiling entity processor
-# -- Compiling architecture behavioral of processor
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Loading package mips_constant_pkg
-# -- Compiling entity toplevel
-# -- Compiling architecture behavioral of toplevel
-vcom -reportprogress 300 -work work C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_toplevel.vhd
+do tb_toplevel.fdo
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Compiling entity tb_toplevel
 # -- Compiling architecture behavior of tb_toplevel
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt14/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt15/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt16/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt17/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt22/_deps" - file is inconsistent with version property.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_toplevel(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mips_constant_pkg
+# Loading work.toplevel(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.com(behavioral)#1
+# Loading work.memory(behavioral)#1
+# Loading work.processor(behavioral)#1
+# Loading work.reg_ifid(behavioral)#1
+# Loading work.reg_32(behavioral)#1
+# Loading work.reg_idex(behavioral)#1
+# Loading work.reg_exmem(behavioral)#1
+# Loading work.reg_memwb(behavioral)#1
+# Loading work.control_unit(behavioral)#1
+# Loading work.alu(behavioral)#1
+# Loading work.alu_1bit(behavioral)#1
+# Loading work.full_adder(behavioral)#1
+# Loading work.alu_control(behavioral)#1
+# Loading work.pc(behavioral)#1
+# Loading work.adder(behavioral)#1
+# Loading work.register_file(behavioral)#1
+# Loading work.sign_extend(behavioral)#1
+# Loading work.forwarding_unit(behavioral)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+do C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding.do
+restart -f;
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt14/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt15/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt16/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt17/_deps" - file open failed.
+# No such file or directory. (errno = ENOENT)
+# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt22/_deps" - file is inconsistent with version property.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_toplevel(behavior)#1
+# Loading ieee.numeric_std(body)
+# Loading work.mips_constant_pkg
+# Loading work.toplevel(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.com(behavioral)#1
+# Loading work.memory(behavioral)#1
+# Loading work.processor(behavioral)#1
+# Loading work.reg_ifid(behavioral)#1
+# Loading work.reg_32(behavioral)#1
+# Loading work.reg_idex(behavioral)#1
+# Loading work.reg_exmem(behavioral)#1
+# Loading work.reg_memwb(behavioral)#1
+# Loading work.control_unit(behavioral)#1
+# Loading work.alu(behavioral)#1
+# Loading work.alu_1bit(behavioral)#1
+# Loading work.full_adder(behavioral)#1
+# Loading work.alu_control(behavioral)#1
+# Loading work.pc(behavioral)#1
+# Loading work.adder(behavioral)#1
+# Loading work.register_file(behavioral)#1
+# Loading work.sign_extend(behavioral)#1
+# Loading work.forwarding_unit(behavioral)#1
+run 50 us;
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
 do tb_toplevel.fdo
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
@@ -432,225 +523,6 @@ restart -f; run 50us;
 # Loading work.register_file(behavioral)#1
 # Loading work.sign_extend(behavioral)#1
 # Loading work.forwarding_unit(behavioral)#1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-do tb_forwarding_unit.fdo
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity forwarding_unit
-# -- Compiling architecture behavioral of forwarding_unit
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_forwarding_unit
-# -- Compiling architecture behavior of tb_forwarding_unit
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_forwarding_unit 
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt18/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt19/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt20/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Note: (vsim-3812) Design is being optimized...
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_forwarding_unit(behavior)#1
-# Loading work.forwarding_unit(behavioral)#1
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-do C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding.do
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/clk'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 3
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/reset'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 4
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/clk'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 5
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/processor_enable'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 6
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/data_mem/mem(1)'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 7
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/inst_register_file/regs(1)'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 8
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/inst_register_file/regs(2)'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 9
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/inst_register_file/regs(3)'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 10
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/inst_register_file/regs(4)'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 11
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/inst_register_file/regs(7)'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 12
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/inst_register_file/regs(11)'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 13
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/imem_address'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 14
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/id_reg_write'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 15
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/ex_reg_write'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 16
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/mem_reg_write'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 17
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/wb_reg_write'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 18
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/inst_alu/x'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 19
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/inst_alu/y'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 20
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/alu_in'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 21
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/inst_alu/r'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 22
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/data_to_write'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 23
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/id_reg_dst'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 24
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/ex_reg_dst'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 25
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/id_alu_op'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 26
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/ex_alu_op'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 27
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/id_alu_src'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 28
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/ex_alu_src'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 29
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/ex_alu_out'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 30
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/mem_alu_out'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 31
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/wb_alu_out'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 32
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/id_jump'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 33
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/reg_write_exec'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 34
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/ex_read_data_1'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 35
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/ex_read_data_2'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 36
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/ex_rd_addr'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 37
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/mem_rd_addr'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 38
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/wb_rd_addr'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 39
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/ex_rs'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 40
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/ex_rt'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 41
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/ex_rd'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 42
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/forward_a'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 43
-# ** Error: (vish-4014) No objects found matching '/tb_toplevel/uut/mips_sc_processor/forward_b'.
-# Executing ONERROR command at macro C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\forwarding.do line 44
-do tb_toplevel.fdo
-# ** Warning: (vlib-34) Library already exists at "work".
-# Model Technology ModelSim SE vcom 6.6d Compiler 2010.11 Nov  1 2010
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity tb_toplevel
-# -- Compiling architecture behavior of tb_toplevel
-# vsim -lib work -voptargs=\"+acc\" -t 1ps work.tb_toplevel 
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt14/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt15/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt16/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt17/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt22/_deps" - file is inconsistent with version property.
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "com(behavioral)".
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_toplevel(behavior)#1
-# Loading ieee.numeric_std(body)
-# Loading work.mips_constant_pkg
-# Loading work.toplevel(behavioral)#1
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_unsigned(body)
-# Loading work.com(behavioral)#1
-# Loading work.memory(behavioral)#1
-# Loading work.processor(behavioral)#1
-# Loading work.reg_ifid(behavioral)#1
-# Loading work.reg_32(behavioral)#1
-# Loading work.reg_idex(behavioral)#1
-# Loading work.reg_exmem(behavioral)#1
-# Loading work.reg_memwb(behavioral)#1
-# Loading work.control_unit(behavioral)#1
-# Loading work.alu(behavioral)#1
-# Loading work.alu_1bit(behavioral)#1
-# Loading work.full_adder(behavioral)#1
-# Loading work.alu_control(behavioral)#1
-# Loading work.pc(behavioral)#1
-# Loading work.adder(behavioral)#1
-# Loading work.register_file(behavioral)#1
-# Loading work.sign_extend(behavioral)#1
-# Loading work.forwarding_unit(behavioral)#1
-# .main_pane.wave.interior.cs.body.pw.wf
-# .main_pane.structure.interior.cs.body.struct
-# .main_pane.objects.interior.cs.body.tree
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 2  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 1  Instance: /tb_toplevel/uut/inst_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 3  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 20 ns  Iteration: 4  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 40 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 60 ns  Iteration: 1  Instance: /tb_toplevel/uut/data_mem
-do C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/forwarding.do
-restart -f; run 50 us;
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt14/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt15/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt16/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt17/_deps" - file open failed.
-# No such file or directory. (errno = ENOENT)
-# ** Warning: (vsim-56) Problem with optimized design dependency file "C:\Users\chribru\Desktop\GitHub\tdt4255\oving1\work/@_opt22/_deps" - file is inconsistent with version property.
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_toplevel/uut/mips_sc_processor/inst_register_file
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
