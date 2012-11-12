@@ -358,6 +358,10 @@ architecture Behavioral of processor is
 	signal mem_write_muxed: STD_LOGIC := ZERO1b;
 	signal branch_muxed: STD_LOGIC := ZERO1b;
 	signal alu_op_muxed: STD_LOGIC_VECTOR (1 downto 0) := "00";
+	
+	-- register mux signals
+	signal reg_muxed_read_data_1: STD_LOGIC_VECTOR (4 downto 0) := (others => '0');
+	signal reg_muxed_read_data_2: STD_LOGIC_VECTOR (4 downto 0) := (others => '0');
 
 begin
 	-- This one updates the PC when the next state is a FETCH to make sure the instruction is ready for the next EXEC
@@ -409,8 +413,10 @@ begin
 	with stall_to_mux select branch_muxed <= '0' when '1', id_branch when others;
 	with stall_to_mux select alu_op_muxed <= "00" when '1', id_alu_op when others; --STD_LOGIC_VECTOR
 	
-	
-	
+	-- hack for register read/write on same cycle
+	reg_muxed_read_data_1 <= data_to_write when (id_instruction (25 downto 21) = wb_rd_addr) else id_read_data_1;
+	reg_muxed_read_data_2 <= data_to_write when (id_instruction (20 downto 16) = wb_rd_addr) else id_read_data_2;
+
 	-- enable signals
 	pc_clk <= (pc_enable and clk);
 	ifid_clk <= (ifid_enable and clk);
@@ -447,9 +453,9 @@ begin
 			alu_src_out => ex_alu_src,
 			pc_in => id_pc_next,
 			pc_out => ex_pc_next,
-			read_data_1_in => id_read_data_1,
+			read_data_1_in => reg_muxed_read_data_1,
 			read_data_1_out => ex_read_data_1,
-			read_data_2_in => id_read_data_2,
+			read_data_2_in => reg_muxed_read_data_2,
 			read_data_2_out => ex_read_data_2,
 			immediate_in => id_offset,
 			immediate_out => ex_offset,
