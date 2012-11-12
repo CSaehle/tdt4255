@@ -62,7 +62,7 @@ begin
 			pc_write <= '1';
 		elsif (counter <= 0) and rising_edge(CLK) then
 			if ((ex_mem_read = '1') and ((ex_register_rt = id_register_rs) or (ex_register_rt = id_register_rt))) then
-				-- stall for register read
+				-- stall for memory read
 				counter <= 2;
 				reset_idex <= '0';
 				stall_to_mux <= '1';
@@ -72,7 +72,7 @@ begin
 				-- flush for branching
 				reset_idex <= '1';
 				reset_ifid <= '1';
-				counter <= 1;
+				counter <= 4;
 				ifid_write <= '0';
 			else
 				-- no stalling
