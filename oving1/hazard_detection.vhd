@@ -60,7 +60,7 @@ begin
 			reset_idex <= '0';
 			ifid_write <= '1';
 			pc_write <= '1';
-		elsif (counter = 0) then
+		elsif (counter <= 0) and rising_edge(CLK) then
 			if ((ex_mem_read = '1') and ((ex_register_rt = id_register_rs) or (ex_register_rt = id_register_rt))) then
 				-- stall for register read
 				counter <= 2;
@@ -77,6 +77,7 @@ begin
 			else
 				-- no stalling
 				stall_to_mux <= '0';
+				reset_ifid <= '0';
 				reset_idex <= '0';
 				pc_write <= '1';
 				ifid_write <= '1';
