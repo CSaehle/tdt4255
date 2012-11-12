@@ -216,13 +216,19 @@ architecture Behavioral of processor is
 	end component forwarding_unit;
 	
 	component hazard_detection is
-		Port ( ex_mem_read : in  STD_LOGIC;
+		Port ( CLK 			:	in	STD_LOGIC;
+			  RESET			:	in	STD_LOGIC;
+			  ex_zero 		: 	in STD_LOGIC;
+			  ex_branch 	: 	in STD_LOGIC;
+			  ex_mem_read : in  STD_LOGIC;
            ex_register_rt : in  STD_LOGIC_VECTOR (4 downto 0);
            id_register_rs : in  STD_LOGIC_VECTOR (4 downto 0);
            id_register_rt : in  STD_LOGIC_VECTOR (4 downto 0);
-           reset_idex : out  STD_LOGIC;
-           pc_write : out  STD_LOGIC;
-           ifid_write : out  STD_LOGIC);
+           reset_ifid 		:	out STD_LOGIC;
+			  reset_idex 		:	out STD_LOGIC;
+           pc_write 			:	out STD_LOGIC;
+           ifid_write 		:	out STD_LOGIC;
+			  stall_to_mux		:	out STD_LOGIC);
 	end component hazard_detection;
 	
 	
@@ -332,14 +338,26 @@ architecture Behavioral of processor is
 	--/forward
 	
 	-- hazard detection unit
+	signal reset_ifid : STD_LOGIC := '0';
 	signal reset_idex : STD_LOGIC := '0'; -- this line should be moved ...
 	signal pc_clk : STD_LOGIC := '0'; -- ... and this one ...
 	signal ifid_clk : STD_LOGIC := '0'; -- ... and this one
+	signal hdu_reset_ifid : STD_LOGIC := '0';
 	signal hdu_reset_idex : STD_LOGIC := '0';
 	signal pc_enable : STD_LOGIC := '1';
 	signal ifid_enable : STD_LOGIC := '1';
+	signal stall_to_mux : STD_LOGIC := '0';
 	--/hazard detection unit
 	
+	-- stall mux signals
+	signal reg_dst_muxed: STD_LOGIC := ZERO1b;
+	signal alu_src_muxed: STD_LOGIC := ZERO1b;
+	signal mem_to_reg_muxed: STD_LOGIC := ZERO1b;
+	signal reg_write_muxed: STD_LOGIC := ZERO1b;
+	signal mem_read_muxed: STD_LOGIC := ZERO1b;
+	signal mem_write_muxed: STD_LOGIC := ZERO1b;
+	signal branch_muxed: STD_LOGIC := ZERO1b;
+	signal alu_op_muxed: STD_LOGIC_VECTOR (1 downto 0) := "00";
 
 begin
 	-- This one updates the PC when the next state is a FETCH to make sure the instruction is ready for the next EXEC
@@ -374,9 +392,24 @@ begin
 	
 	-- Using address from PC to address instruction memory.
 	imem_address <= pc_current;
-
+	
+	-- If/id reset
+	reset_ifid <= (hdu_reset_ifid or reset);
+	
 	-- Id/ex reset
 	reset_idex <= (hdu_reset_idex or reset);
+	
+	-- Stall muxes
+	with stall_to_mux select reg_dst_muxed <= '0' when '1', id_reg_dst when others;
+	with stall_to_mux select alu_src_muxed <= '0' when '1', id_alu_src when others;
+	with stall_to_mux select mem_to_reg_muxed <= '0' when '1', id_mem_to_reg when others;
+	with stall_to_mux select reg_write_muxed <= '0' when '1', id_reg_write when others;
+	with stall_to_mux select mem_read_muxed <= '0' when '1', id_mem_read when others;
+	with stall_to_mux select mem_write_muxed <= '0' when '1', id_mem_write when others;
+	with stall_to_mux select branch_muxed <= '0' when '1', id_branch when others;
+	with stall_to_mux select alu_op_muxed <= "00" when '1', id_alu_op when others; --STD_LOGIC_VECTOR
+	
+	
 	
 	-- enable signals
 	pc_clk <= (pc_enable and clk);
@@ -391,26 +424,26 @@ begin
 			instr_in => imem_data_in,
 			instr_out => id_instruction,
 			clk => ifid_clk,
-			reset => reset
+			reset => reset_ifid
 		);
 	
 	inst_reg_idex : reg_idex
 	Port map(
-			reg_write_in => id_reg_write,
+			reg_write_in => reg_write_muxed,
 			reg_write_out => ex_reg_write,
-			mem_to_reg_in => id_mem_to_reg,
+			mem_to_reg_in => mem_to_reg_muxed,
 			mem_to_reg_out => ex_mem_to_reg,
-			branch_in => id_branch,
+			branch_in => branch_muxed,
 			branch_out => ex_branch,
-			mem_read_in => id_mem_read,
+			mem_read_in => mem_read_muxed,
 			mem_read_out => ex_mem_read,
-			mem_write_in => id_mem_write,
+			mem_write_in => mem_write_muxed,
 			mem_write_out => ex_mem_write,
-			reg_dst_in => id_reg_dst,
+			reg_dst_in => reg_dst_muxed,
 			reg_dst_out => ex_reg_dst,
-			alu_op_in => id_alu_op,
+			alu_op_in => alu_op_muxed,
 			alu_op_out => ex_alu_op,
-			alu_src_in => id_alu_src,
+			alu_src_in => alu_src_muxed,
 			alu_src_out => ex_alu_src,
 			pc_in => id_pc_next,
 			pc_out => ex_pc_next,
@@ -560,13 +593,19 @@ begin
 		
 	inst_hazard_detection: hazard_detection
 	port map(
+			CLK => clk,
+			RESET => reset,
+			ex_zero => flags.zero,
+			ex_branch => ex_branch,
 			ex_mem_read => ex_mem_read,
 			ex_register_rt => ex_rt,
 			id_register_rs => id_instruction (25 downto 21),
 			id_register_rt => id_instruction (20 downto 16),
+			reset_ifid => hdu_reset_ifid,
 			reset_idex => hdu_reset_idex,
 			pc_write => pc_enable,
-			ifid_write => ifid_enable
+			ifid_write => ifid_enable,
+			stall_to_mux => stall_to_mux
 		);
 		
 		

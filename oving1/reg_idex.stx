@@ -4,13 +4,13 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to Z:/github/tdt4255/oving1/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: reg_idex.prj
 
@@ -45,11 +45,11 @@ Parsing architecture <Behavioral> of entity <reg_idex>.
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.23 secs
+Total CPU time to Xst completion: 3.21 secs
  
 --> 
 
-Total memory usage is 183788 kilobytes
+Total memory usage is 186928 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
