@@ -140,914 +140,922 @@ Z56 n@_opt32
 R6
 R7
 T_opt33
-VUOA1AUAmOI:C4Z]chJB;[1
+Z57 VUOA1AUAmOI:C4Z]chJB;[1
 R2
-Z57 =2-00215a612d5a-50a16f2f-292-20c
+Z58 =2-00215a612d5a-50a16f2f-292-20c
 R4
-Z58 n@_opt33
+Z59 n@_opt33
+R6
+R7
+T_opt34
+V6Wb3SY?KmZ:3lK9l48lI_1
+R2
+Z60 =3-00215a611f14-50a17582-1a3-e00
+R4
+Z61 n@_opt34
 R6
 R7
 Eadder
-Z59 w1352642479
-Z60 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
-Z61 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z62 w1352642479
+Z63 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z64 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
 R7
-Z62 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd
-Z63 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd
+Z65 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd
+Z66 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/adder.vhd
 l0
 L33
-Z64 V9UP27P3nThNk5^h[BLcUI2
-Z65 OE;C;6.6d;45
+Z67 V9UP27P3nThNk5^h[BLcUI2
+Z68 OE;C;6.6d;45
 32
-Z66 o-work work
-Z67 tExplicit 1
-Z68 !s100 MC16gUE;:VACLmO2:0I8g3
+Z69 o-work work
+Z70 tExplicit 1
+Z71 !s100 MC16gUE;:VACLmO2:0I8g3
 Abehavioral
-R60
-R61
-Z69 DEx4 work 5 adder 0 22 9UP27P3nThNk5^h[BLcUI2
+R63
+R64
+Z72 DEx4 work 5 adder 0 22 9UP27P3nThNk5^h[BLcUI2
 l58
 L44
-Z70 VSeNOR]EmTDI02;HSNWn`H3
-R65
+Z73 VSeNOR]EmTDI02;HSNWn`H3
+R68
 32
-Z71 Mx2 4 ieee 14 std_logic_1164
-Z72 Mx1 4 ieee 11 numeric_std
-R66
-R67
-Z73 !s100 ;4cW_;;^@`bD0ZjWIPoMU2
+Z74 Mx2 4 ieee 14 std_logic_1164
+Z75 Mx1 4 ieee 11 numeric_std
+R69
+R70
+Z76 !s100 ;4cW_;;^@`bD0ZjWIPoMU2
 Ealu
-R59
-Z74 DPx4 work 17 mips_constant_pkg 0 22 V7`?6hGDZ@=P>?hVOb>XV0
-R60
-R61
+R62
+Z77 DPx4 work 17 mips_constant_pkg 0 22 V7`?6hGDZ@=P>?hVOb>XV0
+R63
+R64
 R7
-Z75 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd
-Z76 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd
+Z78 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd
+Z79 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu.vhd
 l0
 L36
-Z77 VUIgodI[^E;6eN<:`Uf7[a3
-R65
+Z80 VUIgodI[^E;6eN<:`Uf7[a3
+R68
 32
-R66
-R67
-Z78 !s100 m:z=BJPEiYaD=?7fWPQIc0
+R69
+R70
+Z81 !s100 m:z=BJPEiYaD=?7fWPQIc0
 Abehavioral
-R74
-R60
-R61
-Z79 DEx4 work 3 alu 0 22 UIgodI[^E;6eN<:`Uf7[a3
+R77
+R63
+R64
+Z82 DEx4 work 3 alu 0 22 UIgodI[^E;6eN<:`Uf7[a3
 l68
 L47
-Z80 V7[GI>oPJJb3Ai9EaAchQ=2
-R65
+Z83 V7[GI>oPJJb3Ai9EaAchQ=2
+R68
 32
-Z81 Mx3 4 ieee 14 std_logic_1164
-Z82 Mx2 4 ieee 11 numeric_std
-Z83 Mx1 4 work 17 mips_constant_pkg
-R66
-R67
-Z84 !s100 23UcV149`ZXOcFo6WG]Oc2
+Z84 Mx3 4 ieee 14 std_logic_1164
+Z85 Mx2 4 ieee 11 numeric_std
+Z86 Mx1 4 work 17 mips_constant_pkg
+R69
+R70
+Z87 !s100 23UcV149`ZXOcFo6WG]Oc2
 Ealu_1bit
-R59
-R61
+R62
+R64
 R7
-Z85 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd
-Z86 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd
+Z88 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd
+Z89 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_1bit.vhd
 l0
 L32
-Z87 Vh^D@6WX4SMabTcIXeZ@VS3
-R65
+Z90 Vh^D@6WX4SMabTcIXeZ@VS3
+R68
 32
-R66
-R67
-Z88 !s100 `LFFVnEK1Vb6EVYnoM]AT3
+R69
+R70
+Z91 !s100 `LFFVnEK1Vb6EVYnoM]AT3
 Abehavioral
-R61
-Z89 DEx4 work 8 alu_1bit 0 22 h^D@6WX4SMabTcIXeZ@VS3
+R64
+Z92 DEx4 work 8 alu_1bit 0 22 h^D@6WX4SMabTcIXeZ@VS3
 l65
 L49
-Z90 VN3>Z>UhW;@1mH;mbYm4J=0
-R65
+Z93 VN3>Z>UhW;@1mH;mbYm4J=0
+R68
 32
-Z91 Mx1 4 ieee 14 std_logic_1164
-R66
-R67
-Z92 !s100 IRM97U]?SoB`Y;<850An71
+Z94 Mx1 4 ieee 14 std_logic_1164
+R69
+R70
+Z95 !s100 IRM97U]?SoB`Y;<850An71
 Ealu_control
-R59
-R74
-R61
+R62
+R77
+R64
 R7
-Z93 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd
-Z94 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd
+Z96 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd
+Z97 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/alu_control.vhd
 l0
 L35
-Z95 V_D4f3o1W_:zkiIJEJnAS61
-R65
+Z98 V_D4f3o1W_:zkiIJEJnAS61
+R68
 32
-R66
-R67
-Z96 !s100 CR5mz9>9=J@:dUBHKaBfI3
+R69
+R70
+Z99 !s100 CR5mz9>9=J@:dUBHKaBfI3
 Abehavioral
-R74
-R61
-Z97 DEx4 work 11 alu_control 0 22 _D4f3o1W_:zkiIJEJnAS61
+R77
+R64
+Z100 DEx4 work 11 alu_control 0 22 _D4f3o1W_:zkiIJEJnAS61
 l46
 L42
-Z98 VIa>ik`GlEUWj6KFz;HQ6h1
-R65
+Z101 VIa>ik`GlEUWj6KFz;HQ6h1
+R68
 32
-R71
-R83
-R66
-R67
-Z99 !s100 6bXBi:]IL2YKFbFZZaO6m2
+R74
+R86
+R69
+R70
+Z102 !s100 6bXBi:]IL2YKFbFZZaO6m2
 Ecom
-R59
-Z100 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
-Z101 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
-R61
+R62
+Z103 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z104 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+R64
 R7
-Z102 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd
-Z103 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd
+Z105 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd
+Z106 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/com.vhd
 l0
 L33
-Z104 VY2WL=`kS59e5X1E1`Ylh93
-R65
+Z107 VY2WL=`kS59e5X1E1`Ylh93
+R68
 32
-R66
-R67
-Z105 !s100 nB]L6F:Z_>Fk:FA0o5KI^0
+R69
+R70
+Z108 !s100 nB]L6F:Z_>Fk:FA0o5KI^0
 Abehavioral
-R100
-R101
-R61
-Z106 DEx4 work 3 com 0 22 Y2WL=`kS59e5X1E1`Ylh93
+R103
+R104
+R64
+Z109 DEx4 work 3 com 0 22 Y2WL=`kS59e5X1E1`Ylh93
 l77
 L60
-Z107 V3]Mm<CEm9n:k^Y7aOfk]83
-R65
+Z110 V3]Mm<CEm9n:k^Y7aOfk]83
+R68
 32
-R81
-Z108 Mx2 4 ieee 18 std_logic_unsigned
-Z109 Mx1 4 ieee 15 std_logic_arith
-R66
-R67
-Z110 !s100 cl;a9;MYJGV4a2i][IQ3U1
+R84
+Z111 Mx2 4 ieee 18 std_logic_unsigned
+Z112 Mx1 4 ieee 15 std_logic_arith
+R69
+R70
+Z113 !s100 cl;a9;MYJGV4a2i][IQ3U1
 Econtrol_unit
-R59
-R61
+R62
+R64
 R7
-Z111 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd
-Z112 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd
+Z114 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd
+Z115 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/control_unit.vhd
 l0
 L32
-Z113 V>j=[CJ1@fg:CnZP2c;@jL2
-R65
+Z116 V>j=[CJ1@fg:CnZP2c;@jL2
+R68
 32
-R66
-R67
-Z114 !s100 RgDkAV>LRz@b_c65Ie4dZ3
+R69
+R70
+Z117 !s100 RgDkAV>LRz@b_c65Ie4dZ3
 Abehavioral
-R61
-Z115 DEx4 work 12 control_unit 0 22 >j=[CJ1@fg:CnZP2c;@jL2
+R64
+Z118 DEx4 work 12 control_unit 0 22 >j=[CJ1@fg:CnZP2c;@jL2
 l49
 L47
-Z116 V3PzkHeF86X:U5@kj;RWeF2
-R65
+Z119 V3PzkHeF86X:U5@kj;RWeF2
+R68
 32
-R91
-R66
-R67
-Z117 !s100 zzUFeYBX8ZmJAlFXoJ@@<1
+R94
+R69
+R70
+Z120 !s100 zzUFeYBX8ZmJAlFXoJ@@<1
 Eforwarding_unit
-Z118 w1352714098
-R61
-Z119 dZ:\git\GitHub\tdt4255\oving1
-Z120 8Z:/git/GitHub/tdt4255/oving1/forwarding_unit.vhd
-Z121 FZ:/git/GitHub/tdt4255/oving1/forwarding_unit.vhd
+Z121 w1352714098
+R64
+Z122 dZ:\git\GitHub\tdt4255\oving1
+Z123 8Z:/git/GitHub/tdt4255/oving1/forwarding_unit.vhd
+Z124 FZ:/git/GitHub/tdt4255/oving1/forwarding_unit.vhd
 l0
 L32
-Z122 VX2IJ^I?ldj:8?BL2B2mjR0
-R65
+Z125 VX2IJ^I?ldj:8?BL2B2mjR0
+R68
 32
-R66
-R67
-Z123 !s100 ;>UeoN3]PTajmYaNin6Ge0
+R69
+R70
+Z126 !s100 ;>UeoN3]PTajmYaNin6Ge0
 Abehavioral
-R61
-Z124 DEx4 work 15 forwarding_unit 0 22 X2IJ^I?ldj:8?BL2B2mjR0
+R64
+Z127 DEx4 work 15 forwarding_unit 0 22 X2IJ^I?ldj:8?BL2B2mjR0
 l45
 L43
-Z125 VJOkCIkW1XM[3;LmbQ=i:e1
-R65
+Z128 VJOkCIkW1XM[3;LmbQ=i:e1
+R68
 32
-R91
-R66
-R67
-Z126 !s100 N@`?k;4h`1lGz]2Fj?Nn30
+R94
+R69
+R70
+Z129 !s100 N@`?k;4h`1lGz]2Fj?Nn30
 Efull_adder
-R59
-R60
-R61
+R62
+R63
+R64
 R7
-Z127 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd
-Z128 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd
+Z130 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd
+Z131 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/full_adder.vhd
 l0
 L33
-Z129 Vf<mIQ6T_]MOcL5a;^2[g72
-R65
+Z132 Vf<mIQ6T_]MOcL5a;^2[g72
+R68
 32
-R66
-R67
-Z130 !s100 ^`l^^Ui_Q1V>EaR0gz7AP3
+R69
+R70
+Z133 !s100 ^`l^^Ui_Q1V>EaR0gz7AP3
 Abehavioral
-R60
-R61
-Z131 DEx4 work 10 full_adder 0 22 f<mIQ6T_]MOcL5a;^2[g72
+R63
+R64
+Z134 DEx4 work 10 full_adder 0 22 f<mIQ6T_]MOcL5a;^2[g72
 l47
 L43
-Z132 VB:2iIo9QY]f^i3nn4;Y3I1
-R65
+Z135 VB:2iIo9QY]f^i3nn4;Y3I1
+R68
 32
-R71
-R72
-R66
-R67
-Z133 !s100 [8z9P?GWKmfGXn^enXj:;0
+R74
+R75
+R69
+R70
+Z136 !s100 [8z9P?GWKmfGXn^enXj:;0
 Ehazard_detection
-Z134 w1352756502
-R100
-R61
+Z137 w1352756502
+R103
+R64
 R7
-Z135 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/hazard_detection.vhd
-Z136 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/hazard_detection.vhd
+Z138 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/hazard_detection.vhd
+Z139 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/hazard_detection.vhd
 l0
 L33
-Z137 V`Y1Q^DV=M0JIK[09PiDa42
-R65
+Z140 V`Y1Q^DV=M0JIK[09PiDa42
+R68
 32
-Z138 o-O0 -work work
-Z139 tExplicit 1 DisableOpt 1 NoCoverage 1
-Z140 !s100 KX`T0[<?@7Q=JkU863H>d0
+Z141 o-O0 -work work
+Z142 tExplicit 1 DisableOpt 1 NoCoverage 1
+Z143 !s100 KX`T0[<?@7Q=JkU863H>d0
 Abehavioral
-R100
-R61
-Z141 DEx4 work 16 hazard_detection 0 22 `Y1Q^DV=M0JIK[09PiDa42
+R103
+R64
+Z144 DEx4 work 16 hazard_detection 0 22 `Y1Q^DV=M0JIK[09PiDa42
 l53
 L49
-Z142 V[EZel;HdEEB<6jbXS@B3>0
-R65
+Z145 V[EZel;HdEEB<6jbXS@B3>0
+R68
 32
-R71
-R109
-R138
-R139
-Z143 !s100 bgVWRQZa8m`6mFPE:7H[`1
+R74
+R112
+R141
+R142
+Z146 !s100 bgVWRQZa8m`6mFPE:7H[`1
 Ememory
-R59
-R60
-R61
+R62
+R63
+R64
 R7
-Z144 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd
-Z145 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd
+Z147 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd
+Z148 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/memory.vhd
 l0
 L33
-Z146 V]KfEEzVSzGnhEb^Ykg@m?1
-R65
+Z149 V]KfEEzVSzGnhEb^Ykg@m?1
+R68
 32
-R66
-R67
-Z147 !s100 _enK[N3VAJ`3Yj>Ygie?90
+R69
+R70
+Z150 !s100 _enK[N3VAJ`3Yj>Ygie?90
 Abehavioral
-R60
-R61
-Z148 DEx4 work 6 memory 0 22 ]KfEEzVSzGnhEb^Ykg@m?1
+R63
+R64
+Z151 DEx4 work 6 memory 0 22 ]KfEEzVSzGnhEb^Ykg@m?1
 l54
 L46
-Z149 V7=60VR;7@DVI0mM2j5iGG2
-R65
+Z152 V7=60VR;7@DVI0mM2j5iGG2
+R68
 32
-R71
-R72
-R66
-R67
-Z150 !s100 X=eZ8[gKOI`XO<[6I80PY0
+R74
+R75
+R69
+R70
+Z153 !s100 X=eZ8[gKOI`XO<[6I80PY0
 Pmips_constant_pkg
-R61
-R59
+R64
+R62
 R7
-Z151 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd
-Z152 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd
+Z154 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd
+Z155 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/mips_constant_pkg.vhd
 l0
 L10
-Z153 VV7`?6hGDZ@=P>?hVOb>XV0
-R65
+Z156 VV7`?6hGDZ@=P>?hVOb>XV0
+R68
 32
-R91
-R66
-R67
-Z154 !s100 WE6bniY[De<`TE`cMQCim0
+R94
+R69
+R70
+Z157 !s100 WE6bniY[De<`TE`cMQCim0
 Epc
-R59
-R74
-R61
+R62
+R77
+R64
 R7
-Z155 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd
-Z156 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd
+Z158 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd
+Z159 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/pc.vhd
 l0
 L35
-Z157 V?e;@CY3J=_GGNMVg_kIYR3
-R65
+Z160 V?e;@CY3J=_GGNMVg_kIYR3
+R68
 32
-R66
-R67
-Z158 !s100 =LJDMeIFJbY]55@n52P:?2
+R69
+R70
+Z161 !s100 =LJDMeIFJbY]55@n52P:?2
 Abehavioral
-R74
-R61
-Z159 DEx4 work 2 pc 0 22 ?e;@CY3J=_GGNMVg_kIYR3
+R77
+R64
+Z162 DEx4 work 2 pc 0 22 ?e;@CY3J=_GGNMVg_kIYR3
 l47
 L43
-Z160 VGaAYFnH0TK9`LbSbcF?JO3
-R65
+Z163 VGaAYFnH0TK9`LbSbcF?JO3
+R68
 32
-R71
-R83
-R66
-R67
-Z161 !s100 SF1HH[6?go`I`G65LC]c:0
-Eprocessor
-Z162 w1352752288
 R74
-R61
-R7
-Z163 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd
-Z164 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/processor.vhd
+R86
+R69
+R70
+Z164 !s100 SF1HH[6?go`I`G65LC]c:0
+Eprocessor
+Z165 w1352758849
+R77
+R64
+R122
+Z166 8Z:/git/GitHub/tdt4255/oving1/processor.vhd
+Z167 FZ:/git/GitHub/tdt4255/oving1/processor.vhd
 l0
 L35
-Z165 VZ:z9U^Oa[Cl2bH=WX^cFj0
-R65
+Z168 VBSSHD^Qna1]mL7SPCVzh<2
+R68
 32
-R138
-R139
-Z166 !s100 hC[4XJX55BBQLMM;8D^Kd1
+R69
+R70
+Z169 !s100 hC[4XJX55BBQLMM;8D^Kd1
 Abehavioral
-R74
-R61
-Z167 DEx4 work 9 processor 0 22 Z:z9U^Oa[Cl2bH=WX^cFj0
-l362
+R77
+R64
+Z170 DEx4 work 9 processor 0 22 BSSHD^Qna1]mL7SPCVzh<2
+l366
 L50
-Z168 V?ON7ODG>3:g9ng5LJVgkJ1
-R65
+Z171 VI<Aj8I2<kY:Aj:5DBRczO2
+R68
 32
-R71
-R83
-R138
-R139
-Z169 !s100 [X4IYH9ef^dHDAjILT;L<3
+R74
+R86
+R69
+R70
+Z172 !s100 O@YU1eUN6fUK9F[On5i]f1
 Ereg_32
-R59
-R61
+R62
+R64
 R7
-Z170 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_32.vhd
-Z171 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_32.vhd
+Z173 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_32.vhd
+Z174 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_32.vhd
 l0
 L32
-Z172 Vf`F:`Mm5X@AC2l`j17Jmz2
-R65
+Z175 Vf`F:`Mm5X@AC2l`j17Jmz2
+R68
 32
-R66
-R67
-Z173 !s100 bZbAfRlEza78em?LY7XAQ1
+R69
+R70
+Z176 !s100 bZbAfRlEza78em?LY7XAQ1
 Abehavioral
-R61
-Z174 DEx4 work 6 reg_32 0 22 f`F:`Mm5X@AC2l`j17Jmz2
+R64
+Z177 DEx4 work 6 reg_32 0 22 f`F:`Mm5X@AC2l`j17Jmz2
 l41
 L39
-Z175 Vc6fE2Z<YLb<=fTA:3QjL<3
-R65
+Z178 Vc6fE2Z<YLb<=fTA:3QjL<3
+R68
 32
-R91
-R66
-R67
-Z176 !s100 [>6cXm:O3X0m?Sco2GTc]2
+R94
+R69
+R70
+Z179 !s100 [>6cXm:O3X0m?Sco2GTc]2
 Ereg_exmem
-R59
-R61
+R62
+R64
 R7
-Z177 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_exmem.vhd
-Z178 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_exmem.vhd
+Z180 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_exmem.vhd
+Z181 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_exmem.vhd
 l0
 L32
-Z179 VXeVnocAYY:OQ8:?@cFGZB1
-R65
+Z182 VXeVnocAYY:OQ8:?@cFGZB1
+R68
 32
-R66
-R67
-Z180 !s100 fTRz_FQmS2TSYU[h32J>C1
+R69
+R70
+Z183 !s100 fTRz_FQmS2TSYU[h32J>C1
 Abehavioral
-R61
-Z181 DEx4 work 9 reg_exmem 0 22 XeVnocAYY:OQ8:?@cFGZB1
+R64
+Z184 DEx4 work 9 reg_exmem 0 22 XeVnocAYY:OQ8:?@cFGZB1
 l60
 L58
-Z182 Vbn4O]hflASiMR8l8;WJ[L1
-R65
+Z185 Vbn4O]hflASiMR8l8;WJ[L1
+R68
 32
-R91
-R66
-R67
-Z183 !s100 DcEI8QJgT]6UVzokek:000
+R94
+R69
+R70
+Z186 !s100 DcEI8QJgT]6UVzokek:000
 Ereg_idex
-Z184 w1352667323
-R61
-Z185 dZ:\github\tdt4255\oving1
-Z186 8Z:/github/tdt4255/oving1/reg_idex.vhd
-Z187 FZ:/github/tdt4255/oving1/reg_idex.vhd
+Z187 w1352667323
+R64
+Z188 dZ:\github\tdt4255\oving1
+Z189 8Z:/github/tdt4255/oving1/reg_idex.vhd
+Z190 FZ:/github/tdt4255/oving1/reg_idex.vhd
 l0
 L32
-Z188 VLOE7BCZOJdR`MMZT<2@cH3
-R65
+Z191 VLOE7BCZOJdR`MMZT<2@cH3
+R68
 32
-R66
-Z189 tExplicit 1 NoCoverage 1
-Z190 !s100 b1^C@=M6JfRF83QIFa>hQ1
+R69
+Z192 tExplicit 1 NoCoverage 1
+Z193 !s100 b1^C@=M6JfRF83QIFa>hQ1
 Abehavioral
-R61
-Z191 DEx4 work 8 reg_idex 0 22 LOE7BCZOJdR`MMZT<2@cH3
+R64
+Z194 DEx4 work 8 reg_idex 0 22 LOE7BCZOJdR`MMZT<2@cH3
 l70
 L68
-Z192 VUK3KOZc]Ic[YoMQCU4<Bh2
-R65
+Z195 VUK3KOZc]Ic[YoMQCU4<Bh2
+R68
 32
-R91
-R66
-R189
-Z193 !s100 VlQKO0M6BVo4N=fTK6H?P1
+R94
+R69
+R192
+Z196 !s100 VlQKO0M6BVo4N=fTK6H?P1
 Ereg_ifid
-R59
-R61
+R62
+R64
 R7
-Z194 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_ifid.vhd
-Z195 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_ifid.vhd
+Z197 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_ifid.vhd
+Z198 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_ifid.vhd
 l0
 L32
-Z196 VU[>4@QgOS_EniONd]OgBJ1
-R65
+Z199 VU[>4@QgOS_EniONd]OgBJ1
+R68
 32
-R66
-R67
-Z197 !s100 fXaCOWUoJjISO5FA7Ai241
+R69
+R70
+Z200 !s100 fXaCOWUoJjISO5FA7Ai241
 Abehavioral
-R61
-Z198 DEx4 work 8 reg_ifid 0 22 U[>4@QgOS_EniONd]OgBJ1
+R64
+Z201 DEx4 work 8 reg_ifid 0 22 U[>4@QgOS_EniONd]OgBJ1
 l50
 L41
-Z199 VC^LFiQIhWS5Bk7IhXo]Af2
-R65
+Z202 VC^LFiQIhWS5Bk7IhXo]Af2
+R68
 32
-R91
-R66
-R67
-Z200 !s100 z^]ZUDa?nAoX`4o<AhH7T1
+R94
+R69
+R70
+Z203 !s100 z^]ZUDa?nAoX`4o<AhH7T1
 Ereg_memwb
-R59
-R61
+R62
+R64
 R7
-Z201 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_memwb.vhd
-Z202 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_memwb.vhd
+Z204 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_memwb.vhd
+Z205 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/reg_memwb.vhd
 l0
 L32
-Z203 VY`6U:TQDZ@lnIVMnGD<Iz2
-R65
+Z206 VY`6U:TQDZ@lnIVMnGD<Iz2
+R68
 32
-R66
-R67
-Z204 !s100 ?U>RS<eeDBAZHi^LJ4==12
+R69
+R70
+Z207 !s100 ?U>RS<eeDBAZHi^LJ4==12
 Abehavioral
-R61
-Z205 DEx4 work 9 reg_memwb 0 22 Y`6U:TQDZ@lnIVMnGD<Iz2
+R64
+Z208 DEx4 work 9 reg_memwb 0 22 Y`6U:TQDZ@lnIVMnGD<Iz2
 l47
 L45
-Z206 Vne7l@^G^hBAU4gm5PbET]3
-R65
+Z209 Vne7l@^G^hBAU4gm5PbET]3
+R68
 32
-R91
-R66
-R67
-Z207 !s100 [BZlGBiMOa;oIEl5MJSka3
+R94
+R69
+R70
+Z210 !s100 [BZlGBiMOa;oIEl5MJSka3
 Eregister_file
-Z208 w1352722141
-R74
-R60
-R61
-R119
-Z209 8Z:/git/GitHub/tdt4255/oving1/register_file.vhd
-Z210 FZ:/git/GitHub/tdt4255/oving1/register_file.vhd
+Z211 w1352722141
+R77
+R63
+R64
+R122
+Z212 8Z:/git/GitHub/tdt4255/oving1/register_file.vhd
+Z213 FZ:/git/GitHub/tdt4255/oving1/register_file.vhd
 l0
 L36
-Z211 VlknUdZX7Jn1j:CL1CHNDz2
-R65
+Z214 VlknUdZX7Jn1j:CL1CHNDz2
+R68
 32
-R66
-R67
-Z212 !s100 27PSd2dmMZZMX<nF`i5@_2
+R69
+R70
+Z215 !s100 27PSd2dmMZZMX<nF`i5@_2
 Abehavioral
-R74
-R60
-R61
-Z213 DEx4 work 13 register_file 0 22 lknUdZX7Jn1j:CL1CHNDz2
+R77
+R63
+R64
+Z216 DEx4 work 13 register_file 0 22 lknUdZX7Jn1j:CL1CHNDz2
 l58
 L51
-Z214 VHXne:Cl83>BY2cdalZ<jI0
-R65
+Z217 VHXne:Cl83>BY2cdalZ<jI0
+R68
 32
-R81
-R82
-R83
-R66
-R67
-Z215 !s100 KcA==dn>5[d;Bh[GELS>;3
+R84
+R85
+R86
+R69
+R70
+Z218 !s100 KcA==dn>5[d;Bh[GELS>;3
 Esign_extend
-R59
-R61
+R62
+R64
 R7
-Z216 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd
-Z217 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd
+Z219 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd
+Z220 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/sign_extend.vhd
 l0
 L32
-Z218 VzZQF8o<2>KCnnHJ;Mi@E10
-R65
+Z221 VzZQF8o<2>KCnnHJ;Mi@E10
+R68
 32
-R66
-R67
-Z219 !s100 k;S:MX3BdU5eDlMQDZFdE3
+R69
+R70
+Z222 !s100 k;S:MX3BdU5eDlMQDZFdE3
 Abehavioral
-R61
-Z220 DEx4 work 11 sign_extend 0 22 zZQF8o<2>KCnnHJ;Mi@E10
+R64
+Z223 DEx4 work 11 sign_extend 0 22 zZQF8o<2>KCnnHJ;Mi@E10
 l38
 L37
-Z221 V4MQ0NdPcm=UN<ofm[bo<21
-R65
+Z224 V4MQ0NdPcm=UN<ofm[bo<21
+R68
 32
-R91
-R66
-R67
-Z222 !s100 lP5NX3LIhLVbO`T]W2?G61
+R94
+R69
+R70
+Z225 !s100 lP5NX3LIhLVbO`T]W2?G61
 Etb_adder
-R59
-R60
-R61
+R62
+R63
+R64
 R7
-Z223 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd
-Z224 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd
+Z226 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd
+Z227 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_adder.vhd
 l0
 L7
-Z225 VGKkFW4G1?OUozhU7liKA71
-R65
+Z228 VGKkFW4G1?OUozhU7liKA71
+R68
 32
-R66
-R67
-Z226 !s100 l:BM_8VOlmI>=BKIGejRI0
+R69
+R70
+Z229 !s100 l:BM_8VOlmI>=BKIGejRI0
 Abehavior
-R60
-R61
-Z227 DEx4 work 8 tb_adder 0 22 GKkFW4G1?OUozhU7liKA71
+R63
+R64
+Z230 DEx4 work 8 tb_adder 0 22 GKkFW4G1?OUozhU7liKA71
 l31
 L10
-Z228 Ve3`Km_>Lmf6mHfT>B9GC_2
-R65
+Z231 Ve3`Km_>Lmf6mHfT>B9GC_2
+R68
 32
-R71
-R72
-R66
-R67
-Z229 !s100 0MZ<S>B7l7A:?]^0a4XA51
-Etb_alu
-R59
 R74
-R60
-R61
+R75
+R69
+R70
+Z232 !s100 0MZ<S>B7l7A:?]^0a4XA51
+Etb_alu
+R62
+R77
+R63
+R64
 R7
-Z230 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd
-Z231 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd
+Z233 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd
+Z234 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu.vhd
 l0
 L11
-Z232 V<246z5I@QVkj8[Z^Km0F<3
-R65
+Z235 V<246z5I@QVkj8[Z^Km0F<3
+R68
 32
-R66
-R67
-Z233 !s100 CWkNR^VS=>fXRIi8@I6RL1
+R69
+R70
+Z236 !s100 CWkNR^VS=>fXRIi8@I6RL1
 Abehavior
-R74
-R60
-R61
-Z234 DEx4 work 6 tb_alu 0 22 <246z5I@QVkj8[Z^Km0F<3
+R77
+R63
+R64
+Z237 DEx4 work 6 tb_alu 0 22 <246z5I@QVkj8[Z^Km0F<3
 l35
 L14
-Z235 V<_5f0U_<W?b`0Qe>czf1=3
-R65
+Z238 V<_5f0U_<W?b`0Qe>czf1=3
+R68
 32
-R81
-R82
-R83
-R66
-R67
-Z236 !s100 n6RBBbA>H1=IOiEWb8:L:3
+R84
+R85
+R86
+R69
+R70
+Z239 !s100 n6RBBbA>H1=IOiEWb8:L:3
 Etb_alu_control
-R59
-R74
-R61
+R62
+R77
+R64
 R7
-Z237 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd
-Z238 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd
+Z240 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd
+Z241 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_alu_control.vhd
 l0
 L38
-Z239 V]NodCOL:0ejW5[^`TZX6b0
-R65
+Z242 V]NodCOL:0ejW5[^`TZX6b0
+R68
 32
-R66
-R67
-Z240 !s100 NaBN1;H:]@0h47>kfzeDb3
+R69
+R70
+Z243 !s100 NaBN1;H:]@0h47>kfzeDb3
 Abehavior
-R74
-R61
-Z241 DEx4 work 14 tb_alu_control 0 22 ]NodCOL:0ejW5[^`TZX6b0
+R77
+R64
+Z244 DEx4 work 14 tb_alu_control 0 22 ]NodCOL:0ejW5[^`TZX6b0
 l62
 L41
-Z242 V?IDL?zVIbFLI]_?jh=;^00
-R65
+Z245 V?IDL?zVIbFLI]_?jh=;^00
+R68
 32
-R71
-R83
-R66
-R67
-Z243 !s100 JH^V<>^`MRVH=0fEAY^2e3
+R74
+R86
+R69
+R70
+Z246 !s100 JH^V<>^`MRVH=0fEAY^2e3
 Etb_control_unit
-R59
-R61
+R62
+R64
 R7
-Z244 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd
-Z245 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd
+Z247 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd
+Z248 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_control_unit.vhd
 l0
 L35
-Z246 VJ8iGDbG?@Hm`>XY8e:WOU0
-R65
+Z249 VJ8iGDbG?@Hm`>XY8e:WOU0
+R68
 32
-R66
-R67
-Z247 !s100 g<0GKD7k5c4@^4;fhzbo>3
+R69
+R70
+Z250 !s100 g<0GKD7k5c4@^4;fhzbo>3
 Abehavior
-R61
-Z248 DEx4 work 15 tb_control_unit 0 22 J8iGDbG?@Hm`>XY8e:WOU0
+R64
+Z251 DEx4 work 15 tb_control_unit 0 22 J8iGDbG?@Hm`>XY8e:WOU0
 l74
 L38
-Z249 VO>WMOGz?1N3Kz;4NDZ=oQ3
-R65
+Z252 VO>WMOGz?1N3Kz;4NDZ=oQ3
+R68
 32
-R91
-R66
-R67
-Z250 !s100 jWcSo^1_g4lAV>>7USjM20
+R94
+R69
+R70
+Z253 !s100 jWcSo^1_g4lAV>>7USjM20
 Etb_forwarding_unit
-Z251 w1352664404
-R61
+Z254 w1352664404
+R64
 R7
-Z252 8tb_forwarding_unit.vhd
-Z253 Ftb_forwarding_unit.vhd
+Z255 8tb_forwarding_unit.vhd
+Z256 Ftb_forwarding_unit.vhd
 l0
 L35
-Z254 V2o>:<]UnjD5IHheF46_hA0
-R65
+Z257 V2o>:<]UnjD5IHheF46_hA0
+R68
 31
-Z255 o-explicit -93
-R67
-Z256 !s100 [<Yz_PQNjYh_Gk>AeHgTP1
+Z258 o-explicit -93
+R70
+Z259 !s100 [<Yz_PQNjYh_Gk>AeHgTP1
 Abehavior
-R61
-Z257 DEx4 work 18 tb_forwarding_unit 0 22 2o>:<]UnjD5IHheF46_hA0
+R64
+Z260 DEx4 work 18 tb_forwarding_unit 0 22 2o>:<]UnjD5IHheF46_hA0
 l70
 L38
-Z258 V5POB2GiI:8CBjUZFgjKEe1
-R65
+Z261 V5POB2GiI:8CBjUZFgjKEe1
+R68
 31
-R91
-R255
-R67
-Z259 !s100 XBi06dAJUgF0jK^;jWTnk0
+R94
+R258
+R70
+Z262 !s100 XBi06dAJUgF0jK^;jWTnk0
 Etb_pc
-R59
-R61
+R62
+R64
 R7
-Z260 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd
-Z261 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd
+Z263 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd
+Z264 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_pc.vhd
 l0
 L35
-Z262 VIPn9?X]Kdcj>O1G2zlAkg3
-R65
+Z265 VIPn9?X]Kdcj>O1G2zlAkg3
+R68
 32
-R66
-R67
-Z263 !s100 bDDSWNde8A1_bQ@XN8j_P0
+R69
+R70
+Z266 !s100 bDDSWNde8A1_bQ@XN8j_P0
 Abehavior
-R61
-Z264 DEx4 work 5 tb_pc 0 22 IPn9?X]Kdcj>O1G2zlAkg3
+R64
+Z267 DEx4 work 5 tb_pc 0 22 IPn9?X]Kdcj>O1G2zlAkg3
 l65
 L38
-Z265 VdY:oBDKHXV2g@61ISNfLP1
-R65
+Z268 VdY:oBDKHXV2g@61ISNfLP1
+R68
 32
-R91
-R66
-R67
-Z266 !s100 IQiRNe:eiYKbgj:3;>8lD0
+R94
+R69
+R70
+Z269 !s100 IQiRNe:eiYKbgj:3;>8lD0
 Etb_reg_exmem
-R59
-R61
+R62
+R64
 R7
-Z267 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd
-Z268 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd
+Z270 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd
+Z271 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_exmem.vhd
 l0
 L35
-Z269 Vnnd2g97VC4SgOSXem9GV?2
-R65
+Z272 Vnnd2g97VC4SgOSXem9GV?2
+R68
 32
-R66
-R67
-Z270 !s100 fbhA>9ZFzSSmCaY0SUF;R3
+R69
+R70
+Z273 !s100 fbhA>9ZFzSSmCaY0SUF;R3
 Abehavior
-R61
-Z271 DEx4 work 12 tb_reg_exmem 0 22 nnd2g97VC4SgOSXem9GV?2
+R64
+Z274 DEx4 work 12 tb_reg_exmem 0 22 nnd2g97VC4SgOSXem9GV?2
 l103
 L38
-Z272 VV<0[gF4=bc<]hXM4=7>h63
-R65
+Z275 VV<0[gF4=bc<]hXM4=7>h63
+R68
 32
-R91
-R66
-R67
-Z273 !s100 d[O>;67B8XiHSR4Jn`PQZ0
+R94
+R69
+R70
+Z276 !s100 d[O>;67B8XiHSR4Jn`PQZ0
 Etb_reg_idex
-R59
-R61
+R62
+R64
 R7
-Z274 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd
-Z275 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd
+Z277 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd
+Z278 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_idex.vhd
 l0
 L35
-Z276 VR[kRlGC7:UcBzYGSV6_WX1
-R65
+Z279 VR[kRlGC7:UcBzYGSV6_WX1
+R68
 32
-R66
-R67
-Z277 !s100 Q<m3>SVNeefBoESXhZkBB3
+R69
+R70
+Z280 !s100 Q<m3>SVNeefBoESXhZkBB3
 Abehavior
-R61
-Z278 DEx4 work 11 tb_reg_idex 0 22 R[kRlGC7:UcBzYGSV6_WX1
+R64
+Z281 DEx4 work 11 tb_reg_idex 0 22 R[kRlGC7:UcBzYGSV6_WX1
 l119
 L38
-Z279 VKBl2mg<M9U14hR]kEWL6g0
-R65
+Z282 VKBl2mg<M9U14hR]kEWL6g0
+R68
 32
-R91
-R66
-R67
-Z280 !s100 cFHiBhb:jYM5n7B:WUYNz2
+R94
+R69
+R70
+Z283 !s100 cFHiBhb:jYM5n7B:WUYNz2
 Etb_reg_ifid
-R59
-R61
+R62
+R64
 R7
-Z281 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd
-Z282 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd
+Z284 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd
+Z285 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_ifid.vhd
 l0
 L35
-Z283 VAW34UVk:Q`F@lV3oLfnL`0
-R65
+Z286 VAW34UVk:Q`F@lV3oLfnL`0
+R68
 32
-R66
-R67
-Z284 !s100 :2DQ90MIgD[V87A2E]_gR3
+R69
+R70
+Z287 !s100 :2DQ90MIgD[V87A2E]_gR3
 Abehavior
-R61
-Z285 DEx4 work 11 tb_reg_ifid 0 22 AW34UVk:Q`F@lV3oLfnL`0
+R64
+Z288 DEx4 work 11 tb_reg_ifid 0 22 AW34UVk:Q`F@lV3oLfnL`0
 l67
 L38
-Z286 VO?3nFmL99CjCP^lb49ZGM0
-R65
+Z289 VO?3nFmL99CjCP^lb49ZGM0
+R68
 32
-R91
-R66
-R67
-Z287 !s100 C<l0I8UU;f^<CNN4GDC1C0
+R94
+R69
+R70
+Z290 !s100 C<l0I8UU;f^<CNN4GDC1C0
 Etb_reg_memwb
-R59
-R61
+R62
+R64
 R7
-Z288 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd
-Z289 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd
+Z291 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd
+Z292 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_reg_memwb.vhd
 l0
 L35
-Z290 VaELB>dZ7o_6Oj=T@PFfjY2
-R65
+Z293 VaELB>dZ7o_6Oj=T@PFfjY2
+R68
 32
-R66
-R67
-Z291 !s100 >P1nd:jjC4OD^3bUF7E@Y0
+R69
+R70
+Z294 !s100 >P1nd:jjC4OD^3bUF7E@Y0
 Abehavior
-R61
-Z292 DEx4 work 12 tb_reg_memwb 0 22 aELB>dZ7o_6Oj=T@PFfjY2
+R64
+Z295 DEx4 work 12 tb_reg_memwb 0 22 aELB>dZ7o_6Oj=T@PFfjY2
 l75
 L38
-Z293 V^Pz0WN9[lU8_N5cGVc5;<1
-R65
+Z296 V^Pz0WN9[lU8_N5cGVc5;<1
+R68
 32
-R91
-R66
-R67
-Z294 !s100 JZ6h;P`I:JW=LBYIVi[z00
+R94
+R69
+R70
+Z297 !s100 JZ6h;P`I:JW=LBYIVi[z00
 Etb_sign_extend
-R59
-R61
+R62
+R64
 R7
-Z295 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd
-Z296 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd
+Z298 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd
+Z299 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/tb_sign_extend.vhd
 l0
 L35
-Z297 VAhQDLk1J7eEVMXM6eIdJN3
-R65
+Z300 VAhQDLk1J7eEVMXM6eIdJN3
+R68
 32
-R66
-R67
-Z298 !s100 W@oB1hPJ?eW8CBK=Nl=b53
+R69
+R70
+Z301 !s100 W@oB1hPJ?eW8CBK=Nl=b53
 Abehavior
-R61
-Z299 DEx4 work 14 tb_sign_extend 0 22 AhQDLk1J7eEVMXM6eIdJN3
+R64
+Z302 DEx4 work 14 tb_sign_extend 0 22 AhQDLk1J7eEVMXM6eIdJN3
 l58
 L38
-Z300 VUo^A1@aSH8^7k@oo8og630
-R65
+Z303 VUo^A1@aSH8^7k@oo8og630
+R68
 32
-R91
-R66
-R67
-Z301 !s100 Ia^R2z0P70VdiVI<20khX0
+R94
+R69
+R70
+Z304 !s100 Ia^R2z0P70VdiVI<20khX0
 Etb_toplevel
-Z302 w1352756996
-R61
-R7
-Z303 8tb_toplevel.vhd
-Z304 Ftb_toplevel.vhd
+Z305 w1352758433
+R64
+R122
+Z306 8Z:/git/GitHub/tdt4255/oving1/tb_toplevel.vhd
+Z307 FZ:/git/GitHub/tdt4255/oving1/tb_toplevel.vhd
 l0
 L35
-Z305 Vh=fBZSOd3]P7XlKSB_zPj1
-R65
-31
-Z306 o-O0 -explicit -93
-R139
-Z307 !s100 ^Y?0PR>TL_RB9O=NiTk0i2
+Z308 VWaX8GGfKiWY`PMJA3[^iW3
+R68
+32
+R69
+R70
+Z309 !s100 ^Y?0PR>TL_RB9O=NiTk0i2
 Abehavior
-R61
-Z308 DEx4 work 11 tb_toplevel 0 22 h=fBZSOd3]P7XlKSB_zPj1
+R64
+Z310 DEx4 work 11 tb_toplevel 0 22 WaX8GGfKiWY`PMJA3[^iW3
 l84
 L38
-Z309 V]Ic9k2TO`XTkMcA]>:cNC1
-R65
-31
-R91
-R306
-R139
-Z310 !s100 hNJ[D]944Z5G[nfXd5@9N0
+Z311 V053bK0el2eIC6z;ezQE<a0
+R68
+32
+R94
+R69
+R70
+Z312 !s100 z[Y8]:EH[N;1P:`@^>CdY3
 Etoplevel
-R162
-R74
-R60
-R61
-R7
-Z311 8C:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd
-Z312 FC:/Users/chribru/Desktop/GitHub/tdt4255/oving1/toplevel.vhd
+Z313 w1352645484
+R77
+R63
+R64
+R122
+Z314 8Z:/git/GitHub/tdt4255/oving1/toplevel.vhd
+Z315 FZ:/git/GitHub/tdt4255/oving1/toplevel.vhd
 l0
 L36
-Z313 VBCaZWH=MFT<le7mS]G[XI1
-R65
+Z316 V5ghobM_1TNKGjKGZfZJJL1
+R68
 32
-R138
-R139
-Z314 !s100 ^50ZPI`ZT2AI]PNIG<B:X0
+R69
+R70
+Z317 !s100 ^50ZPI`ZT2AI]PNIG<B:X0
 Abehavioral
-R74
-R60
-R61
-Z315 DEx4 work 8 toplevel 0 22 BCaZWH=MFT<le7mS]G[XI1
+R77
+R63
+R64
+Z318 DEx4 work 8 toplevel 0 22 5ghobM_1TNKGjKGZfZJJL1
 l122
 L53
-Z316 VeIK:WZ42>;@Iln>_GCN0n2
-R65
+Z319 VlA0;P?zcVNfT8:8QZ7oYK1
+R68
 32
-R81
-R82
-R83
-R138
-R139
-Z317 !s100 Ko@S6WdE?IHHYbjW1`eYk1
+R84
+R85
+R86
+R69
+R70
+Z320 !s100 Ko@S6WdE?IHHYbjW1`eYk1

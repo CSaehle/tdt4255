@@ -360,8 +360,8 @@ architecture Behavioral of processor is
 	signal alu_op_muxed: STD_LOGIC_VECTOR (1 downto 0) := "00";
 	
 	-- register mux signals
-	signal reg_muxed_read_data_1: STD_LOGIC_VECTOR (4 downto 0) := (others => '0');
-	signal reg_muxed_read_data_2: STD_LOGIC_VECTOR (4 downto 0) := (others => '0');
+	signal reg_muxed_read_data_1: STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
+	signal reg_muxed_read_data_2: STD_LOGIC_VECTOR (31 downto 0) := (others => '0');
 
 begin
 	-- This one updates the PC when the next state is a FETCH to make sure the instruction is ready for the next EXEC
@@ -414,8 +414,8 @@ begin
 	with stall_to_mux select alu_op_muxed <= "00" when '1', id_alu_op when others; --STD_LOGIC_VECTOR
 	
 	-- hack for register read/write on same cycle
-	reg_muxed_read_data_1 <= data_to_write when (id_instruction (25 downto 21) = wb_rd_addr) else id_read_data_1;
-	reg_muxed_read_data_2 <= data_to_write when (id_instruction (20 downto 16) = wb_rd_addr) else id_read_data_2;
+	reg_muxed_read_data_1 <= data_to_write when ((wb_reg_write = '1') and (id_instruction (25 downto 21) = wb_rd_addr)) else id_read_data_1;
+	reg_muxed_read_data_2 <= data_to_write when ((wb_reg_write = '1') and (id_instruction (20 downto 16) = wb_rd_addr)) else id_read_data_2;
 
 	-- enable signals
 	pc_clk <= (pc_enable and clk);
