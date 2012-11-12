@@ -215,6 +215,17 @@ architecture Behavioral of processor is
            forward_b : out  STD_LOGIC_VECTOR (1 downto 0));
 	end component forwarding_unit;
 	
+	component hazard_detection is
+		Port ( ex_mem_read : in  STD_LOGIC;
+           ex_register_rt : in  STD_LOGIC_VECTOR (4 downto 0);
+           id_register_rs : in  STD_LOGIC_VECTOR (4 downto 0);
+           id_register_rt : in  STD_LOGIC_VECTOR (4 downto 0);
+           reset_idex : out  STD_LOGIC;
+           pc_write : out  STD_LOGIC;
+           ifid_write : out  STD_LOGIC);
+	end component hazard_detection;
+	
+	
 	signal id_instruction: STD_LOGIC_VECTOR (31 downto 0) := ZERO32b;
 	signal ONE: STD_LOGIC_VECTOR (31 downto 0) := x"00000001";
 	
@@ -320,6 +331,15 @@ architecture Behavioral of processor is
 	signal forward_b : STD_LOGIC_VECTOR (1 downto 0) := (others => '0');
 	--/forward
 	
+	-- hazard detection unit
+	signal reset_idex : STD_LOGIC := '0'; -- this line should be moved ...
+	signal pc_clk : STD_LOGIC := '0'; -- ... and this one ...
+	signal ifid_clk : STD_LOGIC := '0'; -- ... and this one
+	signal hdu_reset_idex : STD_LOGIC := '0';
+	signal pc_enable : STD_LOGIC := '1';
+	signal ifid_enable : STD_LOGIC := '1';
+	--/hazard detection unit
+	
 
 begin
 	-- This one updates the PC when the next state is a FETCH to make sure the instruction is ready for the next EXEC
@@ -355,6 +375,14 @@ begin
 	-- Using address from PC to address instruction memory.
 	imem_address <= pc_current;
 
+	-- Id/ex reset
+	reset_idex <= (hdu_reset_idex or reset);
+	
+	-- enable signals
+	pc_clk <= (pc_enable and clk);
+	ifid_clk <= (ifid_enable and clk);
+
+
 	-- PIPELINE REGISTERS
 	inst_reg_ifid : reg_ifid
 	Port map(
@@ -362,7 +390,7 @@ begin
 			pc_out => id_pc_next,
 			instr_in => imem_data_in,
 			instr_out => id_instruction,
-			clk => clk,
+			clk => ifid_clk,
 			reset => reset
 		);
 	
@@ -399,7 +427,7 @@ begin
 			rd_in => id_instruction (15 downto 11),
 			rd_out => ex_rd,
 			clk => clk,
-			reset => reset
+			reset => reset_idex
 		);
 
 	inst_reg_exmem : reg_exmem
@@ -476,7 +504,7 @@ begin
 		
 	inst_pc: pc
 	port map (
-			clk => clk,
+			clk => pc_clk,
 			WE => pc_write_enable,
 			RESET => RESET,
 			addr_get => pc_current,
@@ -529,6 +557,19 @@ begin
 			forward_a => forward_a,
 			forward_b => forward_b
 		);
+		
+	inst_hazard_detection: hazard_detection
+	port map(
+			ex_mem_read => ex_mem_read,
+			ex_register_rt => ex_rt,
+			id_register_rs => id_instruction (25 downto 21),
+			id_register_rt => id_instruction (20 downto 16),
+			reset_idex => hdu_reset_idex,
+			pc_write => pc_enable,
+			ifid_write => ifid_enable
+		);
+		
+		
 
 end Behavioral;
 
