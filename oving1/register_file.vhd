@@ -70,11 +70,22 @@ begin
 		end if;
 	end process  REGISTERS;
 
-	RS <= (others=>'0') when RS_ADDR="00000"
-         else REGS(to_integer(unsigned(RS_ADDR)));
-			
-	RT <= (others=>'0') when RT_ADDR="00000"
-         else REGS(to_integer(unsigned(RT_ADDR)));
+	process(CLK,RS_ADDR,RT_ADDR)
+	begin
+		if falling_edge(CLK) then
+			if RS_ADDR="00000" then
+				RS <= (others=>'0');
+			else
+				RS <= REGS(to_integer(unsigned(RS_ADDR)));
+			end if;
+
+			if RT_ADDR="00000" then
+				RT <= (others=>'0');
+			else
+				RT <= REGS(to_integer(unsigned(RT_ADDR)));
+			end if;
+		end if;
+	end process;
 
 end Behavioral;
 
